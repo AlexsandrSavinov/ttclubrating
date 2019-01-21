@@ -1,0 +1,413 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.4">
+	<VerticalScroll>useIfNecessary</VerticalScroll>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<Autofill>false</Autofill>
+	</AutoCommandBar>
+	<Events>
+		<Event name="BeforeClose">ПередЗакрытием</Event>
+	</Events>
+	<ChildItems>
+		<LabelDecoration name="ДекорацияШапка" id="1">
+			<HorizontalStretch>true</HorizontalStretch>
+			<TextColor>style:FieldSelectionBackColor</TextColor>
+			<Font ref="sys:DefaultGUIFont" height="10" kind="WindowsFont"/>
+			<Title formatted="false">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Утверждено ФНТР от 23.10.2013</v8:content>
+				</v8:item>
+			</Title>
+			<Hyperlink>true</Hyperlink>
+			<ContextMenu name="ДекорацияШапкаКонтекстноеМеню" id="2"/>
+			<ExtendedTooltip name="ДекорацияШапкаРасширеннаяПодсказка" id="68"/>
+			<Events>
+				<Event name="Click">ДекорацияШапкаНажатие</Event>
+			</Events>
+		</LabelDecoration>
+		<LabelDecoration name="Декорация0" id="46">
+			<HorizontalStretch>true</HorizontalStretch>
+			<Title formatted="false">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Правила настольного тенниса. Полная версия</v8:content>
+				</v8:item>
+			</Title>
+			<Hyperlink>true</Hyperlink>
+			<ContextMenu name="Декорация0КонтекстноеМеню" id="47"/>
+			<ExtendedTooltip name="Декорация0РасширеннаяПодсказка" id="69"/>
+			<Events>
+				<Event name="Click">Декорация0Нажатие</Event>
+			</Events>
+		</LabelDecoration>
+		<LabelDecoration name="Декорация1" id="18">
+			<HorizontalStretch>true</HorizontalStretch>
+			<Title formatted="false">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Приложение 01. Положение о соревнованиях</v8:content>
+				</v8:item>
+			</Title>
+			<Hyperlink>true</Hyperlink>
+			<ContextMenu name="Декорация1КонтекстноеМеню" id="19"/>
+			<ExtendedTooltip name="Декорация1РасширеннаяПодсказка" id="70"/>
+			<Events>
+				<Event name="Click">Декорация1Нажатие</Event>
+			</Events>
+		</LabelDecoration>
+		<LabelDecoration name="Декорация2" id="20">
+			<HorizontalStretch>true</HorizontalStretch>
+			<Title formatted="false">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Приложение 02. Заявка на участие в соревнованиях</v8:content>
+				</v8:item>
+			</Title>
+			<Hyperlink>true</Hyperlink>
+			<ContextMenu name="Декорация2КонтекстноеМеню" id="21"/>
+			<ExtendedTooltip name="Декорация2РасширеннаяПодсказка" id="71"/>
+			<Events>
+				<Event name="Click">Декорация2Нажатие</Event>
+			</Events>
+		</LabelDecoration>
+		<LabelDecoration name="Декорация3" id="22">
+			<HorizontalStretch>true</HorizontalStretch>
+			<Title formatted="false">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Приложение 03. Отчёт главной судейской коллегии соревнований</v8:content>
+				</v8:item>
+			</Title>
+			<Hyperlink>true</Hyperlink>
+			<ContextMenu name="Декорация3КонтекстноеМеню" id="23"/>
+			<ExtendedTooltip name="Декорация3РасширеннаяПодсказка" id="72"/>
+			<Events>
+				<Event name="Click">Декорация3Нажатие</Event>
+			</Events>
+		</LabelDecoration>
+		<LabelDecoration name="Декорация4" id="24">
+			<HorizontalStretch>true</HorizontalStretch>
+			<Title formatted="false">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Приложение 04. Заявка состава команды</v8:content>
+				</v8:item>
+			</Title>
+			<Hyperlink>true</Hyperlink>
+			<ContextMenu name="Декорация4КонтекстноеМеню" id="25"/>
+			<ExtendedTooltip name="Декорация4РасширеннаяПодсказка" id="73"/>
+			<Events>
+				<Event name="Click">Декорация4Нажатие</Event>
+			</Events>
+		</LabelDecoration>
+		<LabelDecoration name="Декорация5" id="26">
+			<HorizontalStretch>true</HorizontalStretch>
+			<Title formatted="false">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Приложение 05. Протокол одиночной (парной) встречи</v8:content>
+				</v8:item>
+			</Title>
+			<Hyperlink>true</Hyperlink>
+			<ContextMenu name="Декорация5КонтекстноеМеню" id="27"/>
+			<ExtendedTooltip name="Декорация5РасширеннаяПодсказка" id="74"/>
+			<Events>
+				<Event name="Click">Декорация5Нажатие</Event>
+			</Events>
+		</LabelDecoration>
+		<LabelDecoration name="Декорация6" id="28">
+			<HorizontalStretch>true</HorizontalStretch>
+			<Title formatted="false">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Приложение 06. Протокол командного матча</v8:content>
+				</v8:item>
+			</Title>
+			<Hyperlink>true</Hyperlink>
+			<ContextMenu name="Декорация6КонтекстноеМеню" id="29"/>
+			<ExtendedTooltip name="Декорация6РасширеннаяПодсказка" id="75"/>
+			<Events>
+				<Event name="Click">Декорация6Нажатие</Event>
+			</Events>
+		</LabelDecoration>
+		<LabelDecoration name="Декорация7" id="30">
+			<HorizontalStretch>true</HorizontalStretch>
+			<Title formatted="false">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Приложение 07. Очерёдность игр. Круговая система (традиционный метод)</v8:content>
+				</v8:item>
+			</Title>
+			<Hyperlink>true</Hyperlink>
+			<ContextMenu name="Декорация7КонтекстноеМеню" id="31"/>
+			<ExtendedTooltip name="Декорация7РасширеннаяПодсказка" id="76"/>
+			<Events>
+				<Event name="Click">Декорация7Нажатие</Event>
+			</Events>
+		</LabelDecoration>
+		<LabelDecoration name="Декорация8" id="32">
+			<HorizontalStretch>true</HorizontalStretch>
+			<Title formatted="false">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Приложение 08. Очерёдность игр. Круговая система (метод ETTU)</v8:content>
+				</v8:item>
+			</Title>
+			<Hyperlink>true</Hyperlink>
+			<ContextMenu name="Декорация8КонтекстноеМеню" id="33"/>
+			<ExtendedTooltip name="Декорация8РасширеннаяПодсказка" id="77"/>
+			<Events>
+				<Event name="Click">Декорация8Нажатие</Event>
+			</Events>
+		</LabelDecoration>
+		<LabelDecoration name="Декорация9" id="34">
+			<HorizontalStretch>true</HorizontalStretch>
+			<Title formatted="false">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Приложение 09. Таблица результатов по круговому способу</v8:content>
+				</v8:item>
+			</Title>
+			<Hyperlink>true</Hyperlink>
+			<ContextMenu name="Декорация9КонтекстноеМеню" id="35"/>
+			<ExtendedTooltip name="Декорация9РасширеннаяПодсказка" id="78"/>
+			<Events>
+				<Event name="Click">Декорация9Нажатие</Event>
+			</Events>
+		</LabelDecoration>
+		<LabelDecoration name="Декорация10" id="36">
+			<HorizontalStretch>true</HorizontalStretch>
+			<Title formatted="false">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Приложение 10. Таблица результатов. Система с выбыванием (прямой нокаут)</v8:content>
+				</v8:item>
+			</Title>
+			<Hyperlink>true</Hyperlink>
+			<ContextMenu name="Декорация10КонтекстноеМеню" id="37"/>
+			<ExtendedTooltip name="Декорация10РасширеннаяПодсказка" id="79"/>
+			<Events>
+				<Event name="Click">Декорация10Нажатие</Event>
+			</Events>
+		</LabelDecoration>
+		<LabelDecoration name="Декорация11" id="38">
+			<HorizontalStretch>true</HorizontalStretch>
+			<Title formatted="false">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Приложение 11. Таблица результатов. Прогрессивная система (розыгрыш всех мест)</v8:content>
+				</v8:item>
+			</Title>
+			<Hyperlink>true</Hyperlink>
+			<ContextMenu name="Декорация11КонтекстноеМеню" id="39"/>
+			<ExtendedTooltip name="Декорация11РасширеннаяПодсказка" id="80"/>
+			<Events>
+				<Event name="Click">Декорация11Нажатие</Event>
+			</Events>
+		</LabelDecoration>
+		<LabelDecoration name="Декорация12" id="40">
+			<HorizontalStretch>true</HorizontalStretch>
+			<Title formatted="false">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Приложение 12. Таблица результатов. После 2-х поражений с розыгрышем всех мест</v8:content>
+				</v8:item>
+			</Title>
+			<Hyperlink>true</Hyperlink>
+			<ContextMenu name="Декорация12КонтекстноеМеню" id="41"/>
+			<ExtendedTooltip name="Декорация12РасширеннаяПодсказка" id="81"/>
+			<Events>
+				<Event name="Click">Декорация12Нажатие</Event>
+			</Events>
+		</LabelDecoration>
+		<LabelDecoration name="Декорация13" id="42">
+			<HorizontalStretch>true</HorizontalStretch>
+			<Title formatted="false">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Приложение 13. Содержание полного отчёта о соревнованиях (лично-командных)</v8:content>
+				</v8:item>
+			</Title>
+			<Hyperlink>true</Hyperlink>
+			<ContextMenu name="Декорация13КонтекстноеМеню" id="43"/>
+			<ExtendedTooltip name="Декорация13РасширеннаяПодсказка" id="82"/>
+			<Events>
+				<Event name="Click">Декорация13Нажатие</Event>
+			</Events>
+		</LabelDecoration>
+		<LabelDecoration name="Декорация14" id="44">
+			<HorizontalStretch>true</HorizontalStretch>
+			<Title formatted="false">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Приложение 14. Инструментальные проверки ракеток</v8:content>
+				</v8:item>
+			</Title>
+			<Hyperlink>true</Hyperlink>
+			<ContextMenu name="Декорация14КонтекстноеМеню" id="45"/>
+			<ExtendedTooltip name="Декорация14РасширеннаяПодсказка" id="83"/>
+			<Events>
+				<Event name="Click">Декорация14Нажатие</Event>
+			</Events>
+		</LabelDecoration>
+		<LabelDecoration name="Пробел" id="48">
+			<HorizontalStretch>true</HorizontalStretch>
+			<ContextMenu name="ПробелКонтекстноеМеню" id="49"/>
+			<ExtendedTooltip name="ПробелРасширеннаяПодсказка" id="84"/>
+		</LabelDecoration>
+		<LabelDecoration name="Декорация16" id="50">
+			<HorizontalStretch>true</HorizontalStretch>
+			<Title formatted="false">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Руководство для официальных лиц матча</v8:content>
+				</v8:item>
+			</Title>
+			<Hyperlink>true</Hyperlink>
+			<ContextMenu name="Декорация16КонтекстноеМеню" id="51"/>
+			<ExtendedTooltip name="Декорация16РасширеннаяПодсказка" id="85"/>
+			<Events>
+				<Event name="Click">Декорация16Нажатие</Event>
+			</Events>
+		</LabelDecoration>
+		<LabelDecoration name="Декорация17" id="52">
+			<HorizontalStretch>true</HorizontalStretch>
+			<Title formatted="false">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Приложение А. Рекомендованные процедуры для официальных лиц матча</v8:content>
+				</v8:item>
+			</Title>
+			<Hyperlink>true</Hyperlink>
+			<ContextMenu name="Декорация17КонтекстноеМеню" id="53"/>
+			<ExtendedTooltip name="Декорация17РасширеннаяПодсказка" id="86"/>
+			<Events>
+				<Event name="Click">Декорация17Нажатие</Event>
+			</Events>
+		</LabelDecoration>
+		<LabelDecoration name="Декорация18" id="54">
+			<HorizontalStretch>true</HorizontalStretch>
+			<Title formatted="false">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Приложение В. Директивы для официальных лиц матча на ЧМ и соревнованиях под эгидой ITTF</v8:content>
+				</v8:item>
+			</Title>
+			<Hyperlink>true</Hyperlink>
+			<ContextMenu name="Декорация18КонтекстноеМеню" id="55"/>
+			<ExtendedTooltip name="Декорация18РасширеннаяПодсказка" id="87"/>
+			<Events>
+				<Event name="Click">Декорация18Нажатие</Event>
+			</Events>
+		</LabelDecoration>
+		<LabelDecoration name="Декорация19" id="56">
+			<HorizontalStretch>true</HorizontalStretch>
+			<Title formatted="false">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Приложение С. Квалификация судей</v8:content>
+				</v8:item>
+			</Title>
+			<Hyperlink>true</Hyperlink>
+			<ContextMenu name="Декорация19КонтекстноеМеню" id="57"/>
+			<ExtendedTooltip name="Декорация19РасширеннаяПодсказка" id="88"/>
+			<Events>
+				<Event name="Click">Декорация19Нажатие</Event>
+			</Events>
+		</LabelDecoration>
+		<LabelDecoration name="Декорация20" id="58">
+			<HorizontalStretch>true</HorizontalStretch>
+			<Title formatted="false">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Приложение D. Кодекс поведения официальных лиц</v8:content>
+				</v8:item>
+			</Title>
+			<Hyperlink>true</Hyperlink>
+			<ContextMenu name="Декорация20КонтекстноеМеню" id="59"/>
+			<ExtendedTooltip name="Декорация20РасширеннаяПодсказка" id="89"/>
+			<Events>
+				<Event name="Click">Декорация20Нажатие</Event>
+			</Events>
+		</LabelDecoration>
+		<LabelDecoration name="Декорация21" id="60">
+			<HorizontalStretch>true</HorizontalStretch>
+			<Title formatted="false">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Приложение Е. Рекомендованные сигналы рукой и голосом</v8:content>
+				</v8:item>
+			</Title>
+			<Hyperlink>true</Hyperlink>
+			<ContextMenu name="Декорация21КонтекстноеМеню" id="61"/>
+			<ExtendedTooltip name="Декорация21РасширеннаяПодсказка" id="90"/>
+			<Events>
+				<Event name="Click">Декорация21Нажатие</Event>
+			</Events>
+		</LabelDecoration>
+		<LabelDecoration name="Декорация22" id="62">
+			<HorizontalStretch>true</HorizontalStretch>
+			<Title formatted="false">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Приложение F. Процедуры в игровом зале</v8:content>
+				</v8:item>
+			</Title>
+			<Hyperlink>true</Hyperlink>
+			<ContextMenu name="Декорация22КонтекстноеМеню" id="63"/>
+			<ExtendedTooltip name="Декорация22РасширеннаяПодсказка" id="91"/>
+			<Events>
+				<Event name="Click">Декорация22Нажатие</Event>
+			</Events>
+		</LabelDecoration>
+		<LabelDecoration name="Декорация23" id="64">
+			<HorizontalStretch>true</HorizontalStretch>
+			<Title formatted="false">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Приложение G. Униформа судей</v8:content>
+				</v8:item>
+			</Title>
+			<Hyperlink>true</Hyperlink>
+			<ContextMenu name="Декорация23КонтекстноеМеню" id="65"/>
+			<ExtendedTooltip name="Декорация23РасширеннаяПодсказка" id="92"/>
+			<Events>
+				<Event name="Click">Декорация23Нажатие</Event>
+			</Events>
+		</LabelDecoration>
+		<LabelDecoration name="Декорация24" id="66">
+			<HorizontalStretch>true</HorizontalStretch>
+			<Title formatted="false">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Приложение H. Краткий свод изменений в Законах и Предписаниях в 2005 и 2006 гг.</v8:content>
+				</v8:item>
+			</Title>
+			<Hyperlink>true</Hyperlink>
+			<ContextMenu name="Декорация24КонтекстноеМеню" id="67"/>
+			<ExtendedTooltip name="Декорация24РасширеннаяПодсказка" id="93"/>
+			<Events>
+				<Event name="Click">Декорация24Нажатие</Event>
+			</Events>
+		</LabelDecoration>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:DataProcessorObject.Правила</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+		</Attribute>
+		<Attribute name="СписокФайлов" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Список файлов</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueListType</v8:Type>
+			</Type>
+		</Attribute>
+	</Attributes>
+</Form>

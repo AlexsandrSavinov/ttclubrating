@@ -1,0 +1,238 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.4">
+	<WindowOpeningMode>LockOwnerWindow</WindowOpeningMode>
+	<VerticalScroll>useIfNecessary</VerticalScroll>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<Autofill>false</Autofill>
+	</AutoCommandBar>
+	<Events>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<Table name="ДеревоКоманд" id="1">
+			<Representation>Tree</Representation>
+			<AutoInsertNewRow>true</AutoInsertNewRow>
+			<SearchOnInput>Use</SearchOnInput>
+			<EnableStartDrag>true</EnableStartDrag>
+			<EnableDrag>true</EnableDrag>
+			<DataPath>ДеревоКоманд</DataPath>
+			<SearchStringLocation>None</SearchStringLocation>
+			<ViewStatusLocation>None</ViewStatusLocation>
+			<SearchControlLocation>None</SearchControlLocation>
+			<ContextMenu name="ДеревоКомандКонтекстноеМеню" id="2"/>
+			<AutoCommandBar name="ДеревоКомандКоманднаяПанель" id="3">
+				<Autofill>false</Autofill>
+				<ChildItems>
+					<Button name="ДеревоКомандКомандаВыбратьКоманды" id="17">
+						<Type>CommandBarButton</Type>
+						<Representation>PictureAndText</Representation>
+						<DefaultButton>true</DefaultButton>
+						<CommandName>Form.Command.КомандаВыбратьКоманды</CommandName>
+						<Picture>
+							<xr:Ref>StdPicture.ExecuteTask</xr:Ref>
+							<xr:LoadTransparent>true</xr:LoadTransparent>
+						</Picture>
+						<ExtendedTooltip name="ДеревоКомандКомандаВыбратьКомандыРасширеннаяПодсказка" id="18"/>
+					</Button>
+					<Button name="ДеревоКомандСортироватьСписокПоВозрастанию" id="10">
+						<Type>CommandBarButton</Type>
+						<OnlyInAllActions>true</OnlyInAllActions>
+						<CommandName>Form.Item.ДеревоКоманд.StandardCommand.SortListAsc</CommandName>
+						<ExtendedTooltip name="ДеревоКомандСортироватьСписокПоВозрастаниюРасширеннаяПодсказка" id="19"/>
+					</Button>
+					<Button name="ДеревоКомандСортироватьСписокПоУбыванию" id="11">
+						<Type>CommandBarButton</Type>
+						<OnlyInAllActions>true</OnlyInAllActions>
+						<CommandName>Form.Item.ДеревоКоманд.StandardCommand.SortListDesc</CommandName>
+						<ExtendedTooltip name="ДеревоКомандСортироватьСписокПоУбываниюРасширеннаяПодсказка" id="20"/>
+					</Button>
+					<Button name="ДеревоКомандСписок" id="12">
+						<Type>CommandBarButton</Type>
+						<Representation>Picture</Representation>
+						<OnlyInAllActions>true</OnlyInAllActions>
+						<CommandName>Form.Item.ДеревоКоманд.StandardCommand.List</CommandName>
+						<ExtendedTooltip name="ДеревоКомандСписокРасширеннаяПодсказка" id="21"/>
+					</Button>
+					<Button name="ДеревоКомандИерархическийСписок" id="13">
+						<Type>CommandBarButton</Type>
+						<Representation>Picture</Representation>
+						<OnlyInAllActions>true</OnlyInAllActions>
+						<CommandName>Form.Item.ДеревоКоманд.StandardCommand.HierarchicalList</CommandName>
+						<ExtendedTooltip name="ДеревоКомандИерархическийСписокРасширеннаяПодсказка" id="22"/>
+					</Button>
+					<Button name="ДеревоКомандДерево" id="14">
+						<Type>CommandBarButton</Type>
+						<Representation>Picture</Representation>
+						<OnlyInAllActions>true</OnlyInAllActions>
+						<CommandName>Form.Item.ДеревоКоманд.StandardCommand.Tree</CommandName>
+						<ExtendedTooltip name="ДеревоКомандДеревоРасширеннаяПодсказка" id="23"/>
+					</Button>
+				</ChildItems>
+			</AutoCommandBar>
+			<ExtendedTooltip name="ДеревоКомандРасширеннаяПодсказка" id="24"/>
+			<SearchStringAddition name="ДеревоКомандСтрокаПоиска" id="25">
+				<AdditionSource>
+					<Item>ДеревоКоманд</Item>
+					<Type>SearchStringRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="ДеревоКомандСтрокаПоискаКонтекстноеМеню" id="26"/>
+				<ExtendedTooltip name="ДеревоКомандСтрокаПоискаРасширеннаяПодсказка" id="27"/>
+			</SearchStringAddition>
+			<ViewStatusAddition name="ДеревоКомандСостояниеПросмотра" id="28">
+				<AdditionSource>
+					<Item>ДеревоКоманд</Item>
+					<Type>ViewStatusRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="ДеревоКомандСостояниеПросмотраКонтекстноеМеню" id="29"/>
+				<ExtendedTooltip name="ДеревоКомандСостояниеПросмотраРасширеннаяПодсказка" id="30"/>
+			</ViewStatusAddition>
+			<SearchControlAddition name="ДеревоКомандУправлениеПоиском" id="31">
+				<AdditionSource>
+					<Item>ДеревоКоманд</Item>
+					<Type>SearchControl</Type>
+				</AdditionSource>
+				<ContextMenu name="ДеревоКомандУправлениеПоискомКонтекстноеМеню" id="32"/>
+				<ExtendedTooltip name="ДеревоКомандУправлениеПоискомРасширеннаяПодсказка" id="33"/>
+			</SearchControlAddition>
+			<Events>
+				<Event name="BeforeAddRow">ДеревоКомандПередНачаломДобавления</Event>
+				<Event name="BeforeDeleteRow">ДеревоКомандПередУдалением</Event>
+			</Events>
+			<ChildItems>
+				<CheckBoxField name="ДеревоКомандПометка" id="4">
+					<DataPath>ДеревоКоманд.Пометка</DataPath>
+					<TitleLocation>None</TitleLocation>
+					<EditMode>Directly</EditMode>
+					<CheckBoxType>Auto</CheckBoxType>
+					<ContextMenu name="ДеревоКомандПометкаКонтекстноеМеню" id="5"/>
+					<ExtendedTooltip name="ДеревоКомандПометкаРасширеннаяПодсказка" id="34"/>
+					<Events>
+						<Event name="OnChange">ДеревоКомандПометкаПриИзменении</Event>
+					</Events>
+				</CheckBoxField>
+				<InputField name="ДеревоКомандНазваниеКоманды" id="6">
+					<DataPath>ДеревоКоманд.НазваниеКоманды</DataPath>
+					<Visible>false</Visible>
+					<ReadOnly>true</ReadOnly>
+					<EditMode>EnterOnInput</EditMode>
+					<HeaderHorizontalAlign>Center</HeaderHorizontalAlign>
+					<Width>13</Width>
+					<HorizontalStretch>true</HorizontalStretch>
+					<ContextMenu name="ДеревоКомандНазваниеКомандыКонтекстноеМеню" id="7"/>
+					<ExtendedTooltip name="ДеревоКомандНазваниеКомандыРасширеннаяПодсказка" id="35"/>
+				</InputField>
+				<InputField name="ДеревоКомандУчастник" id="8">
+					<DataPath>ДеревоКоманд.Участник</DataPath>
+					<ReadOnly>true</ReadOnly>
+					<EditMode>EnterOnInput</EditMode>
+					<HorizontalStretch>true</HorizontalStretch>
+					<ContextMenu name="ДеревоКомандУчастникКонтекстноеМеню" id="9"/>
+					<ExtendedTooltip name="ДеревоКомандУчастникРасширеннаяПодсказка" id="36"/>
+				</InputField>
+			</ChildItems>
+		</Table>
+		<LabelDecoration name="Декорация1" id="15">
+			<HorizontalStretch>true</HorizontalStretch>
+			<Title formatted="false">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Для поиска используйте комбинацию клавиш Ctrl+F</v8:content>
+				</v8:item>
+			</Title>
+			<ContextMenu name="Декорация1КонтекстноеМеню" id="16"/>
+			<ExtendedTooltip name="Декорация1РасширеннаяПодсказка" id="37"/>
+		</LabelDecoration>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="ДеревоКоманд" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Дерево команд</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueTree</v8:Type>
+			</Type>
+			<Columns>
+				<Column name="Пометка" id="1">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Пометка</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:boolean</v8:Type>
+					</Type>
+				</Column>
+				<Column name="НазваниеКоманды" id="2">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Команда</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>300</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="Участник" id="3">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Команда</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:Type>cfg:CatalogRef.Участники</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>50</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+			</Columns>
+		</Attribute>
+		<Attribute name="фСписокКоманд" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Ф список команд</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueListType</v8:Type>
+			</Type>
+			<Settings xsi:type="v8:TypeDescription">
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Settings>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="КомандаВыбратьКоманды" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Выбрать команды</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Выбрать команды</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>КомандаВыбратьКоманды</Action>
+		</Command>
+	</Commands>
+</Form>

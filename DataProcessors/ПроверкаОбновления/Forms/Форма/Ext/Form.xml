@@ -1,0 +1,685 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.4">
+	<AutoSaveDataInSettings>Use</AutoSaveDataInSettings>
+	<SaveDataInSettings>UseList</SaveDataInSettings>
+	<AutoTitle>false</AutoTitle>
+	<VerticalScroll>useIfNecessary</VerticalScroll>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<Autofill>false</Autofill>
+	</AutoCommandBar>
+	<Events>
+		<Event name="OnOpen">ПриОткрытии</Event>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<UsualGroup name="ОбщиеНастройки" id="47">
+			<Visible>false</Visible>
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Общие настройки</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Общие настройки</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Group>Vertical</Group>
+			<Representation>StrongSeparation</Representation>
+			<ExtendedTooltip name="ОбщиеНастройкиРасширеннаяПодсказка" id="61"/>
+			<ChildItems>
+				<UsualGroup name="Группа4" id="52">
+					<Group>Horizontal</Group>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="Группа4РасширеннаяПодсказка" id="62"/>
+					<ChildItems>
+						<InputField name="Пользователь" id="18">
+							<DataPath>Пользователь</DataPath>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Пользователь (если есть)</v8:content>
+								</v8:item>
+							</Title>
+							<Width>12</Width>
+							<ContextMenu name="ПользовательКонтекстноеМеню" id="19"/>
+							<ExtendedTooltip name="ПользовательРасширеннаяПодсказка" id="63"/>
+						</InputField>
+						<InputField name="Пароль" id="20">
+							<DataPath>Пароль</DataPath>
+							<Width>10</Width>
+							<PasswordMode>true</PasswordMode>
+							<ContextMenu name="ПарольКонтекстноеМеню" id="21"/>
+							<ExtendedTooltip name="ПарольРасширеннаяПодсказка" id="64"/>
+						</InputField>
+					</ChildItems>
+				</UsualGroup>
+				<InputField name="ПутьКПрограмме" id="50">
+					<DataPath>ПутьКПрограмме</DataPath>
+					<ChoiceButton>true</ChoiceButton>
+					<ContextMenu name="ПутьКПрограммеКонтекстноеМеню" id="51"/>
+					<ExtendedTooltip name="ПутьКПрограммеРасширеннаяПодсказка" id="65"/>
+					<Events>
+						<Event name="StartChoice">ПутьКПрограммеНачалоВыбора</Event>
+					</Events>
+				</InputField>
+				<InputField name="ПутьКБазе" id="48">
+					<DataPath>ПутьКБазе</DataPath>
+					<ChoiceButton>true</ChoiceButton>
+					<ContextMenu name="ПутьКБазеКонтекстноеМеню" id="49"/>
+					<ExtendedTooltip name="ПутьКБазеРасширеннаяПодсказка" id="66"/>
+					<Events>
+						<Event name="StartChoice">ПутьКБазеНачалоВыбора</Event>
+					</Events>
+				</InputField>
+			</ChildItems>
+		</UsualGroup>
+		<Pages name="СервисныеСтраницы" id="31">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сервисные страницы</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сервисные страницы</v8:content>
+				</v8:item>
+			</ToolTip>
+			<PagesRepresentation>None</PagesRepresentation>
+			<ExtendedTooltip name="СервисныеСтраницыРасширеннаяПодсказка" id="67"/>
+			<ChildItems>
+				<Page name="ГруппаОбновление" id="32">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа обновление</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа обновление</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ExtendedTooltip name="ГруппаОбновлениеРасширеннаяПодсказка" id="68"/>
+					<ChildItems>
+						<LabelDecoration name="Декорация1" id="1">
+							<TextColor>style:FieldSelectionBackColor</TextColor>
+							<Title formatted="false">
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Для проверки обновления необходимо подключение к сети интернет</v8:content>
+								</v8:item>
+							</Title>
+							<ContextMenu name="Декорация1КонтекстноеМеню" id="2"/>
+							<ExtendedTooltip name="Декорация1РасширеннаяПодсказка" id="69"/>
+						</LabelDecoration>
+						<UsualGroup name="Группа2" id="9">
+							<Group>Horizontal</Group>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="Группа2РасширеннаяПодсказка" id="70"/>
+							<ChildItems>
+								<Button name="Проверить" id="5">
+									<Type>UsualButton</Type>
+									<CommandName>Form.Command.Проверить</CommandName>
+									<Font ref="sys:DefaultGUIFont" bold="true" italic="false" underline="false" strikeout="false" kind="WindowsFont"/>
+									<ExtendedTooltip name="ПроверитьРасширеннаяПодсказка" id="71"/>
+								</Button>
+								<LabelDecoration name="Декорация2" id="15">
+									<Width>19</Width>
+									<HorizontalStretch>true</HorizontalStretch>
+									<ContextMenu name="Декорация2КонтекстноеМеню" id="16"/>
+									<ExtendedTooltip name="Декорация2РасширеннаяПодсказка" id="72"/>
+								</LabelDecoration>
+							</ChildItems>
+						</UsualGroup>
+						<UsualGroup name="Группа1" id="6">
+							<Group>Vertical</Group>
+							<Representation>StrongSeparation</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="Группа1РасширеннаяПодсказка" id="73"/>
+							<ChildItems>
+								<LabelField name="ТекущаяВерсия" id="3">
+									<DataPath>ТекущаяВерсия</DataPath>
+									<TitleLocation>Left</TitleLocation>
+									<HorizontalAlign>Center</HorizontalAlign>
+									<ContextMenu name="ТекущаяВерсияКонтекстноеМеню" id="4"/>
+									<ExtendedTooltip name="ТекущаяВерсияРасширеннаяПодсказка" id="74"/>
+								</LabelField>
+								<LabelField name="ПоследняяВерсия" id="7">
+									<DataPath>ПоследняяВерсия</DataPath>
+									<TitleLocation>Left</TitleLocation>
+									<HorizontalAlign>Center</HorizontalAlign>
+									<Font ref="sys:DefaultGUIFont" bold="true" italic="false" underline="false" strikeout="false" kind="WindowsFont"/>
+									<ContextMenu name="ПоследняяВерсияКонтекстноеМеню" id="8"/>
+									<ExtendedTooltip name="ПоследняяВерсияРасширеннаяПодсказка" id="75"/>
+								</LabelField>
+							</ChildItems>
+						</UsualGroup>
+						<InputField name="Инф" id="12">
+							<DataPath>Инф</DataPath>
+							<ReadOnly>true</ReadOnly>
+							<TitleLocation>None</TitleLocation>
+							<HorizontalAlign>Center</HorizontalAlign>
+							<Height>1</Height>
+							<MultiLine>true</MultiLine>
+							<Font bold="true" kind="AutoFont"/>
+							<ContextMenu name="ИнфКонтекстноеМеню" id="13"/>
+							<ExtendedTooltip name="ИнфРасширеннаяПодсказка" id="76"/>
+						</InputField>
+						<Button name="КомандаСохранитьОбновление" id="54">
+							<Type>UsualButton</Type>
+							<Visible>false</Visible>
+							<CommandName>Form.Command.КомандаСохранитьОбновление</CommandName>
+							<Font ref="sys:DefaultGUIFont" bold="true" italic="false" underline="false" strikeout="false" kind="WindowsFont"/>
+							<ExtendedTooltip name="КомандаСохранитьОбновлениеРасширеннаяПодсказка" id="77"/>
+						</Button>
+						<HTMLDocumentField name="ПолеПомощьПриОбновлении" id="59">
+							<DataPath>ПолеПомощьПриОбновлении</DataPath>
+							<Visible>false</Visible>
+							<TitleLocation>None</TitleLocation>
+							<ContextMenu name="ПолеПомощьПриОбновленииКонтекстноеМеню" id="60"/>
+							<ExtendedTooltip name="ПолеПомощьПриОбновленииРасширеннаяПодсказка" id="78"/>
+						</HTMLDocumentField>
+						<UsualGroup name="НастройкиОбновления" id="17">
+							<Visible>false</Visible>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Настройки обновления</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Настройки обновления</v8:content>
+								</v8:item>
+							</ToolTip>
+							<HorizontalStretch>true</HorizontalStretch>
+							<Group>Vertical</Group>
+							<Representation>StrongSeparation</Representation>
+							<ExtendedTooltip name="НастройкиОбновленияРасширеннаяПодсказка" id="79"/>
+							<ChildItems>
+								<UsualGroup name="Группа3" id="26">
+									<Group>Vertical</Group>
+									<Representation>None</Representation>
+									<ShowTitle>false</ShowTitle>
+									<ExtendedTooltip name="Группа3РасширеннаяПодсказка" id="80"/>
+									<ChildItems>
+										<CheckBoxField name="СоздаватьРезервнуюКопию" id="38">
+											<DataPath>Объект.СоздаватьРезервнуюКопию</DataPath>
+											<TitleLocation>Right</TitleLocation>
+											<CheckBoxType>Auto</CheckBoxType>
+											<ContextMenu name="СоздаватьРезервнуюКопиюКонтекстноеМеню" id="39"/>
+											<ExtendedTooltip name="СоздаватьРезервнуюКопиюРасширеннаяПодсказка" id="81"/>
+											<Events>
+												<Event name="OnChange">СоздаватьРезервнуюКопиюПриИзменении</Event>
+											</Events>
+										</CheckBoxField>
+										<InputField name="КаталогКопии" id="27">
+											<DataPath>Объект.ИмяКаталогаРезервнойКопииИБ</DataPath>
+											<Visible>false</Visible>
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Сохранить в</v8:content>
+												</v8:item>
+											</Title>
+											<ChoiceButton>true</ChoiceButton>
+											<ContextMenu name="КаталогКопииКонтекстноеМеню" id="28"/>
+											<ExtendedTooltip name="КаталогКопииРасширеннаяПодсказка" id="82"/>
+											<Events>
+												<Event name="StartChoice">КаталогКопииНачалоВыбора</Event>
+											</Events>
+										</InputField>
+									</ChildItems>
+								</UsualGroup>
+								<CheckBoxField name="ЗапуститьПрограммуПослеОбновления" id="24">
+									<DataPath>ЗапуститьПрограммуПослеОбновления</DataPath>
+									<Visible>false</Visible>
+									<TitleLocation>Right</TitleLocation>
+									<CheckBoxType>Auto</CheckBoxType>
+									<ContextMenu name="ЗапуститьПрограммуПослеОбновленияКонтекстноеМеню" id="25"/>
+									<ExtendedTooltip name="ЗапуститьПрограммуПослеОбновленияРасширеннаяПодсказка" id="83"/>
+								</CheckBoxField>
+								<LabelDecoration name="Декорация3" id="29">
+									<HorizontalStretch>true</HorizontalStretch>
+									<TextColor>style:SpecialTextColor</TextColor>
+									<Font ref="sys:DefaultGUIFont" height="10" bold="true" italic="false" underline="false" strikeout="false" kind="WindowsFont"/>
+									<Title formatted="false">
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Внимание: перед обновлением, 
+работа программы будет завершена</v8:content>
+										</v8:item>
+									</Title>
+									<ContextMenu name="Декорация3КонтекстноеМеню" id="30"/>
+									<ExtendedTooltip name="Декорация3РасширеннаяПодсказка" id="84"/>
+								</LabelDecoration>
+								<UsualGroup name="Группа5" id="53">
+									<Group>Horizontal</Group>
+									<Representation>None</Representation>
+									<ShowTitle>false</ShowTitle>
+									<ExtendedTooltip name="Группа5РасширеннаяПодсказка" id="85"/>
+									<ChildItems>
+										<Button name="ОбновитьПрограмму" id="14">
+											<Type>UsualButton</Type>
+											<Representation>PictureAndText</Representation>
+											<Enabled>false</Enabled>
+											<CommandName>Form.Command.ОбновитьПрограмму</CommandName>
+											<Font bold="true" kind="AutoFont"/>
+											<Picture>
+												<xr:Ref>StdPicture.Refresh</xr:Ref>
+												<xr:LoadTransparent>true</xr:LoadTransparent>
+											</Picture>
+											<ExtendedTooltip name="ОбновитьПрограммуРасширеннаяПодсказка" id="86"/>
+										</Button>
+									</ChildItems>
+								</UsualGroup>
+							</ChildItems>
+						</UsualGroup>
+					</ChildItems>
+				</Page>
+				<Page name="ГруппаРезервнойКопии" id="33">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа резервной копии</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа резервной копии</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ExtendedTooltip name="ГруппаРезервнойКопииРасширеннаяПодсказка" id="87"/>
+					<ChildItems>
+						<InputField name="ИмяКаталогаРезервнойКопииИБ" id="36">
+							<DataPath>Объект.КаталогСРезервнымиКопиями</DataPath>
+							<Visible>false</Visible>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Каталог копий</v8:content>
+								</v8:item>
+							</Title>
+							<ChoiceButton>true</ChoiceButton>
+							<ContextMenu name="ИмяКаталогаРезервнойКопииИБКонтекстноеМеню" id="37"/>
+							<ExtendedTooltip name="ИмяКаталогаРезервнойКопииИБРасширеннаяПодсказка" id="88"/>
+							<Events>
+								<Event name="StartChoice">ИмяКаталогаРезервнойКопииИБНачалоВыбора</Event>
+							</Events>
+						</InputField>
+						<Button name="КомандаСохранитьКопию" id="35">
+							<Type>UsualButton</Type>
+							<Visible>false</Visible>
+							<CommandName>Form.Command.КомандаСохранитьКопию</CommandName>
+							<Font ref="sys:DefaultGUIFont" bold="true" italic="false" underline="false" strikeout="false" kind="WindowsFont"/>
+							<ExtendedTooltip name="КомандаСохранитьКопиюРасширеннаяПодсказка" id="89"/>
+						</Button>
+						<HTMLDocumentField name="ПолеПомощьПриВыгрузки" id="55">
+							<DataPath>ПолеПомощьПриВыгрузки</DataPath>
+							<TitleLocation>None</TitleLocation>
+							<ContextMenu name="ПолеПомощьПриВыгрузкиКонтекстноеМеню" id="56"/>
+							<ExtendedTooltip name="ПолеПомощьПриВыгрузкиРасширеннаяПодсказка" id="90"/>
+						</HTMLDocumentField>
+					</ChildItems>
+				</Page>
+				<Page name="ГруппаВосстановление" id="34">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа восстановление</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа восстановление</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ExtendedTooltip name="ГруппаВосстановлениеРасширеннаяПодсказка" id="91"/>
+					<ChildItems>
+						<InputField name="ФайлЗагрузкиРезервнойКопии" id="40">
+							<DataPath>Объект.ФайлЗагрузкиРезервнойКопии</DataPath>
+							<Visible>false</Visible>
+							<ChoiceButton>true</ChoiceButton>
+							<ContextMenu name="ФайлЗагрузкиРезервнойКопииКонтекстноеМеню" id="41"/>
+							<ExtendedTooltip name="ФайлЗагрузкиРезервнойКопииРасширеннаяПодсказка" id="92"/>
+							<Events>
+								<Event name="StartChoice">ФайлЗагрузкиРезервнойКопииНачалоВыбора</Event>
+							</Events>
+						</InputField>
+						<Button name="КомандаНачатьВосстанволение" id="42">
+							<Type>UsualButton</Type>
+							<Visible>false</Visible>
+							<CommandName>Form.Command.КомандаНачатьВосстанволение</CommandName>
+							<Font ref="sys:DefaultGUIFont" bold="true" italic="false" underline="false" strikeout="false" kind="WindowsFont"/>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Восстановить базу из копии</v8:content>
+								</v8:item>
+							</Title>
+							<ExtendedTooltip name="КомандаНачатьВосстанволениеРасширеннаяПодсказка" id="93"/>
+						</Button>
+						<HTMLDocumentField name="ПолеПомощьПриВосстановлении" id="57">
+							<DataPath>ПолеПомощьПриВосстановлении</DataPath>
+							<TitleLocation>None</TitleLocation>
+							<ContextMenu name="ПолеПомощьПриВосстановленииКонтекстноеМеню" id="58"/>
+							<ExtendedTooltip name="ПолеПомощьПриВосстановленииРасширеннаяПодсказка" id="94"/>
+						</HTMLDocumentField>
+					</ChildItems>
+				</Page>
+			</ChildItems>
+		</Pages>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:DataProcessorObject.ПроверкаОбновления</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<Save>
+				<Field>Объект.КаталогСРезервнымиКопиями</Field>
+				<Field>Объект.ИмяКаталогаРезервнойКопииИБ</Field>
+			</Save>
+		</Attribute>
+		<Attribute name="ТекущаяВерсия" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Текущая версия</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ПоследняяВерсия" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Последняя версия</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="Инф" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Инф</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="Пользователь" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Имя пользователя</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+			<SavedData>true</SavedData>
+		</Attribute>
+		<Attribute name="Пароль" id="6">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Пароль</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+			<Save>
+				<Field>Пароль</Field>
+			</Save>
+		</Attribute>
+		<Attribute name="ЗапуститьПрограммуПослеОбновления" id="8">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Запустить программу после обновления</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+			<SavedData>true</SavedData>
+		</Attribute>
+		<Attribute name="КаталогКопии" id="9">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Каталог копии</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+			<SavedData>true</SavedData>
+		</Attribute>
+		<Attribute name="ОперацияРезервногоКопирования" id="10">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Операция резервного копирования</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:decimal</v8:Type>
+				<v8:NumberQualifiers>
+					<v8:Digits>10</v8:Digits>
+					<v8:FractionDigits>0</v8:FractionDigits>
+					<v8:AllowedSign>Any</v8:AllowedSign>
+				</v8:NumberQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ПутьКБазе" id="7">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Путь к базе</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+			<Save>
+				<Field>ПутьКБазе</Field>
+			</Save>
+		</Attribute>
+		<Attribute name="ПутьКПрограмме" id="11">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Путь к программе 1С</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+			<Save>
+				<Field>ПутьКПрограмме</Field>
+			</Save>
+		</Attribute>
+		<Attribute name="ПолеПомощьПриВыгрузки" id="12">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Поле помощь при выгрузки</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ПолеПомощьПриВосстановлении" id="13">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Поле помощь при выгрузки</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ПолеПомощьПриОбновлении" id="14">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Поле помощь при выгрузки</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="Проверить" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Проверить</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Проверить</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>Проверить</Action>
+			<Representation>TextPicture</Representation>
+		</Command>
+		<Command name="ОбновитьПрограмму" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Обновить</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Обновить сейчас программу</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>КомандаОбновить</Action>
+		</Command>
+		<Command name="КомандаНачатьВосстанволение" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Команда начать восстанволение</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Команда начать восстанволение</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>НачатьВосстановлениеИБ</Action>
+		</Command>
+		<Command name="КомандаСохранитьКопию" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сделать резервную копию</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Команда сохранить копию</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>КомандаНачатьКопирование</Action>
+		</Command>
+		<Command name="КомандаСохранитьОбновление" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сохранить</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Команда сохранить обновление</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>КомандаСохранитьОбновление</Action>
+		</Command>
+	</Commands>
+	<Parameters>
+		<Parameter name="ПроверятьСразу">
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Parameter>
+	</Parameters>
+</Form>

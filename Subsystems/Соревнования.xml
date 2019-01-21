@@ -1,0 +1,73 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.4">
+	<Subsystem uuid="5077fec0-0e6d-4e5c-b495-3087dc30c4b2">
+		<Properties>
+			<Name>Соревнования</Name>
+			<Synonym>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Проведение соревнований</v8:content>
+				</v8:item>
+			</Synonym>
+			<Comment/>
+			<IncludeHelpInContents>true</IncludeHelpInContents>
+			<IncludeInCommandInterface>true</IncludeInCommandInterface>
+			<Explanation/>
+			<Picture>
+				<xr:Ref>CommonPicture.кСоревнования</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+				<xr:TransparentPixel x="66" y="65"/>
+			</Picture>
+			<Content>
+				<xr:Item xsi:type="xr:MDObjectRef">Document.ПроведениеСоревнования</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.кСоревнования</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.ИсторияСоревнований</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.ВстречиУчастников</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.РейтингУчастников</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.ДанныеСоревнования</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.РассчитатьРейтинг</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.ЗаписатьДанные</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Report.ТекущийРейтингУчастников</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.КартинкаВыборВГрупповомЭтапе</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Document.ВводНачальногоРейтинга</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.РезультатЖеребьевки</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Document.ПрисвоитьРазряд</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.ДетализацияПриростаРейтинга</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.ДополнительныеОтчетыИОбработки</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.УчестьИгры</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonForm.НастройкиПрограммы</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.ПроверкаОбновления</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.Обновление</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Report.РазрядыИЗвания</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.МонеткаДляЖеребьевкиБольшая</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.МонеткаМаленькая</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.СтолПоНастольномуТеннису</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.СозданиеПользователя</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Report.ОтчетКарточкаУчастника</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.КарточкаУчастника</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Enum.ВидыСоревнований</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.НастройкиСбораГрупп</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.РассчитанПоРежиму</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Report.ДетализацияПрироста</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.ЗагрузкаУчастников</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Report.СписокУчастниковСоревнований</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Report.СуммаПриростаЗаПериод</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Report.СписокБыстрогоРасчета</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.ПорядокИгр</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.Правила</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.КомандыСоревнований</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Enum.ВариантыРасстановки</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.ЖеребьевкаКоманд</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.ТекущиеВстречи</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Enum.ОтображениеВкладок</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Report.ПобедыНадРазрядниками</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.МестаУчастниковСоревнований</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Report.ОтчетМестаУчастников</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.ПериодДействияРазрядов</xr:Item>
+			</Content>
+		</Properties>
+		<ChildObjects>
+			<Subsystem>Справочники</Subsystem>
+		</ChildObjects>
+	</Subsystem>
+</MetaDataObject>

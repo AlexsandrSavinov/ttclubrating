@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<CommandInterface xmlns="http://v8.1c.ru/8.3/xcf/extrnprops" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.4">
+	<SubsystemsVisibility>
+		<Subsystem name="708f6fbd-29cd-49ad-9299-ffa62bbce89b">
+			<Visibility>
+				<xr:Common>false</xr:Common>
+				<xr:Value name="Role.ПолныеПрава">false</xr:Value>
+			</Visibility>
+		</Subsystem>
+		<Subsystem name="Subsystem.Соревнования">
+			<Visibility>
+				<xr:Common>false</xr:Common>
+			</Visibility>
+		</Subsystem>
+	</SubsystemsVisibility>
+	<SubsystemsOrder>
+		<Subsystem>708f6fbd-29cd-49ad-9299-ffa62bbce89b</Subsystem>
+		<Subsystem>Subsystem.Соревнования</Subsystem>
+	</SubsystemsOrder>
+</CommandInterface>

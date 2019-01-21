@@ -1,0 +1,456 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<CommandInterface xmlns="http://v8.1c.ru/8.3/xcf/extrnprops" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.4">
+	<CommandsVisibility>
+		<Command name="Document.ПроведениеСоревнования.StandardCommand.OpenList">
+			<Visibility>
+				<xr:Common>true</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="Document.ВводНачальногоРейтинга.StandardCommand.OpenList">
+			<Visibility>
+				<xr:Common>true</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="Document.ПрисвоитьРазряд.StandardCommand.OpenList">
+			<Visibility>
+				<xr:Common>true</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="InformationRegister.ТекущиеВстречи.Command.ТекущиеВстречи">
+			<Visibility>
+				<xr:Common>true</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="Catalog.Участники.StandardCommand.OpenList">
+			<Visibility>
+				<xr:Common>true</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="Catalog.Тренеры.StandardCommand.OpenList">
+			<Visibility>
+				<xr:Common>true</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="Catalog.Города.StandardCommand.OpenList">
+			<Visibility>
+				<xr:Common>true</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="Catalog.Клубы.StandardCommand.OpenList">
+			<Visibility>
+				<xr:Common>true</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="InformationRegister.ПорядокИгр.StandardCommand.OpenList">
+			<Visibility>
+				<xr:Common>true</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="Catalog.ЖеребьевкаКоманд.StandardCommand.OpenList">
+			<Visibility>
+				<xr:Common>true</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="DataProcessor.Правила.Command.ОткрытьПравила">
+			<Visibility>
+				<xr:Common>true</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="Catalog.Судьи.StandardCommand.OpenList">
+			<Visibility>
+				<xr:Common>true</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="Catalog.Пользователи.StandardCommand.OpenList">
+			<Visibility>
+				<xr:Common>true</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="Catalog.ВидыРейтинга.StandardCommand.OpenList">
+			<Visibility>
+				<xr:Common>true</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="InformationRegister.ПериодДействияРазрядов.StandardCommand.OpenList">
+			<Visibility>
+				<xr:Common>true</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="InformationRegister.НастройкиСбораГрупп.StandardCommand.OpenList">
+			<Visibility>
+				<xr:Common>false</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="InformationRegister.ФормулыРасчетаРейтинга.StandardCommand.OpenList">
+			<Visibility>
+				<xr:Common>true</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="InformationRegister.БонусныеОчки.StandardCommand.OpenList">
+			<Visibility>
+				<xr:Common>true</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="Catalog.ДополнительныеОтчетыИОбработки.StandardCommand.OpenList">
+			<Visibility>
+				<xr:Common>true</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="Document.ПроведениеСоревнования.StandardCommand.Create">
+			<Visibility>
+				<xr:Common>false</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="Catalog.Участники.StandardCommand.Create">
+			<Visibility>
+				<xr:Common>false</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="Report.ТекущийРейтингУчастников.StandardCommand.Open">
+			<Visibility>
+				<xr:Common>true</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="Report.ДетализацияПрироста.StandardCommand.Open">
+			<Visibility>
+				<xr:Common>true</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="Report.СуммаПриростаЗаПериод.StandardCommand.Open">
+			<Visibility>
+				<xr:Common>true</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="Report.СписокУчастниковСоревнований.StandardCommand.Open">
+			<Visibility>
+				<xr:Common>true</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="Report.ОтчетКарточкаУчастника.StandardCommand.Open">
+			<Visibility>
+				<xr:Common>true</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="Report.РазрядыИЗвания.StandardCommand.Open">
+			<Visibility>
+				<xr:Common>true</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="Report.ПобедыНадРазрядниками.StandardCommand.Open">
+			<Visibility>
+				<xr:Common>true</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="Report.ОтчетМестаУчастников.StandardCommand.Open">
+			<Visibility>
+				<xr:Common>true</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="DataProcessor.ПроверкаОбновления.Command.Обновление">
+			<Visibility>
+				<xr:Common>true</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="DataProcessor.ПроверкаОбновления.Command.РезервнаяКопия">
+			<Visibility>
+				<xr:Common>true</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="DataProcessor.ПроверкаОбновления.Command.ВосстановитьИБ">
+			<Visibility>
+				<xr:Common>true</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="CommonForm.НастройкиПрограммы.StandardCommand.Open">
+			<Visibility>
+				<xr:Common>true</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="DataProcessor.ЗагрузкаУчастников.StandardCommand.Open">
+			<Visibility>
+				<xr:Common>true</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="DataProcessor.СозданиеПользователя.StandardCommand.Open">
+			<Visibility>
+				<xr:Common>true</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="DataProcessor.СкрытьУчастниковИзОтчетов.StandardCommand.Open">
+			<Visibility>
+				<xr:Common>true</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="CommonCommand.ВыходИзПрограммы">
+			<Visibility>
+				<xr:Common>true</xr:Common>
+			</Visibility>
+		</Command>
+	</CommandsVisibility>
+	<CommandsPlacement>
+		<Command name="Document.ПроведениеСоревнования.StandardCommand.OpenList">
+			<CommandGroup>NavigationPanelImportant</CommandGroup>
+			<Placement>Manual</Placement>
+		</Command>
+		<Command name="Document.ВводНачальногоРейтинга.StandardCommand.OpenList">
+			<CommandGroup>NavigationPanelImportant</CommandGroup>
+			<Placement>Manual</Placement>
+		</Command>
+		<Command name="Document.ПрисвоитьРазряд.StandardCommand.OpenList">
+			<CommandGroup>NavigationPanelImportant</CommandGroup>
+			<Placement>Manual</Placement>
+		</Command>
+		<Command name="InformationRegister.ТекущиеВстречи.Command.ТекущиеВстречи">
+			<CommandGroup>NavigationPanelImportant</CommandGroup>
+			<Placement>Manual</Placement>
+		</Command>
+		<Command name="Catalog.Участники.StandardCommand.OpenList">
+			<CommandGroup>CommandGroup.Справочники</CommandGroup>
+			<Placement>Manual</Placement>
+		</Command>
+		<Command name="Catalog.Тренеры.StandardCommand.OpenList">
+			<CommandGroup>CommandGroup.Справочники</CommandGroup>
+			<Placement>Manual</Placement>
+		</Command>
+		<Command name="Catalog.Города.StandardCommand.OpenList">
+			<CommandGroup>CommandGroup.Справочники</CommandGroup>
+			<Placement>Manual</Placement>
+		</Command>
+		<Command name="Catalog.Клубы.StandardCommand.OpenList">
+			<CommandGroup>CommandGroup.Справочники</CommandGroup>
+			<Placement>Manual</Placement>
+		</Command>
+		<Command name="InformationRegister.ПорядокИгр.StandardCommand.OpenList">
+			<CommandGroup>CommandGroup.Справочники</CommandGroup>
+			<Placement>Manual</Placement>
+		</Command>
+		<Command name="Catalog.ЖеребьевкаКоманд.StandardCommand.OpenList">
+			<CommandGroup>CommandGroup.Справочники</CommandGroup>
+			<Placement>Manual</Placement>
+		</Command>
+		<Command name="DataProcessor.Правила.Command.ОткрытьПравила">
+			<CommandGroup>NavigationPanelSeeAlso</CommandGroup>
+			<Placement>Manual</Placement>
+		</Command>
+		<Command name="Catalog.Судьи.StandardCommand.OpenList">
+			<CommandGroup>NavigationPanelSeeAlso</CommandGroup>
+			<Placement>Manual</Placement>
+		</Command>
+		<Command name="Catalog.Пользователи.StandardCommand.OpenList">
+			<CommandGroup>NavigationPanelSeeAlso</CommandGroup>
+			<Placement>Manual</Placement>
+		</Command>
+		<Command name="Catalog.ВидыРейтинга.StandardCommand.OpenList">
+			<CommandGroup>NavigationPanelSeeAlso</CommandGroup>
+			<Placement>Manual</Placement>
+		</Command>
+		<Command name="InformationRegister.ПериодДействияРазрядов.StandardCommand.OpenList">
+			<CommandGroup>NavigationPanelSeeAlso</CommandGroup>
+			<Placement>Manual</Placement>
+		</Command>
+		<Command name="InformationRegister.НастройкиСбораГрупп.StandardCommand.OpenList">
+			<CommandGroup>NavigationPanelSeeAlso</CommandGroup>
+			<Placement>Manual</Placement>
+		</Command>
+		<Command name="InformationRegister.ФормулыРасчетаРейтинга.StandardCommand.OpenList">
+			<CommandGroup>NavigationPanelSeeAlso</CommandGroup>
+			<Placement>Manual</Placement>
+		</Command>
+		<Command name="InformationRegister.БонусныеОчки.StandardCommand.OpenList">
+			<CommandGroup>NavigationPanelSeeAlso</CommandGroup>
+			<Placement>Manual</Placement>
+		</Command>
+		<Command name="Catalog.ДополнительныеОтчетыИОбработки.StandardCommand.OpenList">
+			<CommandGroup>NavigationPanelSeeAlso</CommandGroup>
+			<Placement>Manual</Placement>
+		</Command>
+		<Command name="Document.ПроведениеСоревнования.StandardCommand.Create">
+			<CommandGroup>ActionsPanelCreate</CommandGroup>
+			<Placement>Manual</Placement>
+		</Command>
+		<Command name="Catalog.Участники.StandardCommand.Create">
+			<CommandGroup>ActionsPanelCreate</CommandGroup>
+			<Placement>Manual</Placement>
+		</Command>
+		<Command name="Report.ТекущийРейтингУчастников.StandardCommand.Open">
+			<CommandGroup>CommandGroup.ОтчетыПоРейтингу</CommandGroup>
+			<Placement>Manual</Placement>
+		</Command>
+		<Command name="Report.ДетализацияПрироста.StandardCommand.Open">
+			<CommandGroup>CommandGroup.ОтчетыПоРейтингу</CommandGroup>
+			<Placement>Manual</Placement>
+		</Command>
+		<Command name="Report.СуммаПриростаЗаПериод.StandardCommand.Open">
+			<CommandGroup>CommandGroup.ОтчетыПоРейтингу</CommandGroup>
+			<Placement>Manual</Placement>
+		</Command>
+		<Command name="Report.СписокУчастниковСоревнований.StandardCommand.Open">
+			<CommandGroup>CommandGroup.ОтчетыУчастников</CommandGroup>
+			<Placement>Manual</Placement>
+		</Command>
+		<Command name="Report.ОтчетКарточкаУчастника.StandardCommand.Open">
+			<CommandGroup>CommandGroup.ОтчетыУчастников</CommandGroup>
+			<Placement>Manual</Placement>
+		</Command>
+		<Command name="Report.РазрядыИЗвания.StandardCommand.Open">
+			<CommandGroup>CommandGroup.ОтчетыУчастников</CommandGroup>
+			<Placement>Manual</Placement>
+		</Command>
+		<Command name="Report.ПобедыНадРазрядниками.StandardCommand.Open">
+			<CommandGroup>CommandGroup.ОтчетыУчастников</CommandGroup>
+			<Placement>Manual</Placement>
+		</Command>
+		<Command name="Report.ОтчетМестаУчастников.StandardCommand.Open">
+			<CommandGroup>CommandGroup.ОтчетыУчастников</CommandGroup>
+			<Placement>Manual</Placement>
+		</Command>
+		<Command name="DataProcessor.ПроверкаОбновления.Command.Обновление">
+			<CommandGroup>CommandGroup.ОперацииСБазой</CommandGroup>
+			<Placement>Manual</Placement>
+		</Command>
+		<Command name="DataProcessor.ПроверкаОбновления.Command.РезервнаяКопия">
+			<CommandGroup>CommandGroup.ОперацииСБазой</CommandGroup>
+			<Placement>Manual</Placement>
+		</Command>
+		<Command name="DataProcessor.ПроверкаОбновления.Command.ВосстановитьИБ">
+			<CommandGroup>CommandGroup.ОперацииСБазой</CommandGroup>
+			<Placement>Manual</Placement>
+		</Command>
+		<Command name="CommonForm.НастройкиПрограммы.StandardCommand.Open">
+			<CommandGroup>CommandGroup.Сервис</CommandGroup>
+			<Placement>Manual</Placement>
+		</Command>
+		<Command name="DataProcessor.ЗагрузкаУчастников.StandardCommand.Open">
+			<CommandGroup>CommandGroup.Сервис</CommandGroup>
+			<Placement>Manual</Placement>
+		</Command>
+		<Command name="DataProcessor.СозданиеПользователя.StandardCommand.Open">
+			<CommandGroup>CommandGroup.Сервис</CommandGroup>
+			<Placement>Manual</Placement>
+		</Command>
+		<Command name="DataProcessor.СкрытьУчастниковИзОтчетов.StandardCommand.Open">
+			<CommandGroup>CommandGroup.Сервис</CommandGroup>
+			<Placement>Manual</Placement>
+		</Command>
+		<Command name="CommonCommand.ВыходИзПрограммы">
+			<CommandGroup>CommandGroup.КомандаВыхода</CommandGroup>
+			<Placement>Manual</Placement>
+		</Command>
+	</CommandsPlacement>
+	<CommandsOrder>
+		<Command name="Document.ПроведениеСоревнования.StandardCommand.OpenList">
+			<CommandGroup>NavigationPanelImportant</CommandGroup>
+		</Command>
+		<Command name="Document.ВводНачальногоРейтинга.StandardCommand.OpenList">
+			<CommandGroup>NavigationPanelImportant</CommandGroup>
+		</Command>
+		<Command name="Document.ПрисвоитьРазряд.StandardCommand.OpenList">
+			<CommandGroup>NavigationPanelImportant</CommandGroup>
+		</Command>
+		<Command name="InformationRegister.ТекущиеВстречи.Command.ТекущиеВстречи">
+			<CommandGroup>NavigationPanelImportant</CommandGroup>
+		</Command>
+		<Command name="Catalog.Участники.StandardCommand.OpenList">
+			<CommandGroup>CommandGroup.Справочники</CommandGroup>
+		</Command>
+		<Command name="Catalog.Тренеры.StandardCommand.OpenList">
+			<CommandGroup>CommandGroup.Справочники</CommandGroup>
+		</Command>
+		<Command name="Catalog.Города.StandardCommand.OpenList">
+			<CommandGroup>CommandGroup.Справочники</CommandGroup>
+		</Command>
+		<Command name="Catalog.Клубы.StandardCommand.OpenList">
+			<CommandGroup>CommandGroup.Справочники</CommandGroup>
+		</Command>
+		<Command name="InformationRegister.ПорядокИгр.StandardCommand.OpenList">
+			<CommandGroup>CommandGroup.Справочники</CommandGroup>
+		</Command>
+		<Command name="Catalog.ЖеребьевкаКоманд.StandardCommand.OpenList">
+			<CommandGroup>CommandGroup.Справочники</CommandGroup>
+		</Command>
+		<Command name="DataProcessor.Правила.Command.ОткрытьПравила">
+			<CommandGroup>NavigationPanelSeeAlso</CommandGroup>
+		</Command>
+		<Command name="Catalog.Судьи.StandardCommand.OpenList">
+			<CommandGroup>NavigationPanelSeeAlso</CommandGroup>
+		</Command>
+		<Command name="Catalog.Пользователи.StandardCommand.OpenList">
+			<CommandGroup>NavigationPanelSeeAlso</CommandGroup>
+		</Command>
+		<Command name="Catalog.ВидыРейтинга.StandardCommand.OpenList">
+			<CommandGroup>NavigationPanelSeeAlso</CommandGroup>
+		</Command>
+		<Command name="InformationRegister.ПериодДействияРазрядов.StandardCommand.OpenList">
+			<CommandGroup>NavigationPanelSeeAlso</CommandGroup>
+		</Command>
+		<Command name="InformationRegister.НастройкиСбораГрупп.StandardCommand.OpenList">
+			<CommandGroup>NavigationPanelSeeAlso</CommandGroup>
+		</Command>
+		<Command name="InformationRegister.ФормулыРасчетаРейтинга.StandardCommand.OpenList">
+			<CommandGroup>NavigationPanelSeeAlso</CommandGroup>
+		</Command>
+		<Command name="InformationRegister.БонусныеОчки.StandardCommand.OpenList">
+			<CommandGroup>NavigationPanelSeeAlso</CommandGroup>
+		</Command>
+		<Command name="Catalog.ДополнительныеОтчетыИОбработки.StandardCommand.OpenList">
+			<CommandGroup>NavigationPanelSeeAlso</CommandGroup>
+		</Command>
+		<Command name="Report.ТекущийРейтингУчастников.StandardCommand.Open">
+			<CommandGroup>CommandGroup.ОтчетыПоРейтингу</CommandGroup>
+		</Command>
+		<Command name="Report.ДетализацияПрироста.StandardCommand.Open">
+			<CommandGroup>CommandGroup.ОтчетыПоРейтингу</CommandGroup>
+		</Command>
+		<Command name="Report.СуммаПриростаЗаПериод.StandardCommand.Open">
+			<CommandGroup>CommandGroup.ОтчетыПоРейтингу</CommandGroup>
+		</Command>
+		<Command name="Report.СписокУчастниковСоревнований.StandardCommand.Open">
+			<CommandGroup>CommandGroup.ОтчетыУчастников</CommandGroup>
+		</Command>
+		<Command name="Report.ОтчетКарточкаУчастника.StandardCommand.Open">
+			<CommandGroup>CommandGroup.ОтчетыУчастников</CommandGroup>
+		</Command>
+		<Command name="Report.РазрядыИЗвания.StandardCommand.Open">
+			<CommandGroup>CommandGroup.ОтчетыУчастников</CommandGroup>
+		</Command>
+		<Command name="Report.ПобедыНадРазрядниками.StandardCommand.Open">
+			<CommandGroup>CommandGroup.ОтчетыУчастников</CommandGroup>
+		</Command>
+		<Command name="Report.ОтчетМестаУчастников.StandardCommand.Open">
+			<CommandGroup>CommandGroup.ОтчетыУчастников</CommandGroup>
+		</Command>
+		<Command name="DataProcessor.ПроверкаОбновления.Command.Обновление">
+			<CommandGroup>CommandGroup.ОперацииСБазой</CommandGroup>
+		</Command>
+		<Command name="DataProcessor.ПроверкаОбновления.Command.РезервнаяКопия">
+			<CommandGroup>CommandGroup.ОперацииСБазой</CommandGroup>
+		</Command>
+		<Command name="DataProcessor.ПроверкаОбновления.Command.ВосстановитьИБ">
+			<CommandGroup>CommandGroup.ОперацииСБазой</CommandGroup>
+		</Command>
+		<Command name="CommonForm.НастройкиПрограммы.StandardCommand.Open">
+			<CommandGroup>CommandGroup.Сервис</CommandGroup>
+		</Command>
+		<Command name="DataProcessor.ЗагрузкаУчастников.StandardCommand.Open">
+			<CommandGroup>CommandGroup.Сервис</CommandGroup>
+		</Command>
+		<Command name="DataProcessor.СозданиеПользователя.StandardCommand.Open">
+			<CommandGroup>CommandGroup.Сервис</CommandGroup>
+		</Command>
+		<Command name="DataProcessor.СкрытьУчастниковИзОтчетов.StandardCommand.Open">
+			<CommandGroup>CommandGroup.Сервис</CommandGroup>
+		</Command>
+	</CommandsOrder>
+	<GroupsOrder>
+		<Group>NavigationPanelImportant</Group>
+		<Group>NavigationPanelOrdinary</Group>
+		<Group>CommandGroup.Справочники</Group>
+		<Group>NavigationPanelSeeAlso</Group>
+		<Group>ActionsPanelReports</Group>
+		<Group>ActionsPanelTools</Group>
+		<Group>CommandGroup.ОтчетыПоРейтингу</Group>
+		<Group>CommandGroup.ОтчетыУчастников</Group>
+		<Group>CommandGroup.ОперацииСБазой</Group>
+		<Group>CommandGroup.Сервис</Group>
+	</GroupsOrder>
+</CommandInterface>

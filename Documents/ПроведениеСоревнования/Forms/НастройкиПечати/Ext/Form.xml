@@ -1,0 +1,1262 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.4">
+	<Title>
+		<v8:item>
+			<v8:lang>ru</v8:lang>
+			<v8:content>Настройка печати протоколов</v8:content>
+		</v8:item>
+	</Title>
+	<AutoTitle>false</AutoTitle>
+	<VerticalScroll>useIfNecessary</VerticalScroll>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<Autofill>false</Autofill>
+	</AutoCommandBar>
+	<Events>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<UsualGroup name="Группа1" id="40">
+			<Group>Vertical</Group>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="Группа1РасширеннаяПодсказка" id="135"/>
+			<ChildItems>
+				<UsualGroup name="Группа4" id="88">
+					<Group>Horizontal</Group>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="Группа4РасширеннаяПодсказка" id="136"/>
+					<ChildItems>
+						<Button name="ФормаКомандаПечать" id="37">
+							<Type>UsualButton</Type>
+							<DefaultButton>true</DefaultButton>
+							<CommandName>Form.Command.КомандаПечать</CommandName>
+							<Font ref="sys:DefaultGUIFont" height="10" bold="true" italic="false" underline="false" strikeout="false" kind="WindowsFont"/>
+							<ExtendedTooltip name="ФормаКомандаПечатьРасширеннаяПодсказка" id="137"/>
+						</Button>
+						<Button name="Закрыть" id="69">
+							<Type>UsualButton</Type>
+							<Representation>PictureAndText</Representation>
+							<CommandName>Form.StandardCommand.Close</CommandName>
+							<ExtendedTooltip name="ЗакрытьРасширеннаяПодсказка" id="138"/>
+						</Button>
+						<Button name="Справка" id="41">
+							<Type>UsualButton</Type>
+							<Representation>Picture</Representation>
+							<OnlyInAllActions>true</OnlyInAllActions>
+							<Width>3</Width>
+							<CommandName>Form.StandardCommand.Help</CommandName>
+							<ExtendedTooltip name="СправкаРасширеннаяПодсказка" id="139"/>
+						</Button>
+					</ChildItems>
+				</UsualGroup>
+			</ChildItems>
+		</UsualGroup>
+		<UsualGroup name="Группа3" id="83">
+			<Group>Horizontal</Group>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="Группа3РасширеннаяПодсказка" id="140"/>
+			<ChildItems>
+				<CheckBoxField name="ВыводитьВОдинЛист" id="81">
+					<DataPath>ВыводитьВОдинЛист</DataPath>
+					<TitleLocation>Right</TitleLocation>
+					<CheckBoxType>Auto</CheckBoxType>
+					<ContextMenu name="ВыводитьВОдинЛистКонтекстноеМеню" id="82"/>
+					<ExtendedTooltip name="ВыводитьВОдинЛистРасширеннаяПодсказка" id="141"/>
+				</CheckBoxField>
+				<Button name="КомандаУстановитьФлажки" id="84">
+					<Type>UsualButton</Type>
+					<CommandName>Form.Command.КомандаУстановитьФлажки</CommandName>
+					<ExtendedTooltip name="КомандаУстановитьФлажкиРасширеннаяПодсказка" id="142"/>
+				</Button>
+				<Button name="КомандаСнятьФлажки" id="85">
+					<Type>UsualButton</Type>
+					<CommandName>Form.Command.КомандаСнятьФлажки</CommandName>
+					<ExtendedTooltip name="КомандаСнятьФлажкиРасширеннаяПодсказка" id="143"/>
+				</Button>
+			</ChildItems>
+		</UsualGroup>
+		<CheckBoxField name="ГрупповойВыводитьСРезультатом" id="38">
+			<DataPath>ГрупповойВыводитьСРезультатом</DataPath>
+			<TitleLocation>Right</TitleLocation>
+			<CheckBoxType>Auto</CheckBoxType>
+			<ContextMenu name="ГрупповойВыводитьСРезультатомКонтекстноеМеню" id="39"/>
+			<ExtendedTooltip name="ГрупповойВыводитьСРезультатомРасширеннаяПодсказка" id="144"/>
+		</CheckBoxField>
+		<UsualGroup name="Группа6" id="128">
+			<Group>Horizontal</Group>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="Группа6РасширеннаяПодсказка" id="145"/>
+			<ChildItems>
+				<CheckBoxField name="ПромежуточныеПротоколы" id="125">
+					<DataPath>ПромежуточныеПротоколы</DataPath>
+					<TitleLocation>Right</TitleLocation>
+					<CheckBoxType>Auto</CheckBoxType>
+					<ContextMenu name="ПромежуточныеПротоколыКонтекстноеМеню" id="126"/>
+					<ExtendedTooltip name="ПромежуточныеПротоколыРасширеннаяПодсказка" id="146"/>
+					<Events>
+						<Event name="OnChange">ПромежуточныеПротоколыПриИзменении</Event>
+					</Events>
+				</CheckBoxField>
+				<LabelDecoration name="Декорация1" id="129">
+					<TextColor>style:FieldSelectionBackColor</TextColor>
+					<Title formatted="false">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>только для сеток, места по порядку туров.</v8:content>
+						</v8:item>
+					</Title>
+					<ContextMenu name="Декорация1КонтекстноеМеню" id="130"/>
+					<ExtendedTooltip name="Декорация1РасширеннаяПодсказка" id="147"/>
+				</LabelDecoration>
+			</ChildItems>
+		</UsualGroup>
+		<UsualGroup name="ГруппаЛичныеСоревнования" id="91">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Личные</v8:content>
+				</v8:item>
+			</Title>
+			<TitleFont ref="sys:DefaultGUIFont" bold="true" italic="false" underline="false" strikeout="false" kind="WindowsFont"/>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа личные соревнования</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Group>Vertical</Group>
+			<ExtendedTooltip name="ГруппаЛичныеСоревнованияРасширеннаяПодсказка" id="148"/>
+			<ChildItems>
+				<Table name="ДокОбъектХодСоревнования" id="92">
+					<Header>false</Header>
+					<HorizontalLines>false</HorizontalLines>
+					<VerticalLines>false</VerticalLines>
+					<AutoInsertNewRow>true</AutoInsertNewRow>
+					<EnableStartDrag>true</EnableStartDrag>
+					<EnableDrag>true</EnableDrag>
+					<DataPath>ДокОбъект.ХодСоревнования</DataPath>
+					<Font ref="sys:DefaultGUIFont" height="10" kind="WindowsFont"/>
+					<SearchStringLocation>None</SearchStringLocation>
+					<ViewStatusLocation>None</ViewStatusLocation>
+					<SearchControlLocation>None</SearchControlLocation>
+					<RowFilter xsi:nil="true"/>
+					<ContextMenu name="ДокОбъектХодСоревнованияКонтекстноеМеню" id="93"/>
+					<AutoCommandBar name="ДокОбъектХодСоревнованияКоманднаяПанель" id="94">
+						<Autofill>false</Autofill>
+					</AutoCommandBar>
+					<ExtendedTooltip name="ДокОбъектХодСоревнованияРасширеннаяПодсказка" id="149"/>
+					<SearchStringAddition name="ДокОбъектХодСоревнованияСтрокаПоиска" id="150">
+						<AdditionSource>
+							<Item>ДокОбъектХодСоревнования</Item>
+							<Type>SearchStringRepresentation</Type>
+						</AdditionSource>
+						<ContextMenu name="ДокОбъектХодСоревнованияСтрокаПоискаКонтекстноеМеню" id="151"/>
+						<ExtendedTooltip name="ДокОбъектХодСоревнованияСтрокаПоискаРасширеннаяПодсказка" id="152"/>
+					</SearchStringAddition>
+					<ViewStatusAddition name="ДокОбъектХодСоревнованияСостояниеПросмотра" id="153">
+						<AdditionSource>
+							<Item>ДокОбъектХодСоревнования</Item>
+							<Type>ViewStatusRepresentation</Type>
+						</AdditionSource>
+						<ContextMenu name="ДокОбъектХодСоревнованияСостояниеПросмотраКонтекстноеМеню" id="154"/>
+						<ExtendedTooltip name="ДокОбъектХодСоревнованияСостояниеПросмотраРасширеннаяПодсказка" id="155"/>
+					</ViewStatusAddition>
+					<SearchControlAddition name="ДокОбъектХодСоревнованияУправлениеПоиском" id="156">
+						<AdditionSource>
+							<Item>ДокОбъектХодСоревнования</Item>
+							<Type>SearchControl</Type>
+						</AdditionSource>
+						<ContextMenu name="ДокОбъектХодСоревнованияУправлениеПоискомКонтекстноеМеню" id="157"/>
+						<ExtendedTooltip name="ДокОбъектХодСоревнованияУправлениеПоискомРасширеннаяПодсказка" id="158"/>
+					</SearchControlAddition>
+					<Events>
+						<Event name="BeforeAddRow">ДокОбъектХодСоревнованияПередНачаломДобавления</Event>
+						<Event name="BeforeDeleteRow">ДокОбъектХодСоревнованияПередУдалением</Event>
+					</Events>
+					<ChildItems>
+						<ColumnGroup name="ДокОбъектХодСоревнованияГруппа1" id="105">
+							<Group>InCell</Group>
+							<ExtendedTooltip name="ДокОбъектХодСоревнованияГруппа1РасширеннаяПодсказка" id="159"/>
+							<ChildItems>
+								<CheckBoxField name="ДокОбъектХодСоревнованияПометка" id="103">
+									<DataPath>ДокОбъект.ХодСоревнования.Пометка</DataPath>
+									<TitleLocation>None</TitleLocation>
+									<EditMode>Directly</EditMode>
+									<CheckBoxType>Auto</CheckBoxType>
+									<ContextMenu name="ДокОбъектХодСоревнованияПометкаКонтекстноеМеню" id="104"/>
+									<ExtendedTooltip name="ДокОбъектХодСоревнованияПометкаРасширеннаяПодсказка" id="160"/>
+								</CheckBoxField>
+								<InputField name="ДокОбъектХодСоревнованияКомментарий" id="101">
+									<DataPath>ДокОбъект.ХодСоревнования.Комментарий</DataPath>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Заголовок</v8:content>
+										</v8:item>
+									</Title>
+									<EditMode>EnterOnInput</EditMode>
+									<Width>15</Width>
+									<HorizontalStretch>true</HorizontalStretch>
+									<ContextMenu name="ДокОбъектХодСоревнованияКомментарийКонтекстноеМеню" id="102"/>
+									<ExtendedTooltip name="ДокОбъектХодСоревнованияКомментарийРасширеннаяПодсказка" id="161"/>
+								</InputField>
+							</ChildItems>
+						</ColumnGroup>
+						<LabelField name="ДокОбъектХодСоревнованияНомерСтроки" id="95">
+							<DataPath>ДокОбъект.ХодСоревнования.LineNumber</DataPath>
+							<Visible>false</Visible>
+							<ReadOnly>true</ReadOnly>
+							<EditMode>EnterOnInput</EditMode>
+							<HeaderHorizontalAlign>Center</HeaderHorizontalAlign>
+							<Width>2</Width>
+							<HorizontalStretch>true</HorizontalStretch>
+							<ContextMenu name="ДокОбъектХодСоревнованияНомерСтрокиКонтекстноеМеню" id="96"/>
+							<ExtendedTooltip name="ДокОбъектХодСоревнованияНомерСтрокиРасширеннаяПодсказка" id="162"/>
+						</LabelField>
+						<InputField name="ДокОбъектХодСоревнованияМестоС" id="131">
+							<DataPath>ДокОбъект.ХодСоревнования.МестоС</DataPath>
+							<Visible>false</Visible>
+							<TitleBackColor>web:PeachPuff</TitleBackColor>
+							<HorizontalAlign>Center</HorizontalAlign>
+							<EditMode>EnterOnInput</EditMode>
+							<Width>3</Width>
+							<HorizontalStretch>true</HorizontalStretch>
+							<ChoiceButton>false</ChoiceButton>
+							<ClearButton>true</ClearButton>
+							<ContextMenu name="ДокОбъектХодСоревнованияМестоСКонтекстноеМеню" id="132"/>
+							<ExtendedTooltip name="ДокОбъектХодСоревнованияМестоСРасширеннаяПодсказка" id="163"/>
+							<Events>
+								<Event name="OnChange">ДокОбъектХодСоревнованияМестоСПриИзменении</Event>
+							</Events>
+						</InputField>
+						<InputField name="ДокОбъектХодСоревнованияМестоПо" id="133">
+							<DataPath>ДокОбъект.ХодСоревнования.МестоПо</DataPath>
+							<Visible>false</Visible>
+							<ReadOnly>true</ReadOnly>
+							<TitleBackColor>web:PeachPuff</TitleBackColor>
+							<HorizontalAlign>Center</HorizontalAlign>
+							<EditMode>EnterOnInput</EditMode>
+							<Width>3</Width>
+							<HorizontalStretch>true</HorizontalStretch>
+							<ChoiceButton>false</ChoiceButton>
+							<ClearButton>true</ClearButton>
+							<ContextMenu name="ДокОбъектХодСоревнованияМестоПоКонтекстноеМеню" id="134"/>
+							<ExtendedTooltip name="ДокОбъектХодСоревнованияМестоПоРасширеннаяПодсказка" id="164"/>
+						</InputField>
+						<InputField name="ДокОбъектХодСоревнованияРежимТура" id="97">
+							<DataPath>ДокОбъект.ХодСоревнования.РежимТура</DataPath>
+							<Visible>false</Visible>
+							<ReadOnly>true</ReadOnly>
+							<EditMode>EnterOnInput</EditMode>
+							<Width>15</Width>
+							<HorizontalStretch>true</HorizontalStretch>
+							<ContextMenu name="ДокОбъектХодСоревнованияРежимТураКонтекстноеМеню" id="98"/>
+							<ExtendedTooltip name="ДокОбъектХодСоревнованияРежимТураРасширеннаяПодсказка" id="165"/>
+						</InputField>
+					</ChildItems>
+				</Table>
+			</ChildItems>
+		</UsualGroup>
+		<UsualGroup name="ГруппаКомандные" id="106">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Командные</v8:content>
+				</v8:item>
+			</Title>
+			<TitleFont ref="sys:DefaultGUIFont" bold="true" italic="false" underline="false" strikeout="false" kind="WindowsFont"/>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Командные</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Group>Vertical</Group>
+			<ExtendedTooltip name="ГруппаКомандныеРасширеннаяПодсказка" id="166"/>
+			<ChildItems>
+				<Table name="ДокОбъектХодСоревнованияКоманды" id="107">
+					<Header>false</Header>
+					<AutoInsertNewRow>true</AutoInsertNewRow>
+					<EnableStartDrag>true</EnableStartDrag>
+					<EnableDrag>true</EnableDrag>
+					<DataPath>ДокОбъект.ХодСоревнованияКоманды</DataPath>
+					<Font ref="sys:DefaultGUIFont" height="10" kind="WindowsFont"/>
+					<SearchStringLocation>None</SearchStringLocation>
+					<ViewStatusLocation>None</ViewStatusLocation>
+					<SearchControlLocation>None</SearchControlLocation>
+					<RowFilter xsi:nil="true"/>
+					<ContextMenu name="ДокОбъектХодСоревнованияКомандыКонтекстноеМеню" id="108"/>
+					<AutoCommandBar name="ДокОбъектХодСоревнованияКомандыКоманднаяПанель" id="109">
+						<Autofill>false</Autofill>
+					</AutoCommandBar>
+					<ExtendedTooltip name="ДокОбъектХодСоревнованияКомандыРасширеннаяПодсказка" id="167"/>
+					<SearchStringAddition name="ДокОбъектХодСоревнованияКомандыСтрокаПоиска" id="168">
+						<AdditionSource>
+							<Item>ДокОбъектХодСоревнованияКоманды</Item>
+							<Type>SearchStringRepresentation</Type>
+						</AdditionSource>
+						<ContextMenu name="ДокОбъектХодСоревнованияКомандыСтрокаПоискаКонтекстноеМеню" id="169"/>
+						<ExtendedTooltip name="ДокОбъектХодСоревнованияКомандыСтрокаПоискаРасширеннаяПодсказка" id="170"/>
+					</SearchStringAddition>
+					<ViewStatusAddition name="ДокОбъектХодСоревнованияКомандыСостояниеПросмотра" id="171">
+						<AdditionSource>
+							<Item>ДокОбъектХодСоревнованияКоманды</Item>
+							<Type>ViewStatusRepresentation</Type>
+						</AdditionSource>
+						<ContextMenu name="ДокОбъектХодСоревнованияКомандыСостояниеПросмотраКонтекстноеМеню" id="172"/>
+						<ExtendedTooltip name="ДокОбъектХодСоревнованияКомандыСостояниеПросмотраРасширеннаяПодсказка" id="173"/>
+					</ViewStatusAddition>
+					<SearchControlAddition name="ДокОбъектХодСоревнованияКомандыУправлениеПоиском" id="174">
+						<AdditionSource>
+							<Item>ДокОбъектХодСоревнованияКоманды</Item>
+							<Type>SearchControl</Type>
+						</AdditionSource>
+						<ContextMenu name="ДокОбъектХодСоревнованияКомандыУправлениеПоискомКонтекстноеМеню" id="175"/>
+						<ExtendedTooltip name="ДокОбъектХодСоревнованияКомандыУправлениеПоискомРасширеннаяПодсказка" id="176"/>
+					</SearchControlAddition>
+					<Events>
+						<Event name="BeforeAddRow">ДокОбъектХодСоревнованияПередНачаломДобавления</Event>
+						<Event name="BeforeDeleteRow">ДокОбъектХодСоревнованияПередУдалением</Event>
+					</Events>
+					<ChildItems>
+						<ColumnGroup name="ДокОбъектХодСоревнованияКомандыГруппа1" id="120">
+							<Group>InCell</Group>
+							<ExtendedTooltip name="ДокОбъектХодСоревнованияКомандыГруппа1РасширеннаяПодсказка" id="177"/>
+							<ChildItems>
+								<CheckBoxField name="ДокОбъектХодСоревнованияКомандыПометка" id="121">
+									<DataPath>ДокОбъект.ХодСоревнованияКоманды.Пометка</DataPath>
+									<TitleLocation>None</TitleLocation>
+									<EditMode>Directly</EditMode>
+									<CheckBoxType>Auto</CheckBoxType>
+									<ContextMenu name="ДокОбъектХодСоревнованияКомандыПометкаКонтекстноеМеню" id="122"/>
+									<ExtendedTooltip name="ДокОбъектХодСоревнованияКомандыПометкаРасширеннаяПодсказка" id="178"/>
+								</CheckBoxField>
+								<InputField name="ДокОбъектХодСоревнованияКомандыКомментарий" id="116">
+									<DataPath>ДокОбъект.ХодСоревнованияКоманды.Комментарий</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<Width>15</Width>
+									<ContextMenu name="ДокОбъектХодСоревнованияКомандыКомментарийКонтекстноеМеню" id="117"/>
+									<ExtendedTooltip name="ДокОбъектХодСоревнованияКомандыКомментарийРасширеннаяПодсказка" id="179"/>
+								</InputField>
+							</ChildItems>
+						</ColumnGroup>
+						<LabelField name="ДокОбъектХодСоревнованияКомандыНомерСтроки" id="110">
+							<DataPath>ДокОбъект.ХодСоревнованияКоманды.LineNumber</DataPath>
+							<Visible>false</Visible>
+							<EditMode>EnterOnInput</EditMode>
+							<ContextMenu name="ДокОбъектХодСоревнованияКомандыНомерСтрокиКонтекстноеМеню" id="111"/>
+							<ExtendedTooltip name="ДокОбъектХодСоревнованияКомандыНомерСтрокиРасширеннаяПодсказка" id="180"/>
+						</LabelField>
+						<InputField name="ДокОбъектХодСоревнованияКомандыРежимТура" id="112">
+							<DataPath>ДокОбъект.ХодСоревнованияКоманды.РежимТура</DataPath>
+							<Visible>false</Visible>
+							<EditMode>EnterOnInput</EditMode>
+							<ContextMenu name="ДокОбъектХодСоревнованияКомандыРежимТураКонтекстноеМеню" id="113"/>
+							<ExtendedTooltip name="ДокОбъектХодСоревнованияКомандыРежимТураРасширеннаяПодсказка" id="181"/>
+						</InputField>
+						<InputField name="ДокОбъектХодСоревнованияКомандыКолПартий" id="114">
+							<DataPath>ДокОбъект.ХодСоревнованияКоманды.КолПартий</DataPath>
+							<Visible>false</Visible>
+							<EditMode>EnterOnInput</EditMode>
+							<ContextMenu name="ДокОбъектХодСоревнованияКомандыКолПартийКонтекстноеМеню" id="115"/>
+							<ExtendedTooltip name="ДокОбъектХодСоревнованияКомандыКолПартийРасширеннаяПодсказка" id="182"/>
+						</InputField>
+						<InputField name="ДокОбъектХодСоревнованияКомандыЖеребьевка" id="118">
+							<DataPath>ДокОбъект.ХодСоревнованияКоманды.Жеребьевка</DataPath>
+							<Visible>false</Visible>
+							<EditMode>EnterOnInput</EditMode>
+							<ContextMenu name="ДокОбъектХодСоревнованияКомандыЖеребьевкаКонтекстноеМеню" id="119"/>
+							<ExtendedTooltip name="ДокОбъектХодСоревнованияКомандыЖеребьевкаРасширеннаяПодсказка" id="183"/>
+						</InputField>
+					</ChildItems>
+				</Table>
+				<UsualGroup name="Группа5" id="127">
+					<Group>Vertical</Group>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="Группа5РасширеннаяПодсказка" id="184"/>
+					<ChildItems>
+						<CheckBoxField name="СписокКоманд" id="123">
+							<DataPath>СписокКоманд</DataPath>
+							<TitleLocation>Right</TitleLocation>
+							<CheckBoxType>Auto</CheckBoxType>
+							<ContextMenu name="СписокКомандКонтекстноеМеню" id="124"/>
+							<ExtendedTooltip name="СписокКомандРасширеннаяПодсказка" id="185"/>
+						</CheckBoxField>
+					</ChildItems>
+				</UsualGroup>
+			</ChildItems>
+		</UsualGroup>
+		<UsualGroup name="ГруппаЭтапов" id="58">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Итоговые места</v8:content>
+				</v8:item>
+			</Title>
+			<TitleFont ref="sys:DefaultGUIFont" bold="true" italic="false" underline="false" strikeout="false" kind="WindowsFont"/>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Участники по местам</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Group>Vertical</Group>
+			<BackColor>web:Cream</BackColor>
+			<ExtendedTooltip name="ГруппаЭтаповРасширеннаяПодсказка" id="186"/>
+			<ChildItems>
+				<UsualGroup name="Группа2" id="72">
+					<Group>Horizontal</Group>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="Группа2РасширеннаяПодсказка" id="187"/>
+					<ChildItems>
+						<RadioButtonField name="ВсеМеста" id="70">
+							<DataPath>ВсеМеста</DataPath>
+							<TitleLocation>None</TitleLocation>
+							<RadioButtonType>Auto</RadioButtonType>
+							<ChoiceList>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Все места</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:decimal">0</Value>
+									</xr:Value>
+								</xr:Item>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Выбранные места</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:decimal">1</Value>
+									</xr:Value>
+								</xr:Item>
+							</ChoiceList>
+							<ContextMenu name="ВсеМестаКонтекстноеМеню" id="71"/>
+							<ExtendedTooltip name="ВсеМестаРасширеннаяПодсказка" id="188"/>
+							<Events>
+								<Event name="OnChange">ВсеМестаПриИзменении</Event>
+							</Events>
+						</RadioButtonField>
+						<InputField name="МестоС" id="73">
+							<DataPath>МестоС</DataPath>
+							<Enabled>false</Enabled>
+							<HorizontalAlign>Center</HorizontalAlign>
+							<Width>3</Width>
+							<ContextMenu name="МестоСКонтекстноеМеню" id="74"/>
+							<ExtendedTooltip name="МестоСРасширеннаяПодсказка" id="189"/>
+						</InputField>
+						<InputField name="МестоПо" id="75">
+							<DataPath>МестоПо</DataPath>
+							<Enabled>false</Enabled>
+							<HorizontalAlign>Center</HorizontalAlign>
+							<Width>3</Width>
+							<HorizontalStretch>false</HorizontalStretch>
+							<ContextMenu name="МестоПоКонтекстноеМеню" id="76"/>
+							<ExtendedTooltip name="МестоПоРасширеннаяПодсказка" id="190"/>
+						</InputField>
+					</ChildItems>
+				</UsualGroup>
+				<Table name="ТаблицаЭтапов" id="59">
+					<Representation>List</Representation>
+					<Height>4</Height>
+					<Header>false</Header>
+					<HorizontalLines>false</HorizontalLines>
+					<VerticalLines>false</VerticalLines>
+					<UseAlternationRowColor>true</UseAlternationRowColor>
+					<AutoInsertNewRow>true</AutoInsertNewRow>
+					<EnableStartDrag>true</EnableStartDrag>
+					<EnableDrag>true</EnableDrag>
+					<DataPath>ТаблицаЭтапов</DataPath>
+					<Font ref="sys:DefaultGUIFont" height="10" kind="WindowsFont"/>
+					<SearchStringLocation>None</SearchStringLocation>
+					<ViewStatusLocation>None</ViewStatusLocation>
+					<SearchControlLocation>None</SearchControlLocation>
+					<RowFilter xsi:nil="true"/>
+					<ContextMenu name="ТаблицаЭтаповКонтекстноеМеню" id="60"/>
+					<AutoCommandBar name="ТаблицаЭтаповКоманднаяПанель" id="61">
+						<Autofill>false</Autofill>
+					</AutoCommandBar>
+					<ExtendedTooltip name="ТаблицаЭтаповРасширеннаяПодсказка" id="191"/>
+					<SearchStringAddition name="ТаблицаЭтаповСтрокаПоиска" id="192">
+						<AdditionSource>
+							<Item>ТаблицаЭтапов</Item>
+							<Type>SearchStringRepresentation</Type>
+						</AdditionSource>
+						<ContextMenu name="ТаблицаЭтаповСтрокаПоискаКонтекстноеМеню" id="193"/>
+						<ExtendedTooltip name="ТаблицаЭтаповСтрокаПоискаРасширеннаяПодсказка" id="194"/>
+					</SearchStringAddition>
+					<ViewStatusAddition name="ТаблицаЭтаповСостояниеПросмотра" id="195">
+						<AdditionSource>
+							<Item>ТаблицаЭтапов</Item>
+							<Type>ViewStatusRepresentation</Type>
+						</AdditionSource>
+						<ContextMenu name="ТаблицаЭтаповСостояниеПросмотраКонтекстноеМеню" id="196"/>
+						<ExtendedTooltip name="ТаблицаЭтаповСостояниеПросмотраРасширеннаяПодсказка" id="197"/>
+					</ViewStatusAddition>
+					<SearchControlAddition name="ТаблицаЭтаповУправлениеПоиском" id="198">
+						<AdditionSource>
+							<Item>ТаблицаЭтапов</Item>
+							<Type>SearchControl</Type>
+						</AdditionSource>
+						<ContextMenu name="ТаблицаЭтаповУправлениеПоискомКонтекстноеМеню" id="199"/>
+						<ExtendedTooltip name="ТаблицаЭтаповУправлениеПоискомРасширеннаяПодсказка" id="200"/>
+					</SearchControlAddition>
+					<Events>
+						<Event name="BeforeAddRow">ТаблицаГрупповойПередНачаломДобавления</Event>
+						<Event name="BeforeDeleteRow">ТаблицаГрупповойПередУдалением</Event>
+					</Events>
+					<ChildItems>
+						<ColumnGroup name="ТаблицаЭтаповГруппа1" id="68">
+							<HorizontalStretch>true</HorizontalStretch>
+							<VerticalStretch>true</VerticalStretch>
+							<Group>InCell</Group>
+							<ExtendedTooltip name="ТаблицаЭтаповГруппа1РасширеннаяПодсказка" id="201"/>
+							<ChildItems>
+								<CheckBoxField name="ТаблицаЭтаповПометка" id="64">
+									<DataPath>ТаблицаЭтапов.Пометка</DataPath>
+									<HorizontalAlign>Left</HorizontalAlign>
+									<EditMode>Directly</EditMode>
+									<CheckBoxType>Auto</CheckBoxType>
+									<ContextMenu name="ТаблицаЭтаповПометкаКонтекстноеМеню" id="65"/>
+									<ExtendedTooltip name="ТаблицаЭтаповПометкаРасширеннаяПодсказка" id="202"/>
+								</CheckBoxField>
+								<InputField name="ТаблицаЭтаповКомментарий" id="66">
+									<DataPath>ТаблицаЭтапов.Комментарий</DataPath>
+									<HorizontalAlign>Left</HorizontalAlign>
+									<EditMode>EnterOnInput</EditMode>
+									<HorizontalStretch>true</HorizontalStretch>
+									<Font ref="sys:DefaultGUIFont" height="10" kind="WindowsFont"/>
+									<ContextMenu name="ТаблицаЭтаповКомментарийКонтекстноеМеню" id="67"/>
+									<ExtendedTooltip name="ТаблицаЭтаповКомментарийРасширеннаяПодсказка" id="203"/>
+								</InputField>
+							</ChildItems>
+						</ColumnGroup>
+						<InputField name="ТаблицаЭтаповРежимТура" id="77">
+							<DataPath>ТаблицаЭтапов.РежимТура</DataPath>
+							<Visible>false</Visible>
+							<EditMode>EnterOnInput</EditMode>
+							<Font ref="sys:DefaultGUIFont" height="10" kind="WindowsFont"/>
+							<ContextMenu name="ТаблицаЭтаповРежимТураКонтекстноеМеню" id="78"/>
+							<ExtendedTooltip name="ТаблицаЭтаповРежимТураРасширеннаяПодсказка" id="204"/>
+						</InputField>
+						<InputField name="ТаблицаЭтаповНомерСтроки" id="79">
+							<DataPath>ТаблицаЭтапов.НомерСтроки</DataPath>
+							<Visible>false</Visible>
+							<EditMode>EnterOnInput</EditMode>
+							<Font ref="sys:DefaultGUIFont" height="10" kind="WindowsFont"/>
+							<ContextMenu name="ТаблицаЭтаповНомерСтрокиКонтекстноеМеню" id="80"/>
+							<ExtendedTooltip name="ТаблицаЭтаповНомерСтрокиРасширеннаяПодсказка" id="205"/>
+						</InputField>
+					</ChildItems>
+				</Table>
+				<CheckBoxField name="ПолноеФИО" id="207">
+					<DataPath>ПолноеФИО</DataPath>
+					<TitleLocation>Right</TitleLocation>
+					<CheckBoxType>Auto</CheckBoxType>
+					<ContextMenu name="ПолноеФИОКонтекстноеМеню" id="208"/>
+					<ExtendedTooltip name="ПолноеФИОРасширеннаяПодсказка" id="209"/>
+				</CheckBoxField>
+			</ChildItems>
+		</UsualGroup>
+		<CheckBoxField name="ВыводитьПредварительныйРейтинг" id="89">
+			<DataPath>ВыводитьПредварительныйРейтинг</DataPath>
+			<TitleLocation>Right</TitleLocation>
+			<CheckBoxType>Auto</CheckBoxType>
+			<ContextMenu name="ВыводитьПредварительныйРейтингКонтекстноеМеню" id="90"/>
+			<ExtendedTooltip name="ВыводитьПредварительныйРейтингРасширеннаяПодсказка" id="206"/>
+		</CheckBoxField>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="ТаблицаГрупповой" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Таблица групповой</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueTable</v8:Type>
+			</Type>
+			<Columns>
+				<Column name="РежимТура" id="1">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Тур</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>cfg:EnumRef.РежимыТуровСоревнования</v8:Type>
+					</Type>
+				</Column>
+				<Column name="Комментарий" id="2">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Комментарий</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="НомерСтроки" id="3">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>№</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>10</v8:Digits>
+							<v8:FractionDigits>0</v8:FractionDigits>
+							<v8:AllowedSign>Any</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+				</Column>
+				<Column name="Пометка" id="4">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Пометка</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:boolean</v8:Type>
+					</Type>
+				</Column>
+				<Column name="КолПартий" id="5">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Кол партий</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>10</v8:Digits>
+							<v8:FractionDigits>0</v8:FractionDigits>
+							<v8:AllowedSign>Any</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+				</Column>
+			</Columns>
+		</Attribute>
+		<Attribute name="ТаблицаСистемы2" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Таблица групповой</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueTable</v8:Type>
+			</Type>
+			<Columns>
+				<Column name="РежимТура" id="1">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Тур</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>cfg:EnumRef.РежимыТуровСоревнования</v8:Type>
+					</Type>
+				</Column>
+				<Column name="Комментарий" id="2">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Комментарий</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="НомерСтроки" id="3">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>№</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>10</v8:Digits>
+							<v8:FractionDigits>0</v8:FractionDigits>
+							<v8:AllowedSign>Any</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+				</Column>
+				<Column name="Пометка" id="4">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Пометка</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:boolean</v8:Type>
+					</Type>
+				</Column>
+				<Column name="КолПартий" id="5">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Кол партий</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>10</v8:Digits>
+							<v8:FractionDigits>0</v8:FractionDigits>
+							<v8:AllowedSign>Any</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+				</Column>
+			</Columns>
+		</Attribute>
+		<Attribute name="ТаблицаОлимпийка" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Таблица</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueTable</v8:Type>
+			</Type>
+			<Columns>
+				<Column name="РежимТура" id="1">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Тур</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>cfg:EnumRef.РежимыТуровСоревнования</v8:Type>
+					</Type>
+				</Column>
+				<Column name="Комментарий" id="2">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Комментарий</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="НомерСтроки" id="3">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>№</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>10</v8:Digits>
+							<v8:FractionDigits>0</v8:FractionDigits>
+							<v8:AllowedSign>Any</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+				</Column>
+				<Column name="Пометка" id="4">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Пометка</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:boolean</v8:Type>
+					</Type>
+				</Column>
+				<Column name="КолПартий" id="5">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Кол партий</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>10</v8:Digits>
+							<v8:FractionDigits>0</v8:FractionDigits>
+							<v8:AllowedSign>Any</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+				</Column>
+			</Columns>
+		</Attribute>
+		<Attribute name="ГрупповойВыводитьСРезультатом" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Таблицы с результатом</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ТаблицаПрогрессивка" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Таблица групповой</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueTable</v8:Type>
+			</Type>
+			<Columns>
+				<Column name="РежимТура" id="1">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Тур</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>cfg:EnumRef.РежимыТуровСоревнования</v8:Type>
+					</Type>
+				</Column>
+				<Column name="Комментарий" id="2">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Комментарий</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="НомерСтроки" id="3">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>№</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>10</v8:Digits>
+							<v8:FractionDigits>0</v8:FractionDigits>
+							<v8:AllowedSign>Any</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+				</Column>
+				<Column name="Пометка" id="4">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Пометка</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:boolean</v8:Type>
+					</Type>
+				</Column>
+				<Column name="КолПартий" id="5">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Кол партий</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>10</v8:Digits>
+							<v8:FractionDigits>0</v8:FractionDigits>
+							<v8:AllowedSign>Any</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+				</Column>
+			</Columns>
+		</Attribute>
+		<Attribute name="ТаблицаЭтапов" id="6">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Таблица этапов</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueTable</v8:Type>
+			</Type>
+			<Columns>
+				<Column name="НомерСтроки" id="1">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>№</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>10</v8:Digits>
+							<v8:FractionDigits>0</v8:FractionDigits>
+							<v8:AllowedSign>Any</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+				</Column>
+				<Column name="Пометка" id="2">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Пометка</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:boolean</v8:Type>
+					</Type>
+				</Column>
+				<Column name="Комментарий" id="3">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Комментарий</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="РежимТура" id="4">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Тур</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>cfg:EnumRef.РежимыТуровСоревнования</v8:Type>
+					</Type>
+				</Column>
+				<Column name="СеткаНа" id="5">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Сетка на</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>10</v8:Digits>
+							<v8:FractionDigits>0</v8:FractionDigits>
+							<v8:AllowedSign>Any</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+				</Column>
+			</Columns>
+		</Attribute>
+		<Attribute name="ДокОбъект" id="7">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Док объект</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:DocumentObject.ПроведениеСоревнования</v8:Type>
+			</Type>
+			<UseAlways>
+				<Field>ДокОбъект.RegisterRecords</Field>
+			</UseAlways>
+			<Columns>
+				<AdditionalColumns table="ДокОбъект.ХодСоревнованияКоманды">
+					<Column name="Пометка" id="1">
+						<Title>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Пометка</v8:content>
+							</v8:item>
+						</Title>
+						<Type>
+							<v8:Type>xs:boolean</v8:Type>
+						</Type>
+					</Column>
+				</AdditionalColumns>
+				<AdditionalColumns table="ДокОбъект.ХодСоревнования">
+					<Column name="Пометка" id="1">
+						<Title>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Пометка</v8:content>
+							</v8:item>
+						</Title>
+						<Type>
+							<v8:Type>xs:boolean</v8:Type>
+						</Type>
+					</Column>
+					<Column name="МестоС" id="2">
+						<Title>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Место С</v8:content>
+							</v8:item>
+						</Title>
+						<Type>
+							<v8:Type>xs:decimal</v8:Type>
+							<v8:NumberQualifiers>
+								<v8:Digits>3</v8:Digits>
+								<v8:FractionDigits>0</v8:FractionDigits>
+								<v8:AllowedSign>Nonnegative</v8:AllowedSign>
+							</v8:NumberQualifiers>
+						</Type>
+					</Column>
+					<Column name="МестоПо" id="3">
+						<Title>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Место по</v8:content>
+							</v8:item>
+						</Title>
+						<Type>
+							<v8:Type>xs:decimal</v8:Type>
+							<v8:NumberQualifiers>
+								<v8:Digits>3</v8:Digits>
+								<v8:FractionDigits>0</v8:FractionDigits>
+								<v8:AllowedSign>Nonnegative</v8:AllowedSign>
+							</v8:NumberQualifiers>
+						</Type>
+					</Column>
+					<Column name="КолМестВСетке" id="4">
+						<Title>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Кол мест в сетке</v8:content>
+							</v8:item>
+						</Title>
+						<Type>
+							<v8:Type>xs:decimal</v8:Type>
+							<v8:NumberQualifiers>
+								<v8:Digits>10</v8:Digits>
+								<v8:FractionDigits>0</v8:FractionDigits>
+								<v8:AllowedSign>Any</v8:AllowedSign>
+							</v8:NumberQualifiers>
+						</Type>
+					</Column>
+				</AdditionalColumns>
+			</Columns>
+		</Attribute>
+		<Attribute name="ВсеМеста" id="8">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Все места</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:decimal</v8:Type>
+				<v8:NumberQualifiers>
+					<v8:Digits>10</v8:Digits>
+					<v8:FractionDigits>0</v8:FractionDigits>
+					<v8:AllowedSign>Any</v8:AllowedSign>
+				</v8:NumberQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="МестоС" id="9">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>с</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:decimal</v8:Type>
+				<v8:NumberQualifiers>
+					<v8:Digits>10</v8:Digits>
+					<v8:FractionDigits>0</v8:FractionDigits>
+					<v8:AllowedSign>Any</v8:AllowedSign>
+				</v8:NumberQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="МестоПо" id="10">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>по</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:decimal</v8:Type>
+				<v8:NumberQualifiers>
+					<v8:Digits>10</v8:Digits>
+					<v8:FractionDigits>0</v8:FractionDigits>
+					<v8:AllowedSign>Any</v8:AllowedSign>
+				</v8:NumberQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ВыводитьВОдинЛист" id="11">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Выводить все протоколы в один файл</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ВыводитьПредварительныйРейтинг" id="12">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Выводить предварительный рейтинг</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="СписокКоманд" id="13">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Полный протокол соревнований</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ПромежуточныеПротоколы" id="14">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Промежуточные места</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ПолноеФИО" id="15">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Выводить полное Ф.И.О</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="КомандаПечать" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Вывести</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Печать</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>StdPicture.Print</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>КомандаПечать</Action>
+			<Representation>TextPicture</Representation>
+		</Command>
+		<Command name="КомандаУстановитьФлажки" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Команда установить флажки</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Команда установить флажки</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>StdPicture.CheckAll</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>КомандаУстановитьФлажки</Action>
+			<Representation>Picture</Representation>
+		</Command>
+		<Command name="КомандаСнятьФлажки" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Команда снять флажки</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Команда снять флажки</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>StdPicture.UncheckAll</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>КомандаСнятьФлажки</Action>
+			<Representation>Picture</Representation>
+		</Command>
+	</Commands>
+</Form>

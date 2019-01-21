@@ -1,0 +1,4329 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.4">
+	<WindowOpeningMode>LockOwnerWindow</WindowOpeningMode>
+	<AutoTitle>false</AutoTitle>
+	<CommandBarLocation>None</CommandBarLocation>
+	<VerticalScroll>useIfNecessary</VerticalScroll>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<Autofill>false</Autofill>
+	</AutoCommandBar>
+	<Events>
+		<Event name="NotificationProcessing">ОбработкаОповещения</Event>
+		<Event name="OnOpen">ПриОткрытии</Event>
+		<Event name="BeforeClose">ПередЗакрытием</Event>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+		<Event name="OnClose">ПриЗакрытии</Event>
+	</Events>
+	<ChildItems>
+		<UsualGroup name="Группа1" id="4">
+			<Group>Vertical</Group>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="Группа1РасширеннаяПодсказка" id="231"/>
+			<ChildItems>
+				<CommandBar name="Группа2" id="5">
+					<ExtendedTooltip name="Группа2РасширеннаяПодсказка" id="232"/>
+					<ChildItems>
+						<Button name="ФормаЗаписатьДанные" id="1">
+							<Type>CommandBarButton</Type>
+							<Representation>PictureAndText</Representation>
+							<DefaultButton>true</DefaultButton>
+							<CommandName>Form.Command.ЗаписатьДанные</CommandName>
+							<Picture>
+								<xr:Ref>CommonPicture.ЗаписатьДанные</xr:Ref>
+								<xr:LoadTransparent>false</xr:LoadTransparent>
+							</Picture>
+							<ExtendedTooltip name="ФормаЗаписатьДанныеРасширеннаяПодсказка" id="233"/>
+						</Button>
+						<Button name="ЗаписатьБезЗакрытия" id="30">
+							<Type>CommandBarButton</Type>
+							<CommandName>Form.Command.ЗаписатьБезЗакрытия</CommandName>
+							<ExtendedTooltip name="ЗаписатьБезЗакрытияРасширеннаяПодсказка" id="234"/>
+						</Button>
+						<Button name="ФормаЗакрытьФорму" id="2">
+							<Type>CommandBarButton</Type>
+							<CommandName>Form.Command.ЗакрытьФорму</CommandName>
+							<ExtendedTooltip name="ФормаЗакрытьФормуРасширеннаяПодсказка" id="235"/>
+						</Button>
+						<Button name="ФормаСправка" id="3">
+							<Type>CommandBarButton</Type>
+							<CommandName>Form.StandardCommand.Help</CommandName>
+							<ExtendedTooltip name="ФормаСправкаРасширеннаяПодсказка" id="236"/>
+						</Button>
+						<Button name="СУчетомИгр" id="6">
+							<Type>CommandBarButton</Type>
+							<Visible>false</Visible>
+							<CommandName>Form.Command.СУчетомИгр</CommandName>
+							<Picture>
+								<xr:Ref>CommonPicture.УчестьИгры</xr:Ref>
+								<xr:LoadTransparent>false</xr:LoadTransparent>
+							</Picture>
+							<ExtendedTooltip name="СУчетомИгрРасширеннаяПодсказка" id="237"/>
+						</Button>
+						<Button name="ИзменитьФорму" id="7">
+							<Type>CommandBarButton</Type>
+							<CommandName>Form.StandardCommand.CustomizeForm</CommandName>
+							<ExtendedTooltip name="ИзменитьФормуРасширеннаяПодсказка" id="238"/>
+						</Button>
+						<Button name="КомандаБегунки" id="29">
+							<Type>CommandBarButton</Type>
+							<Visible>false</Visible>
+							<CommandName>Form.Command.КомандаБегунки</CommandName>
+							<ExtendedTooltip name="КомандаБегункиРасширеннаяПодсказка" id="239"/>
+						</Button>
+						<Button name="ПоменятьРасстановку" id="229">
+							<Type>CommandBarButton</Type>
+							<CommandName>Form.Command.ПоменятьРасстановку</CommandName>
+							<ExtendedTooltip name="ПоменятьРасстановкуРасширеннаяПодсказка" id="240"/>
+						</Button>
+						<Button name="УдалитьДанныеИгры" id="8">
+							<Type>CommandBarButton</Type>
+							<CommandName>Form.Command.УдалитьДанныеИгры</CommandName>
+							<ExtendedTooltip name="УдалитьДанныеИгрыРасширеннаяПодсказка" id="241"/>
+						</Button>
+						<Button name="КомандаПоказатьПротокол" id="230">
+							<Type>CommandBarButton</Type>
+							<CommandName>Form.Command.КомандаПоказатьПротокол</CommandName>
+							<ExtendedTooltip name="КомандаПоказатьПротоколРасширеннаяПодсказка" id="242"/>
+						</Button>
+					</ChildItems>
+				</CommandBar>
+				<InputField name="ПоискКоманды" id="31">
+					<DataPath>ПоискКоманды</DataPath>
+					<Visible>false</Visible>
+					<ClearButton>true</ClearButton>
+					<ContextMenu name="ПоискКомандыКонтекстноеМеню" id="32"/>
+					<ExtendedTooltip name="ПоискКомандыРасширеннаяПодсказка" id="243"/>
+					<Events>
+						<Event name="AutoComplete">ПоискУчастникаАвтоПодбор</Event>
+						<Event name="ChoiceProcessing">ПоискУчастникаОбработкаВыбора</Event>
+					</Events>
+				</InputField>
+			</ChildItems>
+		</UsualGroup>
+		<UsualGroup name="ГруппаЗаголовок" id="76">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа заголовок</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа заголовок</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Group>Horizontal</Group>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ГруппаЗаголовокРасширеннаяПодсказка" id="244"/>
+			<ChildItems>
+				<LabelField name="НаименованиеКоманда1" id="77">
+					<DataPath>НаименованиеКоманда1</DataPath>
+					<TitleLocation>None</TitleLocation>
+					<HorizontalAlign>Right</HorizontalAlign>
+					<Width>10</Width>
+					<HorizontalStretch>true</HorizontalStretch>
+					<Font ref="sys:DefaultGUIFont" height="10" bold="true" italic="false" underline="false" strikeout="false" kind="WindowsFont"/>
+					<ContextMenu name="НаименованиеКоманда1КонтекстноеМеню" id="78"/>
+					<ExtendedTooltip name="НаименованиеКоманда1РасширеннаяПодсказка" id="245"/>
+				</LabelField>
+				<InputField name="СуммаИтогов1" id="223">
+					<DataPath>СуммаИтогов1</DataPath>
+					<ReadOnly>true</ReadOnly>
+					<TitleLocation>None</TitleLocation>
+					<HorizontalAlign>Center</HorizontalAlign>
+					<Width>4</Width>
+					<HorizontalStretch>false</HorizontalStretch>
+					<Font ref="sys:DefaultGUIFont" height="10" bold="true" italic="false" underline="false" strikeout="false" kind="WindowsFont"/>
+					<ContextMenu name="СуммаИтогов1КонтекстноеМеню" id="224"/>
+					<ExtendedTooltip name="СуммаИтогов1РасширеннаяПодсказка" id="246"/>
+				</InputField>
+				<LabelDecoration name="Декорация1" id="227">
+					<Width>2</Width>
+					<HorizontalStretch>false</HorizontalStretch>
+					<Font ref="sys:DefaultGUIFont" height="10" kind="WindowsFont"/>
+					<Title formatted="false">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>-</v8:content>
+						</v8:item>
+					</Title>
+					<HorizontalAlign>Center</HorizontalAlign>
+					<ContextMenu name="Декорация1КонтекстноеМеню" id="228"/>
+					<ExtendedTooltip name="Декорация1РасширеннаяПодсказка" id="247"/>
+				</LabelDecoration>
+				<InputField name="СуммаИтогов2" id="225">
+					<DataPath>СуммаИтогов2</DataPath>
+					<ReadOnly>true</ReadOnly>
+					<TitleLocation>None</TitleLocation>
+					<HorizontalAlign>Center</HorizontalAlign>
+					<Width>4</Width>
+					<HorizontalStretch>false</HorizontalStretch>
+					<TextColor>#FF0000</TextColor>
+					<Font ref="sys:DefaultGUIFont" height="10" bold="true" italic="false" underline="false" strikeout="false" kind="WindowsFont"/>
+					<ContextMenu name="СуммаИтогов2КонтекстноеМеню" id="226"/>
+					<ExtendedTooltip name="СуммаИтогов2РасширеннаяПодсказка" id="248"/>
+				</InputField>
+				<LabelField name="НаименованиеКоманда2" id="79">
+					<DataPath>НаименованиеКоманда2</DataPath>
+					<TitleLocation>None</TitleLocation>
+					<HorizontalAlign>Left</HorizontalAlign>
+					<Width>10</Width>
+					<HorizontalStretch>true</HorizontalStretch>
+					<TextColor>#FF0000</TextColor>
+					<Font ref="sys:DefaultGUIFont" height="10" bold="true" italic="false" underline="false" strikeout="false" kind="WindowsFont"/>
+					<ContextMenu name="НаименованиеКоманда2КонтекстноеМеню" id="80"/>
+					<ExtendedTooltip name="НаименованиеКоманда2РасширеннаяПодсказка" id="249"/>
+				</LabelField>
+			</ChildItems>
+		</UsualGroup>
+		<Table name="ТаблицаПартий" id="33">
+			<Representation>List</Representation>
+			<AutoInsertNewRow>true</AutoInsertNewRow>
+			<EnableStartDrag>true</EnableStartDrag>
+			<EnableDrag>true</EnableDrag>
+			<DataPath>ТаблицаПартий</DataPath>
+			<SearchStringLocation>None</SearchStringLocation>
+			<ViewStatusLocation>None</ViewStatusLocation>
+			<SearchControlLocation>None</SearchControlLocation>
+			<RowFilter xsi:nil="true"/>
+			<ContextMenu name="ТаблицаПартийКонтекстноеМеню" id="34"/>
+			<AutoCommandBar name="ТаблицаПартийКоманднаяПанель" id="35">
+				<Autofill>false</Autofill>
+			</AutoCommandBar>
+			<ExtendedTooltip name="ТаблицаПартийРасширеннаяПодсказка" id="250"/>
+			<SearchStringAddition name="ТаблицаПартийСтрокаПоиска" id="251">
+				<AdditionSource>
+					<Item>ТаблицаПартий</Item>
+					<Type>SearchStringRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="ТаблицаПартийСтрокаПоискаКонтекстноеМеню" id="252"/>
+				<ExtendedTooltip name="ТаблицаПартийСтрокаПоискаРасширеннаяПодсказка" id="253"/>
+			</SearchStringAddition>
+			<ViewStatusAddition name="ТаблицаПартийСостояниеПросмотра" id="254">
+				<AdditionSource>
+					<Item>ТаблицаПартий</Item>
+					<Type>ViewStatusRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="ТаблицаПартийСостояниеПросмотраКонтекстноеМеню" id="255"/>
+				<ExtendedTooltip name="ТаблицаПартийСостояниеПросмотраРасширеннаяПодсказка" id="256"/>
+			</ViewStatusAddition>
+			<SearchControlAddition name="ТаблицаПартийУправлениеПоиском" id="257">
+				<AdditionSource>
+					<Item>ТаблицаПартий</Item>
+					<Type>SearchControl</Type>
+				</AdditionSource>
+				<ContextMenu name="ТаблицаПартийУправлениеПоискомКонтекстноеМеню" id="258"/>
+				<ExtendedTooltip name="ТаблицаПартийУправлениеПоискомРасширеннаяПодсказка" id="259"/>
+			</SearchControlAddition>
+			<Events>
+				<Event name="BeforeAddRow">ТаблицаПартийПередНачаломДобавления</Event>
+				<Event name="BeforeDeleteRow">ТаблицаПартийПередУдалением</Event>
+				<Event name="BeforeRowChange">ТаблицаПартийПередНачаломИзменения</Event>
+			</Events>
+			<ChildItems>
+				<InputField name="ТаблицаПартийРасстановка1" id="60">
+					<DataPath>ТаблицаПартий.Расстановка1</DataPath>
+					<ReadOnly>true</ReadOnly>
+					<TitleLocation>None</TitleLocation>
+					<HorizontalAlign>Center</HorizontalAlign>
+					<EditMode>EnterOnInput</EditMode>
+					<HeaderHorizontalAlign>Center</HeaderHorizontalAlign>
+					<Width>2</Width>
+					<HorizontalStretch>true</HorizontalStretch>
+					<ContextMenu name="ТаблицаПартийРасстановка1КонтекстноеМеню" id="61"/>
+					<ExtendedTooltip name="ТаблицаПартийРасстановка1РасширеннаяПодсказка" id="260"/>
+				</InputField>
+				<InputField name="ТаблицаПартийУчастник_1" id="36">
+					<DataPath>ТаблицаПартий.Участник1</DataPath>
+					<TitleFont ref="sys:DefaultGUIFont" bold="true" italic="false" underline="false" strikeout="false" kind="WindowsFont"/>
+					<EditMode>EnterOnInput</EditMode>
+					<HeaderHorizontalAlign>Center</HeaderHorizontalAlign>
+					<FooterFont ref="sys:DefaultGUIFont" bold="true" italic="false" underline="false" strikeout="false" kind="WindowsFont"/>
+					<FooterHorizontalAlign>Center</FooterHorizontalAlign>
+					<Width>15</Width>
+					<ChoiceButton>true</ChoiceButton>
+					<ClearButton>true</ClearButton>
+					<SpinButton>false</SpinButton>
+					<OpenButton>false</OpenButton>
+					<ChoiceListButton>false</ChoiceListButton>
+					<ContextMenu name="ТаблицаПартийУчастник_1КонтекстноеМеню" id="37"/>
+					<ExtendedTooltip name="ТаблицаПартийУчастник_1РасширеннаяПодсказка" id="261"/>
+					<Events>
+						<Event name="StartChoice">ТаблицаПартийНачалоВыбораУчастника1</Event>
+						<Event name="Clearing">ТаблицаПартийОчисткаУчастника1</Event>
+					</Events>
+				</InputField>
+				<CheckBoxField name="ТаблицаПартийТехническое_1" id="40">
+					<DataPath>ТаблицаПартий.Техническое1</DataPath>
+					<TitleLocation>None</TitleLocation>
+					<EditMode>Directly</EditMode>
+					<HeaderPicture>
+						<xr:Ref>CommonPicture.Техническое</xr:Ref>
+						<xr:LoadTransparent>false</xr:LoadTransparent>
+					</HeaderPicture>
+					<CheckBoxType>Auto</CheckBoxType>
+					<ContextMenu name="ТаблицаПартийТехническое_1КонтекстноеМеню" id="41"/>
+					<ExtendedTooltip name="ТаблицаПартийТехническое_1РасширеннаяПодсказка" id="262"/>
+					<Events>
+						<Event name="OnChange">ТаблицаПартийТехническое_1ПриИзменении</Event>
+					</Events>
+				</CheckBoxField>
+				<InputField name="ТаблицаПартийРасстановка2" id="62">
+					<DataPath>ТаблицаПартий.Расстановка2</DataPath>
+					<ReadOnly>true</ReadOnly>
+					<TitleLocation>None</TitleLocation>
+					<HorizontalAlign>Center</HorizontalAlign>
+					<EditMode>EnterOnInput</EditMode>
+					<HeaderHorizontalAlign>Center</HeaderHorizontalAlign>
+					<Width>2</Width>
+					<HorizontalStretch>true</HorizontalStretch>
+					<ContextMenu name="ТаблицаПартийРасстановка2КонтекстноеМеню" id="63"/>
+					<ExtendedTooltip name="ТаблицаПартийРасстановка2РасширеннаяПодсказка" id="263"/>
+				</InputField>
+				<InputField name="ТаблицаПартийУчастник_2" id="58">
+					<DataPath>ТаблицаПартий.Участник2</DataPath>
+					<TitleTextColor>#FF0000</TitleTextColor>
+					<TitleFont ref="sys:DefaultGUIFont" bold="true" italic="false" underline="false" strikeout="false" kind="WindowsFont"/>
+					<EditMode>EnterOnInput</EditMode>
+					<HeaderHorizontalAlign>Center</HeaderHorizontalAlign>
+					<FooterFont ref="sys:DefaultGUIFont" bold="true" italic="false" underline="false" strikeout="false" kind="WindowsFont"/>
+					<FooterHorizontalAlign>Center</FooterHorizontalAlign>
+					<Width>15</Width>
+					<ChoiceButton>true</ChoiceButton>
+					<ClearButton>true</ClearButton>
+					<SpinButton>false</SpinButton>
+					<OpenButton>false</OpenButton>
+					<ChoiceListButton>false</ChoiceListButton>
+					<TextColor>#FF0000</TextColor>
+					<ContextMenu name="ТаблицаПартийУчастник_2КонтекстноеМеню" id="59"/>
+					<ExtendedTooltip name="ТаблицаПартийУчастник_2РасширеннаяПодсказка" id="264"/>
+					<Events>
+						<Event name="StartChoice">ТаблицаПартийНачалоВыбораУчастника2</Event>
+						<Event name="Clearing">ТаблицаПартийОчисткаУчастника2</Event>
+					</Events>
+				</InputField>
+				<CheckBoxField name="ТаблицаПартийТехническое_2" id="72">
+					<DataPath>ТаблицаПартий.Техническое2</DataPath>
+					<TitleLocation>None</TitleLocation>
+					<EditMode>Directly</EditMode>
+					<HeaderPicture>
+						<xr:Ref>CommonPicture.Техническое</xr:Ref>
+						<xr:LoadTransparent>false</xr:LoadTransparent>
+					</HeaderPicture>
+					<CheckBoxType>Auto</CheckBoxType>
+					<ContextMenu name="ТаблицаПартийТехническое_2КонтекстноеМеню" id="73"/>
+					<ExtendedTooltip name="ТаблицаПартийТехническое_2РасширеннаяПодсказка" id="265"/>
+					<Events>
+						<Event name="OnChange">ТаблицаПартийТехническое_2ПриИзменении</Event>
+					</Events>
+				</CheckBoxField>
+				<InputField name="ТаблицаПартийИгра1" id="42">
+					<DataPath>ТаблицаПартий.Игра1</DataPath>
+					<Visible>false</Visible>
+					<HorizontalAlign>Center</HorizontalAlign>
+					<EditMode>EnterOnInput</EditMode>
+					<HeaderHorizontalAlign>Center</HeaderHorizontalAlign>
+					<ContextMenu name="ТаблицаПартийИгра1КонтекстноеМеню" id="43"/>
+					<ExtendedTooltip name="ТаблицаПартийИгра1РасширеннаяПодсказка" id="266"/>
+					<Events>
+						<Event name="OnChange">ТаблицаПартийПриИзменении</Event>
+					</Events>
+				</InputField>
+				<InputField name="ТаблицаПартийИгра2" id="44">
+					<DataPath>ТаблицаПартий.Игра2</DataPath>
+					<Visible>false</Visible>
+					<HorizontalAlign>Center</HorizontalAlign>
+					<EditMode>EnterOnInput</EditMode>
+					<HeaderHorizontalAlign>Center</HeaderHorizontalAlign>
+					<ContextMenu name="ТаблицаПартийИгра2КонтекстноеМеню" id="45"/>
+					<ExtendedTooltip name="ТаблицаПартийИгра2РасширеннаяПодсказка" id="267"/>
+					<Events>
+						<Event name="OnChange">ТаблицаПартийПриИзменении</Event>
+					</Events>
+				</InputField>
+				<InputField name="ТаблицаПартийИгра3" id="46">
+					<DataPath>ТаблицаПартий.Игра3</DataPath>
+					<Visible>false</Visible>
+					<HorizontalAlign>Center</HorizontalAlign>
+					<EditMode>EnterOnInput</EditMode>
+					<HeaderHorizontalAlign>Center</HeaderHorizontalAlign>
+					<ContextMenu name="ТаблицаПартийИгра3КонтекстноеМеню" id="47"/>
+					<ExtendedTooltip name="ТаблицаПартийИгра3РасширеннаяПодсказка" id="268"/>
+					<Events>
+						<Event name="OnChange">ТаблицаПартийПриИзменении</Event>
+					</Events>
+				</InputField>
+				<InputField name="ТаблицаПартийИгра4" id="48">
+					<DataPath>ТаблицаПартий.Игра4</DataPath>
+					<Visible>false</Visible>
+					<HorizontalAlign>Center</HorizontalAlign>
+					<EditMode>EnterOnInput</EditMode>
+					<HeaderHorizontalAlign>Center</HeaderHorizontalAlign>
+					<ContextMenu name="ТаблицаПартийИгра4КонтекстноеМеню" id="49"/>
+					<ExtendedTooltip name="ТаблицаПартийИгра4РасширеннаяПодсказка" id="269"/>
+					<Events>
+						<Event name="OnChange">ТаблицаПартийПриИзменении</Event>
+					</Events>
+				</InputField>
+				<InputField name="ТаблицаПартийИгра5" id="50">
+					<DataPath>ТаблицаПартий.Игра5</DataPath>
+					<Visible>false</Visible>
+					<HorizontalAlign>Center</HorizontalAlign>
+					<EditMode>EnterOnInput</EditMode>
+					<HeaderHorizontalAlign>Center</HeaderHorizontalAlign>
+					<ContextMenu name="ТаблицаПартийИгра5КонтекстноеМеню" id="51"/>
+					<ExtendedTooltip name="ТаблицаПартийИгра5РасширеннаяПодсказка" id="270"/>
+					<Events>
+						<Event name="OnChange">ТаблицаПартийПриИзменении</Event>
+					</Events>
+				</InputField>
+				<InputField name="ТаблицаПартийИгра6" id="52">
+					<DataPath>ТаблицаПартий.Игра6</DataPath>
+					<Visible>false</Visible>
+					<HorizontalAlign>Center</HorizontalAlign>
+					<EditMode>EnterOnInput</EditMode>
+					<HeaderHorizontalAlign>Center</HeaderHorizontalAlign>
+					<ContextMenu name="ТаблицаПартийИгра6КонтекстноеМеню" id="53"/>
+					<ExtendedTooltip name="ТаблицаПартийИгра6РасширеннаяПодсказка" id="271"/>
+					<Events>
+						<Event name="OnChange">ТаблицаПартийПриИзменении</Event>
+					</Events>
+				</InputField>
+				<InputField name="ТаблицаПартийИгра7" id="54">
+					<DataPath>ТаблицаПартий.Игра7</DataPath>
+					<Visible>false</Visible>
+					<HorizontalAlign>Center</HorizontalAlign>
+					<EditMode>EnterOnInput</EditMode>
+					<HeaderHorizontalAlign>Center</HeaderHorizontalAlign>
+					<ContextMenu name="ТаблицаПартийИгра7КонтекстноеМеню" id="55"/>
+					<ExtendedTooltip name="ТаблицаПартийИгра7РасширеннаяПодсказка" id="272"/>
+					<Events>
+						<Event name="OnChange">ТаблицаПартийПриИзменении</Event>
+					</Events>
+				</InputField>
+				<ColumnGroup name="ГруппаОбщийРезультатПартий" id="74">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Общий счет партий</v8:content>
+						</v8:item>
+					</Title>
+					<HorizontalStretch>false</HorizontalStretch>
+					<Group>Horizontal</Group>
+					<ShowInHeader>true</ShowInHeader>
+					<HeaderHorizontalAlign>Center</HeaderHorizontalAlign>
+					<ExtendedTooltip name="ГруппаОбщийРезультатПартийРасширеннаяПодсказка" id="273"/>
+					<ChildItems>
+						<InputField name="ТаблицаПартийОбщийРезультат1" id="68">
+							<DataPath>ТаблицаПартий.ОбщийРезультат1</DataPath>
+							<HorizontalAlign>Center</HorizontalAlign>
+							<EditMode>EnterOnInput</EditMode>
+							<ShowInHeader>false</ShowInHeader>
+							<HeaderHorizontalAlign>Center</HeaderHorizontalAlign>
+							<Width>6</Width>
+							<HorizontalStretch>true</HorizontalStretch>
+							<ContextMenu name="ТаблицаПартийОбщийРезультат1КонтекстноеМеню" id="69"/>
+							<ExtendedTooltip name="ТаблицаПартийОбщийРезультат1РасширеннаяПодсказка" id="274"/>
+							<Events>
+								<Event name="OnChange">ТаблицаПартийОбщийРезультатПриИзменении</Event>
+							</Events>
+						</InputField>
+						<InputField name="ТаблицаПартийОбщийРезультат2" id="70">
+							<DataPath>ТаблицаПартий.ОбщийРезультат2</DataPath>
+							<HorizontalAlign>Center</HorizontalAlign>
+							<EditMode>EnterOnInput</EditMode>
+							<ShowInHeader>false</ShowInHeader>
+							<Width>6</Width>
+							<HorizontalStretch>true</HorizontalStretch>
+							<ContextMenu name="ТаблицаПартийОбщийРезультат2КонтекстноеМеню" id="71"/>
+							<ExtendedTooltip name="ТаблицаПартийОбщийРезультат2РасширеннаяПодсказка" id="275"/>
+							<Events>
+								<Event name="OnChange">ТаблицаПартийОбщийРезультатПриИзменении</Event>
+							</Events>
+						</InputField>
+					</ChildItems>
+				</ColumnGroup>
+				<ColumnGroup name="ТаблицаПартийГруппа1" id="75">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Командный счет</v8:content>
+						</v8:item>
+					</Title>
+					<HorizontalStretch>false</HorizontalStretch>
+					<Group>Horizontal</Group>
+					<ShowInHeader>true</ShowInHeader>
+					<HeaderHorizontalAlign>Center</HeaderHorizontalAlign>
+					<ExtendedTooltip name="ТаблицаПартийГруппа1РасширеннаяПодсказка" id="276"/>
+					<ChildItems>
+						<InputField name="ТаблицаПартийИтог1" id="56">
+							<DataPath>ТаблицаПартий.Итог1</DataPath>
+							<HorizontalAlign>Center</HorizontalAlign>
+							<EditMode>EnterOnInput</EditMode>
+							<ShowInHeader>false</ShowInHeader>
+							<HeaderHorizontalAlign>Center</HeaderHorizontalAlign>
+							<FooterDataPath>СуммаИтогов1</FooterDataPath>
+							<FooterFont ref="sys:DefaultGUIFont" bold="true" italic="false" underline="false" strikeout="false" kind="WindowsFont"/>
+							<FooterHorizontalAlign>Center</FooterHorizontalAlign>
+							<ClearButton>true</ClearButton>
+							<ContextMenu name="ТаблицаПартийИтог1КонтекстноеМеню" id="57"/>
+							<ExtendedTooltip name="ТаблицаПартийИтог1РасширеннаяПодсказка" id="277"/>
+							<Events>
+								<Event name="Clearing">ТаблицаПартийИтог1Очистка</Event>
+							</Events>
+						</InputField>
+						<InputField name="ТаблицаПартийИтог2" id="64">
+							<DataPath>ТаблицаПартий.Итог2</DataPath>
+							<HorizontalAlign>Center</HorizontalAlign>
+							<EditMode>EnterOnInput</EditMode>
+							<ShowInHeader>false</ShowInHeader>
+							<FooterDataPath>СуммаИтогов2</FooterDataPath>
+							<FooterFont ref="sys:DefaultGUIFont" bold="true" italic="false" underline="false" strikeout="false" kind="WindowsFont"/>
+							<FooterHorizontalAlign>Center</FooterHorizontalAlign>
+							<ClearButton>true</ClearButton>
+							<ContextMenu name="ТаблицаПартийИтог2КонтекстноеМеню" id="65"/>
+							<ExtendedTooltip name="ТаблицаПартийИтог2РасширеннаяПодсказка" id="278"/>
+							<Events>
+								<Event name="Clearing">ТаблицаПартийИтог1Очистка</Event>
+							</Events>
+						</InputField>
+					</ChildItems>
+				</ColumnGroup>
+			</ChildItems>
+		</Table>
+		<UsualGroup name="Группа3" id="215">
+			<Group>Horizontal</Group>
+			<Representation>None</Representation>
+			<ChildItemsWidth>LeftNarrowest</ChildItemsWidth>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="Группа3РасширеннаяПодсказка" id="279"/>
+			<ChildItems>
+				<Table name="СписокГрупп" id="216">
+					<Representation>List</Representation>
+					<ReadOnly>true</ReadOnly>
+					<Width>15</Width>
+					<SelectionMode>SingleRow</SelectionMode>
+					<RowSelectionMode>Row</RowSelectionMode>
+					<Header>false</Header>
+					<HorizontalLines>false</HorizontalLines>
+					<VerticalLines>false</VerticalLines>
+					<UseAlternationRowColor>true</UseAlternationRowColor>
+					<AutoInsertNewRow>true</AutoInsertNewRow>
+					<SearchOnInput>Use</SearchOnInput>
+					<DataPath>СписокГрупп</DataPath>
+					<RowPictureDataPath>СписокГрупп.Picture</RowPictureDataPath>
+					<Font ref="sys:DefaultGUIFont" height="10" kind="WindowsFont"/>
+					<SearchStringLocation>None</SearchStringLocation>
+					<ViewStatusLocation>None</ViewStatusLocation>
+					<SearchControlLocation>None</SearchControlLocation>
+					<ContextMenu name="СписокГруппКонтекстноеМеню" id="217"/>
+					<AutoCommandBar name="СписокГруппКоманднаяПанель" id="218">
+						<Autofill>false</Autofill>
+					</AutoCommandBar>
+					<ExtendedTooltip name="СписокГруппРасширеннаяПодсказка" id="280"/>
+					<SearchStringAddition name="СписокГруппСтрокаПоиска" id="281">
+						<AdditionSource>
+							<Item>СписокГрупп</Item>
+							<Type>SearchStringRepresentation</Type>
+						</AdditionSource>
+						<ContextMenu name="СписокГруппСтрокаПоискаКонтекстноеМеню" id="282"/>
+						<ExtendedTooltip name="СписокГруппСтрокаПоискаРасширеннаяПодсказка" id="283"/>
+					</SearchStringAddition>
+					<ViewStatusAddition name="СписокГруппСостояниеПросмотра" id="284">
+						<AdditionSource>
+							<Item>СписокГрупп</Item>
+							<Type>ViewStatusRepresentation</Type>
+						</AdditionSource>
+						<ContextMenu name="СписокГруппСостояниеПросмотраКонтекстноеМеню" id="285"/>
+						<ExtendedTooltip name="СписокГруппСостояниеПросмотраРасширеннаяПодсказка" id="286"/>
+					</ViewStatusAddition>
+					<SearchControlAddition name="СписокГруппУправлениеПоиском" id="287">
+						<AdditionSource>
+							<Item>СписокГрупп</Item>
+							<Type>SearchControl</Type>
+						</AdditionSource>
+						<ContextMenu name="СписокГруппУправлениеПоискомКонтекстноеМеню" id="288"/>
+						<ExtendedTooltip name="СписокГруппУправлениеПоискомРасширеннаяПодсказка" id="289"/>
+					</SearchControlAddition>
+					<Events>
+						<Event name="OnActivateRow">СписокГруппПриАктивизацииСтроки</Event>
+					</Events>
+					<ChildItems>
+						<InputField name="СписокГруппПредставление" id="221">
+							<DataPath>СписокГрупп.Presentation</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<Width>12</Width>
+							<ContextMenu name="СписокГруппПредставлениеКонтекстноеМеню" id="222"/>
+							<ExtendedTooltip name="СписокГруппПредставлениеРасширеннаяПодсказка" id="290"/>
+						</InputField>
+					</ChildItems>
+				</Table>
+				<Table name="ТаблицаГруппы" id="99">
+					<Representation>List</Representation>
+					<ChangeRowSet>false</ChangeRowSet>
+					<ChangeRowOrder>false</ChangeRowOrder>
+					<AutoInsertNewRow>true</AutoInsertNewRow>
+					<Output>Enable</Output>
+					<EnableStartDrag>true</EnableStartDrag>
+					<EnableDrag>true</EnableDrag>
+					<DataPath>ТаблицаГруппы</DataPath>
+					<SearchStringLocation>None</SearchStringLocation>
+					<ViewStatusLocation>None</ViewStatusLocation>
+					<SearchControlLocation>None</SearchControlLocation>
+					<RowFilter xsi:nil="true"/>
+					<ContextMenu name="ТаблицаГруппыКонтекстноеМеню" id="100"/>
+					<AutoCommandBar name="ТаблицаГруппыКоманднаяПанель" id="101">
+						<Autofill>false</Autofill>
+					</AutoCommandBar>
+					<ExtendedTooltip name="ТаблицаГруппыРасширеннаяПодсказка" id="291"/>
+					<SearchStringAddition name="ТаблицаГруппыСтрокаПоиска" id="292">
+						<AdditionSource>
+							<Item>ТаблицаГруппы</Item>
+							<Type>SearchStringRepresentation</Type>
+						</AdditionSource>
+						<ContextMenu name="ТаблицаГруппыСтрокаПоискаКонтекстноеМеню" id="293"/>
+						<ExtendedTooltip name="ТаблицаГруппыСтрокаПоискаРасширеннаяПодсказка" id="294"/>
+					</SearchStringAddition>
+					<ViewStatusAddition name="ТаблицаГруппыСостояниеПросмотра" id="295">
+						<AdditionSource>
+							<Item>ТаблицаГруппы</Item>
+							<Type>ViewStatusRepresentation</Type>
+						</AdditionSource>
+						<ContextMenu name="ТаблицаГруппыСостояниеПросмотраКонтекстноеМеню" id="296"/>
+						<ExtendedTooltip name="ТаблицаГруппыСостояниеПросмотраРасширеннаяПодсказка" id="297"/>
+					</ViewStatusAddition>
+					<SearchControlAddition name="ТаблицаГруппыУправлениеПоиском" id="298">
+						<AdditionSource>
+							<Item>ТаблицаГруппы</Item>
+							<Type>SearchControl</Type>
+						</AdditionSource>
+						<ContextMenu name="ТаблицаГруппыУправлениеПоискомКонтекстноеМеню" id="299"/>
+						<ExtendedTooltip name="ТаблицаГруппыУправлениеПоискомРасширеннаяПодсказка" id="300"/>
+					</SearchControlAddition>
+					<Events>
+						<Event name="BeforeAddRow">ТаблицаГруппыПередНачаломДобавления</Event>
+						<Event name="BeforeDeleteRow">ТаблицаГруппыПередУдалением</Event>
+						<Event name="OnActivateCell">ТаблицаГруппыПриАктивизацииЯчейки</Event>
+					</Events>
+					<ChildItems>
+						<InputField name="ТаблицаГруппыНомерУчастника" id="102">
+							<DataPath>ТаблицаГруппы.НомерУчастника</DataPath>
+							<ReadOnly>true</ReadOnly>
+							<HorizontalAlign>Center</HorizontalAlign>
+							<EditMode>EnterOnInput</EditMode>
+							<FixingInTable>Left</FixingInTable>
+							<HeaderHorizontalAlign>Center</HeaderHorizontalAlign>
+							<Width>3</Width>
+							<ContextMenu name="ТаблицаГруппыНомерУчастникаКонтекстноеМеню" id="103"/>
+							<ExtendedTooltip name="ТаблицаГруппыНомерУчастникаРасширеннаяПодсказка" id="301"/>
+						</InputField>
+						<InputField name="ТаблицаГруппыУчастник" id="106">
+							<DataPath>ТаблицаГруппы.Участник</DataPath>
+							<ReadOnly>true</ReadOnly>
+							<EditMode>EnterOnInput</EditMode>
+							<FixingInTable>Left</FixingInTable>
+							<Width>17</Width>
+							<HorizontalStretch>true</HorizontalStretch>
+							<ContextMenu name="ТаблицаГруппыУчастникКонтекстноеМеню" id="107"/>
+							<ExtendedTooltip name="ТаблицаГруппыУчастникРасширеннаяПодсказка" id="302"/>
+						</InputField>
+						<InputField name="ТаблицаГруппыРейтингУчастника" id="104">
+							<DataPath>ТаблицаГруппы.РейтингУчастника</DataPath>
+							<ReadOnly>true</ReadOnly>
+							<EditMode>EnterOnInput</EditMode>
+							<HeaderHorizontalAlign>Center</HeaderHorizontalAlign>
+							<Width>10</Width>
+							<HorizontalStretch>true</HorizontalStretch>
+							<ContextMenu name="ТаблицаГруппыРейтингУчастникаКонтекстноеМеню" id="105"/>
+							<ExtendedTooltip name="ТаблицаГруппыРейтингУчастникаРасширеннаяПодсказка" id="303"/>
+						</InputField>
+						<ColumnGroup name="ТаблицаГруппыГруппа1" id="196">
+							<Visible>false</Visible>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>1</v8:content>
+								</v8:item>
+							</Title>
+							<Width>4</Width>
+							<HorizontalStretch>true</HorizontalStretch>
+							<ShowInHeader>true</ShowInHeader>
+							<HeaderHorizontalAlign>Center</HeaderHorizontalAlign>
+							<ExtendedTooltip name="ТаблицаГруппыГруппа1РасширеннаяПодсказка" id="304"/>
+							<ChildItems>
+								<InputField name="ТаблицаГруппыКолонкаИгры1" id="108">
+									<DataPath>ТаблицаГруппы.КолонкаИгры1</DataPath>
+									<ReadOnly>true</ReadOnly>
+									<HorizontalAlign>Center</HorizontalAlign>
+									<EditMode>EnterOnInput</EditMode>
+									<ShowInHeader>false</ShowInHeader>
+									<Width>4</Width>
+									<HorizontalStretch>true</HorizontalStretch>
+									<ContextMenu name="ТаблицаГруппыКолонкаИгры1КонтекстноеМеню" id="109"/>
+									<ExtendedTooltip name="ТаблицаГруппыКолонкаИгры1РасширеннаяПодсказка" id="305"/>
+								</InputField>
+								<InputField name="ТаблицаГруппыСписокОчков1" id="110">
+									<DataPath>ТаблицаГруппы.СписокОчков1</DataPath>
+									<ReadOnly>true</ReadOnly>
+									<HorizontalAlign>Center</HorizontalAlign>
+									<EditMode>EnterOnInput</EditMode>
+									<ShowInHeader>false</ShowInHeader>
+									<Width>4</Width>
+									<HorizontalStretch>true</HorizontalStretch>
+									<ContextMenu name="ТаблицаГруппыСписокОчков1КонтекстноеМеню" id="111"/>
+									<ExtendedTooltip name="ТаблицаГруппыСписокОчков1РасширеннаяПодсказка" id="306"/>
+								</InputField>
+							</ChildItems>
+						</ColumnGroup>
+						<ColumnGroup name="ТаблицаГруппыГруппа2" id="201">
+							<Visible>false</Visible>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>2</v8:content>
+								</v8:item>
+							</Title>
+							<Width>4</Width>
+							<HorizontalStretch>true</HorizontalStretch>
+							<ShowInHeader>true</ShowInHeader>
+							<HeaderHorizontalAlign>Center</HeaderHorizontalAlign>
+							<ExtendedTooltip name="ТаблицаГруппыГруппа2РасширеннаяПодсказка" id="307"/>
+							<ChildItems>
+								<InputField name="ТаблицаГруппыКолонкаИгры2" id="114">
+									<DataPath>ТаблицаГруппы.КолонкаИгры2</DataPath>
+									<ReadOnly>true</ReadOnly>
+									<HorizontalAlign>Center</HorizontalAlign>
+									<EditMode>EnterOnInput</EditMode>
+									<ShowInHeader>false</ShowInHeader>
+									<Width>4</Width>
+									<HorizontalStretch>true</HorizontalStretch>
+									<ContextMenu name="ТаблицаГруппыКолонкаИгры2КонтекстноеМеню" id="115"/>
+									<ExtendedTooltip name="ТаблицаГруппыКолонкаИгры2РасширеннаяПодсказка" id="308"/>
+								</InputField>
+								<InputField name="ТаблицаГруппыСписокОчков2" id="116">
+									<DataPath>ТаблицаГруппы.СписокОчков2</DataPath>
+									<ReadOnly>true</ReadOnly>
+									<HorizontalAlign>Center</HorizontalAlign>
+									<EditMode>EnterOnInput</EditMode>
+									<ShowInHeader>false</ShowInHeader>
+									<Width>4</Width>
+									<HorizontalStretch>true</HorizontalStretch>
+									<ContextMenu name="ТаблицаГруппыСписокОчков2КонтекстноеМеню" id="117"/>
+									<ExtendedTooltip name="ТаблицаГруппыСписокОчков2РасширеннаяПодсказка" id="309"/>
+								</InputField>
+							</ChildItems>
+						</ColumnGroup>
+						<ColumnGroup name="ТаблицаГруппыГруппа3" id="202">
+							<Visible>false</Visible>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>3</v8:content>
+								</v8:item>
+							</Title>
+							<Width>4</Width>
+							<HorizontalStretch>true</HorizontalStretch>
+							<ShowInHeader>true</ShowInHeader>
+							<HeaderHorizontalAlign>Center</HeaderHorizontalAlign>
+							<ExtendedTooltip name="ТаблицаГруппыГруппа3РасширеннаяПодсказка" id="310"/>
+							<ChildItems>
+								<InputField name="ТаблицаГруппыКолонкаИгры3" id="120">
+									<DataPath>ТаблицаГруппы.КолонкаИгры3</DataPath>
+									<ReadOnly>true</ReadOnly>
+									<HorizontalAlign>Center</HorizontalAlign>
+									<EditMode>EnterOnInput</EditMode>
+									<ShowInHeader>false</ShowInHeader>
+									<Width>4</Width>
+									<HorizontalStretch>true</HorizontalStretch>
+									<ContextMenu name="ТаблицаГруппыКолонкаИгры3КонтекстноеМеню" id="121"/>
+									<ExtendedTooltip name="ТаблицаГруппыКолонкаИгры3РасширеннаяПодсказка" id="311"/>
+								</InputField>
+								<InputField name="ТаблицаГруппыСписокОчков3" id="122">
+									<DataPath>ТаблицаГруппы.СписокОчков3</DataPath>
+									<ReadOnly>true</ReadOnly>
+									<HorizontalAlign>Center</HorizontalAlign>
+									<EditMode>EnterOnInput</EditMode>
+									<ShowInHeader>false</ShowInHeader>
+									<Width>4</Width>
+									<HorizontalStretch>true</HorizontalStretch>
+									<ContextMenu name="ТаблицаГруппыСписокОчков3КонтекстноеМеню" id="123"/>
+									<ExtendedTooltip name="ТаблицаГруппыСписокОчков3РасширеннаяПодсказка" id="312"/>
+								</InputField>
+							</ChildItems>
+						</ColumnGroup>
+						<ColumnGroup name="ТаблицаГруппыГруппа4" id="203">
+							<Visible>false</Visible>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>4</v8:content>
+								</v8:item>
+							</Title>
+							<Width>4</Width>
+							<HorizontalStretch>true</HorizontalStretch>
+							<ShowInHeader>true</ShowInHeader>
+							<HeaderHorizontalAlign>Center</HeaderHorizontalAlign>
+							<ExtendedTooltip name="ТаблицаГруппыГруппа4РасширеннаяПодсказка" id="313"/>
+							<ChildItems>
+								<InputField name="ТаблицаГруппыКолонкаИгры4" id="126">
+									<DataPath>ТаблицаГруппы.КолонкаИгры4</DataPath>
+									<ReadOnly>true</ReadOnly>
+									<HorizontalAlign>Center</HorizontalAlign>
+									<EditMode>EnterOnInput</EditMode>
+									<ShowInHeader>false</ShowInHeader>
+									<Width>4</Width>
+									<HorizontalStretch>true</HorizontalStretch>
+									<ContextMenu name="ТаблицаГруппыКолонкаИгры4КонтекстноеМеню" id="127"/>
+									<ExtendedTooltip name="ТаблицаГруппыКолонкаИгры4РасширеннаяПодсказка" id="314"/>
+								</InputField>
+								<InputField name="ТаблицаГруппыСписокОчков4" id="128">
+									<DataPath>ТаблицаГруппы.СписокОчков4</DataPath>
+									<ReadOnly>true</ReadOnly>
+									<HorizontalAlign>Center</HorizontalAlign>
+									<EditMode>EnterOnInput</EditMode>
+									<ShowInHeader>false</ShowInHeader>
+									<Width>4</Width>
+									<HorizontalStretch>true</HorizontalStretch>
+									<ContextMenu name="ТаблицаГруппыСписокОчков4КонтекстноеМеню" id="129"/>
+									<ExtendedTooltip name="ТаблицаГруппыСписокОчков4РасширеннаяПодсказка" id="315"/>
+								</InputField>
+							</ChildItems>
+						</ColumnGroup>
+						<ColumnGroup name="ТаблицаГруппыГруппа5" id="204">
+							<Visible>false</Visible>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>5</v8:content>
+								</v8:item>
+							</Title>
+							<Width>4</Width>
+							<HorizontalStretch>true</HorizontalStretch>
+							<ShowInHeader>true</ShowInHeader>
+							<HeaderHorizontalAlign>Center</HeaderHorizontalAlign>
+							<ExtendedTooltip name="ТаблицаГруппыГруппа5РасширеннаяПодсказка" id="316"/>
+							<ChildItems>
+								<InputField name="ТаблицаГруппыКолонкаИгры5" id="132">
+									<DataPath>ТаблицаГруппы.КолонкаИгры5</DataPath>
+									<ReadOnly>true</ReadOnly>
+									<HorizontalAlign>Center</HorizontalAlign>
+									<EditMode>EnterOnInput</EditMode>
+									<ShowInHeader>false</ShowInHeader>
+									<Width>4</Width>
+									<HorizontalStretch>true</HorizontalStretch>
+									<ContextMenu name="ТаблицаГруппыКолонкаИгры5КонтекстноеМеню" id="133"/>
+									<ExtendedTooltip name="ТаблицаГруппыКолонкаИгры5РасширеннаяПодсказка" id="317"/>
+								</InputField>
+								<InputField name="ТаблицаГруппыСписокОчков5" id="134">
+									<DataPath>ТаблицаГруппы.СписокОчков5</DataPath>
+									<ReadOnly>true</ReadOnly>
+									<HorizontalAlign>Center</HorizontalAlign>
+									<EditMode>EnterOnInput</EditMode>
+									<ShowInHeader>false</ShowInHeader>
+									<Width>4</Width>
+									<HorizontalStretch>true</HorizontalStretch>
+									<ContextMenu name="ТаблицаГруппыСписокОчков5КонтекстноеМеню" id="135"/>
+									<ExtendedTooltip name="ТаблицаГруппыСписокОчков5РасширеннаяПодсказка" id="318"/>
+								</InputField>
+							</ChildItems>
+						</ColumnGroup>
+						<ColumnGroup name="ТаблицаГруппыГруппа6" id="205">
+							<Visible>false</Visible>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>6</v8:content>
+								</v8:item>
+							</Title>
+							<Width>4</Width>
+							<HorizontalStretch>true</HorizontalStretch>
+							<ShowInHeader>true</ShowInHeader>
+							<HeaderHorizontalAlign>Center</HeaderHorizontalAlign>
+							<ExtendedTooltip name="ТаблицаГруппыГруппа6РасширеннаяПодсказка" id="319"/>
+							<ChildItems>
+								<InputField name="ТаблицаГруппыКолонкаИгры6" id="138">
+									<DataPath>ТаблицаГруппы.КолонкаИгры6</DataPath>
+									<ReadOnly>true</ReadOnly>
+									<HorizontalAlign>Center</HorizontalAlign>
+									<EditMode>EnterOnInput</EditMode>
+									<ShowInHeader>false</ShowInHeader>
+									<Width>4</Width>
+									<HorizontalStretch>true</HorizontalStretch>
+									<ContextMenu name="ТаблицаГруппыКолонкаИгры6КонтекстноеМеню" id="139"/>
+									<ExtendedTooltip name="ТаблицаГруппыКолонкаИгры6РасширеннаяПодсказка" id="320"/>
+								</InputField>
+								<InputField name="ТаблицаГруппыСписокОчков6" id="140">
+									<DataPath>ТаблицаГруппы.СписокОчков6</DataPath>
+									<ReadOnly>true</ReadOnly>
+									<HorizontalAlign>Center</HorizontalAlign>
+									<EditMode>EnterOnInput</EditMode>
+									<ShowInHeader>false</ShowInHeader>
+									<Width>4</Width>
+									<HorizontalStretch>true</HorizontalStretch>
+									<ContextMenu name="ТаблицаГруппыСписокОчков6КонтекстноеМеню" id="141"/>
+									<ExtendedTooltip name="ТаблицаГруппыСписокОчков6РасширеннаяПодсказка" id="321"/>
+								</InputField>
+							</ChildItems>
+						</ColumnGroup>
+						<ColumnGroup name="ТаблицаГруппыГруппа7" id="206">
+							<Visible>false</Visible>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>7</v8:content>
+								</v8:item>
+							</Title>
+							<Width>4</Width>
+							<HorizontalStretch>true</HorizontalStretch>
+							<ShowInHeader>true</ShowInHeader>
+							<HeaderHorizontalAlign>Center</HeaderHorizontalAlign>
+							<ExtendedTooltip name="ТаблицаГруппыГруппа7РасширеннаяПодсказка" id="322"/>
+							<ChildItems>
+								<InputField name="ТаблицаГруппыКолонкаИгры7" id="144">
+									<DataPath>ТаблицаГруппы.КолонкаИгры7</DataPath>
+									<ReadOnly>true</ReadOnly>
+									<HorizontalAlign>Center</HorizontalAlign>
+									<EditMode>EnterOnInput</EditMode>
+									<ShowInHeader>false</ShowInHeader>
+									<Width>4</Width>
+									<HorizontalStretch>true</HorizontalStretch>
+									<ContextMenu name="ТаблицаГруппыКолонкаИгры7КонтекстноеМеню" id="145"/>
+									<ExtendedTooltip name="ТаблицаГруппыКолонкаИгры7РасширеннаяПодсказка" id="323"/>
+								</InputField>
+								<InputField name="ТаблицаГруппыСписокОчков7" id="146">
+									<DataPath>ТаблицаГруппы.СписокОчков7</DataPath>
+									<ReadOnly>true</ReadOnly>
+									<HorizontalAlign>Center</HorizontalAlign>
+									<EditMode>EnterOnInput</EditMode>
+									<ShowInHeader>false</ShowInHeader>
+									<Width>4</Width>
+									<HorizontalStretch>true</HorizontalStretch>
+									<ContextMenu name="ТаблицаГруппыСписокОчков7КонтекстноеМеню" id="147"/>
+									<ExtendedTooltip name="ТаблицаГруппыСписокОчков7РасширеннаяПодсказка" id="324"/>
+								</InputField>
+							</ChildItems>
+						</ColumnGroup>
+						<ColumnGroup name="ТаблицаГруппыГруппа8" id="207">
+							<Visible>false</Visible>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>8</v8:content>
+								</v8:item>
+							</Title>
+							<Width>4</Width>
+							<HorizontalStretch>true</HorizontalStretch>
+							<ShowInHeader>true</ShowInHeader>
+							<HeaderHorizontalAlign>Center</HeaderHorizontalAlign>
+							<ExtendedTooltip name="ТаблицаГруппыГруппа8РасширеннаяПодсказка" id="325"/>
+							<ChildItems>
+								<InputField name="ТаблицаГруппыКолонкаИгры8" id="150">
+									<DataPath>ТаблицаГруппы.КолонкаИгры8</DataPath>
+									<ReadOnly>true</ReadOnly>
+									<HorizontalAlign>Center</HorizontalAlign>
+									<EditMode>EnterOnInput</EditMode>
+									<ShowInHeader>false</ShowInHeader>
+									<Width>4</Width>
+									<HorizontalStretch>true</HorizontalStretch>
+									<ContextMenu name="ТаблицаГруппыКолонкаИгры8КонтекстноеМеню" id="151"/>
+									<ExtendedTooltip name="ТаблицаГруппыКолонкаИгры8РасширеннаяПодсказка" id="326"/>
+								</InputField>
+								<InputField name="ТаблицаГруппыСписокОчков8" id="152">
+									<DataPath>ТаблицаГруппы.СписокОчков8</DataPath>
+									<ReadOnly>true</ReadOnly>
+									<HorizontalAlign>Center</HorizontalAlign>
+									<EditMode>EnterOnInput</EditMode>
+									<ShowInHeader>false</ShowInHeader>
+									<Width>4</Width>
+									<HorizontalStretch>true</HorizontalStretch>
+									<ContextMenu name="ТаблицаГруппыСписокОчков8КонтекстноеМеню" id="153"/>
+									<ExtendedTooltip name="ТаблицаГруппыСписокОчков8РасширеннаяПодсказка" id="327"/>
+								</InputField>
+							</ChildItems>
+						</ColumnGroup>
+						<ColumnGroup name="ТаблицаГруппыГруппа9" id="208">
+							<Visible>false</Visible>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>9</v8:content>
+								</v8:item>
+							</Title>
+							<Width>4</Width>
+							<HorizontalStretch>true</HorizontalStretch>
+							<ShowInHeader>true</ShowInHeader>
+							<HeaderHorizontalAlign>Center</HeaderHorizontalAlign>
+							<ExtendedTooltip name="ТаблицаГруппыГруппа9РасширеннаяПодсказка" id="328"/>
+							<ChildItems>
+								<InputField name="ТаблицаГруппыКолонкаИгры9" id="156">
+									<DataPath>ТаблицаГруппы.КолонкаИгры9</DataPath>
+									<ReadOnly>true</ReadOnly>
+									<HorizontalAlign>Center</HorizontalAlign>
+									<EditMode>EnterOnInput</EditMode>
+									<ShowInHeader>false</ShowInHeader>
+									<Width>4</Width>
+									<HorizontalStretch>true</HorizontalStretch>
+									<ContextMenu name="ТаблицаГруппыКолонкаИгры9КонтекстноеМеню" id="157"/>
+									<ExtendedTooltip name="ТаблицаГруппыКолонкаИгры9РасширеннаяПодсказка" id="329"/>
+								</InputField>
+								<InputField name="ТаблицаГруппыСписокОчков9" id="158">
+									<DataPath>ТаблицаГруппы.СписокОчков9</DataPath>
+									<ReadOnly>true</ReadOnly>
+									<HorizontalAlign>Center</HorizontalAlign>
+									<EditMode>EnterOnInput</EditMode>
+									<ShowInHeader>false</ShowInHeader>
+									<Width>4</Width>
+									<HorizontalStretch>true</HorizontalStretch>
+									<ContextMenu name="ТаблицаГруппыСписокОчков9КонтекстноеМеню" id="159"/>
+									<ExtendedTooltip name="ТаблицаГруппыСписокОчков9РасширеннаяПодсказка" id="330"/>
+								</InputField>
+							</ChildItems>
+						</ColumnGroup>
+						<ColumnGroup name="ТаблицаГруппыГруппа10" id="209">
+							<Visible>false</Visible>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>10</v8:content>
+								</v8:item>
+							</Title>
+							<Width>4</Width>
+							<HorizontalStretch>true</HorizontalStretch>
+							<ShowInHeader>true</ShowInHeader>
+							<HeaderHorizontalAlign>Center</HeaderHorizontalAlign>
+							<ExtendedTooltip name="ТаблицаГруппыГруппа10РасширеннаяПодсказка" id="331"/>
+							<ChildItems>
+								<InputField name="ТаблицаГруппыКолонкаИгры10" id="162">
+									<DataPath>ТаблицаГруппы.КолонкаИгры10</DataPath>
+									<ReadOnly>true</ReadOnly>
+									<HorizontalAlign>Center</HorizontalAlign>
+									<EditMode>EnterOnInput</EditMode>
+									<ShowInHeader>false</ShowInHeader>
+									<Width>4</Width>
+									<HorizontalStretch>true</HorizontalStretch>
+									<ContextMenu name="ТаблицаГруппыКолонкаИгры10КонтекстноеМеню" id="163"/>
+									<ExtendedTooltip name="ТаблицаГруппыКолонкаИгры10РасширеннаяПодсказка" id="332"/>
+								</InputField>
+								<InputField name="ТаблицаГруппыСписокОчков10" id="164">
+									<DataPath>ТаблицаГруппы.СписокОчков10</DataPath>
+									<ReadOnly>true</ReadOnly>
+									<HorizontalAlign>Center</HorizontalAlign>
+									<EditMode>EnterOnInput</EditMode>
+									<ShowInHeader>false</ShowInHeader>
+									<Width>4</Width>
+									<HorizontalStretch>true</HorizontalStretch>
+									<ContextMenu name="ТаблицаГруппыСписокОчков10КонтекстноеМеню" id="165"/>
+									<ExtendedTooltip name="ТаблицаГруппыСписокОчков10РасширеннаяПодсказка" id="333"/>
+								</InputField>
+							</ChildItems>
+						</ColumnGroup>
+						<ColumnGroup name="ТаблицаГруппыГруппа11" id="210">
+							<Visible>false</Visible>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>11</v8:content>
+								</v8:item>
+							</Title>
+							<Width>4</Width>
+							<HorizontalStretch>true</HorizontalStretch>
+							<ShowInHeader>true</ShowInHeader>
+							<HeaderHorizontalAlign>Center</HeaderHorizontalAlign>
+							<ExtendedTooltip name="ТаблицаГруппыГруппа11РасширеннаяПодсказка" id="334"/>
+							<ChildItems>
+								<InputField name="ТаблицаГруппыКолонкаИгры11" id="168">
+									<DataPath>ТаблицаГруппы.КолонкаИгры11</DataPath>
+									<ReadOnly>true</ReadOnly>
+									<HorizontalAlign>Center</HorizontalAlign>
+									<EditMode>EnterOnInput</EditMode>
+									<ShowInHeader>false</ShowInHeader>
+									<Width>4</Width>
+									<HorizontalStretch>true</HorizontalStretch>
+									<ContextMenu name="ТаблицаГруппыКолонкаИгры11КонтекстноеМеню" id="169"/>
+									<ExtendedTooltip name="ТаблицаГруппыКолонкаИгры11РасширеннаяПодсказка" id="335"/>
+								</InputField>
+								<InputField name="ТаблицаГруппыСписокОчков11" id="170">
+									<DataPath>ТаблицаГруппы.СписокОчков11</DataPath>
+									<ReadOnly>true</ReadOnly>
+									<HorizontalAlign>Center</HorizontalAlign>
+									<EditMode>EnterOnInput</EditMode>
+									<ShowInHeader>false</ShowInHeader>
+									<Width>4</Width>
+									<HorizontalStretch>true</HorizontalStretch>
+									<ContextMenu name="ТаблицаГруппыСписокОчков11КонтекстноеМеню" id="171"/>
+									<ExtendedTooltip name="ТаблицаГруппыСписокОчков11РасширеннаяПодсказка" id="336"/>
+								</InputField>
+							</ChildItems>
+						</ColumnGroup>
+						<ColumnGroup name="ТаблицаГруппыГруппа12" id="211">
+							<Visible>false</Visible>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>12</v8:content>
+								</v8:item>
+							</Title>
+							<Width>4</Width>
+							<HorizontalStretch>true</HorizontalStretch>
+							<ShowInHeader>true</ShowInHeader>
+							<HeaderHorizontalAlign>Center</HeaderHorizontalAlign>
+							<ExtendedTooltip name="ТаблицаГруппыГруппа12РасширеннаяПодсказка" id="337"/>
+							<ChildItems>
+								<InputField name="ТаблицаГруппыКолонкаИгры12" id="174">
+									<DataPath>ТаблицаГруппы.КолонкаИгры12</DataPath>
+									<ReadOnly>true</ReadOnly>
+									<HorizontalAlign>Center</HorizontalAlign>
+									<EditMode>EnterOnInput</EditMode>
+									<ShowInHeader>false</ShowInHeader>
+									<Width>4</Width>
+									<HorizontalStretch>true</HorizontalStretch>
+									<ContextMenu name="ТаблицаГруппыКолонкаИгры12КонтекстноеМеню" id="175"/>
+									<ExtendedTooltip name="ТаблицаГруппыКолонкаИгры12РасширеннаяПодсказка" id="338"/>
+								</InputField>
+								<InputField name="ТаблицаГруппыСписокОчков12" id="176">
+									<DataPath>ТаблицаГруппы.СписокОчков12</DataPath>
+									<ReadOnly>true</ReadOnly>
+									<HorizontalAlign>Center</HorizontalAlign>
+									<EditMode>EnterOnInput</EditMode>
+									<ShowInHeader>false</ShowInHeader>
+									<Width>4</Width>
+									<HorizontalStretch>true</HorizontalStretch>
+									<ContextMenu name="ТаблицаГруппыСписокОчков12КонтекстноеМеню" id="177"/>
+									<ExtendedTooltip name="ТаблицаГруппыСписокОчков12РасширеннаяПодсказка" id="339"/>
+								</InputField>
+							</ChildItems>
+						</ColumnGroup>
+						<ColumnGroup name="ТаблицаГруппыГруппа13" id="212">
+							<Visible>false</Visible>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>13</v8:content>
+								</v8:item>
+							</Title>
+							<Width>4</Width>
+							<HorizontalStretch>true</HorizontalStretch>
+							<ShowInHeader>true</ShowInHeader>
+							<HeaderHorizontalAlign>Center</HeaderHorizontalAlign>
+							<ExtendedTooltip name="ТаблицаГруппыГруппа13РасширеннаяПодсказка" id="340"/>
+							<ChildItems>
+								<InputField name="ТаблицаГруппыКолонкаИгры13" id="180">
+									<DataPath>ТаблицаГруппы.КолонкаИгры13</DataPath>
+									<ReadOnly>true</ReadOnly>
+									<HorizontalAlign>Center</HorizontalAlign>
+									<EditMode>EnterOnInput</EditMode>
+									<ShowInHeader>false</ShowInHeader>
+									<Width>4</Width>
+									<HorizontalStretch>true</HorizontalStretch>
+									<ContextMenu name="ТаблицаГруппыКолонкаИгры13КонтекстноеМеню" id="181"/>
+									<ExtendedTooltip name="ТаблицаГруппыКолонкаИгры13РасширеннаяПодсказка" id="341"/>
+								</InputField>
+								<InputField name="ТаблицаГруппыСписокОчков13" id="182">
+									<DataPath>ТаблицаГруппы.СписокОчков13</DataPath>
+									<ReadOnly>true</ReadOnly>
+									<HorizontalAlign>Center</HorizontalAlign>
+									<EditMode>EnterOnInput</EditMode>
+									<ShowInHeader>false</ShowInHeader>
+									<Width>4</Width>
+									<HorizontalStretch>true</HorizontalStretch>
+									<ContextMenu name="ТаблицаГруппыСписокОчков13КонтекстноеМеню" id="183"/>
+									<ExtendedTooltip name="ТаблицаГруппыСписокОчков13РасширеннаяПодсказка" id="342"/>
+								</InputField>
+							</ChildItems>
+						</ColumnGroup>
+						<ColumnGroup name="ТаблицаГруппыГруппа14" id="213">
+							<Visible>false</Visible>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>14</v8:content>
+								</v8:item>
+							</Title>
+							<Width>4</Width>
+							<HorizontalStretch>true</HorizontalStretch>
+							<ShowInHeader>true</ShowInHeader>
+							<HeaderHorizontalAlign>Center</HeaderHorizontalAlign>
+							<ExtendedTooltip name="ТаблицаГруппыГруппа14РасширеннаяПодсказка" id="343"/>
+							<ChildItems>
+								<InputField name="ТаблицаГруппыКолонкаИгры14" id="186">
+									<DataPath>ТаблицаГруппы.КолонкаИгры14</DataPath>
+									<ReadOnly>true</ReadOnly>
+									<HorizontalAlign>Center</HorizontalAlign>
+									<EditMode>EnterOnInput</EditMode>
+									<ShowInHeader>false</ShowInHeader>
+									<Width>4</Width>
+									<HorizontalStretch>true</HorizontalStretch>
+									<ContextMenu name="ТаблицаГруппыКолонкаИгры14КонтекстноеМеню" id="187"/>
+									<ExtendedTooltip name="ТаблицаГруппыКолонкаИгры14РасширеннаяПодсказка" id="344"/>
+								</InputField>
+								<InputField name="ТаблицаГруппыСписокОчков14" id="188">
+									<DataPath>ТаблицаГруппы.СписокОчков14</DataPath>
+									<ReadOnly>true</ReadOnly>
+									<HorizontalAlign>Center</HorizontalAlign>
+									<EditMode>EnterOnInput</EditMode>
+									<ShowInHeader>false</ShowInHeader>
+									<Width>4</Width>
+									<HorizontalStretch>true</HorizontalStretch>
+									<ContextMenu name="ТаблицаГруппыСписокОчков14КонтекстноеМеню" id="189"/>
+									<ExtendedTooltip name="ТаблицаГруппыСписокОчков14РасширеннаяПодсказка" id="345"/>
+								</InputField>
+							</ChildItems>
+						</ColumnGroup>
+						<ColumnGroup name="ТаблицаГруппыГруппа15" id="214">
+							<Visible>false</Visible>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>15</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Таблица группы группа15</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Width>4</Width>
+							<HorizontalStretch>true</HorizontalStretch>
+							<ShowInHeader>true</ShowInHeader>
+							<HeaderHorizontalAlign>Center</HeaderHorizontalAlign>
+							<ExtendedTooltip name="ТаблицаГруппыГруппа15РасширеннаяПодсказка" id="346"/>
+							<ChildItems>
+								<InputField name="ТаблицаГруппыКолонкаИгры15" id="192">
+									<DataPath>ТаблицаГруппы.КолонкаИгры15</DataPath>
+									<ReadOnly>true</ReadOnly>
+									<HorizontalAlign>Center</HorizontalAlign>
+									<EditMode>EnterOnInput</EditMode>
+									<ShowInHeader>false</ShowInHeader>
+									<Width>4</Width>
+									<HorizontalStretch>true</HorizontalStretch>
+									<ContextMenu name="ТаблицаГруппыКолонкаИгры15КонтекстноеМеню" id="193"/>
+									<ExtendedTooltip name="ТаблицаГруппыКолонкаИгры15РасширеннаяПодсказка" id="347"/>
+								</InputField>
+								<InputField name="ТаблицаГруппыСписокОчков15" id="194">
+									<DataPath>ТаблицаГруппы.СписокОчков15</DataPath>
+									<ReadOnly>true</ReadOnly>
+									<HorizontalAlign>Center</HorizontalAlign>
+									<EditMode>EnterOnInput</EditMode>
+									<ShowInHeader>false</ShowInHeader>
+									<Width>4</Width>
+									<HorizontalStretch>true</HorizontalStretch>
+									<ContextMenu name="ТаблицаГруппыСписокОчков15КонтекстноеМеню" id="195"/>
+									<ExtendedTooltip name="ТаблицаГруппыСписокОчков15РасширеннаяПодсказка" id="348"/>
+								</InputField>
+							</ChildItems>
+						</ColumnGroup>
+						<ColumnGroup name="ТаблицаГруппыГруппа16" id="353">
+							<Visible>false</Visible>
+							<Width>4</Width>
+							<HorizontalStretch>true</HorizontalStretch>
+							<ShowInHeader>true</ShowInHeader>
+							<HeaderHorizontalAlign>Center</HeaderHorizontalAlign>
+							<ExtendedTooltip name="ТаблицаГруппыГруппа16РасширеннаяПодсказка" id="354"/>
+							<ChildItems>
+								<InputField name="ТаблицаГруппыКолонкаИгры16" id="373">
+									<DataPath>ТаблицаГруппы.КолонкаИгры16</DataPath>
+									<ReadOnly>true</ReadOnly>
+									<EditMode>EnterOnInput</EditMode>
+									<Width>4</Width>
+									<HorizontalStretch>true</HorizontalStretch>
+									<ContextMenu name="ТаблицаГруппыКолонкаИгры16КонтекстноеМеню" id="374"/>
+									<ExtendedTooltip name="ТаблицаГруппыКолонкаИгры16РасширеннаяПодсказка" id="375"/>
+								</InputField>
+								<InputField name="ТаблицаГруппыСписокОчков16" id="376">
+									<DataPath>ТаблицаГруппы.СписокОчков16</DataPath>
+									<ReadOnly>true</ReadOnly>
+									<EditMode>EnterOnInput</EditMode>
+									<Width>4</Width>
+									<HorizontalStretch>true</HorizontalStretch>
+									<ContextMenu name="ТаблицаГруппыСписокОчков16КонтекстноеМеню" id="377"/>
+									<ExtendedTooltip name="ТаблицаГруппыСписокОчков16РасширеннаяПодсказка" id="378"/>
+								</InputField>
+							</ChildItems>
+						</ColumnGroup>
+						<ColumnGroup name="ТаблицаГруппыГруппа17" id="355">
+							<Visible>false</Visible>
+							<Width>4</Width>
+							<HorizontalStretch>true</HorizontalStretch>
+							<ShowInHeader>true</ShowInHeader>
+							<HeaderHorizontalAlign>Center</HeaderHorizontalAlign>
+							<ExtendedTooltip name="ТаблицаГруппыГруппа17РасширеннаяПодсказка" id="356"/>
+							<ChildItems>
+								<InputField name="ТаблицаГруппыКолонкаИгры17" id="379">
+									<DataPath>ТаблицаГруппы.КолонкаИгры17</DataPath>
+									<ReadOnly>true</ReadOnly>
+									<EditMode>EnterOnInput</EditMode>
+									<Width>4</Width>
+									<HorizontalStretch>true</HorizontalStretch>
+									<ContextMenu name="ТаблицаГруппыКолонкаИгры17КонтекстноеМеню" id="380"/>
+									<ExtendedTooltip name="ТаблицаГруппыКолонкаИгры17РасширеннаяПодсказка" id="381"/>
+								</InputField>
+								<InputField name="ТаблицаГруппыСписокОчков17" id="382">
+									<DataPath>ТаблицаГруппы.СписокОчков17</DataPath>
+									<ReadOnly>true</ReadOnly>
+									<EditMode>EnterOnInput</EditMode>
+									<Width>4</Width>
+									<HorizontalStretch>true</HorizontalStretch>
+									<ContextMenu name="ТаблицаГруппыСписокОчков17КонтекстноеМеню" id="383"/>
+									<ExtendedTooltip name="ТаблицаГруппыСписокОчков17РасширеннаяПодсказка" id="384"/>
+								</InputField>
+							</ChildItems>
+						</ColumnGroup>
+						<ColumnGroup name="ТаблицаГруппыГруппа18" id="357">
+							<Visible>false</Visible>
+							<Width>4</Width>
+							<HorizontalStretch>true</HorizontalStretch>
+							<ShowInHeader>true</ShowInHeader>
+							<HeaderHorizontalAlign>Center</HeaderHorizontalAlign>
+							<ExtendedTooltip name="ТаблицаГруппыГруппа18РасширеннаяПодсказка" id="358"/>
+							<ChildItems>
+								<InputField name="ТаблицаГруппыКолонкаИгры18" id="385">
+									<DataPath>ТаблицаГруппы.КолонкаИгры18</DataPath>
+									<ReadOnly>true</ReadOnly>
+									<EditMode>EnterOnInput</EditMode>
+									<Width>4</Width>
+									<HorizontalStretch>true</HorizontalStretch>
+									<ContextMenu name="ТаблицаГруппыКолонкаИгры18КонтекстноеМеню" id="386"/>
+									<ExtendedTooltip name="ТаблицаГруппыКолонкаИгры18РасширеннаяПодсказка" id="387"/>
+								</InputField>
+								<InputField name="ТаблицаГруппыСписокОчков18" id="388">
+									<DataPath>ТаблицаГруппы.СписокОчков18</DataPath>
+									<ReadOnly>true</ReadOnly>
+									<EditMode>EnterOnInput</EditMode>
+									<Width>4</Width>
+									<HorizontalStretch>true</HorizontalStretch>
+									<ContextMenu name="ТаблицаГруппыСписокОчков18КонтекстноеМеню" id="389"/>
+									<ExtendedTooltip name="ТаблицаГруппыСписокОчков18РасширеннаяПодсказка" id="390"/>
+								</InputField>
+							</ChildItems>
+						</ColumnGroup>
+						<ColumnGroup name="ТаблицаГруппыГруппа19" id="359">
+							<Visible>false</Visible>
+							<Width>4</Width>
+							<HorizontalStretch>true</HorizontalStretch>
+							<ShowInHeader>true</ShowInHeader>
+							<HeaderHorizontalAlign>Center</HeaderHorizontalAlign>
+							<ExtendedTooltip name="ТаблицаГруппыГруппа19РасширеннаяПодсказка" id="360"/>
+							<ChildItems>
+								<InputField name="ТаблицаГруппыКолонкаИгры19" id="391">
+									<DataPath>ТаблицаГруппы.КолонкаИгры19</DataPath>
+									<ReadOnly>true</ReadOnly>
+									<EditMode>EnterOnInput</EditMode>
+									<Width>4</Width>
+									<HorizontalStretch>true</HorizontalStretch>
+									<ContextMenu name="ТаблицаГруппыКолонкаИгры19КонтекстноеМеню" id="392"/>
+									<ExtendedTooltip name="ТаблицаГруппыКолонкаИгры19РасширеннаяПодсказка" id="393"/>
+								</InputField>
+								<InputField name="ТаблицаГруппыСписокОчков19" id="394">
+									<DataPath>ТаблицаГруппы.СписокОчков19</DataPath>
+									<ReadOnly>true</ReadOnly>
+									<EditMode>EnterOnInput</EditMode>
+									<Width>4</Width>
+									<HorizontalStretch>true</HorizontalStretch>
+									<ContextMenu name="ТаблицаГруппыСписокОчков19КонтекстноеМеню" id="395"/>
+									<ExtendedTooltip name="ТаблицаГруппыСписокОчков19РасширеннаяПодсказка" id="396"/>
+								</InputField>
+							</ChildItems>
+						</ColumnGroup>
+						<ColumnGroup name="ТаблицаГруппыГруппа20" id="361">
+							<Visible>false</Visible>
+							<Width>4</Width>
+							<HorizontalStretch>true</HorizontalStretch>
+							<ShowInHeader>true</ShowInHeader>
+							<HeaderHorizontalAlign>Center</HeaderHorizontalAlign>
+							<ExtendedTooltip name="ТаблицаГруппыГруппа20РасширеннаяПодсказка" id="362"/>
+							<ChildItems>
+								<InputField name="ТаблицаГруппыКолонкаИгры20" id="400">
+									<DataPath>ТаблицаГруппы.КолонкаИгры20</DataPath>
+									<ReadOnly>true</ReadOnly>
+									<EditMode>EnterOnInput</EditMode>
+									<Width>4</Width>
+									<HorizontalStretch>true</HorizontalStretch>
+									<ContextMenu name="ТаблицаГруппыКолонкаИгры20КонтекстноеМеню" id="401"/>
+									<ExtendedTooltip name="ТаблицаГруппыКолонкаИгры20РасширеннаяПодсказка" id="402"/>
+								</InputField>
+								<InputField name="ТаблицаГруппыСписокОчков20" id="397">
+									<DataPath>ТаблицаГруппы.СписокОчков20</DataPath>
+									<ReadOnly>true</ReadOnly>
+									<EditMode>EnterOnInput</EditMode>
+									<Width>4</Width>
+									<HorizontalStretch>true</HorizontalStretch>
+									<ContextMenu name="ТаблицаГруппыСписокОчков20КонтекстноеМеню" id="398"/>
+									<ExtendedTooltip name="ТаблицаГруппыСписокОчков20РасширеннаяПодсказка" id="399"/>
+								</InputField>
+							</ChildItems>
+						</ColumnGroup>
+						<ColumnGroup name="ТаблицаГруппыГруппа21" id="363">
+							<Visible>false</Visible>
+							<Width>4</Width>
+							<HorizontalStretch>true</HorizontalStretch>
+							<ShowInHeader>true</ShowInHeader>
+							<HeaderHorizontalAlign>Center</HeaderHorizontalAlign>
+							<ExtendedTooltip name="ТаблицаГруппыГруппа21РасширеннаяПодсказка" id="364"/>
+							<ChildItems>
+								<InputField name="ТаблицаГруппыКолонкаИгры21" id="406">
+									<DataPath>ТаблицаГруппы.КолонкаИгры21</DataPath>
+									<ReadOnly>true</ReadOnly>
+									<EditMode>EnterOnInput</EditMode>
+									<Width>4</Width>
+									<HorizontalStretch>true</HorizontalStretch>
+									<ContextMenu name="ТаблицаГруппыКолонкаИгры21КонтекстноеМеню" id="407"/>
+									<ExtendedTooltip name="ТаблицаГруппыКолонкаИгры21РасширеннаяПодсказка" id="408"/>
+								</InputField>
+								<InputField name="ТаблицаГруппыСписокОчков21" id="403">
+									<DataPath>ТаблицаГруппы.СписокОчков21</DataPath>
+									<ReadOnly>true</ReadOnly>
+									<EditMode>EnterOnInput</EditMode>
+									<Width>4</Width>
+									<HorizontalStretch>true</HorizontalStretch>
+									<ContextMenu name="ТаблицаГруппыСписокОчков21КонтекстноеМеню" id="404"/>
+									<ExtendedTooltip name="ТаблицаГруппыСписокОчков21РасширеннаяПодсказка" id="405"/>
+								</InputField>
+							</ChildItems>
+						</ColumnGroup>
+						<ColumnGroup name="ТаблицаГруппыГруппа22" id="365">
+							<Visible>false</Visible>
+							<Width>4</Width>
+							<HorizontalStretch>true</HorizontalStretch>
+							<ShowInHeader>true</ShowInHeader>
+							<HeaderHorizontalAlign>Center</HeaderHorizontalAlign>
+							<ExtendedTooltip name="ТаблицаГруппыГруппа22РасширеннаяПодсказка" id="366"/>
+							<ChildItems>
+								<InputField name="ТаблицаГруппыКолонкаИгры22" id="409">
+									<DataPath>ТаблицаГруппы.КолонкаИгры22</DataPath>
+									<ReadOnly>true</ReadOnly>
+									<EditMode>EnterOnInput</EditMode>
+									<Width>4</Width>
+									<HorizontalStretch>true</HorizontalStretch>
+									<ContextMenu name="ТаблицаГруппыКолонкаИгры22КонтекстноеМеню" id="410"/>
+									<ExtendedTooltip name="ТаблицаГруппыКолонкаИгры22РасширеннаяПодсказка" id="411"/>
+								</InputField>
+								<InputField name="ТаблицаГруппыСписокОчков22" id="412">
+									<DataPath>ТаблицаГруппы.СписокОчков22</DataPath>
+									<ReadOnly>true</ReadOnly>
+									<EditMode>EnterOnInput</EditMode>
+									<Width>4</Width>
+									<HorizontalStretch>true</HorizontalStretch>
+									<ContextMenu name="ТаблицаГруппыСписокОчков22КонтекстноеМеню" id="413"/>
+									<ExtendedTooltip name="ТаблицаГруппыСписокОчков22РасширеннаяПодсказка" id="414"/>
+								</InputField>
+							</ChildItems>
+						</ColumnGroup>
+						<ColumnGroup name="ТаблицаГруппыГруппа23" id="367">
+							<Visible>false</Visible>
+							<Width>4</Width>
+							<HorizontalStretch>true</HorizontalStretch>
+							<ShowInHeader>true</ShowInHeader>
+							<HeaderHorizontalAlign>Center</HeaderHorizontalAlign>
+							<ExtendedTooltip name="ТаблицаГруппыГруппа23РасширеннаяПодсказка" id="368"/>
+							<ChildItems>
+								<InputField name="ТаблицаГруппыКолонкаИгры23" id="415">
+									<DataPath>ТаблицаГруппы.КолонкаИгры23</DataPath>
+									<ReadOnly>true</ReadOnly>
+									<EditMode>EnterOnInput</EditMode>
+									<Width>4</Width>
+									<HorizontalStretch>true</HorizontalStretch>
+									<ContextMenu name="ТаблицаГруппыКолонкаИгры23КонтекстноеМеню" id="416"/>
+									<ExtendedTooltip name="ТаблицаГруппыКолонкаИгры23РасширеннаяПодсказка" id="417"/>
+								</InputField>
+								<InputField name="ТаблицаГруппыСписокОчков23" id="418">
+									<DataPath>ТаблицаГруппы.СписокОчков23</DataPath>
+									<ReadOnly>true</ReadOnly>
+									<EditMode>EnterOnInput</EditMode>
+									<Width>4</Width>
+									<HorizontalStretch>true</HorizontalStretch>
+									<ContextMenu name="ТаблицаГруппыСписокОчков23КонтекстноеМеню" id="419"/>
+									<ExtendedTooltip name="ТаблицаГруппыСписокОчков23РасширеннаяПодсказка" id="420"/>
+								</InputField>
+							</ChildItems>
+						</ColumnGroup>
+						<ColumnGroup name="ТаблицаГруппыГруппа24" id="369">
+							<Visible>false</Visible>
+							<Width>4</Width>
+							<HorizontalStretch>true</HorizontalStretch>
+							<ShowInHeader>true</ShowInHeader>
+							<HeaderHorizontalAlign>Center</HeaderHorizontalAlign>
+							<ExtendedTooltip name="ТаблицаГруппыГруппа24РасширеннаяПодсказка" id="370"/>
+							<ChildItems>
+								<InputField name="ТаблицаГруппыКолонкаИгры24" id="421">
+									<DataPath>ТаблицаГруппы.КолонкаИгры24</DataPath>
+									<ReadOnly>true</ReadOnly>
+									<EditMode>EnterOnInput</EditMode>
+									<Width>4</Width>
+									<HorizontalStretch>true</HorizontalStretch>
+									<ContextMenu name="ТаблицаГруппыКолонкаИгры24КонтекстноеМеню" id="422"/>
+									<ExtendedTooltip name="ТаблицаГруппыКолонкаИгры24РасширеннаяПодсказка" id="423"/>
+								</InputField>
+								<InputField name="ТаблицаГруппыСписокОчков24" id="424">
+									<DataPath>ТаблицаГруппы.СписокОчков24</DataPath>
+									<ReadOnly>true</ReadOnly>
+									<EditMode>EnterOnInput</EditMode>
+									<Width>4</Width>
+									<HorizontalStretch>true</HorizontalStretch>
+									<ContextMenu name="ТаблицаГруппыСписокОчков24КонтекстноеМеню" id="425"/>
+									<ExtendedTooltip name="ТаблицаГруппыСписокОчков24РасширеннаяПодсказка" id="426"/>
+								</InputField>
+							</ChildItems>
+						</ColumnGroup>
+						<ColumnGroup name="ТаблицаГруппыГруппа25" id="371">
+							<Visible>false</Visible>
+							<Width>4</Width>
+							<HorizontalStretch>true</HorizontalStretch>
+							<ShowInHeader>true</ShowInHeader>
+							<HeaderHorizontalAlign>Center</HeaderHorizontalAlign>
+							<ExtendedTooltip name="ТаблицаГруппыГруппа25РасширеннаяПодсказка" id="372"/>
+							<ChildItems>
+								<InputField name="ТаблицаГруппыКолонкаИгры25" id="427">
+									<DataPath>ТаблицаГруппы.КолонкаИгры25</DataPath>
+									<ReadOnly>true</ReadOnly>
+									<EditMode>EnterOnInput</EditMode>
+									<Width>4</Width>
+									<HorizontalStretch>true</HorizontalStretch>
+									<ContextMenu name="ТаблицаГруппыКолонкаИгры25КонтекстноеМеню" id="428"/>
+									<ExtendedTooltip name="ТаблицаГруппыКолонкаИгры25РасширеннаяПодсказка" id="429"/>
+								</InputField>
+								<InputField name="ТаблицаГруппыСписокОчков25" id="430">
+									<DataPath>ТаблицаГруппы.СписокОчков25</DataPath>
+									<ReadOnly>true</ReadOnly>
+									<EditMode>EnterOnInput</EditMode>
+									<Width>4</Width>
+									<HorizontalStretch>true</HorizontalStretch>
+									<ContextMenu name="ТаблицаГруппыСписокОчков25КонтекстноеМеню" id="431"/>
+									<ExtendedTooltip name="ТаблицаГруппыСписокОчков25РасширеннаяПодсказка" id="432"/>
+								</InputField>
+							</ChildItems>
+						</ColumnGroup>
+						<ColumnGroup name="ТаблицаГруппыИтог" id="351">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Таблица группы итог</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Таблица группы итог</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Width>4</Width>
+							<FixingInTable>Right</FixingInTable>
+							<ExtendedTooltip name="ТаблицаГруппыИтогРасширеннаяПодсказка" id="352"/>
+							<ChildItems>
+								<InputField name="ТаблицаГруппыМесто" id="197">
+									<DataPath>ТаблицаГруппы.Место</DataPath>
+									<ReadOnly>true</ReadOnly>
+									<HorizontalAlign>Center</HorizontalAlign>
+									<EditMode>EnterOnInput</EditMode>
+									<HeaderHorizontalAlign>Center</HeaderHorizontalAlign>
+									<Width>4</Width>
+									<HorizontalStretch>true</HorizontalStretch>
+									<ContextMenu name="ТаблицаГруппыМестоКонтекстноеМеню" id="198"/>
+									<ExtendedTooltip name="ТаблицаГруппыМестоРасширеннаяПодсказка" id="350"/>
+								</InputField>
+								<InputField name="ТаблицаГруппыОчки" id="199">
+									<DataPath>ТаблицаГруппы.Очки</DataPath>
+									<ReadOnly>true</ReadOnly>
+									<HorizontalAlign>Center</HorizontalAlign>
+									<EditMode>EnterOnInput</EditMode>
+									<HeaderHorizontalAlign>Center</HeaderHorizontalAlign>
+									<Width>4</Width>
+									<HorizontalStretch>true</HorizontalStretch>
+									<ContextMenu name="ТаблицаГруппыОчкиКонтекстноеМеню" id="200"/>
+									<ExtendedTooltip name="ТаблицаГруппыОчкиРасширеннаяПодсказка" id="349"/>
+								</InputField>
+							</ChildItems>
+						</ColumnGroup>
+					</ChildItems>
+				</Table>
+			</ChildItems>
+		</UsualGroup>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="СсылкаНаСоревнование" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Ссылка на соревнование</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:DocumentObject.ПроведениеСоревнования</v8:Type>
+			</Type>
+			<UseAlways>
+				<Field>СсылкаНаСоревнование.RegisterRecords</Field>
+			</UseAlways>
+			<Columns>
+				<AdditionalColumns table="СсылкаНаСоревнование.СписокУчастников"/>
+				<AdditionalColumns table="СсылкаНаСоревнование.ОбщаяТаблицаДанных"/>
+			</Columns>
+		</Attribute>
+		<Attribute name="ТаблицаОбщихДанных" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Таблица общих данных</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueTable</v8:Type>
+			</Type>
+			<Columns>
+				<Column name="НомерТура" id="1">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Номер тура</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>2</v8:Digits>
+							<v8:FractionDigits>0</v8:FractionDigits>
+							<v8:AllowedSign>Any</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+				</Column>
+				<Column name="НомерГруппы" id="2">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Номер группы</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>2</v8:Digits>
+							<v8:FractionDigits>0</v8:FractionDigits>
+							<v8:AllowedSign>Any</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+				</Column>
+				<Column name="НомерСета" id="3">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Номер сета</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>1</v8:Digits>
+							<v8:FractionDigits>0</v8:FractionDigits>
+							<v8:AllowedSign>Any</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+				</Column>
+				<Column name="Выигравший" id="4">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Выигравший</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>cfg:CatalogRef.Участники</v8:Type>
+					</Type>
+				</Column>
+				<Column name="Проигравший" id="5">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Проигравший</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>cfg:CatalogRef.Участники</v8:Type>
+					</Type>
+				</Column>
+				<Column name="КолШаров" id="6">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Кол шаров</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>2</v8:Digits>
+							<v8:FractionDigits>0</v8:FractionDigits>
+							<v8:AllowedSign>Any</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+				</Column>
+				<Column name="ОчкиВыигравшего" id="7">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Очки выигравшего</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>2</v8:Digits>
+							<v8:FractionDigits>0</v8:FractionDigits>
+							<v8:AllowedSign>Any</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+				</Column>
+				<Column name="ОчкиПроигравшего" id="8">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Очки проигравшего</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>2</v8:Digits>
+							<v8:FractionDigits>0</v8:FractionDigits>
+							<v8:AllowedSign>Any</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+				</Column>
+				<Column name="РежимТура" id="9">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Режим тура</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>cfg:EnumRef.РежимыТуровСоревнования</v8:Type>
+					</Type>
+				</Column>
+				<Column name="ТехническоеВ" id="10">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Техническое В</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:boolean</v8:Type>
+					</Type>
+				</Column>
+				<Column name="ТехническоеП" id="11">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Техническое</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:boolean</v8:Type>
+					</Type>
+				</Column>
+				<Column name="ЗачтеннаяИграГрупповой" id="12">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Зачтенная игра групповой</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:boolean</v8:Type>
+					</Type>
+				</Column>
+			</Columns>
+		</Attribute>
+		<Attribute name="НомерТура" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Номер тура</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:decimal</v8:Type>
+				<v8:NumberQualifiers>
+					<v8:Digits>2</v8:Digits>
+					<v8:FractionDigits>0</v8:FractionDigits>
+					<v8:AllowedSign>Any</v8:AllowedSign>
+				</v8:NumberQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="РежимТура" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Режим тура</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:EnumRef.РежимыТуровСоревнования</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="КолПартий" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Кол партий</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:decimal</v8:Type>
+				<v8:NumberQualifiers>
+					<v8:Digits>1</v8:Digits>
+					<v8:FractionDigits>0</v8:FractionDigits>
+					<v8:AllowedSign>Any</v8:AllowedSign>
+				</v8:NumberQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ТаблицаСыгранныхИгр" id="6">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Таблица сыгранных игр</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueTable</v8:Type>
+			</Type>
+			<Columns>
+				<Column name="НомерГруппы" id="1">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Номер группы</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="Количество" id="2">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Количество</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>10</v8:Digits>
+							<v8:FractionDigits>0</v8:FractionDigits>
+							<v8:AllowedSign>Any</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+				</Column>
+			</Columns>
+		</Attribute>
+		<Attribute name="СписокГрупповыхЭтапов" id="7">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Список групповых этапов</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueListType</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ПереоткрытьФорму" id="8">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Переоткрыть форму</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="СУчетомИгр" id="9">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>С учетом игр</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ВидСоревнований" id="11">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Вид соревнований</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:EnumRef.ВидыСоревнований</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ПоискКоманды" id="12">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Поиск команды</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ВсяТаблицаОбщихДанных" id="13">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Таблица общих данных</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueTable</v8:Type>
+			</Type>
+			<Columns>
+				<Column name="НомерТура" id="1">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Номер тура</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>2</v8:Digits>
+							<v8:FractionDigits>0</v8:FractionDigits>
+							<v8:AllowedSign>Any</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+				</Column>
+				<Column name="Участник1" id="4">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Участник1</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>cfg:CatalogRef.Участники</v8:Type>
+					</Type>
+				</Column>
+				<Column name="Участник2" id="5">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Участник2</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>cfg:CatalogRef.Участники</v8:Type>
+					</Type>
+				</Column>
+				<Column name="ОчкиВыигравшего" id="7">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Очки выигравшего</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>2</v8:Digits>
+							<v8:FractionDigits>0</v8:FractionDigits>
+							<v8:AllowedSign>Any</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+				</Column>
+				<Column name="ОчкиПроигравшего" id="8">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Очки проигравшего</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>2</v8:Digits>
+							<v8:FractionDigits>0</v8:FractionDigits>
+							<v8:AllowedSign>Any</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+				</Column>
+				<Column name="НомерСета" id="2">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Номер сета</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>3</v8:Digits>
+							<v8:FractionDigits>0</v8:FractionDigits>
+							<v8:AllowedSign>Nonnegative</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+				</Column>
+				<Column name="ТехническоеВ" id="3">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Техническое В</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:boolean</v8:Type>
+					</Type>
+				</Column>
+				<Column name="ТехническоеП" id="6">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Техническое</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:boolean</v8:Type>
+					</Type>
+				</Column>
+				<Column name="КолШаров" id="9">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Кол шаров</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>2</v8:Digits>
+							<v8:FractionDigits>0</v8:FractionDigits>
+							<v8:AllowedSign>Any</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+				</Column>
+				<Column name="РежимТура" id="10">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Режим тура</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>cfg:EnumRef.РежимыТуровСоревнования</v8:Type>
+					</Type>
+				</Column>
+				<Column name="НомерГруппы" id="11">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Номер группы</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>5</v8:Digits>
+							<v8:FractionDigits>0</v8:FractionDigits>
+							<v8:AllowedSign>Any</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+				</Column>
+				<Column name="Команда1" id="12">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Команда1</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>150</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="Команда2" id="13">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Команда1</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>150</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="Расстановка1" id="14">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Расстановка1</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>cfg:EnumRef.ВариантыРасстановки</v8:Type>
+					</Type>
+				</Column>
+				<Column name="Расстановка2" id="15">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Расстановка1</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>cfg:EnumRef.ВариантыРасстановки</v8:Type>
+					</Type>
+				</Column>
+			</Columns>
+		</Attribute>
+		<Attribute name="ЖеребьевкаКоманд" id="10">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Жеребьевка команд</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:CatalogRef.ЖеребьевкаКоманд</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="КоличествоПобедВКоманднойИгре" id="14">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Количество побед в командной игре</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:decimal</v8:Type>
+				<v8:NumberQualifiers>
+					<v8:Digits>10</v8:Digits>
+					<v8:FractionDigits>0</v8:FractionDigits>
+					<v8:AllowedSign>Any</v8:AllowedSign>
+				</v8:NumberQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="НаименованиеКоманда1" id="15">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Наименование команда1</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>100</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="НаименованиеКоманда2" id="16">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Наименование команда1</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>100</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="СуммаИтогов1" id="17">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сумма итогов1</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>3</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="СуммаИтогов2" id="18">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сумма итогов2</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>3</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ТаблицаПартий" id="19">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Таблица партий</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueTable</v8:Type>
+			</Type>
+			<Columns>
+				<Column name="Участник1" id="1">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content> </v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>v8:ValueListType</v8:Type>
+						<v8:Type>cfg:CatalogRef.Участники</v8:Type>
+					</Type>
+				</Column>
+				<Column name="Рейтинг" id="2">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Рейтинг</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>15</v8:Digits>
+							<v8:FractionDigits>2</v8:FractionDigits>
+							<v8:AllowedSign>Any</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+				</Column>
+				<Column name="Техническое1" id="3">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Техн.</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:boolean</v8:Type>
+					</Type>
+				</Column>
+				<Column name="Игра1" id="4">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>1</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>3</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="Игра2" id="5">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>2</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>3</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="Игра3" id="6">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>3</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>3</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="Игра4" id="7">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>4</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>3</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="Игра5" id="8">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>5</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>3</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="Игра6" id="9">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>6</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>3</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="Игра7" id="10">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>7</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>3</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="Итог1" id="11">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Итог</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>1</v8:Digits>
+							<v8:FractionDigits>0</v8:FractionDigits>
+							<v8:AllowedSign>Any</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+				</Column>
+				<Column name="Участник2" id="12">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content> </v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>v8:ValueListType</v8:Type>
+						<v8:Type>cfg:CatalogRef.Участники</v8:Type>
+					</Type>
+				</Column>
+				<Column name="Расстановка1" id="13">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Расстановка</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>cfg:EnumRef.ВариантыРасстановки</v8:Type>
+					</Type>
+				</Column>
+				<Column name="Расстановка2" id="14">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Расстановка</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>cfg:EnumRef.ВариантыРасстановки</v8:Type>
+					</Type>
+				</Column>
+				<Column name="Итог2" id="15">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Итог</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>1</v8:Digits>
+							<v8:FractionDigits>0</v8:FractionDigits>
+							<v8:AllowedSign>Any</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+				</Column>
+				<Column name="НомерСтроки" id="16">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Номер строки</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>10</v8:Digits>
+							<v8:FractionDigits>0</v8:FractionDigits>
+							<v8:AllowedSign>Any</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+				</Column>
+				<Column name="ОбщийРезультат1" id="17">
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>10</v8:Digits>
+							<v8:FractionDigits>0</v8:FractionDigits>
+							<v8:AllowedSign>Any</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+				</Column>
+				<Column name="ОбщийРезультат2" id="18">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>ОбщийРезультат2</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>10</v8:Digits>
+							<v8:FractionDigits>0</v8:FractionDigits>
+							<v8:AllowedSign>Any</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+				</Column>
+				<Column name="Техническое2" id="19">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Техн.</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:boolean</v8:Type>
+					</Type>
+				</Column>
+				<Column name="Команда1" id="20">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Команда1</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>150</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="Команда2" id="21">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Команда2</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>150</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+			</Columns>
+		</Attribute>
+		<Attribute name="ЗаголовокДляТаблицы" id="20">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Заголовок для таблицы</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ТаблицаГруппы" id="21">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Таблица группы</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueTable</v8:Type>
+			</Type>
+			<Columns>
+				<Column name="НомерУчастника" id="1">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>№</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>2</v8:Digits>
+							<v8:FractionDigits>0</v8:FractionDigits>
+							<v8:AllowedSign>Any</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+				</Column>
+				<Column name="РейтингУчастника" id="2">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Рейтинг</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>15</v8:Digits>
+							<v8:FractionDigits>2</v8:FractionDigits>
+							<v8:AllowedSign>Any</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+				</Column>
+				<Column name="Участник" id="3">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Команда</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="КолонкаИгры1" id="4">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>1</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>3</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="СписокОчков1" id="5">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Список очков1</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>15</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="ВыделениеКолонки1" id="6">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Выделение колонки1</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:boolean</v8:Type>
+					</Type>
+				</Column>
+				<Column name="КолонкаИгры2" id="7">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>2</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>3</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="СписокОчков2" id="8">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Список очков1</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>15</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="ВыделениеКолонки2" id="9">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Выделение колонки1</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:boolean</v8:Type>
+					</Type>
+				</Column>
+				<Column name="КолонкаИгры3" id="10">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>3</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>3</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="СписокОчков3" id="11">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Список очков1</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>15</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="ВыделениеКолонки3" id="12">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Выделение колонки1</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:boolean</v8:Type>
+					</Type>
+				</Column>
+				<Column name="КолонкаИгры4" id="13">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>4</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>3</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="СписокОчков4" id="14">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Список очков1</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>15</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="ВыделениеКолонки4" id="15">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Выделение колонки1</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:boolean</v8:Type>
+					</Type>
+				</Column>
+				<Column name="КолонкаИгры5" id="16">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>5</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>3</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="СписокОчков5" id="17">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Список очков1</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>15</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="ВыделениеКолонки5" id="18">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Выделение колонки1</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:boolean</v8:Type>
+					</Type>
+				</Column>
+				<Column name="КолонкаИгры6" id="19">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>6</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>3</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="СписокОчков6" id="20">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Список очков1</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>15</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="ВыделениеКолонки6" id="21">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Выделение колонки1</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:boolean</v8:Type>
+					</Type>
+				</Column>
+				<Column name="КолонкаИгры7" id="22">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>7</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>3</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="СписокОчков7" id="23">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Список очков1</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>15</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="ВыделениеКолонки7" id="24">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Выделение колонки1</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:boolean</v8:Type>
+					</Type>
+				</Column>
+				<Column name="КолонкаИгры8" id="25">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>8</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>3</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="СписокОчков8" id="26">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Список очков1</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>15</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="ВыделениеКолонки8" id="27">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Выделение колонки1</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:boolean</v8:Type>
+					</Type>
+				</Column>
+				<Column name="КолонкаИгры9" id="28">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>9</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>3</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="СписокОчков9" id="29">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Список очков1</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>15</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="ВыделениеКолонки9" id="30">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Выделение колонки1</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:boolean</v8:Type>
+					</Type>
+				</Column>
+				<Column name="КолонкаИгры10" id="31">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>10</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>3</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="СписокОчков10" id="32">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Список очков1</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>15</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="ВыделениеКолонки10" id="33">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Выделение колонки1</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:boolean</v8:Type>
+					</Type>
+				</Column>
+				<Column name="КолонкаИгры11" id="34">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>11</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>3</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="СписокОчков11" id="35">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Список очков1</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>15</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="ВыделениеКолонки11" id="36">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Выделение колонки1</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:boolean</v8:Type>
+					</Type>
+				</Column>
+				<Column name="КолонкаИгры12" id="37">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>12</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>3</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="СписокОчков12" id="38">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Список очков1</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>15</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="ВыделениеКолонки12" id="39">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Выделение колонки1</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:boolean</v8:Type>
+					</Type>
+				</Column>
+				<Column name="КолонкаИгры13" id="40">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>13</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>3</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="СписокОчков13" id="41">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Список очков1</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>15</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="ВыделениеКолонки13" id="42">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Выделение колонки1</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:boolean</v8:Type>
+					</Type>
+				</Column>
+				<Column name="КолонкаИгры14" id="43">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>14</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>3</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="СписокОчков14" id="44">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Список очков1</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>15</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="ВыделениеКолонки14" id="45">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Выделение колонки1</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:boolean</v8:Type>
+					</Type>
+				</Column>
+				<Column name="КолонкаИгры15" id="46">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>15</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>3</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="СписокОчков15" id="47">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Список очков1</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>15</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="ВыделениеКолонки15" id="48">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Выделение колонки1</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:boolean</v8:Type>
+					</Type>
+				</Column>
+				<Column name="Очки" id="49">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Очки</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>10</v8:Digits>
+							<v8:FractionDigits>0</v8:FractionDigits>
+							<v8:AllowedSign>Any</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+				</Column>
+				<Column name="Место" id="50">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Место</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>10</v8:Digits>
+							<v8:FractionDigits>0</v8:FractionDigits>
+							<v8:AllowedSign>Any</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+				</Column>
+				<Column name="ВыделениеСтроки" id="51">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Выделение строки</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:boolean</v8:Type>
+					</Type>
+				</Column>
+				<Column name="ВыделениеКолонки16" id="52">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Выделение колонки1</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:boolean</v8:Type>
+					</Type>
+				</Column>
+				<Column name="СписокОчков16" id="53">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Список очков1</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>15</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="КолонкаИгры16" id="54">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>15</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>3</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="ВыделениеКолонки17" id="55">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Выделение колонки1</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:boolean</v8:Type>
+					</Type>
+				</Column>
+				<Column name="СписокОчков17" id="56">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Список очков1</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>15</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="КолонкаИгры17" id="57">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>15</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>3</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="ВыделениеКолонки18" id="58">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Выделение колонки1</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:boolean</v8:Type>
+					</Type>
+				</Column>
+				<Column name="СписокОчков18" id="59">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Список очков1</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>15</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="КолонкаИгры18" id="60">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>15</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>3</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="ВыделениеКолонки19" id="61">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Выделение колонки1</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:boolean</v8:Type>
+					</Type>
+				</Column>
+				<Column name="СписокОчков19" id="62">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Список очков1</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>15</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="КолонкаИгры19" id="63">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>15</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>3</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="ВыделениеКолонки20" id="64">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Выделение колонки1</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:boolean</v8:Type>
+					</Type>
+				</Column>
+				<Column name="СписокОчков20" id="65">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Список очков1</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>15</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="КолонкаИгры20" id="66">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>15</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>3</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="ВыделениеКолонки21" id="67">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Выделение колонки1</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:boolean</v8:Type>
+					</Type>
+				</Column>
+				<Column name="СписокОчков21" id="68">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Список очков1</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>15</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="КолонкаИгры21" id="69">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>15</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>3</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="ВыделениеКолонки22" id="70">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Выделение колонки1</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:boolean</v8:Type>
+					</Type>
+				</Column>
+				<Column name="СписокОчков22" id="71">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Список очков1</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>15</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="КолонкаИгры22" id="72">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>15</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>3</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="ВыделениеКолонки23" id="73">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Выделение колонки1</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:boolean</v8:Type>
+					</Type>
+				</Column>
+				<Column name="СписокОчков23" id="74">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Список очков1</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>15</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="КолонкаИгры23" id="75">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>15</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>3</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="ВыделениеКолонки24" id="76">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Выделение колонки1</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:boolean</v8:Type>
+					</Type>
+				</Column>
+				<Column name="СписокОчков24" id="77">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Список очков1</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>15</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="КолонкаИгры24" id="78">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>15</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>3</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="ВыделениеКолонки25" id="79">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Выделение колонки1</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:boolean</v8:Type>
+					</Type>
+				</Column>
+				<Column name="СписокОчков25" id="80">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Список очков1</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>15</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="КолонкаИгры25" id="81">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>15</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>3</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+			</Columns>
+		</Attribute>
+		<Attribute name="СписокГрупп" id="22">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Список групп</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueListType</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="АдресОбщейТаблицыДанных" id="23">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Адрес общей таблицы данных</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="АдресТаблицаУчастников" id="24">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Адрес таблица участников</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="АдресКопииТаблицыГрупп" id="25">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Адрес копии таблицы групп</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="глТекГруппа" id="26">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Гл тек группа</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:decimal</v8:Type>
+				<v8:NumberQualifiers>
+					<v8:Digits>10</v8:Digits>
+					<v8:FractionDigits>0</v8:FractionDigits>
+					<v8:AllowedSign>Any</v8:AllowedSign>
+				</v8:NumberQualifiers>
+			</Type>
+		</Attribute>
+		<ConditionalAppearance>
+			<dcsset:item>
+				<dcsset:use>false</dcsset:use>
+				<dcsset:selection>
+					<dcsset:item>
+						<dcsset:field>ТаблицаПартий</dcsset:field>
+					</dcsset:item>
+				</dcsset:selection>
+				<dcsset:filter>
+					<dcsset:item xsi:type="dcsset:FilterItemGroup">
+						<dcsset:groupType>AndGroup</dcsset:groupType>
+						<dcsset:item xsi:type="dcsset:FilterItemComparison">
+							<dcsset:left xsi:type="dcscor:Field">ТаблицаПартий.Расстановка1</dcsset:left>
+							<dcsset:comparisonType>Equal</dcsset:comparisonType>
+							<dcsset:right xsi:type="dcscor:DesignTimeValue">Перечисление.ВариантыРасстановки.Пара</dcsset:right>
+						</dcsset:item>
+						<dcsset:item xsi:type="dcsset:FilterItemComparison">
+							<dcsset:left xsi:type="dcscor:Field">ТаблицаПартий.Расстановка2</dcsset:left>
+							<dcsset:comparisonType>Equal</dcsset:comparisonType>
+							<dcsset:right xsi:type="dcscor:DesignTimeValue">Перечисление.ВариантыРасстановки.Пара</dcsset:right>
+						</dcsset:item>
+					</dcsset:item>
+				</dcsset:filter>
+				<dcsset:appearance>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>Шрифт</dcscor:parameter>
+						<dcscor:value xsi:type="v8ui:Font" ref="sys:DefaultGUIFont" bold="true" italic="false" underline="false" strikeout="false" kind="WindowsFont"/>
+					</dcscor:item>
+				</dcsset:appearance>
+			</dcsset:item>
+			<dcsset:item>
+				<dcsset:use>false</dcsset:use>
+				<dcsset:selection>
+					<dcsset:item>
+						<dcsset:field>ТаблицаПартийИгра1</dcsset:field>
+					</dcsset:item>
+					<dcsset:item>
+						<dcsset:field>ТаблицаПартийИгра2</dcsset:field>
+					</dcsset:item>
+					<dcsset:item>
+						<dcsset:field>ТаблицаПартийИгра3</dcsset:field>
+					</dcsset:item>
+					<dcsset:item>
+						<dcsset:field>ТаблицаПартийИгра4</dcsset:field>
+					</dcsset:item>
+					<dcsset:item>
+						<dcsset:field>ТаблицаПартийИгра5</dcsset:field>
+					</dcsset:item>
+					<dcsset:item>
+						<dcsset:field>ТаблицаПартийИгра6</dcsset:field>
+					</dcsset:item>
+					<dcsset:item>
+						<dcsset:field>ТаблицаПартийИгра7</dcsset:field>
+					</dcsset:item>
+				</dcsset:selection>
+				<dcsset:filter>
+					<dcsset:item xsi:type="dcsset:FilterItemGroup">
+						<dcsset:groupType>AndGroup</dcsset:groupType>
+						<dcsset:item xsi:type="dcsset:FilterItemGroup">
+							<dcsset:groupType>OrGroup</dcsset:groupType>
+							<dcsset:item xsi:type="dcsset:FilterItemComparison">
+								<dcsset:left xsi:type="dcscor:Field">ТаблицаПартий.Участник1</dcsset:left>
+								<dcsset:comparisonType>Equal</dcsset:comparisonType>
+								<dcsset:right xsi:type="dcscor:DesignTimeValue">Справочник.Участники.ПустаяСсылка</dcsset:right>
+							</dcsset:item>
+							<dcsset:item xsi:type="dcsset:FilterItemComparison">
+								<dcsset:left xsi:type="dcscor:Field">ТаблицаПартий.Участник1</dcsset:left>
+								<dcsset:comparisonType>Equal</dcsset:comparisonType>
+							</dcsset:item>
+						</dcsset:item>
+						<dcsset:item xsi:type="dcsset:FilterItemGroup">
+							<dcsset:groupType>OrGroup</dcsset:groupType>
+							<dcsset:item xsi:type="dcsset:FilterItemComparison">
+								<dcsset:left xsi:type="dcscor:Field">ТаблицаПартий.Участник2</dcsset:left>
+								<dcsset:comparisonType>Equal</dcsset:comparisonType>
+								<dcsset:right xsi:type="dcscor:DesignTimeValue">Справочник.Участники.ПустаяСсылка</dcsset:right>
+							</dcsset:item>
+							<dcsset:item xsi:type="dcsset:FilterItemComparison">
+								<dcsset:left xsi:type="dcscor:Field">ТаблицаПартий.Участник2</dcsset:left>
+								<dcsset:comparisonType>Equal</dcsset:comparisonType>
+							</dcsset:item>
+						</dcsset:item>
+					</dcsset:item>
+				</dcsset:filter>
+				<dcsset:appearance>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>ТолькоПросмотр</dcscor:parameter>
+						<dcscor:value xsi:type="xs:boolean">true</dcscor:value>
+					</dcscor:item>
+				</dcsset:appearance>
+			</dcsset:item>
+			<dcsset:item>
+				<dcsset:selection>
+					<dcsset:item>
+						<dcsset:field>ТаблицаПартийИгра1</dcsset:field>
+					</dcsset:item>
+				</dcsset:selection>
+				<dcsset:filter>
+					<dcsset:item xsi:type="dcsset:FilterItemComparison">
+						<dcsset:left xsi:type="dcscor:Field">ТаблицаПартий.Игра1</dcsset:left>
+						<dcsset:comparisonType>Equal</dcsset:comparisonType>
+						<dcsset:right xsi:type="xs:string">-0</dcsset:right>
+					</dcsset:item>
+				</dcsset:filter>
+				<dcsset:appearance>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>ЦветТекста</dcscor:parameter>
+						<dcscor:value xsi:type="v8ui:Color">#FF0000</dcscor:value>
+					</dcscor:item>
+				</dcsset:appearance>
+			</dcsset:item>
+			<dcsset:item>
+				<dcsset:selection>
+					<dcsset:item>
+						<dcsset:field>ТаблицаПартийИгра2</dcsset:field>
+					</dcsset:item>
+				</dcsset:selection>
+				<dcsset:filter>
+					<dcsset:item xsi:type="dcsset:FilterItemComparison">
+						<dcsset:left xsi:type="dcscor:Field">ТаблицаПартий.Игра2</dcsset:left>
+						<dcsset:comparisonType>Equal</dcsset:comparisonType>
+						<dcsset:right xsi:type="xs:string">-0</dcsset:right>
+					</dcsset:item>
+				</dcsset:filter>
+				<dcsset:appearance>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>ЦветТекста</dcscor:parameter>
+						<dcscor:value xsi:type="v8ui:Color">#FF0000</dcscor:value>
+					</dcscor:item>
+				</dcsset:appearance>
+			</dcsset:item>
+			<dcsset:item>
+				<dcsset:selection>
+					<dcsset:item>
+						<dcsset:field>ТаблицаПартийИгра3</dcsset:field>
+					</dcsset:item>
+				</dcsset:selection>
+				<dcsset:filter>
+					<dcsset:item xsi:type="dcsset:FilterItemComparison">
+						<dcsset:left xsi:type="dcscor:Field">ТаблицаПартий.Игра3</dcsset:left>
+						<dcsset:comparisonType>Equal</dcsset:comparisonType>
+						<dcsset:right xsi:type="xs:string">-0</dcsset:right>
+					</dcsset:item>
+				</dcsset:filter>
+				<dcsset:appearance>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>ЦветТекста</dcscor:parameter>
+						<dcscor:value xsi:type="v8ui:Color">#FF0000</dcscor:value>
+					</dcscor:item>
+				</dcsset:appearance>
+			</dcsset:item>
+			<dcsset:item>
+				<dcsset:selection>
+					<dcsset:item>
+						<dcsset:field>ТаблицаПартийИгра4</dcsset:field>
+					</dcsset:item>
+				</dcsset:selection>
+				<dcsset:filter>
+					<dcsset:item xsi:type="dcsset:FilterItemComparison">
+						<dcsset:left xsi:type="dcscor:Field">ТаблицаПартий.Игра4</dcsset:left>
+						<dcsset:comparisonType>Equal</dcsset:comparisonType>
+						<dcsset:right xsi:type="xs:string">-0</dcsset:right>
+					</dcsset:item>
+				</dcsset:filter>
+				<dcsset:appearance>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>ЦветТекста</dcscor:parameter>
+						<dcscor:value xsi:type="v8ui:Color">#FF0000</dcscor:value>
+					</dcscor:item>
+				</dcsset:appearance>
+			</dcsset:item>
+			<dcsset:item>
+				<dcsset:selection>
+					<dcsset:item>
+						<dcsset:field>ТаблицаПартийИгра5</dcsset:field>
+					</dcsset:item>
+				</dcsset:selection>
+				<dcsset:filter>
+					<dcsset:item xsi:type="dcsset:FilterItemComparison">
+						<dcsset:left xsi:type="dcscor:Field">ТаблицаПартий.Игра5</dcsset:left>
+						<dcsset:comparisonType>Equal</dcsset:comparisonType>
+						<dcsset:right xsi:type="xs:string">-0</dcsset:right>
+					</dcsset:item>
+				</dcsset:filter>
+				<dcsset:appearance>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>ЦветТекста</dcscor:parameter>
+						<dcscor:value xsi:type="v8ui:Color">#FF0000</dcscor:value>
+					</dcscor:item>
+				</dcsset:appearance>
+			</dcsset:item>
+			<dcsset:item>
+				<dcsset:selection>
+					<dcsset:item>
+						<dcsset:field>ТаблицаПартийИгра6</dcsset:field>
+					</dcsset:item>
+				</dcsset:selection>
+				<dcsset:filter>
+					<dcsset:item xsi:type="dcsset:FilterItemComparison">
+						<dcsset:left xsi:type="dcscor:Field">ТаблицаПартий.Игра6</dcsset:left>
+						<dcsset:comparisonType>Equal</dcsset:comparisonType>
+						<dcsset:right xsi:type="xs:string">-0</dcsset:right>
+					</dcsset:item>
+				</dcsset:filter>
+				<dcsset:appearance>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>ЦветТекста</dcscor:parameter>
+						<dcscor:value xsi:type="v8ui:Color">#FF0000</dcscor:value>
+					</dcscor:item>
+				</dcsset:appearance>
+			</dcsset:item>
+			<dcsset:item>
+				<dcsset:selection>
+					<dcsset:item>
+						<dcsset:field>ТаблицаПартийИгра7</dcsset:field>
+					</dcsset:item>
+				</dcsset:selection>
+				<dcsset:filter>
+					<dcsset:item xsi:type="dcsset:FilterItemComparison">
+						<dcsset:left xsi:type="dcscor:Field">ТаблицаПартий.Игра7</dcsset:left>
+						<dcsset:comparisonType>Equal</dcsset:comparisonType>
+						<dcsset:right xsi:type="xs:string">-0</dcsset:right>
+					</dcsset:item>
+				</dcsset:filter>
+				<dcsset:appearance>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>ЦветТекста</dcscor:parameter>
+						<dcscor:value xsi:type="v8ui:Color">#FF0000</dcscor:value>
+					</dcscor:item>
+				</dcsset:appearance>
+			</dcsset:item>
+			<dcsset:item>
+				<dcsset:selection>
+					<dcsset:item>
+						<dcsset:field>ТаблицаПартийИтог1</dcsset:field>
+					</dcsset:item>
+				</dcsset:selection>
+				<dcsset:filter>
+					<dcsset:item xsi:type="dcsset:FilterItemComparison">
+						<dcsset:left xsi:type="dcscor:Field">ТаблицаПартий.Итог1</dcsset:left>
+						<dcsset:comparisonType>Equal</dcsset:comparisonType>
+						<dcsset:right xsi:type="xs:decimal">1</dcsset:right>
+					</dcsset:item>
+				</dcsset:filter>
+				<dcsset:appearance>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>Шрифт</dcscor:parameter>
+						<dcscor:value xsi:type="v8ui:Font" ref="sys:DefaultGUIFont" bold="true" italic="false" underline="false" strikeout="false" kind="WindowsFont"/>
+					</dcscor:item>
+				</dcsset:appearance>
+			</dcsset:item>
+			<dcsset:item>
+				<dcsset:selection>
+					<dcsset:item>
+						<dcsset:field>ТаблицаПартийИтог2</dcsset:field>
+					</dcsset:item>
+				</dcsset:selection>
+				<dcsset:filter>
+					<dcsset:item xsi:type="dcsset:FilterItemComparison">
+						<dcsset:left xsi:type="dcscor:Field">ТаблицаПартий.Итог2</dcsset:left>
+						<dcsset:comparisonType>Equal</dcsset:comparisonType>
+						<dcsset:right xsi:type="xs:decimal">1</dcsset:right>
+					</dcsset:item>
+				</dcsset:filter>
+				<dcsset:appearance>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>Шрифт</dcscor:parameter>
+						<dcscor:value xsi:type="v8ui:Font" ref="sys:DefaultGUIFont" bold="true" italic="false" underline="false" strikeout="false" kind="WindowsFont"/>
+					</dcscor:item>
+				</dcsset:appearance>
+			</dcsset:item>
+			<dcsset:item>
+				<dcsset:selection>
+					<dcsset:item>
+						<dcsset:field>ТаблицаПартийИтог2</dcsset:field>
+					</dcsset:item>
+				</dcsset:selection>
+				<dcsset:filter>
+					<dcsset:item xsi:type="dcsset:FilterItemGroup">
+						<dcsset:groupType>AndGroup</dcsset:groupType>
+						<dcsset:item xsi:type="dcsset:FilterItemComparison">
+							<dcsset:left xsi:type="dcscor:Field">ТаблицаПартий.Итог1</dcsset:left>
+							<dcsset:comparisonType>Equal</dcsset:comparisonType>
+							<dcsset:right xsi:type="xs:decimal">1</dcsset:right>
+						</dcsset:item>
+						<dcsset:item xsi:type="dcsset:FilterItemComparison">
+							<dcsset:left xsi:type="dcscor:Field">ТаблицаПартий.Итог2</dcsset:left>
+							<dcsset:comparisonType>Equal</dcsset:comparisonType>
+							<dcsset:right xsi:type="xs:decimal">0</dcsset:right>
+						</dcsset:item>
+					</dcsset:item>
+				</dcsset:filter>
+				<dcsset:appearance>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>Формат</dcscor:parameter>
+						<dcscor:value xsi:type="v8:LocalStringType">
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>ЧН=0</v8:content>
+							</v8:item>
+						</dcscor:value>
+					</dcscor:item>
+				</dcsset:appearance>
+			</dcsset:item>
+			<dcsset:item>
+				<dcsset:selection>
+					<dcsset:item>
+						<dcsset:field>ТаблицаПартийИтог1</dcsset:field>
+					</dcsset:item>
+				</dcsset:selection>
+				<dcsset:filter>
+					<dcsset:item xsi:type="dcsset:FilterItemGroup">
+						<dcsset:groupType>AndGroup</dcsset:groupType>
+						<dcsset:item xsi:type="dcsset:FilterItemComparison">
+							<dcsset:left xsi:type="dcscor:Field">ТаблицаПартий.Итог1</dcsset:left>
+							<dcsset:comparisonType>Equal</dcsset:comparisonType>
+							<dcsset:right xsi:type="xs:decimal">0</dcsset:right>
+						</dcsset:item>
+						<dcsset:item xsi:type="dcsset:FilterItemComparison">
+							<dcsset:left xsi:type="dcscor:Field">ТаблицаПартий.Итог2</dcsset:left>
+							<dcsset:comparisonType>Equal</dcsset:comparisonType>
+							<dcsset:right xsi:type="xs:decimal">1</dcsset:right>
+						</dcsset:item>
+					</dcsset:item>
+				</dcsset:filter>
+				<dcsset:appearance>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>Формат</dcscor:parameter>
+						<dcscor:value xsi:type="v8:LocalStringType">
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>ЧН=0</v8:content>
+							</v8:item>
+						</dcscor:value>
+					</dcscor:item>
+				</dcsset:appearance>
+			</dcsset:item>
+			<dcsset:item>
+				<dcsset:selection>
+					<dcsset:item>
+						<dcsset:field>ТаблицаПартийОбщийРезультат1</dcsset:field>
+					</dcsset:item>
+				</dcsset:selection>
+				<dcsset:filter>
+					<dcsset:item xsi:type="dcsset:FilterItemGroup">
+						<dcsset:groupType>AndGroup</dcsset:groupType>
+						<dcsset:item xsi:type="dcsset:FilterItemComparison">
+							<dcsset:left xsi:type="dcscor:Field">ТаблицаПартий.ОбщийРезультат1</dcsset:left>
+							<dcsset:comparisonType>Equal</dcsset:comparisonType>
+							<dcsset:right xsi:type="xs:decimal">0</dcsset:right>
+						</dcsset:item>
+						<dcsset:item xsi:type="dcsset:FilterItemComparison">
+							<dcsset:left xsi:type="dcscor:Field">ТаблицаПартий.ОбщийРезультат2</dcsset:left>
+							<dcsset:comparisonType>NotEqual</dcsset:comparisonType>
+							<dcsset:right xsi:type="xs:decimal">0</dcsset:right>
+						</dcsset:item>
+					</dcsset:item>
+				</dcsset:filter>
+				<dcsset:appearance>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>Формат</dcscor:parameter>
+						<dcscor:value xsi:type="v8:LocalStringType">
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>ЧН=0</v8:content>
+							</v8:item>
+						</dcscor:value>
+					</dcscor:item>
+				</dcsset:appearance>
+			</dcsset:item>
+			<dcsset:item>
+				<dcsset:selection>
+					<dcsset:item>
+						<dcsset:field>ТаблицаПартийОбщийРезультат2</dcsset:field>
+					</dcsset:item>
+				</dcsset:selection>
+				<dcsset:filter>
+					<dcsset:item xsi:type="dcsset:FilterItemGroup">
+						<dcsset:groupType>AndGroup</dcsset:groupType>
+						<dcsset:item xsi:type="dcsset:FilterItemComparison">
+							<dcsset:left xsi:type="dcscor:Field">ТаблицаПартий.ОбщийРезультат1</dcsset:left>
+							<dcsset:comparisonType>NotEqual</dcsset:comparisonType>
+							<dcsset:right xsi:type="xs:decimal">0</dcsset:right>
+						</dcsset:item>
+						<dcsset:item xsi:type="dcsset:FilterItemComparison">
+							<dcsset:left xsi:type="dcscor:Field">ТаблицаПартий.ОбщийРезультат2</dcsset:left>
+							<dcsset:comparisonType>Equal</dcsset:comparisonType>
+							<dcsset:right xsi:type="xs:decimal">0</dcsset:right>
+						</dcsset:item>
+					</dcsset:item>
+				</dcsset:filter>
+				<dcsset:appearance>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>Формат</dcscor:parameter>
+						<dcscor:value xsi:type="v8:LocalStringType">
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>ЧН=0</v8:content>
+							</v8:item>
+						</dcscor:value>
+					</dcscor:item>
+				</dcsset:appearance>
+			</dcsset:item>
+			<dcsset:item>
+				<dcsset:selection>
+					<dcsset:item>
+						<dcsset:field>ТаблицаПартийТехническое_1</dcsset:field>
+					</dcsset:item>
+					<dcsset:item>
+						<dcsset:field>ТаблицаПартийТехническое_2</dcsset:field>
+					</dcsset:item>
+				</dcsset:selection>
+				<dcsset:filter>
+					<dcsset:item xsi:type="dcsset:FilterItemGroup">
+						<dcsset:groupType>OrGroup</dcsset:groupType>
+						<dcsset:item xsi:type="dcsset:FilterItemComparison">
+							<dcsset:left xsi:type="dcscor:Field">ТаблицаПартий.Итог1</dcsset:left>
+							<dcsset:comparisonType>Equal</dcsset:comparisonType>
+							<dcsset:right xsi:type="xs:decimal">1</dcsset:right>
+						</dcsset:item>
+						<dcsset:item xsi:type="dcsset:FilterItemComparison">
+							<dcsset:left xsi:type="dcscor:Field">ТаблицаПартий.Итог2</dcsset:left>
+							<dcsset:comparisonType>Equal</dcsset:comparisonType>
+							<dcsset:right xsi:type="xs:decimal">1</dcsset:right>
+						</dcsset:item>
+					</dcsset:item>
+				</dcsset:filter>
+				<dcsset:appearance>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>ТолькоПросмотр</dcscor:parameter>
+						<dcscor:value xsi:type="xs:boolean">true</dcscor:value>
+					</dcscor:item>
+				</dcsset:appearance>
+			</dcsset:item>
+			<dcsset:item>
+				<dcsset:selection>
+					<dcsset:item>
+						<dcsset:field>ТаблицаГруппыУчастник</dcsset:field>
+					</dcsset:item>
+				</dcsset:selection>
+				<dcsset:filter>
+					<dcsset:item xsi:type="dcsset:FilterItemComparison">
+						<dcsset:left xsi:type="dcscor:Field">ТаблицаГруппы.ВыделениеСтроки</dcsset:left>
+						<dcsset:comparisonType>Equal</dcsset:comparisonType>
+						<dcsset:right xsi:type="xs:boolean">true</dcsset:right>
+					</dcsset:item>
+				</dcsset:filter>
+				<dcsset:appearance>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>ЦветТекста</dcscor:parameter>
+						<dcscor:value xsi:type="v8ui:Color">#0000FF</dcscor:value>
+					</dcscor:item>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>Шрифт</dcscor:parameter>
+						<dcscor:value xsi:type="v8ui:Font" ref="sys:DefaultGUIFont" bold="true" italic="false" underline="false" strikeout="false" kind="WindowsFont"/>
+					</dcscor:item>
+				</dcsset:appearance>
+			</dcsset:item>
+		</ConditionalAppearance>
+	</Attributes>
+	<Commands>
+		<Command name="ЗаписатьДанные" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Записать и закрыть</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Записать данные</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ЗаписатьДанные</Action>
+		</Command>
+		<Command name="УдалитьДанныеИгры" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Удалить игры группы</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Удалить данные игры</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>УдалитьДанныеИгры</Action>
+		</Command>
+		<Command name="ЗакрытьФорму" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Закрыть</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Закрыть форму</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>StdPicture.Close</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>ЗакрытьФорму</Action>
+			<Representation>TextPicture</Representation>
+		</Command>
+		<Command name="СУчетомИгр" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Учесть игры тура...</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Позволяет учесть игры с прошлых групповых этапов</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>СУчетомИгр</Action>
+			<Representation>TextPicture</Representation>
+		</Command>
+		<Command name="ОчиститьСтол" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Освободить стол</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Освободить стол</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>StdPicture.Delete</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>ОчиститьСтол</Action>
+			<Representation>TextPicture</Representation>
+		</Command>
+		<Command name="КомандаБегунки" id="6">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Бегунки</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Распечатать бегунки</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>StdPicture.SpreadsheetShowGrid</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>КомандаБегунки</Action>
+			<Representation>TextPicture</Representation>
+		</Command>
+		<Command name="ЗаписатьБезЗакрытия" id="7">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Записать (Ctrl+S)</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Записать без закрытия</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Shortcut>Ctrl+S</Shortcut>
+			<Action>ЗаписатьБезЗакрытия</Action>
+		</Command>
+		<Command name="ПоменятьРасстановку" id="8">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Поменять местами</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Поменять расстановку команд</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>CommonPicture.ПоменятьМестами</xr:Ref>
+				<xr:LoadTransparent>false</xr:LoadTransparent>
+			</Picture>
+			<Action>ПоменятьРасстановку</Action>
+			<Representation>TextPicture</Representation>
+		</Command>
+		<Command name="КомандаПоказатьПротокол" id="9">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Протокол (ALT+P)</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Показать протокол</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Shortcut>Alt+P</Shortcut>
+			<Action>КомандаПоказатьПротокол</Action>
+		</Command>
+	</Commands>
+</Form>

@@ -1,0 +1,1289 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.4">
+	<Width>90</Width>
+	<WindowOpeningMode>LockOwnerWindow</WindowOpeningMode>
+	<AutoSaveDataInSettings>Use</AutoSaveDataInSettings>
+	<VerticalScroll>useIfNecessary</VerticalScroll>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<Autofill>false</Autofill>
+	</AutoCommandBar>
+	<Events>
+		<Event name="OnOpen">ПриОткрытии</Event>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<UsualGroup name="ГруппаНастроек" id="32">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Настройки</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа настроек</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Group>Horizontal</Group>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<BackColor>#E9F4FF</BackColor>
+			<ExtendedTooltip name="ГруппаНастроекРасширеннаяПодсказка" id="122"/>
+			<ChildItems>
+				<UsualGroup name="Группа10" id="78">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Настройки подбора</v8:content>
+						</v8:item>
+					</Title>
+					<HorizontalStretch>true</HorizontalStretch>
+					<Group>Vertical</Group>
+					<VerticalSpacing>Half</VerticalSpacing>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="Группа10РасширеннаяПодсказка" id="123"/>
+					<ChildItems>
+						<UsualGroup name="Группа7" id="75">
+							<Group>Horizontal</Group>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="Группа7РасширеннаяПодсказка" id="124"/>
+							<ChildItems>
+								<InputField name="ТипСоревнования" id="72">
+									<DataPath>ТипСоревнования</DataPath>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Тип</v8:content>
+										</v8:item>
+									</Title>
+									<Width>15</Width>
+									<HorizontalStretch>false</HorizontalStretch>
+									<ContextMenu name="ТипСоревнованияКонтекстноеМеню" id="73"/>
+									<ExtendedTooltip name="ТипСоревнованияРасширеннаяПодсказка" id="125"/>
+									<Events>
+										<Event name="OnChange">ТипСоревнованияПриИзменении</Event>
+									</Events>
+								</InputField>
+								<InputField name="НачДата" id="33">
+									<DataPath>НачДата</DataPath>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Год рождения с</v8:content>
+										</v8:item>
+									</Title>
+									<ClearButton>true</ClearButton>
+									<ContextMenu name="НачДатаКонтекстноеМеню" id="34"/>
+									<ExtendedTooltip name="НачДатаРасширеннаяПодсказка" id="126"/>
+									<Events>
+										<Event name="OnChange">НачДатаПриИзменении</Event>
+										<Event name="Clearing">НачДатаОчистка</Event>
+									</Events>
+								</InputField>
+								<InputField name="Группа" id="54">
+									<DataPath>Группа</DataPath>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Из группы</v8:content>
+										</v8:item>
+									</Title>
+									<HorizontalStretch>true</HorizontalStretch>
+									<ClearButton>true</ClearButton>
+									<OpenButton>false</OpenButton>
+									<QuickChoice>true</QuickChoice>
+									<ChoiceFoldersAndItems>Folders</ChoiceFoldersAndItems>
+									<ContextMenu name="ГруппаКонтекстноеМеню" id="55"/>
+									<ExtendedTooltip name="ГруппаРасширеннаяПодсказка" id="127"/>
+									<Events>
+										<Event name="OnChange">ГруппаПриИзменении</Event>
+										<Event name="Clearing">ГруппаОчистка</Event>
+									</Events>
+								</InputField>
+							</ChildItems>
+						</UsualGroup>
+						<UsualGroup name="Группа8" id="76">
+							<Group>Horizontal</Group>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="Группа8РасширеннаяПодсказка" id="128"/>
+							<ChildItems>
+								<InputField name="ВидРейтинга" id="81">
+									<DataPath>ВидРейтинга</DataPath>
+									<HorizontalStretch>true</HorizontalStretch>
+									<ClearButton>true</ClearButton>
+									<OpenButton>false</OpenButton>
+									<QuickChoice>false</QuickChoice>
+									<ContextMenu name="ВидРейтингаКонтекстноеМеню" id="82"/>
+									<ExtendedTooltip name="ВидРейтингаРасширеннаяПодсказка" id="131"/>
+									<Events>
+										<Event name="OnChange">ВидРейтингаПриИзменении</Event>
+										<Event name="Clearing">ВидРейтингаОчистка</Event>
+									</Events>
+								</InputField>
+								<InputField name="ЭлементФормыЗнаковРавенства" id="111">
+									<DataPath>ЭлементФормыЗнаковРавенства</DataPath>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Рейт</v8:content>
+										</v8:item>
+									</Title>
+									<TitleLocation>None</TitleLocation>
+									<Width>9</Width>
+									<ClearButton>true</ClearButton>
+									<ListChoiceMode>true</ListChoiceMode>
+									<ChoiceList>
+										<xr:Item>
+											<xr:Presentation/>
+											<xr:CheckState>0</xr:CheckState>
+											<xr:Value xsi:type="FormChoiceListDesTimeValue">
+												<Presentation>
+													<v8:item>
+														<v8:lang>ru</v8:lang>
+														<v8:content>&gt;</v8:content>
+													</v8:item>
+												</Presentation>
+												<Value xsi:type="xs:string">0</Value>
+											</xr:Value>
+										</xr:Item>
+										<xr:Item>
+											<xr:Presentation/>
+											<xr:CheckState>0</xr:CheckState>
+											<xr:Value xsi:type="FormChoiceListDesTimeValue">
+												<Presentation>
+													<v8:item>
+														<v8:lang>ru</v8:lang>
+														<v8:content>&gt;=</v8:content>
+													</v8:item>
+												</Presentation>
+												<Value xsi:type="xs:string">1</Value>
+											</xr:Value>
+										</xr:Item>
+										<xr:Item>
+											<xr:Presentation/>
+											<xr:CheckState>0</xr:CheckState>
+											<xr:Value xsi:type="FormChoiceListDesTimeValue">
+												<Presentation>
+													<v8:item>
+														<v8:lang>ru</v8:lang>
+														<v8:content>&lt;</v8:content>
+													</v8:item>
+												</Presentation>
+												<Value xsi:type="xs:string">2</Value>
+											</xr:Value>
+										</xr:Item>
+										<xr:Item>
+											<xr:Presentation/>
+											<xr:CheckState>0</xr:CheckState>
+											<xr:Value xsi:type="FormChoiceListDesTimeValue">
+												<Presentation>
+													<v8:item>
+														<v8:lang>ru</v8:lang>
+														<v8:content>&lt;=</v8:content>
+													</v8:item>
+												</Presentation>
+												<Value xsi:type="xs:string">3</Value>
+											</xr:Value>
+										</xr:Item>
+										<xr:Item>
+											<xr:Presentation/>
+											<xr:CheckState>0</xr:CheckState>
+											<xr:Value xsi:type="FormChoiceListDesTimeValue">
+												<Presentation>
+													<v8:item>
+														<v8:lang>ru</v8:lang>
+														<v8:content>=</v8:content>
+													</v8:item>
+												</Presentation>
+												<Value xsi:type="xs:string">4</Value>
+											</xr:Value>
+										</xr:Item>
+									</ChoiceList>
+									<ContextMenu name="ЭлементФормыЗнаковРавенстваКонтекстноеМеню" id="112"/>
+									<ExtendedTooltip name="ЭлементФормыЗнаковРавенстваРасширеннаяПодсказка" id="132"/>
+									<Events>
+										<Event name="OnChange">ЭлементФормыЗнаковРавенстваПриИзменении</Event>
+										<Event name="Clearing">ЭлементФормыЗнаковРавенстваОчистка</Event>
+									</Events>
+								</InputField>
+								<InputField name="РейтингОтбора" id="107">
+									<DataPath>РейтингОтбора</DataPath>
+									<TitleLocation>None</TitleLocation>
+									<Width>8</Width>
+									<ChoiceButton>false</ChoiceButton>
+									<ClearButton>true</ClearButton>
+									<ContextMenu name="РейтингОтбораКонтекстноеМеню" id="108"/>
+									<ExtendedTooltip name="РейтингОтбораРасширеннаяПодсказка" id="133"/>
+									<Events>
+										<Event name="OnChange">РейтингОтбораПриИзменении</Event>
+										<Event name="Clearing">РейтингОтбораОчистка</Event>
+									</Events>
+								</InputField>
+							</ChildItems>
+						</UsualGroup>
+					</ChildItems>
+				</UsualGroup>
+				<UsualGroup name="Группа9" id="77">
+					<Group>Vertical</Group>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="Группа9РасширеннаяПодсказка" id="134"/>
+					<ChildItems>
+						<Button name="Закрыть" id="60">
+							<Type>UsualButton</Type>
+							<Representation>PictureAndText</Representation>
+							<Width>13</Width>
+							<Height>2</Height>
+							<CommandName>Form.StandardCommand.Close</CommandName>
+							<Font ref="sys:DefaultGUIFont" height="12" bold="true" italic="false" underline="false" strikeout="false" kind="WindowsFont"/>
+							<ExtendedTooltip name="ЗакрытьРасширеннаяПодсказка" id="135"/>
+						</Button>
+					</ChildItems>
+				</UsualGroup>
+			</ChildItems>
+		</UsualGroup>
+		<UsualGroup name="Основная" id="9">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Основная</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Основная</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Group>Horizontal</Group>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ОсновнаяРасширеннаяПодсказка" id="136"/>
+			<ChildItems>
+				<UsualGroup name="Группа1" id="48">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Участники</v8:content>
+						</v8:item>
+					</Title>
+					<TitleTextColor>style:FieldSelectionBackColor</TitleTextColor>
+					<TitleFont ref="sys:DefaultGUIFont" height="10" bold="true" italic="false" underline="false" strikeout="false" kind="WindowsFont"/>
+					<Group>Vertical</Group>
+					<Representation>None</Representation>
+					<ExtendedTooltip name="Группа1РасширеннаяПодсказка" id="137"/>
+					<ChildItems>
+						<UsualGroup name="Группа3" id="95">
+							<Group>Horizontal</Group>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="Группа3РасширеннаяПодсказка" id="138"/>
+							<ChildItems>
+								<InputField name="СтрокаПоиска" id="93">
+									<DataPath>СтрокаПоиска</DataPath>
+									<Visible>false</Visible>
+									<TitleFont ref="sys:DefaultGUIFont" bold="true" italic="false" underline="false" strikeout="false" kind="WindowsFont"/>
+									<ClearButton>true</ClearButton>
+									<ContextMenu name="СтрокаПоискаКонтекстноеМеню" id="94"/>
+									<ExtendedTooltip name="СтрокаПоискаРасширеннаяПодсказка" id="139"/>
+									<Events>
+										<Event name="AutoComplete">СтрокаПоискаАвтоПодбор</Event>
+										<Event name="Clearing">СтрокаПоискаОчистка</Event>
+										<Event name="TextEditEnd">СтрокаПоискаОкончаниеВводаТекста</Event>
+									</Events>
+								</InputField>
+							</ChildItems>
+						</UsualGroup>
+						<Table name="СписокУчастниковДляПодбора" id="83">
+							<Representation>List</Representation>
+							<ChoiceMode>true</ChoiceMode>
+							<HorizontalLines>false</HorizontalLines>
+							<VerticalLines>false</VerticalLines>
+							<UseAlternationRowColor>true</UseAlternationRowColor>
+							<EnableStartDrag>true</EnableStartDrag>
+							<DataPath>СписокУчастниковДляПодбора</DataPath>
+							<RowPictureDataPath>СписокУчастниковДляПодбора.DefaultPicture</RowPictureDataPath>
+							<CommandSet>
+								<ExcludedCommand>HierarchicalList</ExcludedCommand>
+								<ExcludedCommand>Tree</ExcludedCommand>
+								<ExcludedCommand>List</ExcludedCommand>
+								<ExcludedCommand>LevelUp</ExcludedCommand>
+								<ExcludedCommand>MoveItem</ExcludedCommand>
+								<ExcludedCommand>CopyToClipboard</ExcludedCommand>
+								<ExcludedCommand>Choose</ExcludedCommand>
+								<ExcludedCommand>SetDeletionMark</ExcludedCommand>
+								<ExcludedCommand>CreateFolder</ExcludedCommand>
+								<ExcludedCommand>LevelDown</ExcludedCommand>
+								<ExcludedCommand>Delete</ExcludedCommand>
+							</CommandSet>
+							<AutoRefresh>true</AutoRefresh>
+							<AutoRefreshPeriod>20</AutoRefreshPeriod>
+							<Period>
+								<v8:variant xsi:type="v8:StandardPeriodVariant">Custom</v8:variant>
+								<v8:startDate>0001-01-01T00:00:00</v8:startDate>
+								<v8:endDate>0001-01-01T00:00:00</v8:endDate>
+							</Period>
+							<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
+							<RestoreCurrentRow>true</RestoreCurrentRow>
+							<TopLevelParent xsi:nil="true"/>
+							<ShowRoot>true</ShowRoot>
+							<AllowRootChoice>false</AllowRootChoice>
+							<UpdateOnDataChange>Auto</UpdateOnDataChange>
+							<ContextMenu name="СписокУчастниковДляПодбораКонтекстноеМеню" id="84"/>
+							<AutoCommandBar name="СписокУчастниковДляПодбораКоманднаяПанель" id="85">
+								<HorizontalAlign>Right</HorizontalAlign>
+								<ChildItems>
+									<Button name="СписокУчастниковДляПодбораСкопировать" id="197">
+										<Type>CommandBarButton</Type>
+										<OnlyInAllActions>true</OnlyInAllActions>
+										<CommandName>Form.Item.СписокУчастниковДляПодбора.StandardCommand.Copy</CommandName>
+										<ExtendedTooltip name="СписокУчастниковДляПодбораСкопироватьРасширеннаяПодсказка" id="198"/>
+									</Button>
+									<Button name="СписокУчастниковДляПодбораИзменить" id="199">
+										<Type>CommandBarButton</Type>
+										<Representation>Picture</Representation>
+										<OnlyInAllActions>true</OnlyInAllActions>
+										<CommandName>Form.Item.СписокУчастниковДляПодбора.StandardCommand.Change</CommandName>
+										<ExtendedTooltip name="СписокУчастниковДляПодбораИзменитьРасширеннаяПодсказка" id="200"/>
+									</Button>
+									<Button name="СортировкаВозр" id="97">
+										<Type>CommandBarButton</Type>
+										<CommandName>Form.Command.СортировкаВозр</CommandName>
+										<ExtendedTooltip name="СортировкаВозрРасширеннаяПодсказка" id="143"/>
+									</Button>
+									<Button name="СортировкаУбыв" id="98">
+										<Type>CommandBarButton</Type>
+										<CommandName>Form.Command.СортировкаУбыв</CommandName>
+										<ExtendedTooltip name="СортировкаУбывРасширеннаяПодсказка" id="144"/>
+									</Button>
+									<Button name="РежимОтображенияСписков" id="101">
+										<Type>CommandBarButton</Type>
+										<CommandName>Form.Command.РежимОтображенияСписков</CommandName>
+										<ExtendedTooltip name="РежимОтображенияСписковРасширеннаяПодсказка" id="145"/>
+									</Button>
+									<Button name="Обновить" id="96">
+										<Type>CommandBarButton</Type>
+										<Representation>Picture</Representation>
+										<OnlyInAllActions>true</OnlyInAllActions>
+										<CommandName>Form.Item.СписокУчастниковДляПодбора.StandardCommand.Refresh</CommandName>
+										<ExtendedTooltip name="ОбновитьРасширеннаяПодсказка" id="146"/>
+									</Button>
+									<ButtonGroup name="СписокУчастниковДляПодбораГруппа1" id="115">
+										<ExtendedTooltip name="СписокУчастниковДляПодбораГруппа1РасширеннаяПодсказка" id="147"/>
+										<ChildItems>
+											<Button name="ВВыбранные" id="16">
+												<Type>CommandBarButton</Type>
+												<Representation>Picture</Representation>
+												<CommandName>Form.Command.ВВыбранные</CommandName>
+												<Picture>
+													<xr:Ref>StdPicture.MoveRight</xr:Ref>
+													<xr:LoadTransparent>true</xr:LoadTransparent>
+												</Picture>
+												<ExtendedTooltip name="ВВыбранныеРасширеннаяПодсказка" id="148"/>
+											</Button>
+										</ChildItems>
+									</ButtonGroup>
+								</ChildItems>
+							</AutoCommandBar>
+							<ExtendedTooltip name="СписокУчастниковДляПодбораРасширеннаяПодсказка" id="149"/>
+							<SearchStringAddition name="СписокУчастниковДляПодбораСтрокаПоиска" id="150">
+								<AdditionSource>
+									<Item>СписокУчастниковДляПодбора</Item>
+									<Type>SearchStringRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="СписокУчастниковДляПодбораСтрокаПоискаКонтекстноеМеню" id="151"/>
+								<ExtendedTooltip name="СписокУчастниковДляПодбораСтрокаПоискаРасширеннаяПодсказка" id="152"/>
+							</SearchStringAddition>
+							<ViewStatusAddition name="СписокУчастниковДляПодбораСостояниеПросмотра" id="153">
+								<AdditionSource>
+									<Item>СписокУчастниковДляПодбора</Item>
+									<Type>ViewStatusRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="СписокУчастниковДляПодбораСостояниеПросмотраКонтекстноеМеню" id="154"/>
+								<ExtendedTooltip name="СписокУчастниковДляПодбораСостояниеПросмотраРасширеннаяПодсказка" id="155"/>
+							</ViewStatusAddition>
+							<SearchControlAddition name="СписокУчастниковДляПодбораУправлениеПоиском" id="156">
+								<AdditionSource>
+									<Item>СписокУчастниковДляПодбора</Item>
+									<Type>SearchControl</Type>
+								</AdditionSource>
+								<ContextMenu name="СписокУчастниковДляПодбораУправлениеПоискомКонтекстноеМеню" id="157"/>
+								<ExtendedTooltip name="СписокУчастниковДляПодбораУправлениеПоискомРасширеннаяПодсказка" id="158"/>
+							</SearchControlAddition>
+							<Events>
+								<Event name="Selection">СписокУчастниковДляПодбораВыбор</Event>
+							</Events>
+							<ChildItems>
+								<LabelField name="ФИО" id="117">
+									<DataPath>СписокУчастниковДляПодбора.ФИО</DataPath>
+									<DefaultItem>true</DefaultItem>
+									<Width>15</Width>
+									<HorizontalStretch>true</HorizontalStretch>
+									<ContextMenu name="ФИОКонтекстноеМеню" id="118"/>
+									<ExtendedTooltip name="ФИОРасширеннаяПодсказка" id="159"/>
+								</LabelField>
+								<LabelField name="Участник" id="90">
+									<DataPath>СписокУчастниковДляПодбора.Участник</DataPath>
+									<Visible>false</Visible>
+									<Width>15</Width>
+									<HorizontalStretch>true</HorizontalStretch>
+									<ContextMenu name="УчастникКонтекстноеМеню" id="91"/>
+									<ExtendedTooltip name="УчастникРасширеннаяПодсказка" id="160"/>
+								</LabelField>
+								<LabelField name="ДатаРождения" id="86">
+									<DataPath>СписокУчастниковДляПодбора.ДатаРождения</DataPath>
+									<Width>10</Width>
+									<HorizontalStretch>true</HorizontalStretch>
+									<ContextMenu name="ДатаРожденияКонтекстноеМеню" id="87"/>
+									<ExtendedTooltip name="ДатаРожденияРасширеннаяПодсказка" id="161"/>
+								</LabelField>
+								<LabelField name="Рейтинг" id="88">
+									<DataPath>СписокУчастниковДляПодбора.Рейтинг</DataPath>
+									<Width>10</Width>
+									<HorizontalStretch>true</HorizontalStretch>
+									<Format>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>ЧЦ=15; ЧДЦ=2</v8:content>
+										</v8:item>
+									</Format>
+									<ContextMenu name="РейтингКонтекстноеМеню" id="89"/>
+									<ExtendedTooltip name="РейтингРасширеннаяПодсказка" id="162"/>
+								</LabelField>
+							</ChildItems>
+						</Table>
+						<LabelField name="ИнфСтрока" id="120">
+							<DataPath>ИнфСтрока</DataPath>
+							<TitleLocation>None</TitleLocation>
+							<AutoMaxWidth>false</AutoMaxWidth>
+							<HorizontalStretch>true</HorizontalStretch>
+							<TextColor>style:FieldSelectionBackColor</TextColor>
+							<Font ref="sys:DefaultGUIFont" height="10" bold="true" italic="false" underline="false" strikeout="false" kind="WindowsFont"/>
+							<ContextMenu name="ИнфСтрокаКонтекстноеМеню" id="121"/>
+							<ExtendedTooltip name="ИнфСтрокаРасширеннаяПодсказка" id="163"/>
+						</LabelField>
+						<LabelField name="ИтогоСписок" id="49">
+							<DataPath>ИтогоСписок</DataPath>
+							<Visible>false</Visible>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>В списке</v8:content>
+								</v8:item>
+							</Title>
+							<TitleFont ref="sys:DefaultGUIFont" height="9" bold="true" italic="false" underline="false" strikeout="false" kind="WindowsFont"/>
+							<TextColor>style:FieldSelectionBackColor</TextColor>
+							<Font ref="sys:DefaultGUIFont" height="10" bold="true" italic="false" underline="false" strikeout="false" kind="WindowsFont"/>
+							<ContextMenu name="ИтогоСписокКонтекстноеМеню" id="50"/>
+							<ExtendedTooltip name="ИтогоСписокРасширеннаяПодсказка" id="164"/>
+						</LabelField>
+					</ChildItems>
+				</UsualGroup>
+				<UsualGroup name="КнопкиПеремещения" id="15">
+					<Visible>false</Visible>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Кнопки перемещения</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Кнопки перемещения</v8:content>
+						</v8:item>
+					</ToolTip>
+					<HorizontalStretch>true</HorizontalStretch>
+					<VerticalStretch>false</VerticalStretch>
+					<Group>Vertical</Group>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="КнопкиПеремещенияРасширеннаяПодсказка" id="165"/>
+					<ChildItems>
+						<LabelDecoration name="Декорация1" id="18">
+							<ContextMenu name="Декорация1КонтекстноеМеню" id="19"/>
+							<ExtendedTooltip name="Декорация1РасширеннаяПодсказка" id="166"/>
+						</LabelDecoration>
+						<LabelDecoration name="Декорация3" id="46">
+							<ContextMenu name="Декорация3КонтекстноеМеню" id="47"/>
+							<ExtendedTooltip name="Декорация3РасширеннаяПодсказка" id="167"/>
+						</LabelDecoration>
+						<LabelDecoration name="Декорация2" id="30">
+							<ContextMenu name="Декорация2КонтекстноеМеню" id="31"/>
+							<ExtendedTooltip name="Декорация2РасширеннаяПодсказка" id="168"/>
+						</LabelDecoration>
+					</ChildItems>
+				</UsualGroup>
+				<UsualGroup name="Группа2" id="51">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Выбранные участники</v8:content>
+						</v8:item>
+					</Title>
+					<TitleTextColor>style:FieldSelectionBackColor</TitleTextColor>
+					<TitleFont ref="sys:DefaultGUIFont" height="10" bold="true" italic="false" underline="false" strikeout="false" kind="WindowsFont"/>
+					<Group>Vertical</Group>
+					<Representation>None</Representation>
+					<TitleDataPath>ИтогоВыбранные</TitleDataPath>
+					<ExtendedTooltip name="Группа2РасширеннаяПодсказка" id="169"/>
+					<ChildItems>
+						<UsualGroup name="Группа4" id="68">
+							<Group>Horizontal</Group>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="Группа4РасширеннаяПодсказка" id="170"/>
+							<ChildItems>
+								<InputField name="СтрокаПоиска1" id="69">
+									<DataPath>СтрокаПоиска1</DataPath>
+									<Visible>false</Visible>
+									<TitleFont ref="sys:DefaultGUIFont" bold="true" italic="false" underline="false" strikeout="false" kind="WindowsFont"/>
+									<ClearButton>true</ClearButton>
+									<ContextMenu name="СтрокаПоиска1КонтекстноеМеню" id="70"/>
+									<ExtendedTooltip name="СтрокаПоиска1РасширеннаяПодсказка" id="171"/>
+									<Events>
+										<Event name="AutoComplete">СтрокаПоиска1АвтоПодбор</Event>
+									</Events>
+								</InputField>
+							</ChildItems>
+						</UsualGroup>
+						<UsualGroup name="Группа6" id="102">
+							<Group>Horizontal</Group>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="Группа6РасширеннаяПодсказка" id="172"/>
+							<ChildItems>
+								<Table name="ВыбранныеУчастники" id="10">
+									<Representation>List</Representation>
+									<CommandBarLocation>Top</CommandBarLocation>
+									<Header>false</Header>
+									<HorizontalLines>false</HorizontalLines>
+									<VerticalLines>false</VerticalLines>
+									<UseAlternationRowColor>true</UseAlternationRowColor>
+									<AutoInsertNewRow>true</AutoInsertNewRow>
+									<EnableStartDrag>true</EnableStartDrag>
+									<EnableDrag>true</EnableDrag>
+									<DataPath>ВыбранныеУчастники</DataPath>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Выбранные участники</v8:content>
+										</v8:item>
+									</Title>
+									<TitleTextColor>style:FieldSelectionBackColor</TitleTextColor>
+									<TitleFont ref="sys:DefaultGUIFont" height="10" bold="true" italic="false" underline="false" strikeout="false" kind="WindowsFont"/>
+									<SearchStringLocation>None</SearchStringLocation>
+									<ViewStatusLocation>None</ViewStatusLocation>
+									<SearchControlLocation>None</SearchControlLocation>
+									<RowFilter xsi:nil="true"/>
+									<ContextMenu name="ВыбранныеУчастникиКонтекстноеМеню" id="11"/>
+									<AutoCommandBar name="ВыбранныеУчастникиКоманднаяПанель" id="12">
+										<Autofill>false</Autofill>
+										<ChildItems>
+											<ButtonGroup name="ВыбранныеУчастникиГруппа1" id="116">
+												<ExtendedTooltip name="ВыбранныеУчастникиГруппа1РасширеннаяПодсказка" id="173"/>
+												<ChildItems>
+													<Button name="УдалитьИзВыбранных" id="17">
+														<Type>CommandBarButton</Type>
+														<Representation>Picture</Representation>
+														<CommandName>Form.Command.УдалитьИзВыбранных</CommandName>
+														<Picture>
+															<xr:Ref>StdPicture.MoveLeft</xr:Ref>
+															<xr:LoadTransparent>true</xr:LoadTransparent>
+														</Picture>
+														<ExtendedTooltip name="УдалитьИзВыбранныхРасширеннаяПодсказка" id="174"/>
+													</Button>
+													<Button name="УдалитьВсех" id="29">
+														<Type>CommandBarButton</Type>
+														<Representation>Picture</Representation>
+														<CommandName>Form.Command.УдалитьВсех</CommandName>
+														<Picture>
+															<xr:Ref>CommonPicture.ЛевоВсе</xr:Ref>
+															<xr:LoadTransparent>false</xr:LoadTransparent>
+														</Picture>
+														<ExtendedTooltip name="УдалитьВсехРасширеннаяПодсказка" id="175"/>
+													</Button>
+												</ChildItems>
+											</ButtonGroup>
+											<Button name="ВыбранныеУчастникиНайти" id="42">
+												<Type>CommandBarButton</Type>
+												<Representation>Picture</Representation>
+												<CommandName>Form.Item.ВыбранныеУчастники.StandardCommand.Find</CommandName>
+												<ExtendedTooltip name="ВыбранныеУчастникиНайтиРасширеннаяПодсказка" id="176"/>
+											</Button>
+											<Button name="ВыбранныеУчастникиОтменитьПоиск" id="43">
+												<Type>CommandBarButton</Type>
+												<Representation>Picture</Representation>
+												<CommandName>Form.Item.ВыбранныеУчастники.StandardCommand.CancelSearch</CommandName>
+												<ExtendedTooltip name="ВыбранныеУчастникиОтменитьПоискРасширеннаяПодсказка" id="177"/>
+											</Button>
+											<Button name="ВыбранныеУчастникиСортироватьСписокПоВозрастанию" id="44">
+												<Type>CommandBarButton</Type>
+												<Representation>Picture</Representation>
+												<OnlyInAllActions>true</OnlyInAllActions>
+												<CommandName>Form.Item.ВыбранныеУчастники.StandardCommand.SortListAsc</CommandName>
+												<ExtendedTooltip name="ВыбранныеУчастникиСортироватьСписокПоВозрастаниюРасширеннаяПодсказка" id="178"/>
+											</Button>
+											<Button name="ВыбранныеУчастникиСортироватьСписокПоУбыванию" id="45">
+												<Type>CommandBarButton</Type>
+												<Representation>Picture</Representation>
+												<OnlyInAllActions>true</OnlyInAllActions>
+												<CommandName>Form.Item.ВыбранныеУчастники.StandardCommand.SortListDesc</CommandName>
+												<ExtendedTooltip name="ВыбранныеУчастникиСортироватьСписокПоУбываниюРасширеннаяПодсказка" id="179"/>
+											</Button>
+										</ChildItems>
+									</AutoCommandBar>
+									<ExtendedTooltip name="ВыбранныеУчастникиРасширеннаяПодсказка" id="180"/>
+									<SearchStringAddition name="ВыбранныеУчастникиСтрокаПоиска" id="181">
+										<AdditionSource>
+											<Item>ВыбранныеУчастники</Item>
+											<Type>SearchStringRepresentation</Type>
+										</AdditionSource>
+										<ContextMenu name="ВыбранныеУчастникиСтрокаПоискаКонтекстноеМеню" id="182"/>
+										<ExtendedTooltip name="ВыбранныеУчастникиСтрокаПоискаРасширеннаяПодсказка" id="183"/>
+									</SearchStringAddition>
+									<ViewStatusAddition name="ВыбранныеУчастникиСостояниеПросмотра" id="184">
+										<AdditionSource>
+											<Item>ВыбранныеУчастники</Item>
+											<Type>ViewStatusRepresentation</Type>
+										</AdditionSource>
+										<ContextMenu name="ВыбранныеУчастникиСостояниеПросмотраКонтекстноеМеню" id="185"/>
+										<ExtendedTooltip name="ВыбранныеУчастникиСостояниеПросмотраРасширеннаяПодсказка" id="186"/>
+									</ViewStatusAddition>
+									<SearchControlAddition name="ВыбранныеУчастникиУправлениеПоиском" id="187">
+										<AdditionSource>
+											<Item>ВыбранныеУчастники</Item>
+											<Type>SearchControl</Type>
+										</AdditionSource>
+										<ContextMenu name="ВыбранныеУчастникиУправлениеПоискомКонтекстноеМеню" id="188"/>
+										<ExtendedTooltip name="ВыбранныеУчастникиУправлениеПоискомРасширеннаяПодсказка" id="189"/>
+									</SearchControlAddition>
+									<Events>
+										<Event name="Selection">ВыбранныеУчастникиВыбор</Event>
+										<Event name="AfterDeleteRow">ВыбранныеУчастникиПослеУдаления</Event>
+									</Events>
+									<ChildItems>
+										<InputField name="ВыбранныеУчастник" id="13">
+											<DataPath>ВыбранныеУчастники.Участник</DataPath>
+											<ReadOnly>true</ReadOnly>
+											<EditMode>EnterOnInput</EditMode>
+											<HorizontalStretch>true</HorizontalStretch>
+											<ChoiceButton>false</ChoiceButton>
+											<ClearButton>false</ClearButton>
+											<SpinButton>false</SpinButton>
+											<ContextMenu name="ВыбранныеУчастникКонтекстноеМеню" id="14"/>
+											<ExtendedTooltip name="ВыбранныеУчастникРасширеннаяПодсказка" id="190"/>
+										</InputField>
+										<InputField name="ВыбранныеДатаРождения" id="63">
+											<DataPath>ВыбранныеУчастники.Участник.ДатаРождения</DataPath>
+											<EditMode>EnterOnInput</EditMode>
+											<HorizontalStretch>true</HorizontalStretch>
+											<ContextMenu name="ВыбранныеДатаРожденияКонтекстноеМеню" id="64"/>
+											<ExtendedTooltip name="ВыбранныеДатаРожденияРасширеннаяПодсказка" id="191"/>
+										</InputField>
+										<InputField name="ВыбранныеРейтинг" id="58">
+											<DataPath>ВыбранныеУчастники.Рейтинг</DataPath>
+											<EditMode>EnterOnInput</EditMode>
+											<HorizontalStretch>true</HorizontalStretch>
+											<ContextMenu name="ВыбранныеРейтингКонтекстноеМеню" id="59"/>
+											<ExtendedTooltip name="ВыбранныеРейтингРасширеннаяПодсказка" id="192"/>
+										</InputField>
+									</ChildItems>
+								</Table>
+								<Button name="ДобавитьВСоревнования" id="27">
+									<Type>UsualButton</Type>
+									<Visible>false</Visible>
+									<Representation>Picture</Representation>
+									<Height>15</Height>
+									<CommandName>Form.Command.ДобавитьВСоревнования</CommandName>
+									<Picture>
+										<xr:Ref>StdPicture.BusinessProcessStart</xr:Ref>
+										<xr:LoadTransparent>true</xr:LoadTransparent>
+									</Picture>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Добавить в
+соревнование</v8:content>
+										</v8:item>
+									</Title>
+									<ExtendedTooltip name="ДобавитьВСоревнованияРасширеннаяПодсказка" id="193"/>
+								</Button>
+								<PictureDecoration name="Декорация5" id="105">
+									<Width>3</Width>
+									<VerticalStretch>true</VerticalStretch>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Добавляет выбранных участников в сорвенование</v8:content>
+										</v8:item>
+									</ToolTip>
+									<Hyperlink>true</Hyperlink>
+									<PictureSize>Proportionally</PictureSize>
+									<Picture>
+										<xr:Ref>StdPicture.BusinessProcessStart</xr:Ref>
+										<xr:LoadTransparent>true</xr:LoadTransparent>
+									</Picture>
+									<Border width="1">
+										<v8ui:style xsi:type="v8ui:ControlBorderType">Single</v8ui:style>
+									</Border>
+									<ContextMenu name="Декорация5КонтекстноеМеню" id="106"/>
+									<ExtendedTooltip name="Декорация5РасширеннаяПодсказка" id="194"/>
+									<Events>
+										<Event name="Click">Декорация5Нажатие</Event>
+									</Events>
+								</PictureDecoration>
+							</ChildItems>
+						</UsualGroup>
+						<UsualGroup name="Группа5" id="71">
+							<Visible>false</Visible>
+							<Group>Horizontal</Group>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<TitleDataPath>ИтогоВыбранные</TitleDataPath>
+							<ExtendedTooltip name="Группа5РасширеннаяПодсказка" id="195"/>
+							<ChildItems>
+								<LabelField name="ИтогоВыбранные" id="52">
+									<DataPath>ИтогоВыбранные</DataPath>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Выбрано</v8:content>
+										</v8:item>
+									</Title>
+									<TitleFont ref="sys:DefaultGUIFont" height="9" bold="true" italic="false" underline="false" strikeout="false" kind="WindowsFont"/>
+									<TextColor>style:FieldSelectionBackColor</TextColor>
+									<Font ref="sys:DefaultGUIFont" height="10" bold="true" italic="false" underline="false" strikeout="false" kind="WindowsFont"/>
+									<ContextMenu name="ИтогоВыбранныеКонтекстноеМеню" id="53"/>
+									<ExtendedTooltip name="ИтогоВыбранныеРасширеннаяПодсказка" id="196"/>
+								</LabelField>
+							</ChildItems>
+						</UsualGroup>
+					</ChildItems>
+				</UsualGroup>
+			</ChildItems>
+		</UsualGroup>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="ВыбранныеУчастники" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Выбранные участники</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueTable</v8:Type>
+			</Type>
+			<Columns>
+				<Column name="Участник" id="1">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Участник</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>cfg:CatalogRef.Участники</v8:Type>
+					</Type>
+				</Column>
+				<Column name="Рейтинг" id="2">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Рейтинг</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>10</v8:Digits>
+							<v8:FractionDigits>2</v8:FractionDigits>
+							<v8:AllowedSign>Any</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+				</Column>
+			</Columns>
+		</Attribute>
+		<Attribute name="НачДата" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Нач дата</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:dateTime</v8:Type>
+				<v8:DateQualifiers>
+					<v8:DateFractions>Date</v8:DateFractions>
+				</v8:DateQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="КонДата" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Кон дата</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:dateTime</v8:Type>
+				<v8:DateQualifiers>
+					<v8:DateFractions>Date</v8:DateFractions>
+				</v8:DateQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="СписокУчастников" id="6">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Список участников</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueTable</v8:Type>
+			</Type>
+			<Columns>
+				<Column name="Участник" id="1">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Участник</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>cfg:CatalogRef.Участники</v8:Type>
+					</Type>
+				</Column>
+			</Columns>
+		</Attribute>
+		<Attribute name="ТипСоревнования" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Тип </v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:EnumRef.ТипСоревнования</v8:Type>
+			</Type>
+			<Save>
+				<Field>ТипСоревнования</Field>
+			</Save>
+		</Attribute>
+		<Attribute name="ИтогоСписок" id="7">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Итого список</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:decimal</v8:Type>
+				<v8:NumberQualifiers>
+					<v8:Digits>10</v8:Digits>
+					<v8:FractionDigits>0</v8:FractionDigits>
+					<v8:AllowedSign>Any</v8:AllowedSign>
+				</v8:NumberQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ИтогоВыбранные" id="8">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Итого выбранные</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:decimal</v8:Type>
+				<v8:NumberQualifiers>
+					<v8:Digits>15</v8:Digits>
+					<v8:FractionDigits>0</v8:FractionDigits>
+					<v8:AllowedSign>Any</v8:AllowedSign>
+				</v8:NumberQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="Группа" id="9">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:CatalogRef.Участники</v8:Type>
+			</Type>
+			<Save>
+				<Field>Группа</Field>
+			</Save>
+		</Attribute>
+		<Attribute name="ОбъектДокумент" id="10">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Объект документ</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:DocumentObject.ПроведениеСоревнования</v8:Type>
+			</Type>
+			<UseAlways>
+				<Field>ОбъектДокумент.RegisterRecords</Field>
+			</UseAlways>
+		</Attribute>
+		<Attribute name="ДокНовый" id="11">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Док новый</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="СтрокаПоиска" id="12">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Поиск</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="СтрокаПоиска1" id="13">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Поиск</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ВидРейтинга" id="14">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Вид рейтинга</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:CatalogRef.ВидыРейтинга</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="СписокУчастниковДляПодбора" id="15">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Список участников для подбора</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:DynamicList</v8:Type>
+			</Type>
+			<UseAlways>
+				<Field>СписокУчастниковДляПодбора.Участник</Field>
+				<Field>СписокУчастниковДляПодбора.НеВыводитьВОтчетах</Field>
+				<Field>~СписокУчастниковДляПодбора.ВидРейтинга</Field>
+			</UseAlways>
+			<Settings xsi:type="DynamicList">
+				<ManualQuery>true</ManualQuery>
+				<DynamicDataRead>true</DynamicDataRead>
+				<QueryText>ВЫБРАТЬ
+	Участники.Ссылка КАК Участник,
+	Участники.ДатаРождения КАК ДатаРождения,
+	ЕСТЬNULL(РейтингУчастниковСрезПоследних.Рейтинг, 0) КАК Рейтинг,
+	Участники.Наименование КАК ФИО,
+	Участники.НеВыводитьВОтчетах КАК НеВыводитьВОтчетах
+ИЗ
+	Справочник.Участники КАК Участники
+		ЛЕВОЕ СОЕДИНЕНИЕ РегистрСведений.РейтингУчастников.СрезПоследних(, ВидРейтинга = &amp;ВидРейтинга) КАК РейтингУчастниковСрезПоследних
+		ПО Участники.Ссылка = РейтингУчастниковСрезПоследних.Участник
+ГДЕ
+	Участники.ЭтоГруппа = ЛОЖЬ
+	И Участники.ПометкаУдаления = ЛОЖЬ
+	И НЕ Участники.Ссылка В (&amp;СписокВыбранных)</QueryText>
+				<MainTable>Catalog.Участники</MainTable>
+				<ListSettings>
+					<dcsset:filter>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>dfcece9d-5077-440b-b6b3-45a5cb4538eb</dcsset:userSettingID>
+					</dcsset:filter>
+					<dcsset:order>
+						<dcsset:item xsi:type="dcsset:OrderItemField">
+							<dcsset:field>Участник.Наименование</dcsset:field>
+							<dcsset:orderType>Asc</dcsset:orderType>
+						</dcsset:item>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>88619765-ccb3-46c6-ac52-38e9c992ebd4</dcsset:userSettingID>
+					</dcsset:order>
+					<dcsset:conditionalAppearance>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>b75fecce-942b-4aed-abc9-e6a02e460fb3</dcsset:userSettingID>
+					</dcsset:conditionalAppearance>
+					<dcsset:itemsViewMode>Normal</dcsset:itemsViewMode>
+					<dcsset:itemsUserSettingID>911b6018-f537-43e8-a417-da56b22f9aec</dcsset:itemsUserSettingID>
+				</ListSettings>
+			</Settings>
+		</Attribute>
+		<Attribute name="СписокСмешанныхТипов" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Список смешанных типов</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueListType</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="СписокЗнаковОтбора" id="16">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Список знаков отбора</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueListType</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="РейтингОтбора" id="17">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Рейтинг отбора</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:decimal</v8:Type>
+				<v8:NumberQualifiers>
+					<v8:Digits>15</v8:Digits>
+					<v8:FractionDigits>2</v8:FractionDigits>
+					<v8:AllowedSign>Nonnegative</v8:AllowedSign>
+				</v8:NumberQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ЭлементФормыЗнаковРавенства" id="18">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Элемент формы знаков равенства</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ИнфСтрока" id="19">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Инф строка</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ВсеУчастникиКомандныхСоревнований" id="20">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Все участники командных соревнований</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueListType</v8:Type>
+			</Type>
+		</Attribute>
+		<ConditionalAppearance>
+			<dcsset:item>
+				<dcsset:selection>
+					<dcsset:item>
+						<dcsset:field>СписокУчастниковДляПодбора</dcsset:field>
+					</dcsset:item>
+				</dcsset:selection>
+				<dcsset:filter>
+					<dcsset:item xsi:type="dcsset:FilterItemComparison">
+						<dcsset:left xsi:type="dcscor:Field">СписокУчастниковДляПодбора.НеВыводитьВОтчетах</dcsset:left>
+						<dcsset:comparisonType>Equal</dcsset:comparisonType>
+						<dcsset:right xsi:type="xs:boolean">true</dcsset:right>
+					</dcsset:item>
+				</dcsset:filter>
+				<dcsset:appearance>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>ЦветТекста</dcscor:parameter>
+						<dcscor:value xsi:type="v8ui:Color">#FF0000</dcscor:value>
+					</dcscor:item>
+				</dcsset:appearance>
+			</dcsset:item>
+		</ConditionalAppearance>
+	</Attributes>
+	<Commands>
+		<Command name="ВВыбранные" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>В выбранные</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>В выбранные</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ВВыбранные</Action>
+		</Command>
+		<Command name="УдалитьИзВыбранных" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Удалить из выбранных</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Удалить из выбранных</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>УдалитьИзВыбранных</Action>
+		</Command>
+		<Command name="ДобавитьВСоревнования" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Добавить в соревнование</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Добавить в соревнования</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ДобавитьВСоревнования</Action>
+		</Command>
+		<Command name="УдалитьВсех" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Удалить всех</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Удалить всех</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>УдалитьВсех</Action>
+		</Command>
+		<Command name="Заполнить" id="6">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Заполнить</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Подобрать участников</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>CommonPicture.Подобрать</xr:Ref>
+				<xr:LoadTransparent>false</xr:LoadTransparent>
+			</Picture>
+			<Action>Заполнить</Action>
+			<Representation>TextPicture</Representation>
+		</Command>
+		<Command name="СортировкаУбыв" id="7">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сортировка убыв</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сортировка убыв</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>StdPicture.SortListDesc</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>СортировкаУбыв</Action>
+			<Representation>Picture</Representation>
+		</Command>
+		<Command name="СортировкаВозр" id="8">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сортировка возр</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сортировка возр</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>StdPicture.SortListAsc</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>СортировкаВозр</Action>
+			<Representation>Picture</Representation>
+		</Command>
+		<Command name="РежимОтображенияСписков" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Режим отображения списков</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Режим отображения списков</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>StdPicture.ListViewModeList</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>РежимОтображенияСписков</Action>
+			<Representation>Picture</Representation>
+		</Command>
+	</Commands>
+</Form>

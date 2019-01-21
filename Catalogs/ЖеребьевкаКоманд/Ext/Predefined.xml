@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<PredefinedData xmlns="http://v8.1c.ru/8.3/xcf/predef" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="CatalogPredefinedItems" version="2.4">
+	<Item id="ecb8770a-9587-4b57-afb4-59716191bed4">
+		<Name>Приложение61</Name>
+		<Code>000000001</Code>
+		<Description>Приложение 6.1</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="383e0200-7956-43db-a026-669330871e13">
+		<Name>Приложение62</Name>
+		<Code>000000002</Code>
+		<Description>Приложение 6.2</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="4b61f04d-2191-40ed-b3f1-677f42ace047">
+		<Name>Приложение64</Name>
+		<Code>000000004</Code>
+		<Description>Приложение 6.4</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="e200c713-a119-4231-b0d7-be31fd5cb27c">
+		<Name>Приложение65</Name>
+		<Code>000000005</Code>
+		<Description>Приложение 6.5</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+</PredefinedData>
