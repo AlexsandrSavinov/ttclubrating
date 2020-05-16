@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:CommonTemplate xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="4275b3cf-fdec-4b8e-8518-7b89d1a86796">
+  <name>АвторскиеПраваЗащищены</name>
+  <synonym>
+    <key>ru</key>
+    <value>Авторские права защищены</value>
+  </synonym>
+  <templateType>BinaryData</templateType>
+</mdclass:CommonTemplate>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:CommonPicture xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="a5f63700-2575-411e-8684-f23008f31c1b">
+  <name>ИконкаТелеграмм</name>
+  <synonym>
+    <key>ru</key>
+    <value>Иконка телеграмм</value>
+  </synonym>
+</mdclass:CommonPicture>

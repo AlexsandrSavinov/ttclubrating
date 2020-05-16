@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Report xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="014f5e89-5884-4dc9-b472-18f1b856f18f">
+  <producedTypes>
+    <objectType typeId="a524dbf6-043d-4d33-b39f-c57a5cb0e8c1" valueTypeId="45fb6d23-8a75-4a81-ad27-6edada2809a3"/>
+    <managerType typeId="3aeaf878-3d2d-4891-831c-11a5db7126ec" valueTypeId="0bdd6dd8-71d0-4bf3-832e-14ce16d621a7"/>
+  </producedTypes>
+  <name>ДетализацияПрироста</name>
+  <synonym>
+    <key>ru</key>
+    <value>Детализация прироста</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <mainDataCompositionSchema>Report.ДетализацияПрироста.Template.ОсновнаяСхемаКомпоновкиДанных</mainDataCompositionSchema>
+  <templates uuid="b884b1dc-03a5-4ad6-8147-043332814ecb">
+    <name>ОсновнаяСхемаКомпоновкиДанных</name>
+    <synonym>
+      <key>ru</key>
+      <value>Основная схема компоновки данных</value>
+    </synonym>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+</mdclass:Report>

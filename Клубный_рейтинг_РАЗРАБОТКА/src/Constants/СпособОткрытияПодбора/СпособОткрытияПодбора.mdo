@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Constant xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="4a8bc8e5-a37b-403c-b5f6-8be7c5095f5c">
+  <producedTypes>
+    <managerType typeId="11cef651-3332-4695-9cdb-c26d47fd4543" valueTypeId="eff00dbd-3b3b-4fe7-b3e1-79fc28526c2f"/>
+    <valueManagerType typeId="4ff7611a-650b-474b-bb55-92b002d08da8" valueTypeId="b35195c2-45e2-4379-9cfc-02d2fa9bca2e"/>
+    <valueKeyType typeId="3f6d2817-1508-5756-9573-3d7c1b2bcf41" valueTypeId="bf553994-10b5-5685-b702-c62d860948e8"/>
+  </producedTypes>
+  <name>СпособОткрытияПодбора</name>
+  <synonym>
+    <key>ru</key>
+    <value>Способ открытия формы &quot;Подбор участников&quot;</value>
+  </synonym>
+  <type>
+    <types>String</types>
+    <stringQualifiers>
+      <length>25</length>
+    </stringQualifiers>
+  </type>
+  <useStandardCommands>true</useStandardCommands>
+  <minValue xsi:type="core:UndefinedValue"/>
+  <maxValue xsi:type="core:UndefinedValue"/>
+  <dataLockControlMode>Managed</dataLockControlMode>
+</mdclass:Constant>

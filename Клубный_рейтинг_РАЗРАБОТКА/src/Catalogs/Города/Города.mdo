@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Catalog xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="4c478464-f022-4657-8f4f-212293f2218e">
+  <producedTypes>
+    <objectType typeId="1d7343c8-90f3-4b27-96bd-ab3b77fa109c" valueTypeId="284868ef-c250-4d02-b026-e44d4f467bd7"/>
+    <refType typeId="900889ce-fbc1-4fee-bc49-343675603657" valueTypeId="65498c50-dbf9-44e9-bb5f-6ba511c6ffc3"/>
+    <selectionType typeId="5266bfed-c641-4c56-a0d2-a176673918c3" valueTypeId="c1c3884f-3642-4807-be56-f597a2cded71"/>
+    <listType typeId="4a6535f5-c200-4f32-8e3a-9043b5625826" valueTypeId="745e827a-1f68-461b-9742-e0fb4868de62"/>
+    <managerType typeId="661c7099-3692-4035-bd05-85e44135c52f" valueTypeId="00b2f499-c454-414c-9ff7-b3037949b306"/>
+  </producedTypes>
+  <name>Города</name>
+  <synonym>
+    <key>ru</key>
+    <value>Города</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Catalog.Города.StandardAttribute.Description</inputByString>
+  <inputByString>Catalog.Города.StandardAttribute.Code</inputByString>
+  <searchStringModeOnInputByString>AnyPart</searchStringModeOnInputByString>
+  <choiceDataGetModeOnInputByString>Background</choiceDataGetModeOnInputByString>
+  <createOnInput>Use</createOnInput>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <objectPresentation>
+    <key>ru</key>
+    <value>Город</value>
+  </objectPresentation>
+  <listPresentation>
+    <key>ru</key>
+    <value>Города</value>
+  </listPresentation>
+  <levelCount>2</levelCount>
+  <foldersOnTop>true</foldersOnTop>
+  <codeLength>9</codeLength>
+  <descriptionLength>50</descriptionLength>
+  <codeType>String</codeType>
+  <codeAllowedLength>Variable</codeAllowedLength>
+  <checkUnique>true</checkUnique>
+  <autonumbering>true</autonumbering>
+  <defaultPresentation>AsDescription</defaultPresentation>
+  <editType>InDialog</editType>
+  <choiceMode>BothWays</choiceMode>
+</mdclass:Catalog>

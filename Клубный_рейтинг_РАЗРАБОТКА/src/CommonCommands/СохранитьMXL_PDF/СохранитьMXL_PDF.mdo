@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:CommonCommand xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="9336da76-e803-4caf-9654-a919025b18cd">
+  <name>СохранитьMXL_PDF</name>
+  <synonym>
+    <key>ru</key>
+    <value>Сохранить в PDF</value>
+  </synonym>
+  <group>FormCommandBarImportant</group>
+  <commandParameterType/>
+  <representation>Auto</representation>
+  <toolTip>
+    <key>ru</key>
+    <value>Сохранить в PDF</value>
+  </toolTip>
+  <picture xsi:type="core:PictureRef">
+    <picture>CommonPicture.ИконкаPDF</picture>
+  </picture>
+  <shortcut></shortcut>
+</mdclass:CommonCommand>

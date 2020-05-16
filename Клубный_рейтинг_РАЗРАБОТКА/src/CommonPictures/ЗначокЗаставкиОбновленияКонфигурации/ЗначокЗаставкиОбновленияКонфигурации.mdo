@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:CommonPicture xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="a2efd90a-bce2-433e-ad25-86fe97a30c48">
+  <name>ЗначокЗаставкиОбновленияКонфигурации</name>
+  <synonym>
+    <key>ru</key>
+    <value>Значок заставки обновления конфигурации</value>
+  </synonym>
+</mdclass:CommonPicture>

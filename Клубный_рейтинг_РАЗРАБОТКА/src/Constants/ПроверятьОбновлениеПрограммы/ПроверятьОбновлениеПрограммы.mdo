@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Constant xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="7ea42312-a4e4-463f-939c-47fafb0cfd63">
+  <producedTypes>
+    <managerType typeId="3afd45a0-b5d3-46ab-a872-7789d31fbd29" valueTypeId="cb6870a3-1979-4687-a6ce-653f09fe958c"/>
+    <valueManagerType typeId="ab0ec1c2-fa99-4765-aaff-b51b0c5e7240" valueTypeId="2e62dfee-b792-4496-99a1-37eb8cea8107"/>
+    <valueKeyType typeId="9e80a4e9-7031-50a3-afa6-545857458148" valueTypeId="95fe368f-9a6f-5586-9260-274aa9317263"/>
+  </producedTypes>
+  <name>ПроверятьОбновлениеПрограммы</name>
+  <synonym>
+    <key>ru</key>
+    <value>Проверять обновление программы</value>
+  </synonym>
+  <type>
+    <types>Boolean</types>
+  </type>
+  <useStandardCommands>true</useStandardCommands>
+  <minValue xsi:type="core:UndefinedValue"/>
+  <maxValue xsi:type="core:UndefinedValue"/>
+  <dataLockControlMode>Managed</dataLockControlMode>
+</mdclass:Constant>

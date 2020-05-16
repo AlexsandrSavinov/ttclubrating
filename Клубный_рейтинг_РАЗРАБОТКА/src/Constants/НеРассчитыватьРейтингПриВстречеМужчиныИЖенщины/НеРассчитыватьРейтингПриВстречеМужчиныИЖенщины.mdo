@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Constant xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="00055d16-1df9-41eb-ae33-08d2c3df4f55">
+  <producedTypes>
+    <managerType typeId="e50f98c7-b969-42c2-a716-32f9746f3f6c" valueTypeId="a9d18058-a098-4f25-9918-e9034b0127c8"/>
+    <valueManagerType typeId="668cd3a5-1e60-4947-86c5-a51215cd9092" valueTypeId="65e8baea-9947-4c3f-8a56-19d96466e948"/>
+    <valueKeyType typeId="1dde34fd-2990-5952-9c42-5ad12238bafb" valueTypeId="a001d5cc-15f0-5ab6-aae0-e1fad725a1b6"/>
+  </producedTypes>
+  <name>НеРассчитыватьРейтингПриВстречеМужчиныИЖенщины</name>
+  <synonym>
+    <key>ru</key>
+    <value>Не рассчитывать рейтинг при встрече мужчины и женщины</value>
+  </synonym>
+  <type>
+    <types>Boolean</types>
+  </type>
+  <useStandardCommands>true</useStandardCommands>
+  <minValue xsi:type="core:UndefinedValue"/>
+  <maxValue xsi:type="core:UndefinedValue"/>
+  <dataLockControlMode>Managed</dataLockControlMode>
+</mdclass:Constant>

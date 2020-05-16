@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="3b18c709-0ded-4ec8-b6ad-6bb66e9ea459">
+  <producedTypes>
+    <selectionType typeId="f4593b17-0bc7-4413-af5b-f5911dfce5e1" valueTypeId="e237110f-8850-415e-8fa5-5bd073ba1565"/>
+    <listType typeId="66a31f6b-d6b8-42fa-94c3-74dfe4debf75" valueTypeId="cb9fdd72-9e70-4cf6-96c4-b05819bdc890"/>
+    <managerType typeId="e38e893f-dc22-4c8e-b7a0-619b84d63a83" valueTypeId="d2db41d0-c08f-4890-894b-e80c37a4cb33"/>
+    <recordSetType typeId="134ba1de-0180-40ea-b2f9-17db08327d4d" valueTypeId="3e6fde0a-5816-4f68-85e3-b935ba676222"/>
+    <recordKeyType typeId="9cb192f5-2814-4bd1-a44b-d585d67e24aa" valueTypeId="b021fd78-e06d-4ea6-a7f7-a2a6b0805021"/>
+    <recordType typeId="dfbf6a80-beaa-4155-ad80-8fa286c3c800" valueTypeId="b040f515-45dd-4419-a7db-a5e9cf605399"/>
+    <recordManagerType typeId="fd493cbb-4ad4-4fdf-a57f-e573f28326b3" valueTypeId="b0746c87-b2b9-4821-af6e-0eb0b0dc546e"/>
+  </producedTypes>
+  <name>ПериодДействияРазрядов</name>
+  <synonym>
+    <key>ru</key>
+    <value>Период действия разрядов</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <defaultRecordForm>InformationRegister.ПериодДействияРазрядов.Form.ФормаЗаписи</defaultRecordForm>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Active</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>LineNumber</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Recorder</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Period</name>
+    <synonym>
+      <key>ru</key>
+      <value>Действует с</value>
+    </synonym>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <informationRegisterPeriodicity>Day</informationRegisterPeriodicity>
+  <mainFilterOnPeriod>true</mainFilterOnPeriod>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <resources uuid="c57442c8-f32f-466d-ac1b-5097893b2820">
+    <name>СрокДействияЛет</name>
+    <synonym>
+      <key>ru</key>
+      <value>Срок действия лет</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>3</precision>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <dimensions uuid="3ad36e15-18f2-486e-b47f-ff5b1bd294b3">
+    <name>РазрядЗвание</name>
+    <synonym>
+      <key>ru</key>
+      <value>Разряд/звание</value>
+    </synonym>
+    <type>
+      <types>EnumRef.РазрядыИЗвания</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <forms uuid="8dd6b12b-6e8f-43e6-bed3-b904886ef4c0">
+    <name>ФормаЗаписи</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма записи</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:InformationRegister>

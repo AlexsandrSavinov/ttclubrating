@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Constant xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="469b34b4-5dbb-4800-934a-b81d31739b3d">
+  <producedTypes>
+    <managerType typeId="55128714-60b7-4453-8662-9d831951635d" valueTypeId="8866be74-228d-477e-8e53-d3d5030d4d3d"/>
+    <valueManagerType typeId="4884957f-7b82-4495-aa44-50d224cf9da5" valueTypeId="ec5b98db-950d-4480-904b-1f3b35110f90"/>
+    <valueKeyType typeId="9b17a7fd-4476-5439-9e2a-4cd346e990d1" valueTypeId="675b2b2c-90af-59ae-b5a0-edf6302f72b5"/>
+  </producedTypes>
+  <name>ВыводитьСоотношениеПартий</name>
+  <synonym>
+    <key>ru</key>
+    <value>Выводить соотношение партий</value>
+  </synonym>
+  <type>
+    <types>Boolean</types>
+  </type>
+  <useStandardCommands>true</useStandardCommands>
+  <minValue xsi:type="core:UndefinedValue"/>
+  <maxValue xsi:type="core:UndefinedValue"/>
+  <dataLockControlMode>Managed</dataLockControlMode>
+</mdclass:Constant>

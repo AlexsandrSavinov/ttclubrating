@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="34cd9385-4fc7-4d76-8112-6830d990b064">
+  <producedTypes>
+    <selectionType typeId="0fe7b9b0-5340-4fb4-81cc-dda33b805b20" valueTypeId="e9827752-16c3-41a8-a4f9-3e2be1f57670"/>
+    <listType typeId="94ccbd5f-c6a1-474c-b0b6-a5400b5394e7" valueTypeId="f3f261bf-ddb6-404e-946e-4c437d826ac0"/>
+    <managerType typeId="044c2114-8a3c-4f9d-888d-a4c9841ed9a1" valueTypeId="505d6ba1-a557-46ac-8640-4a13f68b6e7f"/>
+    <recordSetType typeId="482ed9a6-e4bf-4247-94c2-7dd4c7da2782" valueTypeId="de5a0f25-f637-4191-b674-e2add7fc9722"/>
+    <recordKeyType typeId="f4815d63-ca1e-4ab3-ae66-b88dcd047545" valueTypeId="012101eb-3cd2-4505-8eb2-f083943da537"/>
+    <recordType typeId="957da547-16bf-492d-bfdc-38163ee86570" valueTypeId="27d9612d-41a1-446a-96cc-ef74619efb0b"/>
+    <recordManagerType typeId="dc99391d-6669-40c1-a8ea-c5a7e8f0e344" valueTypeId="2058c258-851a-4b8a-a955-c9453c192ee4"/>
+  </producedTypes>
+  <name>ТекущиеВстречи</name>
+  <synonym>
+    <key>ru</key>
+    <value>Текущие встречи</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <defaultRecordForm>InformationRegister.ТекущиеВстречи.Form.ФормаЗаписи</defaultRecordForm>
+  <defaultListForm>InformationRegister.ТекущиеВстречи.Form.ФормаСписка</defaultListForm>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <resources uuid="2babbc6b-50b4-4c9a-b956-86faafb3b91f">
+    <name>Участник1</name>
+    <synonym>
+      <key>ru</key>
+      <value>Участник</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Участники</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="1271d305-f10e-40a7-aa8e-97e0cbf7948a">
+    <name>Участник2</name>
+    <synonym>
+      <key>ru</key>
+      <value>Участник</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Участники</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="1ad4acde-0b9f-4f9e-8c67-456984671e6f">
+    <name>ДатаВызова</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дата вызова</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers/>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <dimensions uuid="8b2787f1-4c40-41b1-bad6-9d7be300efc3">
+    <name>ИДФормы</name>
+    <synonym>
+      <key>ru</key>
+      <value>ИДФормы</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>100</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <indexing>Index</indexing>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="0fe5c653-ec4e-474b-a145-c4a4733a6389">
+    <name>НомерСтола</name>
+    <synonym>
+      <key>ru</key>
+      <value>№ стола</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>3</precision>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <indexing>Index</indexing>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <forms uuid="5b57ab42-9ca2-406d-a674-5e361903ef3c">
+    <name>ФормаЗаписи</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма записи</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="757727fe-a4a0-48e5-96a2-1f77effe9653">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <commands uuid="9bf025be-6425-4f8d-8f81-1e040e1bd719">
+    <name>ТекущиеВстречи</name>
+    <synonym>
+      <key>ru</key>
+      <value>Текущие встречи</value>
+    </synonym>
+    <group>NavigationPanelImportant</group>
+    <commandParameterType/>
+    <representation>Auto</representation>
+    <shortcut></shortcut>
+  </commands>
+</mdclass:InformationRegister>

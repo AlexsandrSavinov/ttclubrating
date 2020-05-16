@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Enum xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="7d6d2e2c-3521-4de8-816f-31fb8970bf17">
+  <producedTypes>
+    <refType typeId="cdb924d4-aa59-40fc-93bc-69a198d020db" valueTypeId="be80baca-adfc-40b4-bd13-3464ac6cd047"/>
+    <listType typeId="ed27b1f4-1c65-42fe-bb9b-86444ce4f6d0" valueTypeId="73a39072-ded5-484d-aa16-8905701b18df"/>
+    <managerType typeId="547705db-56f7-4693-b6df-9ef69e30498b" valueTypeId="64e9405b-9815-4b7f-9472-fa92710e5501"/>
+  </producedTypes>
+  <name>ТекущиеРейтинги</name>
+  <synonym>
+    <key>ru</key>
+    <value>Текущие рейтинги</value>
+  </synonym>
+  <quickChoice>true</quickChoice>
+  <choiceMode>BothWays</choiceMode>
+  <enumValues uuid="e15f3482-5c3e-4047-a882-1652a70f2abb">
+    <name>РейтингТекущийВыигравшего</name>
+    <synonym>
+      <key>ru</key>
+      <value>РТв</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="c9f989cf-9c6b-41e5-9a6c-4e8097fc281a">
+    <name>РейтингТекущийПроигравшего</name>
+    <synonym>
+      <key>ru</key>
+      <value>РТп</value>
+    </synonym>
+  </enumValues>
+</mdclass:Enum>

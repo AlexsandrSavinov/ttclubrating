@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Constant xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="cf06144c-d541-4603-83fe-b2acbbd258fd">
+  <producedTypes>
+    <managerType typeId="0ecc2a1d-548a-481b-bbb3-be877ca1807c" valueTypeId="01fe73a6-23eb-4d15-9af2-c502f6856386"/>
+    <valueManagerType typeId="f6b7e3da-d0e4-4fbb-8570-1e87eab899df" valueTypeId="2fb2c32d-f2df-4a61-9ea8-dc27cabe4172"/>
+    <valueKeyType typeId="036db9f4-2775-5a5e-8e9c-ac9612b7be14" valueTypeId="a86c91ad-a9ef-5a6b-aba8-a476ee4800ea"/>
+  </producedTypes>
+  <name>КоличествоСтоловПоГоризонтали</name>
+  <synonym>
+    <key>ru</key>
+    <value>Количество столов по горизонтали</value>
+  </synonym>
+  <type>
+    <types>Number</types>
+    <numberQualifiers>
+      <precision>2</precision>
+    </numberQualifiers>
+  </type>
+  <useStandardCommands>true</useStandardCommands>
+  <minValue xsi:type="core:UndefinedValue"/>
+  <maxValue xsi:type="core:UndefinedValue"/>
+  <dataLockControlMode>Managed</dataLockControlMode>
+</mdclass:Constant>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Enum xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="c7d32b7a-a4cf-48ff-b7bd-bc98a88cc053">
+  <producedTypes>
+    <refType typeId="10267579-22fc-44a5-8aa6-370663051cda" valueTypeId="f608da2f-33ff-4c0e-95cd-5005948e88bd"/>
+    <listType typeId="6f237626-1028-4fb1-93b7-8741f09ebe2a" valueTypeId="f937fd54-47bc-41e0-8e89-60e278bfa44d"/>
+    <managerType typeId="09fb6a20-e3df-42f9-9cd1-2957449cc6ff" valueTypeId="1bb73ded-7da9-4f0e-a1d4-c012f588359a"/>
+  </producedTypes>
+  <name>ВидыФайлов</name>
+  <synonym>
+    <key>ru</key>
+    <value>Виды файлов</value>
+  </synonym>
+  <quickChoice>true</quickChoice>
+  <choiceMode>BothWays</choiceMode>
+  <enumValues uuid="14bf9de2-274c-45f1-b060-c575e5bc0a52">
+    <name>Отчет</name>
+    <synonym>
+      <key>ru</key>
+      <value>Отчет</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="7816e37e-d06e-4a88-9a96-a721533bad76">
+    <name>Обработка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Обработка</value>
+    </synonym>
+  </enumValues>
+</mdclass:Enum>

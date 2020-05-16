@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:CommonCommand xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="06f4a94a-9c95-49c4-869d-3213f470d9b9">
+  <name>СохранитьMXL_PNG</name>
+  <synonym>
+    <key>ru</key>
+    <value>Сохранить в картинку png</value>
+  </synonym>
+  <group>FormCommandBarImportant</group>
+  <commandParameterType/>
+  <representation>Auto</representation>
+  <toolTip>
+    <key>ru</key>
+    <value>Сохранить в картинку png</value>
+  </toolTip>
+  <picture xsi:type="core:PictureRef">
+    <picture>CommonPicture.ИконкаPNG</picture>
+  </picture>
+  <shortcut></shortcut>
+</mdclass:CommonCommand>

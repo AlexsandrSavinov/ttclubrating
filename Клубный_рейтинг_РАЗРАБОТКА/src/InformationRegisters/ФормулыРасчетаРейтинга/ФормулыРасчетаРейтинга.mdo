@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="88a0d94a-9152-4092-aa3f-1348e575b613">
+  <producedTypes>
+    <selectionType typeId="57a2ae41-2441-450b-a3e8-fc35f2c533fb" valueTypeId="67c83168-5781-4f8b-97e5-36731930f282"/>
+    <listType typeId="8460d079-d09f-4aaf-90e7-aab4a9e7ef3d" valueTypeId="c21ff14d-6b4c-4242-a805-1a6ac57695d1"/>
+    <managerType typeId="606fa013-ef7f-42e8-a44f-fac8f94e447a" valueTypeId="fe79234f-04f4-4392-bb0a-f236c8f10bc6"/>
+    <recordSetType typeId="97c722fd-b961-497b-9cac-850cd5fd733b" valueTypeId="138593f9-72bf-47ad-b742-f20a5d6fd900"/>
+    <recordKeyType typeId="4087b4fa-965d-45d7-bfad-459b74950e67" valueTypeId="4a7d514f-f116-452a-a637-2eaddac976af"/>
+    <recordType typeId="056df305-64db-4d22-96b7-07d63dcf5c32" valueTypeId="5cb0a9d2-e09c-4a3e-9fb4-a5b9a145923c"/>
+    <recordManagerType typeId="f7f19343-9719-4155-8a04-e0de9008540e" valueTypeId="58faed17-97cd-4f53-83a1-a44daa4066e5"/>
+  </producedTypes>
+  <name>ФормулыРасчетаРейтинга</name>
+  <synonym>
+    <key>ru</key>
+    <value>Формулы расчета рейтинга</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <defaultRecordForm>InformationRegister.ФормулыРасчетаРейтинга.Form.ФормаЗаписи</defaultRecordForm>
+  <defaultListForm>InformationRegister.ФормулыРасчетаРейтинга.Form.ФормаСписка</defaultListForm>
+  <informationRegisterPeriodicity>Day</informationRegisterPeriodicity>
+  <mainFilterOnPeriod>true</mainFilterOnPeriod>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <recordPresentation>
+    <key>ru</key>
+    <value>Формула расчета прироста</value>
+  </recordPresentation>
+  <listPresentation>
+    <key>ru</key>
+    <value>Формулы</value>
+  </listPresentation>
+  <resources uuid="81e8e686-d084-4f47-ae37-3ffb0c4aa594">
+    <name>Формула</name>
+    <synonym>
+      <key>ru</key>
+      <value>Формула</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>150</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+  </resources>
+  <dimensions uuid="c0a3c4cd-5d8f-480b-a76c-41c205c9ef05">
+    <name>ТипПрироста</name>
+    <synonym>
+      <key>ru</key>
+      <value>Тип прироста</value>
+    </synonym>
+    <type>
+      <types>EnumRef.ТипыПриростов</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <forms uuid="26b77333-9f58-459d-a728-cf02eecdc397">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="a88f72e2-739c-4203-9aa6-230ca6b38ade">
+    <name>ФормаЗаписи</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма записи</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:InformationRegister>

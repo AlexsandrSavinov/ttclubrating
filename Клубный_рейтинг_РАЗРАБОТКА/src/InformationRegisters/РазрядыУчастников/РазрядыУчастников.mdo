@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="0c0c7abd-9b59-4f60-a350-831facd50d64">
+  <producedTypes>
+    <selectionType typeId="76b48d3e-04dd-4b35-83be-7b7af6aa3293" valueTypeId="c9a96406-2322-412e-acd7-4268a376460a"/>
+    <listType typeId="81a685a7-798b-41e5-b3c3-04413a4b891b" valueTypeId="48e4b557-6b28-433e-95ca-d6ac10891e08"/>
+    <managerType typeId="693e4d0c-073f-4636-8eaa-f414c14c9e2d" valueTypeId="bd000bb4-14e7-4830-a7d1-4a0a68ca7508"/>
+    <recordSetType typeId="d3c90af5-5401-40d7-965a-ae413fb4ed73" valueTypeId="d24ebebe-211c-4f71-a4ce-a396b5e489e2"/>
+    <recordKeyType typeId="19900726-fff0-4b50-88e9-d64e0aa3afe3" valueTypeId="e3d7d68a-52fe-4bae-958f-89e41eccad03"/>
+    <recordType typeId="5ab0f99d-5495-43aa-9abc-6fa94fffc681" valueTypeId="a862148a-34c2-484c-bd68-c2e1bde5a8e6"/>
+    <recordManagerType typeId="4ef5c261-07df-47b5-ae00-ab75911d3990" valueTypeId="7d7449ee-c61f-438c-bc3f-3ab07b83ab73"/>
+  </producedTypes>
+  <name>РазрядыУчастников</name>
+  <synonym>
+    <key>ru</key>
+    <value>Разряды участников</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <informationRegisterPeriodicity>Day</informationRegisterPeriodicity>
+  <writeMode>RecorderSubordinate</writeMode>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <resources uuid="644ac4ed-aeb3-4c2b-8d12-6b55da479f89">
+    <name>Разряд</name>
+    <synonym>
+      <key>ru</key>
+      <value>Разряд</value>
+    </synonym>
+    <type>
+      <types>EnumRef.РазрядыИЗвания</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="574a10ac-ab79-4d71-a0b9-5315cc6493aa">
+    <name>ДатаПрисвоения</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дата присвоения</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers>
+        <dateFractions>Date</dateFractions>
+      </dateQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <dimensions uuid="69091f4f-f75e-44fa-a9fc-e680594dda2c">
+    <name>Участник</name>
+    <synonym>
+      <key>ru</key>
+      <value>Участник</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Участники</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>

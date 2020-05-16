@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Constant xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="49dab36e-ab9f-4e32-9d26-972b5697bc0b">
+  <producedTypes>
+    <managerType typeId="2d161d96-f9b5-4653-adb6-52a5f66c6497" valueTypeId="80babd6a-832b-4bef-903b-57ed6fd7d22f"/>
+    <valueManagerType typeId="96a236a0-06fc-43bf-88dc-0ad9f48429f4" valueTypeId="424bc115-242c-4f33-b90d-64e04943aece"/>
+    <valueKeyType typeId="97128eec-939c-58f6-9832-3533d7266b18" valueTypeId="297a9f9c-0883-50ca-b150-ced303a4fa74"/>
+  </producedTypes>
+  <name>НаименованиеКолонкиГорода</name>
+  <synonym>
+    <key>ru</key>
+    <value>Наименование колонки города</value>
+  </synonym>
+  <type>
+    <types>String</types>
+    <stringQualifiers>
+      <length>50</length>
+    </stringQualifiers>
+  </type>
+  <useStandardCommands>true</useStandardCommands>
+  <minValue xsi:type="core:UndefinedValue"/>
+  <maxValue xsi:type="core:UndefinedValue"/>
+  <dataLockControlMode>Managed</dataLockControlMode>
+</mdclass:Constant>

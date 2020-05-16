@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Constant xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="fa9a9e5e-12ea-4612-8481-2133193162fd">
+  <producedTypes>
+    <managerType typeId="f80203de-e0d7-4848-9b80-b22b9b4fad05" valueTypeId="fff5d9b7-2b92-428f-a1da-906cbca7b870"/>
+    <valueManagerType typeId="3f32eceb-d241-4863-ad66-0dacf56d6c1c" valueTypeId="dd9aa1cd-efc7-4cd3-b8fb-6e4c459e3e2e"/>
+    <valueKeyType typeId="8bef7649-4ca4-551a-bed0-6dc17f33288d" valueTypeId="bd28ccbb-d883-52ab-a883-5918935d568c"/>
+  </producedTypes>
+  <name>ВыводКолонкиКлуба</name>
+  <synonym>
+    <key>ru</key>
+    <value>Вывод колонки клуба</value>
+  </synonym>
+  <type>
+    <types>Boolean</types>
+  </type>
+  <useStandardCommands>true</useStandardCommands>
+  <minValue xsi:type="core:UndefinedValue"/>
+  <maxValue xsi:type="core:UndefinedValue"/>
+  <dataLockControlMode>Managed</dataLockControlMode>
+</mdclass:Constant>

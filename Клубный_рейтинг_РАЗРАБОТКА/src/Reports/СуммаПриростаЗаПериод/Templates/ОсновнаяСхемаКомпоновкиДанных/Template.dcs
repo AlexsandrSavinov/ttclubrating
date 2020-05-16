@@ -1,0 +1,313 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DataCompositionSchema xmlns="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcscom="http://v8.1c.ru/8.1/data-composition-system/common" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<dataSource>
+		<name>ИсточникДанных1</name>
+		<dataSourceType>Local</dataSourceType>
+	</dataSource>
+	<dataSet xsi:type="DataSetQuery">
+		<name>НаборДанных1</name>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ВидРейтинга</dataPath>
+			<field>ВидРейтинга</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ДатаРождения</dataPath>
+			<field>ДатаРождения</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>КонечныйРейтинг</dataPath>
+			<field>КонечныйРейтинг</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>На конец периода</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>НачальныйРейтинг</dataPath>
+			<field>НачальныйРейтинг</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>На начало периода</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>СуммаПрироста</dataPath>
+			<field>СуммаПрироста</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Прирост</v8:content>
+				</v8:item>
+			</title>
+			<appearance>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>ВыделятьОтрицательные</dcscor:parameter>
+					<dcscor:value xsi:type="xs:boolean">true</dcscor:value>
+				</dcscor:item>
+			</appearance>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Участник</dataPath>
+			<field>Участник</field>
+		</field>
+		<dataSource>ИсточникДанных1</dataSource>
+		<query>ВЫБРАТЬ
+	РейтингУчастников.Период,
+	РейтингУчастников.Участник,
+	РейтингУчастников.Участник.ДатаРождения КАК ДатаРождения,
+	РейтингУчастников.ВидРейтинга
+ПОМЕСТИТЬ втТаблицаПериодов
+ИЗ
+	РегистрСведений.РейтингУчастников КАК РейтингУчастников
+ГДЕ
+	РейтингУчастников.Период МЕЖДУ &amp;Нач И &amp;Кон
+
+СГРУППИРОВАТЬ ПО
+	РейтингУчастников.Период,
+	РейтингУчастников.Участник,
+	РейтингУчастников.Участник.ДатаРождения,
+	РейтингУчастников.ВидРейтинга
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ
+	МИНИМУМ(втТаблицаПериодов.Период) КАК Период,
+	втТаблицаПериодов.Участник КАК Участник,
+	втТаблицаПериодов.ДатаРождения,
+	втТаблицаПериодов.ВидРейтинга
+ПОМЕСТИТЬ втНачальныйПериод
+ИЗ
+	втТаблицаПериодов КАК втТаблицаПериодов
+
+СГРУППИРОВАТЬ ПО
+	втТаблицаПериодов.Участник,
+	втТаблицаПериодов.ДатаРождения,
+	втТаблицаПериодов.ВидРейтинга
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ
+	втНачальныйПериод.Период,
+	втНачальныйПериод.Участник,
+	втНачальныйПериод.ДатаРождения,
+	втНачальныйПериод.ВидРейтинга,
+	РейтингУчастников.СтарыйРейтинг
+ПОМЕСТИТЬ втИтоговаяНачальныйРейтинг
+ИЗ
+	втНачальныйПериод КАК втНачальныйПериод
+		ВНУТРЕННЕЕ СОЕДИНЕНИЕ РегистрСведений.РейтингУчастников КАК РейтингУчастников
+		ПО втНачальныйПериод.Период = РейтингУчастников.Период
+			И втНачальныйПериод.Участник = РейтингУчастников.Участник
+			И втНачальныйПериод.ВидРейтинга = РейтингУчастников.ВидРейтинга
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ
+	МАКСИМУМ(втТаблицаПериодов.Период) КАК Период,
+	втТаблицаПериодов.Участник,
+	втТаблицаПериодов.ДатаРождения,
+	втТаблицаПериодов.ВидРейтинга
+ПОМЕСТИТЬ втКонечныйПериод
+ИЗ
+	втТаблицаПериодов КАК втТаблицаПериодов
+
+СГРУППИРОВАТЬ ПО
+	втТаблицаПериодов.Участник,
+	втТаблицаПериодов.ДатаРождения,
+	втТаблицаПериодов.ВидРейтинга
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ
+	втКонечныйПериод.Период,
+	втКонечныйПериод.Участник,
+	втКонечныйПериод.ДатаРождения,
+	втКонечныйПериод.ВидРейтинга,
+	РейтингУчастников.Рейтинг
+ПОМЕСТИТЬ втИтоговаяКонечныйПериод
+ИЗ
+	втКонечныйПериод КАК втКонечныйПериод
+		ВНУТРЕННЕЕ СОЕДИНЕНИЕ РегистрСведений.РейтингУчастников КАК РейтингУчастников
+		ПО втКонечныйПериод.Период = РейтингУчастников.Период
+			И втКонечныйПериод.Участник = РейтингУчастников.Участник
+			И втКонечныйПериод.ВидРейтинга = РейтингУчастников.ВидРейтинга
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ
+	РейтингУчастников.Участник,
+	РейтингУчастников.ВидРейтинга,
+	СУММА(РейтингУчастников.Прирост) КАК Прирост
+ПОМЕСТИТЬ втСуммаПрироста
+ИЗ
+	РегистрСведений.РейтингУчастников КАК РейтингУчастников
+ГДЕ
+	РейтингУчастников.Период МЕЖДУ &amp;Нач И &amp;Кон
+
+СГРУППИРОВАТЬ ПО
+	РейтингУчастников.Участник,
+	РейтингУчастников.ВидРейтинга
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ
+	втИтоговаяКонечныйПериод.Участник КАК Участник,
+	втИтоговаяКонечныйПериод.ДатаРождения,
+	втИтоговаяКонечныйПериод.ВидРейтинга,
+	втИтоговаяНачальныйРейтинг.СтарыйРейтинг КАК НачальныйРейтинг,
+	втСуммаПрироста.Прирост КАК СуммаПрироста,
+	втИтоговаяКонечныйПериод.Рейтинг КАК КонечныйРейтинг
+ИЗ
+	втИтоговаяНачальныйРейтинг КАК втИтоговаяНачальныйРейтинг
+		ВНУТРЕННЕЕ СОЕДИНЕНИЕ втИтоговаяКонечныйПериод КАК втИтоговаяКонечныйПериод
+		ПО втИтоговаяНачальныйРейтинг.Участник = втИтоговаяКонечныйПериод.Участник
+			И втИтоговаяНачальныйРейтинг.ВидРейтинга = втИтоговаяКонечныйПериод.ВидРейтинга
+		ВНУТРЕННЕЕ СОЕДИНЕНИЕ втСуммаПрироста КАК втСуммаПрироста
+		ПО втИтоговаяНачальныйРейтинг.Участник = втСуммаПрироста.Участник
+			И втИтоговаяНачальныйРейтинг.ВидРейтинга = втСуммаПрироста.ВидРейтинга
+
+УПОРЯДОЧИТЬ ПО
+	НачальныйРейтинг УБЫВ,
+	втИтоговаяНачальныйРейтинг.Участник.Наименование</query>
+	</dataSet>
+	<parameter>
+		<name>Нач</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Нач</v8:content>
+			</v8:item>
+		</title>
+		<valueType>
+			<v8:Type>xs:dateTime</v8:Type>
+			<v8:DateQualifiers>
+				<v8:DateFractions>Date</v8:DateFractions>
+			</v8:DateQualifiers>
+		</valueType>
+		<value xsi:type="xs:dateTime">0001-01-01T00:00:00</value>
+		<useRestriction>true</useRestriction>
+		<expression>&amp;Период.ДатаНачала</expression>
+	</parameter>
+	<parameter>
+		<name>Кон</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Кон</v8:content>
+			</v8:item>
+		</title>
+		<valueType>
+			<v8:Type>xs:dateTime</v8:Type>
+			<v8:DateQualifiers>
+				<v8:DateFractions>Date</v8:DateFractions>
+			</v8:DateQualifiers>
+		</valueType>
+		<value xsi:type="xs:dateTime">0001-01-01T00:00:00</value>
+		<useRestriction>true</useRestriction>
+		<expression>&amp;Период.ДатаОкончания</expression>
+	</parameter>
+	<parameter>
+		<name>Период</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Период</v8:content>
+			</v8:item>
+		</title>
+		<valueType>
+			<v8:Type>v8:StandardPeriod</v8:Type>
+		</valueType>
+		<value xsi:type="v8:StandardPeriod">
+			<v8:variant xsi:type="v8:StandardPeriodVariant">ThisMonth</v8:variant>
+		</value>
+		<useRestriction>false</useRestriction>
+	</parameter>
+	<settingsVariant>
+		<dcsset:name>Основной</dcsset:name>
+		<dcsset:presentation xsi:type="xs:string">Основной</dcsset:presentation>
+		<dcsset:settings xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows">
+			<dcsset:selection>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>СистемныеПоля.НомерПоПорядку</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>Участник</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>ДатаРождения</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>ВидРейтинга</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>НачальныйРейтинг</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>СуммаПрироста</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>КонечныйРейтинг</dcsset:field>
+				</dcsset:item>
+				<dcsset:viewMode>Normal</dcsset:viewMode>
+				<dcsset:userSettingID>bed91522-2e04-4a93-87a3-8ffd460233bd</dcsset:userSettingID>
+			</dcsset:selection>
+			<dcsset:filter>
+				<dcsset:item xsi:type="dcsset:FilterItemComparison">
+					<dcsset:use>false</dcsset:use>
+					<dcsset:left xsi:type="dcscor:Field">Участник</dcsset:left>
+					<dcsset:comparisonType>InList</dcsset:comparisonType>
+					<dcsset:userSettingID>1d37a0aa-76b8-44bf-972e-4c2f1dc9d18d</dcsset:userSettingID>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:FilterItemComparison">
+					<dcsset:use>false</dcsset:use>
+					<dcsset:left xsi:type="dcscor:Field">ВидРейтинга</dcsset:left>
+					<dcsset:comparisonType>Equal</dcsset:comparisonType>
+					<dcsset:userSettingID>15056241-095e-4139-a83e-53bb8366f9b1</dcsset:userSettingID>
+				</dcsset:item>
+				<dcsset:viewMode>Normal</dcsset:viewMode>
+				<dcsset:userSettingID>0b17835e-2cae-4fb6-8573-27be2c677200</dcsset:userSettingID>
+			</dcsset:filter>
+			<dcsset:dataParameters>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:use>false</dcscor:use>
+					<dcscor:parameter>Нач</dcscor:parameter>
+					<dcscor:value xsi:type="xs:dateTime">0001-01-01T00:00:00</dcscor:value>
+					<dcsset:userSettingID>a9e39726-5a55-4d18-8f19-68c7a31ff047</dcsset:userSettingID>
+					<dcsset:userSettingPresentation xsi:type="xs:string">Начало периода</dcsset:userSettingPresentation>
+				</dcscor:item>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:use>false</dcscor:use>
+					<dcscor:parameter>Кон</dcscor:parameter>
+					<dcscor:value xsi:type="xs:dateTime">0001-01-01T00:00:00</dcscor:value>
+					<dcsset:userSettingID>a43e8dd7-83f8-4a5a-b98c-14d9026dead7</dcsset:userSettingID>
+					<dcsset:userSettingPresentation xsi:type="xs:string">Конец периода</dcsset:userSettingPresentation>
+				</dcscor:item>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>Период</dcscor:parameter>
+					<dcscor:value xsi:type="v8:StandardPeriod">
+						<v8:variant xsi:type="v8:StandardPeriodVariant">ThisMonth</v8:variant>
+					</dcscor:value>
+					<dcsset:userSettingID>d533b1b6-c963-416b-9d85-7bf5158ad478</dcsset:userSettingID>
+				</dcscor:item>
+			</dcsset:dataParameters>
+			<dcsset:item xsi:type="dcsset:StructureItemGroup">
+				<dcsset:filter>
+					<dcsset:viewMode>Normal</dcsset:viewMode>
+					<dcsset:userSettingID>0f577bc0-f7df-4743-87ab-b712b1b946e9</dcsset:userSettingID>
+				</dcsset:filter>
+				<dcsset:order>
+					<dcsset:item xsi:type="dcsset:OrderItemAuto"/>
+				</dcsset:order>
+				<dcsset:selection>
+					<dcsset:item xsi:type="dcsset:SelectedItemAuto"/>
+					<dcsset:viewMode>Normal</dcsset:viewMode>
+					<dcsset:userSettingID>19c424db-6f46-4b20-8858-9e116d1f0b4a</dcsset:userSettingID>
+				</dcsset:selection>
+			</dcsset:item>
+		</dcsset:settings>
+	</settingsVariant>
+</DataCompositionSchema>

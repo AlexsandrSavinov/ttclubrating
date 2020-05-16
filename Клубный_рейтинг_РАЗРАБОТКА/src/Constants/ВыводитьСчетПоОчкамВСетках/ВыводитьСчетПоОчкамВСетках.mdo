@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Constant xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="a066a969-ef87-4f07-920f-90e2562b70e4">
+  <producedTypes>
+    <managerType typeId="021adbcc-e6d9-4602-a8bf-a647eef61396" valueTypeId="e3960a33-ea55-475c-8e51-9b79c4cab130"/>
+    <valueManagerType typeId="28757afb-16d3-4ffc-baf9-22a67fc97081" valueTypeId="8ede829f-8355-4759-8b79-d3e977c46672"/>
+    <valueKeyType typeId="f3eb8840-70bc-5b52-994c-693c9ce28942" valueTypeId="e6ed742e-4f5c-5540-84ad-253db1d54b89"/>
+  </producedTypes>
+  <name>ВыводитьСчетПоОчкамВСетках</name>
+  <synonym>
+    <key>ru</key>
+    <value>Выводить счет по очкам</value>
+  </synonym>
+  <type>
+    <types>Boolean</types>
+  </type>
+  <useStandardCommands>true</useStandardCommands>
+  <minValue xsi:type="core:UndefinedValue"/>
+  <maxValue xsi:type="core:UndefinedValue"/>
+  <dataLockControlMode>Managed</dataLockControlMode>
+</mdclass:Constant>

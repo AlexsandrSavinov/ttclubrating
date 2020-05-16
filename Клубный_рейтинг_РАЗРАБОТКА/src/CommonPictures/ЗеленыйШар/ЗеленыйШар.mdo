@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:CommonPicture xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="a43dd5f6-f814-48d4-9baf-4eca9d6e2529">
+  <name>ЗеленыйШар</name>
+  <synonym>
+    <key>ru</key>
+    <value>Зеленый шар</value>
+  </synonym>
+</mdclass:CommonPicture>

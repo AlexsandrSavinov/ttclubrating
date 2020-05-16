@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:CommonPicture xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="cb6cb384-7510-4221-ae4c-119d98f4970f">
+  <name>СтолПоНастольномуТеннису</name>
+  <synonym>
+    <key>ru</key>
+    <value>Стол по настольному теннису</value>
+  </synonym>
+</mdclass:CommonPicture>

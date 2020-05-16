@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Constant xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="12402720-82ba-4ad1-b5cf-c4c986f18eb3">
+  <producedTypes>
+    <managerType typeId="9387b656-5780-43d3-b45a-004d2f9f469a" valueTypeId="f349eb2f-0975-401b-b59d-8d1dfb533f2c"/>
+    <valueManagerType typeId="f54fe23d-fe29-45cc-9b63-7a40064b0145" valueTypeId="2b4b1d50-3fb9-4543-a326-8a14c4578080"/>
+    <valueKeyType typeId="0dc2d9b3-6264-5c0f-9078-ab04b6d5aa9b" valueTypeId="6da41aee-8d96-5662-a666-c8af191fe56f"/>
+  </producedTypes>
+  <name>КоличествоУчастниковДляПодсчетаСреднегоРейтинга</name>
+  <synonym>
+    <key>ru</key>
+    <value>Количество участников для подсчета среднего рейтинга</value>
+  </synonym>
+  <type>
+    <types>Number</types>
+    <numberQualifiers>
+      <precision>10</precision>
+      <nonNegative>true</nonNegative>
+    </numberQualifiers>
+  </type>
+  <useStandardCommands>true</useStandardCommands>
+  <minValue xsi:type="core:UndefinedValue"/>
+  <maxValue xsi:type="core:UndefinedValue"/>
+  <dataLockControlMode>Managed</dataLockControlMode>
+</mdclass:Constant>

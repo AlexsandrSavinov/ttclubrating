@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Catalog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="39fc61f8-9513-4416-a9e7-cf1050bb85e1">
+  <producedTypes>
+    <objectType typeId="ff57b9f8-afde-4836-971d-040bad0366d9" valueTypeId="47345a10-682f-49d0-a56c-15df6677db0b"/>
+    <refType typeId="2e44e2ad-b41e-4bfe-ab3c-806c3bd34997" valueTypeId="ae8439f1-afbc-40a4-b73e-34a9752c06cb"/>
+    <selectionType typeId="3ac4f9cb-6223-4ec6-a649-72eb7100ebd3" valueTypeId="3b5576ee-fd29-4d67-823a-ded3737528a2"/>
+    <listType typeId="e5025a78-6e06-4d04-9e33-18ceaf2052ef" valueTypeId="0756ce8f-f186-4c16-8a70-7928a31bcd74"/>
+    <managerType typeId="3a5e7b96-b849-4ce2-ac4f-bfabcb7b4159" valueTypeId="7705002b-264e-4160-a003-dc566f199970"/>
+  </producedTypes>
+  <name>Клубы</name>
+  <synonym>
+    <key>ru</key>
+    <value>Клубы</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Catalog.Клубы.StandardAttribute.Description</inputByString>
+  <inputByString>Catalog.Клубы.StandardAttribute.Code</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <createOnInput>Use</createOnInput>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <objectPresentation>
+    <key>ru</key>
+    <value>Клуб</value>
+  </objectPresentation>
+  <listPresentation>
+    <key>ru</key>
+    <value>Клубы</value>
+  </listPresentation>
+  <levelCount>2</levelCount>
+  <foldersOnTop>true</foldersOnTop>
+  <codeLength>9</codeLength>
+  <descriptionLength>70</descriptionLength>
+  <codeType>String</codeType>
+  <codeAllowedLength>Variable</codeAllowedLength>
+  <checkUnique>true</checkUnique>
+  <autonumbering>true</autonumbering>
+  <defaultPresentation>AsDescription</defaultPresentation>
+  <editType>InDialog</editType>
+  <choiceMode>BothWays</choiceMode>
+  <defaultObjectForm>Catalog.Клубы.Form.ФормаЭлемента</defaultObjectForm>
+  <attributes uuid="1780c50d-af12-4381-b9a6-f39ea1dd01fb">
+    <name>Телефон</name>
+    <synonym>
+      <key>ru</key>
+      <value>Телефон</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>17</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="9fa057c9-81fe-4745-9ecc-dfe967f05072">
+    <name>Адрес</name>
+    <synonym>
+      <key>ru</key>
+      <value>Адрес</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>60</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <forms uuid="fa6f976a-fbd0-441c-a1ad-57e6d1e7d1ec">
+    <name>ФормаЭлемента</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма элемента</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:Catalog>

@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="c4ea5cd3-7def-4738-8add-aee640bb856a">
+  <producedTypes>
+    <selectionType typeId="b0e7b738-4847-4ee8-a423-df00f74f7e13" valueTypeId="893cc370-546b-4337-8a47-ef4d9c235863"/>
+    <listType typeId="14f383e0-4ac1-4426-8438-d4951e56ef92" valueTypeId="e78cd97d-994d-4ee1-acee-cf3e3e917319"/>
+    <managerType typeId="cae3bc7a-ec1f-4c42-a15b-9f2ff884acb0" valueTypeId="cb2df276-c884-49c5-9146-60a40e577311"/>
+    <recordSetType typeId="e21a2b58-5112-4f7f-a113-a08164ad79b9" valueTypeId="c4e15704-1ecd-49f9-bc1f-a9d632d6925e"/>
+    <recordKeyType typeId="c8b582bb-0ad3-46aa-827f-f908c53679a3" valueTypeId="748ff690-e65e-431b-b0a5-8b23ae840ddd"/>
+    <recordType typeId="d4261c6c-d382-489f-a0f5-4f9a183c35a9" valueTypeId="4051f5c4-b02a-4dd1-9ff3-771077709751"/>
+    <recordManagerType typeId="a20a53ef-1e59-4a10-bf4e-f781971af256" valueTypeId="5a02bad5-9fad-4c70-ba4e-dadb04b45852"/>
+  </producedTypes>
+  <name>ВстречиУчастников</name>
+  <synonym>
+    <key>ru</key>
+    <value>Встречи участников</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <resources uuid="c911643a-899c-4faa-b764-0535990430b7">
+    <name>ОчкиВыигравшего</name>
+    <synonym>
+      <key>ru</key>
+      <value>Очки выигравшего</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>15</precision>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="dc86128a-1499-4097-b38c-d343c2bc9f5d">
+    <name>ОчкиПроигравшего</name>
+    <synonym>
+      <key>ru</key>
+      <value>Очки проигравшего</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>15</precision>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <dimensions uuid="581adab2-f532-4b84-9203-bb58cd938133">
+    <name>Документ</name>
+    <synonym>
+      <key>ru</key>
+      <value>Документ</value>
+    </synonym>
+    <type>
+      <types>DocumentRef.ПроведениеСоревнования</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="fd432ab6-19c4-4bb7-b3d1-a9cc90ec2722">
+    <name>НомерТура</name>
+    <synonym>
+      <key>ru</key>
+      <value>Номер тура</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>10</precision>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="4c5c2bd4-7eab-44fb-8166-1dfbcba6eb86">
+    <name>НомерГруппы</name>
+    <synonym>
+      <key>ru</key>
+      <value>Номер группы</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>10</precision>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="5e7e4c47-4bed-4c33-bd54-f5ac62e7166e">
+    <name>РежимТура</name>
+    <synonym>
+      <key>ru</key>
+      <value>Режим тура</value>
+    </synonym>
+    <type>
+      <types>EnumRef.РежимыТуровСоревнования</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="86880d97-4921-48a8-8cbb-b8e6d9380284">
+    <name>Выигравший</name>
+    <synonym>
+      <key>ru</key>
+      <value>Выигравший</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Участники</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="1db9b811-a801-4762-b43f-9ac9c6cd04a6">
+    <name>Проигравший</name>
+    <synonym>
+      <key>ru</key>
+      <value>Проигравший</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Участники</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>

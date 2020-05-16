@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="fe0bc0cf-d873-43ee-b2cb-41f4462c0a7d">
+  <producedTypes>
+    <selectionType typeId="2dc3ff99-2d4c-444a-a8a5-8e386a14dee3" valueTypeId="7f80edff-24ad-4afb-a3c0-df490e22a061"/>
+    <listType typeId="b0b308cf-41ea-451a-95ab-7201d7f53901" valueTypeId="1ca4bf62-cab4-4cc4-aaad-d7c8b03c4a9b"/>
+    <managerType typeId="5ec54600-581d-45f5-922c-5a9d62397756" valueTypeId="2ba5bfef-d4b4-49d7-9b26-1c749811720b"/>
+    <recordSetType typeId="81e18186-af1c-4b34-9856-d1001020fdc3" valueTypeId="5651c69e-7d6f-480b-97b6-254cc8e9990b"/>
+    <recordKeyType typeId="6f071de3-051e-4b21-87a5-fd6e435388d2" valueTypeId="818d7154-59ca-4a4a-bd7b-493ddccf3ad0"/>
+    <recordType typeId="dfaf661d-b774-469f-b3b7-b41b61f67cd8" valueTypeId="521ad2d6-4d28-47d4-88c2-0eff2dc5cfcd"/>
+    <recordManagerType typeId="67c3c763-77e9-491c-b9ca-dbdeb65821b2" valueTypeId="b272bb25-f370-4be2-a814-619b2000fac9"/>
+  </producedTypes>
+  <name>НастройкиСбораГрупп</name>
+  <synonym>
+    <key>ru</key>
+    <value>Настройки сбора групп</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <defaultRecordForm>InformationRegister.НастройкиСбораГрупп.Form.ФормаЗаписи</defaultRecordForm>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <explanation>
+    <key>ru</key>
+    <value>Настройки для автоматического заполнения (формирования) групп в жеребьевке, для группового этапа.</value>
+  </explanation>
+  <resources uuid="c5be5a73-ef53-428c-a3ec-5fce0b0932b6">
+    <name>СМеста</name>
+    <synonym>
+      <key>ru</key>
+      <value>С места</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>2</precision>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="15e53caf-ac79-41fb-85ed-41316d9e8d45">
+    <name>ПоМесто</name>
+    <synonym>
+      <key>ru</key>
+      <value>По место</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>2</precision>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <dimensions uuid="35df794c-a5b7-433f-b8f2-1161224432bf">
+    <name>НомерГруппы</name>
+    <synonym>
+      <key>ru</key>
+      <value>Номер группы</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>2</precision>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <forms uuid="20b2ae61-aac0-48ea-96f0-3eaaf55010d7">
+    <name>ФормаЗаписи</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма записи</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:InformationRegister>

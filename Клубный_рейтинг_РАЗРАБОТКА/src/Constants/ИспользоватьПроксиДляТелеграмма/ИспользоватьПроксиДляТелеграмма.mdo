@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Constant xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="b769474c-0ccb-44da-890d-400c609b7648">
+  <producedTypes>
+    <managerType typeId="0866f434-f1df-4899-b06f-39404aafbbd1" valueTypeId="9ca73e6d-d979-46b7-93a4-3e119c33fad3"/>
+    <valueManagerType typeId="694b39b7-b2ee-4443-8c81-f06060ac716d" valueTypeId="781d2ed2-1960-41bf-b40c-2151238af887"/>
+    <valueKeyType typeId="099b4127-0d92-4a7c-b21f-3804c8745e29" valueTypeId="cc7fb94c-6057-4da3-bde0-207479373f16"/>
+  </producedTypes>
+  <name>ИспользоватьПроксиДляТелеграмма</name>
+  <synonym>
+    <key>ru</key>
+    <value>Использовать прокси для телеграмма</value>
+  </synonym>
+  <type>
+    <types>Boolean</types>
+  </type>
+  <useStandardCommands>true</useStandardCommands>
+  <minValue xsi:type="core:UndefinedValue"/>
+  <maxValue xsi:type="core:UndefinedValue"/>
+  <dataLockControlMode>Managed</dataLockControlMode>
+</mdclass:Constant>

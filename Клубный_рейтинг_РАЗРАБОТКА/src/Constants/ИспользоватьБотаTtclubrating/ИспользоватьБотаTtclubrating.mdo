@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Constant xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="cb5727cc-8e00-11ea-0b96-448a5b22d747">
+  <producedTypes>
+    <managerType typeId="cb5727c2-8e00-11ea-0b96-448a5b22d747" valueTypeId="cb5727c3-8e00-11ea-0b96-448a5b22d747"/>
+    <valueManagerType typeId="cb5727c4-8e00-11ea-0b96-448a5b22d747" valueTypeId="cb5727c5-8e00-11ea-0b96-448a5b22d747"/>
+    <valueKeyType typeId="cb5727c6-8e00-11ea-0b96-448a5b22d747" valueTypeId="cb5727c7-8e00-11ea-0b96-448a5b22d747"/>
+  </producedTypes>
+  <name>ИспользоватьБотаTtclubrating</name>
+  <synonym>
+    <key>ru</key>
+    <value>Использовать бота @ttclubrating</value>
+  </synonym>
+  <type>
+    <types>Boolean</types>
+  </type>
+  <useStandardCommands>true</useStandardCommands>
+  <toolTip>
+    <key>ru</key>
+    <value>Если включен этот бот то, независимо от того какой бот будет выбран для отправки, будет использоваться @ttclubrating. Его надо найти и добавить к себе в чат или группу, канал.</value>
+  </toolTip>
+  <minValue xsi:type="core:UndefinedValue"/>
+  <maxValue xsi:type="core:UndefinedValue"/>
+  <dataLockControlMode>Managed</dataLockControlMode>
+</mdclass:Constant>

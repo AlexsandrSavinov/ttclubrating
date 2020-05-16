@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Report xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="c6f7facb-05bf-43e8-9723-df7a08186beb">
+  <producedTypes>
+    <objectType typeId="2e831554-165e-4575-89f7-ac8ad52eed04" valueTypeId="e6f6c338-1879-48f5-9842-1a77e6f679fc"/>
+    <managerType typeId="b9f4c581-3a34-4e6d-8ae2-5af2c07710f6" valueTypeId="e07d50c7-c2d8-441e-9790-aeb2e68339e8"/>
+  </producedTypes>
+  <name>РазрядыИЗвания</name>
+  <synonym>
+    <key>ru</key>
+    <value>Разряды и звания</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <mainDataCompositionSchema>Report.РазрядыИЗвания.Template.ОсновнаяСхемаКомпоновкиДанных</mainDataCompositionSchema>
+  <templates uuid="2ea5909b-733e-49a9-b294-7865628d506d">
+    <name>ОсновнаяСхемаКомпоновкиДанных</name>
+    <synonym>
+      <key>ru</key>
+      <value>Основная схема компоновки данных</value>
+    </synonym>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+</mdclass:Report>

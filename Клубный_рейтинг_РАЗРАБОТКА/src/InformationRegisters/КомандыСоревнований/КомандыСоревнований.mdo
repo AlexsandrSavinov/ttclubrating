@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="b4a4eb06-4a0d-415e-9f5b-5e3132286cc6">
+  <producedTypes>
+    <selectionType typeId="f5cbacd9-72c8-4ea6-bb5c-673070f91493" valueTypeId="ac2a914e-92e2-448b-9d89-21c0f48f60cc"/>
+    <listType typeId="45279317-49ad-4c44-80d5-2a067ce62a6a" valueTypeId="6ff75106-dc54-44a0-93f3-a109732fb2f4"/>
+    <managerType typeId="56269b5e-50a8-4e89-aa36-5c0bae03f0ae" valueTypeId="2b57685b-f41d-46e5-9ab0-cd97fa838886"/>
+    <recordSetType typeId="dc99bf85-e0f6-4270-8846-7523c48c0e3c" valueTypeId="911bbe45-2dbf-4ab4-834a-bc25e21f6303"/>
+    <recordKeyType typeId="75c3dfee-fe2c-4dd4-ae5e-eeb640ec614b" valueTypeId="0cac17fd-3219-40bf-8ab4-93286b608a9a"/>
+    <recordType typeId="9cc6bc20-9dab-44bb-bdf0-3237a1498ebc" valueTypeId="dbb8a9dd-eba1-43a7-8b2d-3dd568989f32"/>
+    <recordManagerType typeId="be603356-cb5f-48ea-be82-c7a24774fef9" valueTypeId="e625454c-caac-440f-ad4a-eb6bc8e696e4"/>
+  </producedTypes>
+  <name>КомандыСоревнований</name>
+  <synonym>
+    <key>ru</key>
+    <value>Команды соревнований</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <writeMode>RecorderSubordinate</writeMode>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <resources uuid="1402b44d-e9a0-45a7-9f04-5d96755a91de">
+    <name>ТекущийРейтинг</name>
+    <synonym>
+      <key>ru</key>
+      <value>Текущий рейтинг</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>15</precision>
+        <scale>2</scale>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <dimensions uuid="0eeff1fb-49c3-415c-90ed-e5d780bda58c">
+    <name>Соревнование</name>
+    <synonym>
+      <key>ru</key>
+      <value>Соревнование</value>
+    </synonym>
+    <type>
+      <types>DocumentRef.ПроведениеСоревнования</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <indexing>Index</indexing>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="6073771f-20cb-46dd-b3ad-5e798265474a">
+    <name>НазваниеКоманды</name>
+    <synonym>
+      <key>ru</key>
+      <value>Название команды</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>300</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <indexing>Index</indexing>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="a01cf5d4-5faf-4518-a0cd-182a43083111">
+    <name>Участник</name>
+    <synonym>
+      <key>ru</key>
+      <value>Участник</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Участники</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>

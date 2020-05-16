@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Constant xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="24391f51-f621-453c-aeac-f16c55b1064e">
+  <producedTypes>
+    <managerType typeId="7674aaf6-439d-4598-87a3-ae4870f9ddba" valueTypeId="60aefcaa-a807-4e09-9e1c-12356a3a434c"/>
+    <valueManagerType typeId="b4171e11-bd07-4235-b984-98ee00f4cbe8" valueTypeId="94fa078f-4f01-478c-9ff5-4cbf8dd39726"/>
+    <valueKeyType typeId="3d1359cb-176c-532f-8e18-6966d94965fc" valueTypeId="fc2f8176-2788-5a1a-8113-8a3fd230713d"/>
+  </producedTypes>
+  <name>ПутьКwkhtmltoimage_exe</name>
+  <synonym>
+    <key>ru</key>
+    <value>Путь к wkhtmltoimage.exe</value>
+  </synonym>
+  <type>
+    <types>String</types>
+    <stringQualifiers>
+      <length>150</length>
+    </stringQualifiers>
+  </type>
+  <useStandardCommands>true</useStandardCommands>
+  <minValue xsi:type="core:UndefinedValue"/>
+  <maxValue xsi:type="core:UndefinedValue"/>
+  <dataLockControlMode>Managed</dataLockControlMode>
+</mdclass:Constant>

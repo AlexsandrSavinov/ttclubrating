@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:CommonPicture xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="1b83afd0-02c0-4b39-a024-2a4379b6df1d">
+  <name>ЭкспортСпискаБыстрый</name>
+  <synonym>
+    <key>ru</key>
+    <value>Экспорт списка быстрый</value>
+  </synonym>
+</mdclass:CommonPicture>

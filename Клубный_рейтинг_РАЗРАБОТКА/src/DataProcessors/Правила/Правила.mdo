@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:DataProcessor xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="6e921d5f-6732-4b5e-afab-e7e9725e72d1">
+  <producedTypes>
+    <objectType typeId="d6d29e1d-0e92-4a18-b653-dcb90d1bdb5e" valueTypeId="8097af82-2daa-42de-bc0e-90fb0d92d1a1"/>
+    <managerType typeId="1534fe42-9a23-47c4-98be-b3518a64671c" valueTypeId="7bd922af-c26a-47d5-a352-5b25f29b06d7"/>
+  </producedTypes>
+  <name>Правила</name>
+  <synonym>
+    <key>ru</key>
+    <value>Правила</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultForm>DataProcessor.Правила.Form.Форма</defaultForm>
+  <explanation>
+    <key>ru</key>
+    <value>Правила настольного тенниса утвержденные ФНТР</value>
+  </explanation>
+  <forms uuid="7847c441-28d0-46ce-a8f4-5b4e00c93d9e">
+    <name>Форма</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <templates uuid="f221496b-5753-4c9c-b494-b55289f70e7e">
+    <name>ПолныеПравила</name>
+    <synonym>
+      <key>ru</key>
+      <value>Полные правила</value>
+    </synonym>
+    <templateType>BinaryData</templateType>
+  </templates>
+  <templates uuid="78a2fce1-6dce-4d02-9540-64648a03e937">
+    <name>Приложение1</name>
+    <synonym>
+      <key>ru</key>
+      <value>Приложение1</value>
+    </synonym>
+    <templateType>BinaryData</templateType>
+  </templates>
+  <templates uuid="04ebb5d5-0fb2-4b34-b17b-ab0832d7f5cf">
+    <name>Приложение2</name>
+    <synonym>
+      <key>ru</key>
+      <value>Приложение2</value>
+    </synonym>
+    <templateType>BinaryData</templateType>
+  </templates>
+  <templates uuid="2a5c7d69-f14e-4757-bc2e-2b6b97bd1f5a">
+    <name>Приложение3</name>
+    <synonym>
+      <key>ru</key>
+      <value>Приложение3</value>
+    </synonym>
+    <templateType>BinaryData</templateType>
+  </templates>
+  <templates uuid="9f67af69-d433-4621-9a59-fcde7af34cde">
+    <name>Приложение4</name>
+    <synonym>
+      <key>ru</key>
+      <value>Приложение4</value>
+    </synonym>
+    <templateType>BinaryData</templateType>
+  </templates>
+  <templates uuid="9e492503-e5ea-4080-8f14-8eda96dce3d6">
+    <name>Приложение5</name>
+    <synonym>
+      <key>ru</key>
+      <value>Приложение5</value>
+    </synonym>
+    <templateType>BinaryData</templateType>
+  </templates>
+  <templates uuid="c2d24484-7681-4290-b4f1-df598bbe933b">
+    <name>Приложение6</name>
+    <synonym>
+      <key>ru</key>
+      <value>Приложение6</value>
+    </synonym>
+    <templateType>BinaryData</templateType>
+  </templates>
+  <templates uuid="0ead2e63-7321-4fb9-afd1-e736cc8f6558">
+    <name>Приложение7</name>
+    <synonym>
+      <key>ru</key>
+      <value>Приложение7</value>
+    </synonym>
+    <templateType>BinaryData</templateType>
+  </templates>
+  <templates uuid="5aac225b-ffb5-49dd-97fc-3b62ecfd0a96">
+    <name>Приложение8</name>
+    <synonym>
+      <key>ru</key>
+      <value>Приложение8</value>
+    </synonym>
+    <templateType>BinaryData</templateType>
+  </templates>
+  <templates uuid="0d3221a6-fe5c-4b00-95cd-bf8c5a726959">
+    <name>Приложение9</name>
+    <synonym>
+      <key>ru</key>
+      <value>Приложение9</value>
+    </synonym>
+    <templateType>BinaryData</templateType>
+  </templates>
+  <templates uuid="e7cabe9c-59c3-4acc-9a73-89285b9104ab">
+    <name>Приложение10</name>
+    <synonym>
+      <key>ru</key>
+      <value>Приложение10</value>
+    </synonym>
+    <templateType>BinaryData</templateType>
+  </templates>
+  <templates uuid="eab973ec-a5d5-4404-846b-f9aab56a8426">
+    <name>Приложение11</name>
+    <synonym>
+      <key>ru</key>
+      <value>Приложение11</value>
+    </synonym>
+    <templateType>BinaryData</templateType>
+  </templates>
+  <templates uuid="f056b140-0e83-4bee-9a70-1783ff898f54">
+    <name>Приложение12</name>
+    <synonym>
+      <key>ru</key>
+      <value>Приложение12</value>
+    </synonym>
+    <templateType>BinaryData</templateType>
+  </templates>
+  <templates uuid="084ab03e-ad6a-442d-8d7e-b345f6cf5a1d">
+    <name>Приложение13</name>
+    <synonym>
+      <key>ru</key>
+      <value>Приложение13</value>
+    </synonym>
+    <templateType>BinaryData</templateType>
+  </templates>
+  <templates uuid="e31ae13e-e31a-46bc-8870-5ef3b2626a0c">
+    <name>Приложение14</name>
+    <synonym>
+      <key>ru</key>
+      <value>Приложение14</value>
+    </synonym>
+    <templateType>BinaryData</templateType>
+  </templates>
+  <templates uuid="b8ce44c0-a676-419a-9ade-b33b148c36fa">
+    <name>ПриложениеA</name>
+    <synonym>
+      <key>ru</key>
+      <value>Приложение A</value>
+    </synonym>
+    <templateType>BinaryData</templateType>
+  </templates>
+  <templates uuid="66122ae0-a774-4d2c-9bbb-32f5ca770979">
+    <name>ПриложениеB</name>
+    <synonym>
+      <key>ru</key>
+      <value>Приложение B</value>
+    </synonym>
+    <templateType>BinaryData</templateType>
+  </templates>
+  <templates uuid="fe303172-7f48-4773-969c-762acef22e91">
+    <name>ПриложениеC</name>
+    <synonym>
+      <key>ru</key>
+      <value>Приложение C</value>
+    </synonym>
+    <templateType>BinaryData</templateType>
+  </templates>
+  <templates uuid="defc562e-fe44-41a1-a3cf-854a3d4b39e9">
+    <name>ПриложениеD</name>
+    <synonym>
+      <key>ru</key>
+      <value>Приложение D</value>
+    </synonym>
+    <templateType>BinaryData</templateType>
+  </templates>
+  <templates uuid="96b142bd-6433-4ebd-b2c4-5a93ab31c13a">
+    <name>ПриложениеE</name>
+    <synonym>
+      <key>ru</key>
+      <value>Приложение E</value>
+    </synonym>
+    <templateType>BinaryData</templateType>
+  </templates>
+  <templates uuid="37728fd2-eccc-4de3-99b2-02e741206db3">
+    <name>ПриложениеF</name>
+    <synonym>
+      <key>ru</key>
+      <value>Приложение F</value>
+    </synonym>
+    <templateType>BinaryData</templateType>
+  </templates>
+  <templates uuid="2507fd8e-8a3a-4137-b670-578a8ddd3673">
+    <name>ПриложениеG</name>
+    <synonym>
+      <key>ru</key>
+      <value>Приложение G</value>
+    </synonym>
+    <templateType>BinaryData</templateType>
+  </templates>
+  <templates uuid="ad7c85c7-4b78-4a9b-b06e-f306cd61e2be">
+    <name>ПриложениеH</name>
+    <synonym>
+      <key>ru</key>
+      <value>Приложение H</value>
+    </synonym>
+    <templateType>BinaryData</templateType>
+  </templates>
+  <templates uuid="f580fbc3-41a1-43a7-b32e-e18a43c0f3f9">
+    <name>РуководствоОфЛиц</name>
+    <synonym>
+      <key>ru</key>
+      <value>Руководство оф лиц</value>
+    </synonym>
+    <templateType>BinaryData</templateType>
+  </templates>
+  <commands uuid="6d4ca74a-80c9-45e6-91dc-79e1739e0588">
+    <name>ОткрытьПравила</name>
+    <synonym>
+      <key>ru</key>
+      <value>Правила</value>
+    </synonym>
+    <group>NavigationPanelSeeAlso</group>
+    <commandParameterType/>
+    <representation>Auto</representation>
+    <shortcut></shortcut>
+  </commands>
+</mdclass:DataProcessor>

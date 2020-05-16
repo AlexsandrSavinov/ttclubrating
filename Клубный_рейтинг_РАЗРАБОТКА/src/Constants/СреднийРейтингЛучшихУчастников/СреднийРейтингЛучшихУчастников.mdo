@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Constant xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="2a6b653a-70b2-4b61-83a1-5031154237e8">
+  <producedTypes>
+    <managerType typeId="533ad1b0-9713-4716-802e-f620efb4947a" valueTypeId="0fcd615f-1b9b-4394-a156-74521d653bf0"/>
+    <valueManagerType typeId="d4d2bebf-f195-4553-b1b2-290e57fc9e2b" valueTypeId="94d1085d-33be-473e-a63f-4942cc16bb78"/>
+    <valueKeyType typeId="7c635f03-97d5-564c-b6b7-1d23cbfeb084" valueTypeId="ba1ec95b-61aa-5e8f-83b1-72993b7295f0"/>
+  </producedTypes>
+  <name>СреднийРейтингЛучшихУчастников</name>
+  <synonym>
+    <key>ru</key>
+    <value>Средний рейтинг лучших участников</value>
+  </synonym>
+  <type>
+    <types>Number</types>
+    <numberQualifiers>
+      <precision>3</precision>
+      <nonNegative>true</nonNegative>
+    </numberQualifiers>
+  </type>
+  <useStandardCommands>true</useStandardCommands>
+  <minValue xsi:type="core:UndefinedValue"/>
+  <maxValue xsi:type="core:UndefinedValue"/>
+  <dataLockControlMode>Managed</dataLockControlMode>
+</mdclass:Constant>

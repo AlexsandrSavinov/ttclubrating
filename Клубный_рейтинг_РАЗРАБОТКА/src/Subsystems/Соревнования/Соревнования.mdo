@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Subsystem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="5077fec0-0e6d-4e5c-b495-3087dc30c4b2">
+  <name>Соревнования</name>
+  <synonym>
+    <key>ru</key>
+    <value>Проведение соревнований</value>
+  </synonym>
+  <includeHelpInContents>true</includeHelpInContents>
+  <includeInCommandInterface>true</includeInCommandInterface>
+  <picture xsi:type="core:PictureRef">
+    <picture>CommonPicture.кСоревнования</picture>
+  </picture>
+  <content>Document.ПроведениеСоревнования</content>
+  <content>CommonPicture.кСоревнования</content>
+  <content>InformationRegister.ИсторияСоревнований</content>
+  <content>InformationRegister.ВстречиУчастников</content>
+  <content>InformationRegister.РейтингУчастников</content>
+  <content>CommonPicture.ДанныеСоревнования</content>
+  <content>CommonPicture.РассчитатьРейтинг</content>
+  <content>CommonPicture.ЗаписатьДанные</content>
+  <content>Report.ТекущийРейтингУчастников</content>
+  <content>CommonPicture.КартинкаВыборВГрупповомЭтапе</content>
+  <content>Document.ВводНачальногоРейтинга</content>
+  <content>CommonPicture.РезультатЖеребьевки</content>
+  <content>Document.ПрисвоитьРазряд</content>
+  <content>InformationRegister.ДетализацияПриростаРейтинга</content>
+  <content>Catalog.ДополнительныеОтчетыИОбработки</content>
+  <content>CommonPicture.УчестьИгры</content>
+  <content>CommonForm.НастройкиПрограммы</content>
+  <content>DataProcessor.ПроверкаОбновления</content>
+  <content>CommonPicture.Обновление</content>
+  <content>Report.РазрядыИЗвания</content>
+  <content>CommonPicture.МонеткаДляЖеребьевкиБольшая</content>
+  <content>CommonPicture.МонеткаМаленькая</content>
+  <content>CommonPicture.СтолПоНастольномуТеннису</content>
+  <content>DataProcessor.СозданиеПользователя</content>
+  <content>Report.ОтчетКарточкаУчастника</content>
+  <content>CommonPicture.КарточкаУчастника</content>
+  <content>Enum.ВидыСоревнований</content>
+  <content>InformationRegister.НастройкиСбораГрупп</content>
+  <content>CommonPicture.РассчитанПоРежиму</content>
+  <content>Report.ДетализацияПрироста</content>
+  <content>DataProcessor.ЗагрузкаУчастников</content>
+  <content>Report.СписокУчастниковСоревнований</content>
+  <content>Report.СуммаПриростаЗаПериод</content>
+  <content>Report.СписокБыстрогоРасчета</content>
+  <content>InformationRegister.ПорядокИгр</content>
+  <content>DataProcessor.Правила</content>
+  <content>InformationRegister.КомандыСоревнований</content>
+  <content>Enum.ВариантыРасстановки</content>
+  <content>Catalog.ЖеребьевкаКоманд</content>
+  <content>InformationRegister.ТекущиеВстречи</content>
+  <content>Enum.ОтображениеВкладок</content>
+  <content>Report.ПобедыНадРазрядниками</content>
+  <content>InformationRegister.МестаУчастниковСоревнований</content>
+  <content>Report.ОтчетМестаУчастников</content>
+  <content>InformationRegister.ПериодДействияРазрядов</content>
+  <content>Report.ИзменениеПозицийУчастниковПоРейтингу</content>
+  <subsystems>Справочники</subsystems>
+</mdclass:Subsystem>

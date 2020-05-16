@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Constant xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="7e20c15b-1dd8-4820-9620-cd211d43e388">
+  <producedTypes>
+    <managerType typeId="11a8f36a-8754-45cd-bdc9-7103614c5b35" valueTypeId="5013622b-fa09-4963-a09d-9880906d703a"/>
+    <valueManagerType typeId="331f3226-e29b-42c5-b808-2e8c3fcb5a40" valueTypeId="481c27a8-6164-43ae-9019-b33ff6d89374"/>
+    <valueKeyType typeId="02a11a27-3fd3-5562-ba16-4e0393b3b682" valueTypeId="988bdb25-a4b9-544b-915e-071f515f9b21"/>
+  </producedTypes>
+  <name>ЗаголовокОкна</name>
+  <synonym>
+    <key>ru</key>
+    <value>Заголовок окна</value>
+  </synonym>
+  <type>
+    <types>String</types>
+    <stringQualifiers>
+      <length>200</length>
+    </stringQualifiers>
+  </type>
+  <useStandardCommands>true</useStandardCommands>
+  <minValue xsi:type="core:UndefinedValue"/>
+  <maxValue xsi:type="core:UndefinedValue"/>
+  <dataLockControlMode>Managed</dataLockControlMode>
+</mdclass:Constant>

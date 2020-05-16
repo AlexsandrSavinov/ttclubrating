@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="4a1c497c-1721-4119-b1a7-5771ebfc5918">
+  <producedTypes>
+    <selectionType typeId="615c15d1-524f-4b7d-aadd-897bbe91954e" valueTypeId="469c3c86-8f65-4107-a49a-cf5c192b08fd"/>
+    <listType typeId="7ad7eba1-5f22-4594-832e-a43dff5f023f" valueTypeId="42ecab45-582f-4ba8-949d-028b3549c51d"/>
+    <managerType typeId="09ab6630-dad7-4f52-96ec-5dbe8c7dedda" valueTypeId="02d42571-4f93-47ee-827e-19588441f92b"/>
+    <recordSetType typeId="9cba2478-de6a-4825-b17e-f8acc1915534" valueTypeId="958801f3-de35-44d2-8eb3-3e8bf95f7a73"/>
+    <recordKeyType typeId="33f33ef0-718b-4aae-90ff-d3449cf05b75" valueTypeId="5a1a8e6e-fbe9-49b6-9f45-14db12c58239"/>
+    <recordType typeId="d8d4e4f1-97d2-4a94-8001-aba2c76326cd" valueTypeId="d23c10a7-1dba-456e-9440-c6f8667ef124"/>
+    <recordManagerType typeId="41776c8b-5152-4acd-b7a0-e0b919a528d2" valueTypeId="3c372396-de8b-4ec0-bb6d-774169fc0006"/>
+  </producedTypes>
+  <name>ПубликацияЗаписейВСоцСетях</name>
+  <synonym>
+    <key>ru</key>
+    <value>Публикация записей в соц сетях</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <defaultRecordForm>InformationRegister.ПубликацияЗаписейВСоцСетях.Form.ФормаЗаписи</defaultRecordForm>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <resources uuid="239a743b-d12c-4a9b-a7ca-2ee72a7d13b1">
+    <name>Публиковать</name>
+    <synonym>
+      <key>ru</key>
+      <value>Публиковать</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="6f852a57-19f1-45d6-9225-51561e2488e0">
+    <name>Комментарий</name>
+    <synonym>
+      <key>ru</key>
+      <value>Комментарий</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>100</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+  </resources>
+  <attributes uuid="2420e2a3-8a0d-440b-a19e-9d0bea0c90e5">
+    <name>Участник</name>
+    <synonym>
+      <key>ru</key>
+      <value>Участник</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Участники</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <dimensions uuid="23f51e60-409f-455f-9226-111669f47a0b">
+    <name>СоцСеть</name>
+    <synonym>
+      <key>ru</key>
+      <value>Соц. сеть</value>
+    </synonym>
+    <type>
+      <types>EnumRef.СоцСеть</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="e15b51dd-1440-44da-99e2-7c6dc280022d">
+    <name>ТипПубликации</name>
+    <synonym>
+      <key>ru</key>
+      <value>Тип публикации</value>
+    </synonym>
+    <type>
+      <types>EnumRef.ТипПубликации</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="238ccd36-e8ab-44a2-adb7-cc4d9a0147f7">
+    <name>ИД</name>
+    <synonym>
+      <key>ru</key>
+      <value>ID</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>20</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <forms uuid="8de71f20-bae7-4783-a236-23a282a02701">
+    <name>ФормаЗаписи</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма записи</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:InformationRegister>

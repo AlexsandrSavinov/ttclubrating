@@ -1,0 +1,454 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DataCompositionSchema xmlns="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcscom="http://v8.1c.ru/8.1/data-composition-system/common" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<dataSource>
+		<name>ИсточникДанных1</name>
+		<dataSourceType>Local</dataSourceType>
+	</dataSource>
+	<dataSet xsi:type="DataSetQuery">
+		<name>НаборДанных1</name>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Период</dataPath>
+			<field>Период</field>
+			<appearance>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>Формат</dcscor:parameter>
+					<dcscor:value xsi:type="xs:string">ДФ=dd.MM.yyyy</dcscor:value>
+				</dcscor:item>
+			</appearance>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Очки1</dataPath>
+			<field>Очки1</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Очки2</dataPath>
+			<field>Очки2</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Период1</dataPath>
+			<field>Период1</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Дата получения разряда</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Период2</dataPath>
+			<field>Период2</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Дата получения разряда соперником</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Разряд1</dataPath>
+			<field>Разряд1</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Разряд участника</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Разряд2</dataPath>
+			<field>Разряд2</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Разряд соперника</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>РежимТура</dataPath>
+			<field>РежимТура</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Участник1</dataPath>
+			<field>Участник1</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Участник</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Участник2</dataPath>
+			<field>Участник2</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Соперник</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>НомерТура</dataPath>
+			<field>НомерТура</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Итог1</dataPath>
+			<field>Итог1</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Кол-во выигранных</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Итог2</dataPath>
+			<field>Итог2</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Кол-во проигранных</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ИтогПоПартиям</dataPath>
+			<field>ИтогПоПартиям</field>
+			<presentationExpression>Строка(Очки1)+" - "+Строка(Очки2)</presentationExpression>
+			<appearance>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>ГоризонтальноеПоложение</dcscor:parameter>
+					<dcscor:value xsi:type="v8ui:HorizontalAlign">Center</dcscor:value>
+				</dcscor:item>
+			</appearance>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Соревнование</dataPath>
+			<field>Соревнование</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Соревнование</v8:content>
+				</v8:item>
+			</title>
+			<presentationExpression>Соревнование.НазваниеСоревнования</presentationExpression>
+		</field>
+		<dataSource>ИсточникДанных1</dataSource>
+		<query>ВЫБРАТЬ
+	ДетализацияПриростаРейтинга.Период,
+	ДетализацияПриростаРейтинга.Участник1,
+	ДетализацияПриростаРейтинга.Участник2,
+	ДетализацияПриростаРейтинга.НомерТура,
+	ДетализацияПриростаРейтинга.РежимТура,
+	ДетализацияПриростаРейтинга.Очки1,
+	ДетализацияПриростаРейтинга.Очки2,
+	ДетализацияПриростаРейтинга.ИД,
+	ДетализацияПриростаРейтинга.Регистратор,
+	ДетализацияПриростаРейтинга.НомерСтроки
+ПОМЕСТИТЬ втОбщаяТаблица
+ИЗ
+	РегистрСведений.ДетализацияПриростаРейтинга КАК ДетализацияПриростаРейтинга
+ГДЕ
+	ДетализацияПриростаРейтинга.Период МЕЖДУ &amp;Нач И &amp;Кон
+	И ДетализацияПриростаРейтинга.Участник1 = &amp;Участник
+
+ОБЪЕДИНИТЬ ВСЕ
+
+ВЫБРАТЬ
+	ДетализацияПриростаРейтинга.Период,
+	ДетализацияПриростаРейтинга.Участник2,
+	ДетализацияПриростаРейтинга.Участник1,
+	ДетализацияПриростаРейтинга.НомерТура,
+	ДетализацияПриростаРейтинга.РежимТура,
+	ДетализацияПриростаРейтинга.Очки2,
+	ДетализацияПриростаРейтинга.Очки1,
+	ДетализацияПриростаРейтинга.ИД,
+	ДетализацияПриростаРейтинга.Регистратор,
+	ДетализацияПриростаРейтинга.НомерСтроки
+ИЗ
+	РегистрСведений.ДетализацияПриростаРейтинга КАК ДетализацияПриростаРейтинга
+ГДЕ
+	ДетализацияПриростаРейтинга.Период МЕЖДУ &amp;Нач И &amp;Кон
+	И ДетализацияПриростаРейтинга.Участник2 = &amp;Участник
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ
+	втОбщаяТаблица.Период,
+	втОбщаяТаблица.Участник1,
+	втОбщаяТаблица.Участник2,
+	втОбщаяТаблица.РежимТура,
+	втОбщаяТаблица.Очки1,
+	втОбщаяТаблица.Очки2,
+	МАКСИМУМ(ЕСТЬNULL(РазрядыУчастников.Период, ДАТАВРЕМЯ(1, 1, 1))) КАК Период1,
+	МАКСИМУМ(ЕСТЬNULL(РазрядыУчастников1.Период, ДАТАВРЕМЯ(1, 1, 1))) КАК Период2,
+	втОбщаяТаблица.НомерТура,
+	втОбщаяТаблица.Регистратор
+ПОМЕСТИТЬ втУчастникиСПериодами
+ИЗ
+	втОбщаяТаблица КАК втОбщаяТаблица
+		ЛЕВОЕ СОЕДИНЕНИЕ РегистрСведений.РазрядыУчастников КАК РазрядыУчастников
+		ПО втОбщаяТаблица.Участник1 = РазрядыУчастников.Участник
+			И втОбщаяТаблица.Период &gt;= РазрядыУчастников.Период
+		ЛЕВОЕ СОЕДИНЕНИЕ РегистрСведений.РазрядыУчастников КАК РазрядыУчастников1
+		ПО втОбщаяТаблица.Участник2 = РазрядыУчастников1.Участник
+			И втОбщаяТаблица.Период &gt;= РазрядыУчастников1.Период
+
+СГРУППИРОВАТЬ ПО
+	втОбщаяТаблица.Период,
+	втОбщаяТаблица.Участник1,
+	втОбщаяТаблица.Участник2,
+	втОбщаяТаблица.РежимТура,
+	втОбщаяТаблица.Очки1,
+	втОбщаяТаблица.Очки2,
+	втОбщаяТаблица.НомерТура,
+	втОбщаяТаблица.Регистратор
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ
+	втУчастникиСПериодами.Период,
+	втУчастникиСПериодами.НомерТура,
+	втУчастникиСПериодами.РежимТура,
+	втУчастникиСПериодами.Участник1,
+	втУчастникиСПериодами.Период1,
+	ЕСТЬNULL(РазрядыУчастников.Разряд, ЗНАЧЕНИЕ(Перечисление.РазрядыИЗвания.ПустаяСсылка)) КАК Разряд1,
+	втУчастникиСПериодами.Очки1,
+	втУчастникиСПериодами.Очки2,
+	втУчастникиСПериодами.Участник2,
+	втУчастникиСПериодами.Период2,
+	ЕСТЬNULL(РазрядыУчастников1.Разряд, ЗНАЧЕНИЕ(Перечисление.РазрядыИЗвания.ПустаяСсылка)) КАК Разряд2,
+	ВЫБОР
+		КОГДА втУчастникиСПериодами.Очки1 &gt; втУчастникиСПериодами.Очки2
+			ТОГДА 1
+		ИНАЧЕ 0
+	КОНЕЦ КАК Итог1,
+	ВЫБОР
+		КОГДА втУчастникиСПериодами.Очки2 &gt; втУчастникиСПериодами.Очки1
+			ТОГДА 1
+		ИНАЧЕ 0
+	КОНЕЦ КАК Итог2,
+	"" КАК ИтогПоПартиям,
+	втУчастникиСПериодами.Регистратор КАК Соревнование
+ИЗ
+	втУчастникиСПериодами КАК втУчастникиСПериодами
+		ЛЕВОЕ СОЕДИНЕНИЕ РегистрСведений.РазрядыУчастников КАК РазрядыУчастников
+		ПО втУчастникиСПериодами.Участник1 = РазрядыУчастников.Участник
+			И втУчастникиСПериодами.Период1 = РазрядыУчастников.Период
+		ЛЕВОЕ СОЕДИНЕНИЕ РегистрСведений.РазрядыУчастников КАК РазрядыУчастников1
+		ПО втУчастникиСПериодами.Участник2 = РазрядыУчастников1.Участник
+			И втУчастникиСПериодами.Период2 = РазрядыУчастников1.Период</query>
+	</dataSet>
+	<totalField>
+		<dataPath>Итог1</dataPath>
+		<expression>Сумма(Итог1)</expression>
+	</totalField>
+	<totalField>
+		<dataPath>Итог2</dataPath>
+		<expression>Сумма(Итог2)</expression>
+	</totalField>
+	<parameter>
+		<name>Кон</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Кон</v8:content>
+			</v8:item>
+		</title>
+		<valueType>
+			<v8:Type>xs:dateTime</v8:Type>
+			<v8:DateQualifiers>
+				<v8:DateFractions>DateTime</v8:DateFractions>
+			</v8:DateQualifiers>
+		</valueType>
+		<value xsi:type="xs:dateTime">0001-01-01T00:00:00</value>
+		<useRestriction>true</useRestriction>
+		<expression>&amp;Период.ДатаОкончания</expression>
+	</parameter>
+	<parameter>
+		<name>Нач</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Нач</v8:content>
+			</v8:item>
+		</title>
+		<valueType>
+			<v8:Type>xs:dateTime</v8:Type>
+			<v8:DateQualifiers>
+				<v8:DateFractions>DateTime</v8:DateFractions>
+			</v8:DateQualifiers>
+		</valueType>
+		<value xsi:type="xs:dateTime">0001-01-01T00:00:00</value>
+		<useRestriction>true</useRestriction>
+		<expression>&amp;Период.ДатаНачала</expression>
+	</parameter>
+	<parameter>
+		<name>Период</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Период</v8:content>
+			</v8:item>
+		</title>
+		<valueType>
+			<v8:Type>v8:StandardPeriod</v8:Type>
+		</valueType>
+		<value xsi:type="v8:StandardPeriod">
+			<v8:variant xsi:type="v8:StandardPeriodVariant">Custom</v8:variant>
+			<v8:startDate>0001-01-01T00:00:00</v8:startDate>
+			<v8:endDate>0001-01-01T00:00:00</v8:endDate>
+		</value>
+		<useRestriction>false</useRestriction>
+	</parameter>
+	<parameter>
+		<name>Участник</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Участник</v8:content>
+			</v8:item>
+		</title>
+		<valueType>
+			<v8:Type xmlns:d4p1="http://v8.1c.ru/8.1/data/enterprise/current-config">d4p1:CatalogRef.Участники</v8:Type>
+		</valueType>
+		<value xsi:nil="true"/>
+		<useRestriction>false</useRestriction>
+		<use>Always</use>
+	</parameter>
+	<settingsVariant>
+		<dcsset:name>Основной</dcsset:name>
+		<dcsset:presentation xsi:type="xs:string">Основной</dcsset:presentation>
+		<dcsset:settings xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows">
+			<dcsset:selection>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>СистемныеПоля.НомерПоПорядку</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>Период</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>Соревнование</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:use>false</dcsset:use>
+					<dcsset:field>НомерТура</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:use>false</dcsset:use>
+					<dcsset:field>РежимТура</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>Участник1</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>Период1</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>Разряд1</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>Итог1</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>ИтогПоПартиям</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>Итог2</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>Участник2</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>Период2</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>Разряд2</dcsset:field>
+				</dcsset:item>
+			</dcsset:selection>
+			<dcsset:filter>
+				<dcsset:item xsi:type="dcsset:FilterItemComparison">
+					<dcsset:use>false</dcsset:use>
+					<dcsset:left xsi:type="dcscor:Field">Разряд2</dcsset:left>
+					<dcsset:comparisonType>InList</dcsset:comparisonType>
+					<dcsset:userSettingID>84822753-d015-417d-907c-a814faac19e0</dcsset:userSettingID>
+				</dcsset:item>
+			</dcsset:filter>
+			<dcsset:dataParameters>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>Период</dcscor:parameter>
+					<dcscor:value xsi:type="v8:StandardPeriod">
+						<v8:variant xsi:type="v8:StandardPeriodVariant">Custom</v8:variant>
+						<v8:startDate>2015-01-01T00:00:00</v8:startDate>
+						<v8:endDate>2015-12-31T23:59:59</v8:endDate>
+					</dcscor:value>
+					<dcsset:userSettingID>0ddb857c-93a2-4313-babe-d80ba3f15a82</dcsset:userSettingID>
+				</dcscor:item>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:use>false</dcscor:use>
+					<dcscor:parameter>Участник</dcscor:parameter>
+					<dcscor:value xsi:nil="true"/>
+					<dcsset:userSettingID>a03144d9-257e-43f7-a30f-cb136fe721f9</dcsset:userSettingID>
+				</dcscor:item>
+			</dcsset:dataParameters>
+			<dcsset:order>
+				<dcsset:item xsi:type="dcsset:OrderItemField">
+					<dcsset:field>Период</dcsset:field>
+					<dcsset:orderType>Asc</dcsset:orderType>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:OrderItemField">
+					<dcsset:field>НомерТура</dcsset:field>
+					<dcsset:orderType>Asc</dcsset:orderType>
+				</dcsset:item>
+			</dcsset:order>
+			<dcsset:outputParameters>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>АвтоПозицияРесурсов</dcscor:parameter>
+					<dcscor:value xsi:type="dcsset:DataCompositionResourcesAutoPosition">DontUse</dcscor:value>
+				</dcscor:item>
+			</dcsset:outputParameters>
+			<dcsset:item xsi:type="dcsset:StructureItemGroup">
+				<dcsset:groupItems>
+					<dcsset:item xsi:type="dcsset:GroupItemField">
+						<dcsset:field>Участник1</dcsset:field>
+						<dcsset:groupType>Items</dcsset:groupType>
+						<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
+						<dcsset:periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionBegin>
+						<dcsset:periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionEnd>
+					</dcsset:item>
+				</dcsset:groupItems>
+				<dcsset:order>
+					<dcsset:item xsi:type="dcsset:OrderItemAuto"/>
+				</dcsset:order>
+				<dcsset:selection>
+					<dcsset:item xsi:type="dcsset:SelectedItemAuto"/>
+				</dcsset:selection>
+				<dcsset:conditionalAppearance>
+					<dcsset:item>
+						<dcsset:selection>
+							<dcsset:item>
+								<dcsset:field>Участник1</dcsset:field>
+							</dcsset:item>
+						</dcsset:selection>
+						<dcsset:filter/>
+						<dcsset:appearance>
+							<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+								<dcscor:parameter>Шрифт</dcscor:parameter>
+								<dcscor:value xsi:type="v8ui:Font" ref="sys:DefaultGUIFont" height="10" kind="WindowsFont"/>
+							</dcscor:item>
+						</dcsset:appearance>
+					</dcsset:item>
+				</dcsset:conditionalAppearance>
+				<dcsset:item xsi:type="dcsset:StructureItemGroup">
+					<dcsset:order>
+						<dcsset:item xsi:type="dcsset:OrderItemAuto"/>
+					</dcsset:order>
+					<dcsset:selection>
+						<dcsset:item xsi:type="dcsset:SelectedItemAuto"/>
+					</dcsset:selection>
+				</dcsset:item>
+			</dcsset:item>
+		</dcsset:settings>
+	</settingsVariant>
+</DataCompositionSchema>

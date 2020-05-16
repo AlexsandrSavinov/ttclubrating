@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Catalog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="a5eb686c-ea52-4beb-ab89-afad5fd68c57">
+  <producedTypes>
+    <objectType typeId="577b4622-e05b-44a4-b759-7d66770f54f1" valueTypeId="39bc3f69-6c15-4f71-9325-79f18ee5af00"/>
+    <refType typeId="6a0ac1ba-e758-4071-8287-fe440e6e1957" valueTypeId="ba18c6f8-64f1-49f2-aad6-7290b1dc3188"/>
+    <selectionType typeId="b06640a2-0286-457a-9388-205d4316cb49" valueTypeId="e5b3dcf5-eb28-4b98-b26e-6f83b9e641ad"/>
+    <listType typeId="4ca0a61a-42ba-4767-89ba-62dc440f0adc" valueTypeId="8d156e7e-d68d-4a3e-ae5b-7b6c8f8cb05c"/>
+    <managerType typeId="3c14396d-4e10-4dc9-857e-f6307ed7047f" valueTypeId="caabc625-80c2-42ee-b742-b3c6e4e14aba"/>
+  </producedTypes>
+  <name>Судьи</name>
+  <synonym>
+    <key>ru</key>
+    <value>Судьи</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Catalog.Судьи.StandardAttribute.Description</inputByString>
+  <inputByString>Catalog.Судьи.StandardAttribute.Code</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <createOnInput>Use</createOnInput>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <objectPresentation>
+    <key>ru</key>
+    <value>Судья</value>
+  </objectPresentation>
+  <levelCount>2</levelCount>
+  <foldersOnTop>true</foldersOnTop>
+  <codeLength>9</codeLength>
+  <descriptionLength>80</descriptionLength>
+  <codeType>String</codeType>
+  <codeAllowedLength>Variable</codeAllowedLength>
+  <checkUnique>true</checkUnique>
+  <autonumbering>true</autonumbering>
+  <defaultPresentation>AsDescription</defaultPresentation>
+  <editType>InDialog</editType>
+  <choiceMode>BothWays</choiceMode>
+  <defaultObjectForm>Catalog.Судьи.Form.ФормаЭлемента</defaultObjectForm>
+  <attributes uuid="439381d9-16b5-4d07-9691-a5680670a12f">
+    <name>Квалификация</name>
+    <synonym>
+      <key>ru</key>
+      <value>Квалификация</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>50</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="146b95a0-8e9f-4c18-8ddd-5aaa6805853d">
+    <name>НомерУдостоверения</name>
+    <synonym>
+      <key>ru</key>
+      <value>№ удостоверения</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>10</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="6050c68a-372c-4332-92df-8d576073555e">
+    <name>Город</name>
+    <synonym>
+      <key>ru</key>
+      <value>Город</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Города</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <forms uuid="9efaa307-7c9b-48f2-baf8-a87a6c6b8c77">
+    <name>ФормаЭлемента</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма элемента</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:Catalog>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Constant xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="1c6e0007-c2c6-4843-b5c2-8f9889e3ac73">
+  <producedTypes>
+    <managerType typeId="28139c1f-a4e9-4485-973a-78d91e426d61" valueTypeId="0e5fb2d6-d825-4635-94be-7ee82dabc374"/>
+    <valueManagerType typeId="0fb87ca2-c7dd-466e-b1e6-1e9b85c0b2cd" valueTypeId="3e7ffb91-b50f-4a45-977c-3c967f1c32d1"/>
+    <valueKeyType typeId="3c4992f2-c3de-505f-b151-eb3884701543" valueTypeId="7c711388-d482-5f96-9963-95350a182561"/>
+  </producedTypes>
+  <name>ВыводитьСреднийРейтингВПредварительном</name>
+  <synonym>
+    <key>ru</key>
+    <value>Выводить средний рейтинг в предварительном отчете</value>
+  </synonym>
+  <type>
+    <types>Boolean</types>
+  </type>
+  <useStandardCommands>true</useStandardCommands>
+  <minValue xsi:type="core:UndefinedValue"/>
+  <maxValue xsi:type="core:UndefinedValue"/>
+  <dataLockControlMode>Managed</dataLockControlMode>
+</mdclass:Constant>

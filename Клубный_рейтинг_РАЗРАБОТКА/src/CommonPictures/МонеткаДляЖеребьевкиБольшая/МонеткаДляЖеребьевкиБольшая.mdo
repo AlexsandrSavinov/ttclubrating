@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:CommonPicture xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="d4054d9a-a3a5-407b-83a2-94cec555734d">
+  <name>МонеткаДляЖеребьевкиБольшая</name>
+  <synonym>
+    <key>ru</key>
+    <value>Монетка для жеребьевки большая</value>
+  </synonym>
+  <transparentPixel>
+    <x>532</x>
+    <y>74</y>
+  </transparentPixel>
+</mdclass:CommonPicture>

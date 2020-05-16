@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Constant xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="a9e14759-e622-44ac-8fb3-c3d1289077c0">
+  <producedTypes>
+    <managerType typeId="8e9f14a8-ecc7-4733-a1f3-43d2840bcfe3" valueTypeId="6a0329b0-c118-4954-97a5-a6e743ea00b3"/>
+    <valueManagerType typeId="1512266a-5a2a-4080-be64-e5d016328449" valueTypeId="7870fa60-a3c6-45c5-9a92-52f538b5136d"/>
+    <valueKeyType typeId="e6367331-b7b1-5681-9e67-57dc4c1495f8" valueTypeId="1849f23a-c2bd-5852-87af-0a612813904d"/>
+  </producedTypes>
+  <name>ВидРейтинга</name>
+  <synonym>
+    <key>ru</key>
+    <value>Вид рейтинга</value>
+  </synonym>
+  <type>
+    <types>CatalogRef.ВидыРейтинга</types>
+  </type>
+  <useStandardCommands>true</useStandardCommands>
+  <minValue xsi:type="core:UndefinedValue"/>
+  <maxValue xsi:type="core:UndefinedValue"/>
+  <dataLockControlMode>Managed</dataLockControlMode>
+</mdclass:Constant>

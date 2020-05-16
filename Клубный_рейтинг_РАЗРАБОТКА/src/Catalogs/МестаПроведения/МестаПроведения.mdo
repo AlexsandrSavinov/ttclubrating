@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Catalog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="819f6e98-8aa8-11e9-0384-448a5b22d747">
+  <producedTypes>
+    <objectType typeId="819f6e70-8aa8-11e9-0384-448a5b22d747" valueTypeId="819f6e7a-8aa8-11e9-0384-448a5b22d747"/>
+    <refType typeId="819f6e7b-8aa8-11e9-0384-448a5b22d747" valueTypeId="819f6e84-8aa8-11e9-0384-448a5b22d747"/>
+    <selectionType typeId="819f6e85-8aa8-11e9-0384-448a5b22d747" valueTypeId="819f6e86-8aa8-11e9-0384-448a5b22d747"/>
+    <listType typeId="819f6e87-8aa8-11e9-0384-448a5b22d747" valueTypeId="819f6e8e-8aa8-11e9-0384-448a5b22d747"/>
+    <managerType typeId="819f6e8f-8aa8-11e9-0384-448a5b22d747" valueTypeId="819f6e90-8aa8-11e9-0384-448a5b22d747"/>
+  </producedTypes>
+  <name>МестаПроведения</name>
+  <synonym>
+    <key>ru</key>
+    <value>Места проведения</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Catalog.МестаПроведения.StandardAttribute.Description</inputByString>
+  <inputByString>Catalog.МестаПроведения.StandardAttribute.Code</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <createOnInput>Use</createOnInput>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <objectPresentation>
+    <key>ru</key>
+    <value>Место проведения</value>
+  </objectPresentation>
+  <levelCount>2</levelCount>
+  <foldersOnTop>true</foldersOnTop>
+  <codeLength>9</codeLength>
+  <descriptionLength>50</descriptionLength>
+  <codeType>String</codeType>
+  <codeAllowedLength>Variable</codeAllowedLength>
+  <checkUnique>true</checkUnique>
+  <autonumbering>true</autonumbering>
+  <defaultPresentation>AsDescription</defaultPresentation>
+  <editType>InDialog</editType>
+  <choiceMode>BothWays</choiceMode>
+  <defaultObjectForm>Catalog.МестаПроведения.Form.ФормаЭлемента</defaultObjectForm>
+  <attributes uuid="93943444-8aa8-11e9-0384-448a5b22d747">
+    <name>Город</name>
+    <synonym>
+      <key>ru</key>
+      <value>Город</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Города</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="9b5cd4f6-8aa8-11e9-0384-448a5b22d747">
+    <name>Клуб</name>
+    <synonym>
+      <key>ru</key>
+      <value>Клуб</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Клубы</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <forms uuid="eed4092e-8aa8-11e9-0384-448a5b22d747">
+    <name>ФормаЭлемента</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма элемента</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:Catalog>

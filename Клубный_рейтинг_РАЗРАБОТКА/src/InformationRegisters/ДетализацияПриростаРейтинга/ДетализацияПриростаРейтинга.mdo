@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="32bc6a52-47a0-4016-b71b-fc217eabb10e">
+  <producedTypes>
+    <selectionType typeId="d80029f4-a3f7-47e9-9974-b94a2927f2d9" valueTypeId="b775d3c4-a1d8-4371-8edb-a17439283a2d"/>
+    <listType typeId="d42c10af-81a4-4703-b4f9-00993deb0330" valueTypeId="c4a3fdfd-474d-4f41-badb-1994f6fc88b7"/>
+    <managerType typeId="786a8365-08f7-46fc-8653-b024093a2d22" valueTypeId="c9e3b034-3f90-488d-96ca-ebe4e9990f04"/>
+    <recordSetType typeId="10f9c42a-d85b-458f-89c7-59acc3f4854c" valueTypeId="513e0975-4bd8-43c7-878a-b1f605e3ad40"/>
+    <recordKeyType typeId="03e4eba2-6bae-499d-be82-fdedc477aa9e" valueTypeId="56a6efa2-0dc3-4e6e-9d5b-84d10ca4040c"/>
+    <recordType typeId="2a78ddce-ac3f-4672-b540-105caff3769b" valueTypeId="2ae497e0-c9bb-4f53-8ae2-ad778b567ad3"/>
+    <recordManagerType typeId="c99e95b1-ff93-470b-a2fe-328da2910a4f" valueTypeId="ecb36fa4-a337-4dcf-98b0-2795a5e7b9c7"/>
+  </producedTypes>
+  <name>ДетализацияПриростаРейтинга</name>
+  <synonym>
+    <key>ru</key>
+    <value>Детализация прироста рейтинга</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <informationRegisterPeriodicity>RecorderPosition</informationRegisterPeriodicity>
+  <writeMode>RecorderSubordinate</writeMode>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <resources uuid="8b4b7575-0804-4369-83d1-4cd159859f1b">
+    <name>Очки1</name>
+    <synonym>
+      <key>ru</key>
+      <value>Очки1</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>15</precision>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="fc46f693-7c06-4124-b69b-b8a3822de47f">
+    <name>Рейтинг1</name>
+    <synonym>
+      <key>ru</key>
+      <value>Рейтинг1</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>15</precision>
+        <scale>2</scale>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="fa79ed2e-7912-4956-864f-46e5de6244a4">
+    <name>Очки2</name>
+    <synonym>
+      <key>ru</key>
+      <value>Очки2</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>15</precision>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="164a4eac-9be7-4dc5-a27d-482e4dc438ce">
+    <name>Рейтинг2</name>
+    <synonym>
+      <key>ru</key>
+      <value>Рейтинг2</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>15</precision>
+        <scale>2</scale>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="debc41f4-59b7-4b5f-aa54-72759e827791">
+    <name>Прирост</name>
+    <synonym>
+      <key>ru</key>
+      <value>Прирост</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>15</precision>
+        <scale>2</scale>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <dimensions uuid="4c9f81c3-cc12-4cd0-9b7a-854254dea2d8">
+    <name>ИД</name>
+    <synonym>
+      <key>ru</key>
+      <value>ИД</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>10</precision>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="12d85d4b-4ccf-48f8-840b-3a8a85b4c40a">
+    <name>НомерТура</name>
+    <synonym>
+      <key>ru</key>
+      <value>Номер тура</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>10</precision>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="119744f5-e3c2-41b3-a167-989b78abd204">
+    <name>Участник1</name>
+    <synonym>
+      <key>ru</key>
+      <value>Участник1</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Участники</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="bd7a67f5-01f6-4b6f-a6b5-cc1a48d5f958">
+    <name>Участник2</name>
+    <synonym>
+      <key>ru</key>
+      <value>Участник2</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Участники</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="8254778e-5b4d-4ee8-8a9a-51c917659dc8">
+    <name>РежимТура</name>
+    <synonym>
+      <key>ru</key>
+      <value>Режим тура</value>
+    </synonym>
+    <type>
+      <types>EnumRef.РежимыТуровСоревнования</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Report xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="048cde28-c1b0-47dc-bed3-06da503c7534">
+  <producedTypes>
+    <objectType typeId="e8d45717-ca3f-460b-aa61-e64fd0920f3b" valueTypeId="4b4045cf-ef29-4623-80f4-8d2cec1a406a"/>
+    <managerType typeId="06a9a5a8-8739-438b-8199-7febd8305cd7" valueTypeId="c39033c2-59e1-475d-a6d4-49a221b6dd3f"/>
+  </producedTypes>
+  <name>ИзменениеПозицийУчастниковПоРейтингу</name>
+  <synonym>
+    <key>ru</key>
+    <value>Изменение позиций участников по рейтингу</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <mainDataCompositionSchema>Report.ИзменениеПозицийУчастниковПоРейтингу.Template.ОсновнаяСхемаКомпоновкиДанных</mainDataCompositionSchema>
+  <templates uuid="9300879f-70aa-474f-8ef3-871181aa4e71">
+    <name>ОсновнаяСхемаКомпоновкиДанных</name>
+    <synonym>
+      <key>ru</key>
+      <value>Основная схема компоновки данных</value>
+    </synonym>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+</mdclass:Report>

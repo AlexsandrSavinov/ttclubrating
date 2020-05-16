@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Enum xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="e6549444-6f89-4bf6-834e-74df6c8dcd90">
+  <producedTypes>
+    <refType typeId="fe1acd90-ff77-4f95-be66-af304d292bca" valueTypeId="f7ead364-40be-41b8-b579-1db476333974"/>
+    <listType typeId="65891d4e-fea9-4e58-9530-7956c51cea68" valueTypeId="29573496-2697-4306-9ed3-81675f1a5e19"/>
+    <managerType typeId="5aa52a90-aa4d-430d-a949-41df33e77de7" valueTypeId="9429c92c-5de4-480f-805b-7b3a1df839e9"/>
+  </producedTypes>
+  <name>СоцСеть</name>
+  <synonym>
+    <key>ru</key>
+    <value>Соц сеть</value>
+  </synonym>
+  <quickChoice>true</quickChoice>
+  <choiceMode>BothWays</choiceMode>
+  <enumValues uuid="32f8a46e-2f7c-41ec-8ad5-82c61c901d14">
+    <name>Вконтакте</name>
+    <synonym>
+      <key>ru</key>
+      <value>Вконтакте</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="85475183-e4da-427c-9e53-f99f5a9e6544">
+    <name>Телеграмм</name>
+    <synonym>
+      <key>ru</key>
+      <value>Телеграмм</value>
+    </synonym>
+  </enumValues>
+</mdclass:Enum>

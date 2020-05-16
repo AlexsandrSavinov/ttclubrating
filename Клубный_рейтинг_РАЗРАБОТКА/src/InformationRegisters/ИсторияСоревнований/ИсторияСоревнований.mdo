@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="ce9d7a66-d40c-4062-aaf1-d5008ec709ef">
+  <producedTypes>
+    <selectionType typeId="a559d57c-3545-4a55-a658-9fc5aa63afaf" valueTypeId="57ada565-5b94-4507-97ad-37e4f094a6b7"/>
+    <listType typeId="d24cba8c-8062-4283-8a74-0b0a8e83f16c" valueTypeId="f011d7ae-2f5b-4077-a3be-45a57deaabba"/>
+    <managerType typeId="bfb3c0fe-66ca-47ab-a4f8-09da91429ccc" valueTypeId="6337fd2d-fde5-4231-9292-ad6353c9d8a2"/>
+    <recordSetType typeId="2f41871a-ec34-4f97-8d16-e707f951909f" valueTypeId="b36045e6-dcc1-4460-815e-c24064b5cdef"/>
+    <recordKeyType typeId="6d9bfb98-55a1-466e-ab81-ef55338bc06d" valueTypeId="df80ff9d-1340-495e-ac32-5e2e10c9702b"/>
+    <recordType typeId="387c47c4-9227-48b1-87d8-486968050de2" valueTypeId="16d63d5d-2343-4baa-922d-806d86258f81"/>
+    <recordManagerType typeId="ef526cee-8415-43e4-879f-f99a6da0abc8" valueTypeId="43665606-d36c-4a4c-afef-d5f38368c2ac"/>
+  </producedTypes>
+  <name>ИсторияСоревнований</name>
+  <synonym>
+    <key>ru</key>
+    <value>История соревнований</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <informationRegisterPeriodicity>RecorderPosition</informationRegisterPeriodicity>
+  <writeMode>RecorderSubordinate</writeMode>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <resources uuid="e2ae5a2e-46fa-412a-a1c4-bea468e3cf4f">
+    <name>Представление</name>
+    <synonym>
+      <key>ru</key>
+      <value>Представление</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>100</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+  </resources>
+  <dimensions uuid="9859ffae-73a4-443d-880d-4188b4a04d33">
+    <name>ДатаСоревнования</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дата соревнования</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers>
+        <dateFractions>Date</dateFractions>
+      </dateQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>

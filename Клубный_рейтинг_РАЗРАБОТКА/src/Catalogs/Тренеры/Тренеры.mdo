@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Catalog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="986a0170-459a-4cbb-b437-b3498730b991">
+  <producedTypes>
+    <objectType typeId="2c6166c1-8f95-4924-86d8-e51caac3ec59" valueTypeId="78509f0d-12c1-412d-b9aa-d79b8e2ad42d"/>
+    <refType typeId="19e5f9d4-a21b-45f9-9695-73ef5bf2905d" valueTypeId="d52d9208-4341-4371-b312-39571cf86331"/>
+    <selectionType typeId="e0773898-fac0-40ee-8957-cf41a62a0d10" valueTypeId="73fe2130-be20-44a8-a752-6797cdaed5c9"/>
+    <listType typeId="178282bd-cb98-4ab3-a229-27219641a025" valueTypeId="1a36aa85-592b-4d09-a2ee-eeb6c9cf9311"/>
+    <managerType typeId="54f44ab0-f707-46a4-8205-6987b71c2b71" valueTypeId="e233c323-f338-4a5e-9839-c2a114730024"/>
+  </producedTypes>
+  <name>Тренеры</name>
+  <synonym>
+    <key>ru</key>
+    <value>Тренеры</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Catalog.Тренеры.StandardAttribute.Description</inputByString>
+  <inputByString>Catalog.Тренеры.StandardAttribute.Code</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <createOnInput>Use</createOnInput>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <objectPresentation>
+    <key>ru</key>
+    <value>Тренер</value>
+  </objectPresentation>
+  <listPresentation>
+    <key>ru</key>
+    <value>Тренеры</value>
+  </listPresentation>
+  <levelCount>2</levelCount>
+  <foldersOnTop>true</foldersOnTop>
+  <codeLength>9</codeLength>
+  <descriptionLength>150</descriptionLength>
+  <codeType>String</codeType>
+  <codeAllowedLength>Variable</codeAllowedLength>
+  <checkUnique>true</checkUnique>
+  <autonumbering>true</autonumbering>
+  <defaultPresentation>AsDescription</defaultPresentation>
+  <editType>InDialog</editType>
+  <choiceMode>BothWays</choiceMode>
+  <defaultObjectForm>Catalog.Тренеры.Form.ФормаЭлемента</defaultObjectForm>
+  <defaultListForm>Catalog.Тренеры.Form.ФормаСписка</defaultListForm>
+  <attributes uuid="2e9e25d0-a745-438f-b444-4cfb7f4fc740">
+    <name>ДатаРождения</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дата рождения</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers>
+        <dateFractions>Date</dateFractions>
+      </dateQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="43e2cfd2-3c4e-4ee2-8906-dd1605c1aed6">
+    <name>ЗваниеРазряд</name>
+    <synonym>
+      <key>ru</key>
+      <value>Звание/Разряд</value>
+    </synonym>
+    <type>
+      <types>EnumRef.РазрядыИЗвания</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="d5b0b123-aca2-4f0d-9a12-0768c0c0fd3d">
+    <name>Город</name>
+    <synonym>
+      <key>ru</key>
+      <value>Город</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Города</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="f951187c-b510-4b2c-9d14-425a65d39d4e">
+    <name>Клуб</name>
+    <synonym>
+      <key>ru</key>
+      <value>Клуб</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Клубы</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <forms uuid="cdbdc9b6-a631-4df1-8cc4-8a5ca3ae963b">
+    <name>ФормаЭлемента</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма элемента</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="224e31e9-0062-432e-b3d4-c83c06fccd2c">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:Catalog>

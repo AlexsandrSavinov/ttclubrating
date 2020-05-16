@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Report xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="fe369013-eda3-4eba-8f9f-91956c0a9d05">
+  <producedTypes>
+    <objectType typeId="9fcf2c0e-c797-483f-b7c6-a96385ddf96e" valueTypeId="68464efc-1681-4117-89c6-733bfc638b7f"/>
+    <managerType typeId="6d11a084-5b53-4c9e-b588-6400d28d6c19" valueTypeId="ea6d25e7-9649-4d5f-9dba-ac45b5379dd4"/>
+  </producedTypes>
+  <name>СписокБыстрогоРасчета</name>
+  <synonym>
+    <key>ru</key>
+    <value>Список игр в быстром режиме</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <mainDataCompositionSchema>Report.СписокБыстрогоРасчета.Template.ОсновнаяСхемаКомпоновкиДанных</mainDataCompositionSchema>
+  <templates uuid="b66f90d6-a53e-4a79-b619-9a893c9c17f6">
+    <name>ОсновнаяСхемаКомпоновкиДанных</name>
+    <synonym>
+      <key>ru</key>
+      <value>Основная схема компоновки данных</value>
+    </synonym>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+  <commands uuid="8b72a4f1-8b3a-4b92-98c0-e91c971a755a">
+    <name>ОткрытьСписокПоБыстромуРасчету</name>
+    <synonym>
+      <key>ru</key>
+      <value>Список</value>
+    </synonym>
+    <group>FormCommandBarImportant</group>
+    <commandParameterType>
+      <types>DocumentRef.ПроведениеСоревнования</types>
+    </commandParameterType>
+    <representation>Auto</representation>
+    <toolTip>
+      <key>ru</key>
+      <value>Список игр для быстрого режима</value>
+    </toolTip>
+    <shortcut></shortcut>
+  </commands>
+</mdclass:Report>

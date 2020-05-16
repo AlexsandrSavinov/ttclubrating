@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="1c24e358-6da2-41d0-ad22-a1a8eb132424">
+  <producedTypes>
+    <selectionType typeId="614c4ad8-d9fa-453d-95cf-19c795b73b4f" valueTypeId="400cf115-2d6b-45d0-a640-e102bff7c3a1"/>
+    <listType typeId="54910a48-6d7e-4181-b19b-da9c744b7f88" valueTypeId="a55398a1-8d0a-4e08-bbe4-2d6e60018e21"/>
+    <managerType typeId="e91c532f-a62d-4c8f-ac7a-8af738963a01" valueTypeId="02fd6948-5d56-41ef-bc6c-d1e9d0427bf8"/>
+    <recordSetType typeId="78e636df-7440-494f-9e37-693fee6323c8" valueTypeId="cc29f4b0-f6cd-495b-8f1c-07933de63400"/>
+    <recordKeyType typeId="81985128-a466-42a1-9766-5e4f17b861e3" valueTypeId="4df70dd6-2b7f-4fc3-a8c4-56d880114bad"/>
+    <recordType typeId="356e704a-691a-448f-9085-248592783750" valueTypeId="f865a40b-d3dc-491f-944d-7fa246c8bb44"/>
+    <recordManagerType typeId="505680ff-6437-4b20-9bb0-f2f0d48824c2" valueTypeId="f2b4f341-18b4-4284-b7da-13b607bae20c"/>
+  </producedTypes>
+  <name>БонусныеОчки</name>
+  <synonym>
+    <key>ru</key>
+    <value>Бонусные очки</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <defaultRecordForm>InformationRegister.БонусныеОчки.Form.ФормаЗаписи</defaultRecordForm>
+  <defaultListForm>InformationRegister.БонусныеОчки.Form.ФормаСписка</defaultListForm>
+  <informationRegisterPeriodicity>Second</informationRegisterPeriodicity>
+  <mainFilterOnPeriod>true</mainFilterOnPeriod>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <recordPresentation>
+    <key>ru</key>
+    <value>Бонус за призовое место</value>
+  </recordPresentation>
+  <listPresentation>
+    <key>ru</key>
+    <value>Бонусы за призовые места</value>
+  </listPresentation>
+  <resources uuid="ad5fc3b6-d076-4cb3-9b31-0a534427a756">
+    <name>БонусОчков</name>
+    <synonym>
+      <key>ru</key>
+      <value>Бонус очков</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>3</precision>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <dimensions uuid="835c95c0-c225-4a36-a40a-d3f3e7e814b5">
+    <name>Место</name>
+    <synonym>
+      <key>ru</key>
+      <value>Место</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>1</precision>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:StringValue">
+      <value>1</value>
+    </minValue>
+    <maxValue xsi:type="core:StringValue">
+      <value>6</value>
+    </maxValue>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <forms uuid="4e9925cf-32e2-4a86-9f4e-021aea3c57e2">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="95512b9f-1997-4639-8273-bed33467c552">
+    <name>ФормаЗаписи</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма записи</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:InformationRegister>

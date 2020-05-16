@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="f60050bc-086c-4338-9f63-83db6eed31df">
+  <producedTypes>
+    <selectionType typeId="2a258504-d780-4f66-bf03-3c77d27f8e69" valueTypeId="c159cb3e-8d09-4790-8aa0-cb81a61a10a8"/>
+    <listType typeId="647a5fd5-e58c-4962-aeb2-28f01e2e94fe" valueTypeId="f45c9997-053b-4b98-91d6-e46c2168058f"/>
+    <managerType typeId="0bbadf9e-6d22-4c79-a5d4-bff74fd2987b" valueTypeId="4f956879-851c-4eac-9848-c44b743e5d07"/>
+    <recordSetType typeId="10af6512-3f95-4d7a-bb33-d939e0a025d9" valueTypeId="f2e29d9d-135c-4247-a7af-154b6bcc5260"/>
+    <recordKeyType typeId="e769a027-e25a-4f7f-b6e8-2eb29fa1c29c" valueTypeId="a04bcd87-fc3b-4928-b828-d174f7b14d3b"/>
+    <recordType typeId="6887fcd4-284b-4cfa-a27d-a9be705a76fc" valueTypeId="f3ab7430-1825-4eb8-b624-e4fb958dab07"/>
+    <recordManagerType typeId="3d04dde0-256f-4c44-a1c2-157fd0c5ffe4" valueTypeId="f20bcef6-c74d-4084-ad1d-2ca9a2e11dfb"/>
+  </producedTypes>
+  <name>МестаУчастниковСоревнований</name>
+  <synonym>
+    <key>ru</key>
+    <value>Места участников соревнований</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <informationRegisterPeriodicity>RecorderPosition</informationRegisterPeriodicity>
+  <writeMode>RecorderSubordinate</writeMode>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <enableTotalsSliceLast>true</enableTotalsSliceLast>
+  <resources uuid="fc883465-e8a8-431d-a6b4-5d1542fad724">
+    <name>Место</name>
+    <synonym>
+      <key>ru</key>
+      <value>Место</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>10</precision>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <attributes uuid="11dc2905-58cc-420c-a6eb-f644abbaab8c">
+    <name>Комментарий</name>
+    <synonym>
+      <key>ru</key>
+      <value>Комментарий</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>300</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+  </attributes>
+  <dimensions uuid="f7f4866e-b18f-4360-b052-51646e54f63b">
+    <name>Участник</name>
+    <synonym>
+      <key>ru</key>
+      <value>Участник</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Участники</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="fb6127cd-2346-4d03-8c62-3e9726853c45">
+    <name>НомерЭтапа</name>
+    <synonym>
+      <key>ru</key>
+      <value>Номер этапа</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>3</precision>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="e00bda16-c0e7-44cd-aa15-31c5b0a9c5d7">
+    <name>РежимЭтапа</name>
+    <synonym>
+      <key>ru</key>
+      <value>Режим этапа</value>
+    </synonym>
+    <type>
+      <types>EnumRef.РежимыТуровСоревнования</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="a447d147-c85f-443f-b145-80e4e35e3541">
+    <name>НомерГруппы</name>
+    <synonym>
+      <key>ru</key>
+      <value>Номер группы</value>
+    </synonym>
+    <comment>(только для групповых этапов)</comment>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>2</precision>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>

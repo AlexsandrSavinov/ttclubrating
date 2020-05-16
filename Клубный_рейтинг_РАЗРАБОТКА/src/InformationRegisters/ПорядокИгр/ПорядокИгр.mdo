@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="b1a877e8-bdc7-47ee-9696-310473f90d53">
+  <producedTypes>
+    <selectionType typeId="e49b1715-6300-43ab-b739-bba8bc3ffc30" valueTypeId="6696c880-485e-4615-af68-9c5436027d4c"/>
+    <listType typeId="b8f35a30-a5cd-41bc-942f-f26811385813" valueTypeId="4486b99c-bf4f-4536-912b-c71504e13e36"/>
+    <managerType typeId="af79b164-f1ae-49f2-99a1-af8984bea8df" valueTypeId="a12e1869-108a-41f1-bca5-9b240fb52a84"/>
+    <recordSetType typeId="42f9cae9-dcd8-4f65-9989-6809d9011f89" valueTypeId="44cb8cc5-e672-4f5c-8b14-0dec3e7c9cad"/>
+    <recordKeyType typeId="162b4835-f54c-4958-8759-c4ac8d6e7b2d" valueTypeId="a78aec11-a9cc-4b49-ba79-6678e0158a74"/>
+    <recordType typeId="214b895a-4d57-478a-8654-a0646d24650c" valueTypeId="4ea2524c-4fe1-4681-bcd6-06ee2263007b"/>
+    <recordManagerType typeId="c412306d-2965-4d46-875f-58d29e6b8226" valueTypeId="b69df7c6-0608-4cc7-856c-14957ca51250"/>
+  </producedTypes>
+  <name>ПорядокИгр</name>
+  <synonym>
+    <key>ru</key>
+    <value>Порядок игр</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <defaultRecordForm>InformationRegister.ПорядокИгр.Form.ФормаЗаписи</defaultRecordForm>
+  <defaultListForm>InformationRegister.ПорядокИгр.Form.ФормаСписка</defaultListForm>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <dimensions uuid="e6fb20b4-f9c1-4b82-8971-fb021b9ae721">
+    <name>РежимТура</name>
+    <synonym>
+      <key>ru</key>
+      <value>Режим тура</value>
+    </synonym>
+    <type>
+      <types>EnumRef.РежимыТуровСоревнования</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="5be0edf6-ffdd-43f8-9af7-b6156fd5cb60">
+    <name>КоличествоУчастников</name>
+    <synonym>
+      <key>ru</key>
+      <value>Количество участников</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>10</precision>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="fd76f3eb-a31f-4df8-b30b-c18ccd97c603">
+    <name>ПриоритетВызова</name>
+    <synonym>
+      <key>ru</key>
+      <value>Приоритет вызова</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>4</precision>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="f1e76970-0826-4fa1-8b7f-3d10d68d3570">
+    <name>НомерИгры</name>
+    <synonym>
+      <key>ru</key>
+      <value>Номер игры</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>4</precision>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <forms uuid="b113ec0a-74e9-45c8-aad8-da12dfe6c03b">
+    <name>ФормаЗаписи</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма записи</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="64284f81-d6c6-42c2-a56c-961499560046">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:InformationRegister>

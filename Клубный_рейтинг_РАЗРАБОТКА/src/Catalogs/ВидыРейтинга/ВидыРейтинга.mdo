@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Catalog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="f6c49977-b495-4972-9caf-861c2dc1581a">
+  <producedTypes>
+    <objectType typeId="5820da07-488c-4a37-a797-429c17e410ee" valueTypeId="632ba152-bfdc-4815-9a0b-d83da0fee9ad"/>
+    <refType typeId="5cf8f969-ebd9-4758-a532-44a8ffaffaff" valueTypeId="d2cc17af-bc4e-4135-86db-6f7e2d5d1efb"/>
+    <selectionType typeId="f9f51ddd-43a8-4d08-a9ba-c2c4c46b32ac" valueTypeId="c2694ed9-9366-4f0d-9416-5d192e0e45d8"/>
+    <listType typeId="b60f3428-253f-4095-8a58-339c95c7db23" valueTypeId="05736a7f-85a0-4289-ad6d-74840a6a472b"/>
+    <managerType typeId="ae34958d-18bd-4627-8ddf-6dcc34ac4828" valueTypeId="defc2154-0a6f-4135-9b61-7cb391bcdb39"/>
+  </producedTypes>
+  <name>ВидыРейтинга</name>
+  <synonym>
+    <key>ru</key>
+    <value>Виды рейтинга</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Catalog.ВидыРейтинга.StandardAttribute.Description</inputByString>
+  <inputByString>Catalog.ВидыРейтинга.StandardAttribute.Code</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <createOnInput>Use</createOnInput>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <levelCount>2</levelCount>
+  <foldersOnTop>true</foldersOnTop>
+  <codeLength>9</codeLength>
+  <descriptionLength>25</descriptionLength>
+  <codeType>String</codeType>
+  <codeAllowedLength>Variable</codeAllowedLength>
+  <checkUnique>true</checkUnique>
+  <autonumbering>true</autonumbering>
+  <defaultPresentation>AsDescription</defaultPresentation>
+  <predefined>
+    <items id="b55ffcf6-d1a8-4101-885f-b113f07f43c9">
+      <name>РейтингФНТР</name>
+      <description>Рейтинг ФНТР</description>
+      <code xsi:type="core:StringValue">
+        <value>000000001</value>
+      </code>
+    </items>
+  </predefined>
+  <editType>InDialog</editType>
+  <choiceMode>BothWays</choiceMode>
+</mdclass:Catalog>

@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:DataProcessor xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="9cef4635-6568-4fad-b58e-14037ac076f7">
+  <producedTypes>
+    <objectType typeId="e4ab8982-436c-42af-98fe-81b15530378f" valueTypeId="55f99068-97dc-4b6c-928d-416e8c8b5c69"/>
+    <managerType typeId="1cf3d97d-20ab-404c-8836-b3805ba060ac" valueTypeId="13441182-ee47-4dee-adf8-a2fb26b1e515"/>
+  </producedTypes>
+  <name>ПроверкаОбновления</name>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultForm>DataProcessor.ПроверкаОбновления.Form.Форма</defaultForm>
+  <attributes uuid="b299e341-cf95-4bdb-a57f-dddbccba8a01">
+    <name>КаталогСРезервнымиКопиями</name>
+    <synonym>
+      <key>ru</key>
+      <value>Каталог с резервными копиями</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers/>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+  </attributes>
+  <attributes uuid="afaf1a3b-d8b3-4f4d-9f69-79f0e9000df7">
+    <name>ФайлЗагрузкиРезервнойКопии</name>
+    <synonym>
+      <key>ru</key>
+      <value>Файл загрузки резервной копии</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers/>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="e9494bbf-9270-41e9-9606-0550bd473d6b">
+    <name>СоздаватьРезервнуюКопию</name>
+    <synonym>
+      <key>ru</key>
+      <value>Создавать резервную копию</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="b4c8a3fd-33bf-4015-ae21-3068dcde8f67">
+    <name>ИмяКаталогаРезервнойКопииИБ</name>
+    <synonym>
+      <key>ru</key>
+      <value>Имя каталога резервной копии ИБ</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers/>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="a292790a-8b50-4543-b20d-102651e90c4f">
+    <name>ОперацияРезервногоКопирования</name>
+    <synonym>
+      <key>ru</key>
+      <value>Операция резервного копирования</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>10</precision>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <forms uuid="41a6bf87-e06c-4181-aa29-6cd44964ffeb">
+    <name>Форма</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <templates uuid="0270a919-b0bc-4ea1-8148-790544bdc9dc">
+    <name>МакетОбновления</name>
+    <synonym>
+      <key>ru</key>
+      <value>Макет обновления</value>
+    </synonym>
+    <templateType>HTMLDocument</templateType>
+  </templates>
+  <templates uuid="068a9154-78e4-4988-8d92-89b12a3d2393">
+    <name>МакетСохранения</name>
+    <synonym>
+      <key>ru</key>
+      <value>Макет сохранения</value>
+    </synonym>
+    <templateType>HTMLDocument</templateType>
+  </templates>
+  <templates uuid="0ba9522c-b5f4-49cd-b503-6815ca13114e">
+    <name>МакетВосстановления</name>
+    <synonym>
+      <key>ru</key>
+      <value>Макет восстановления</value>
+    </synonym>
+    <templateType>HTMLDocument</templateType>
+  </templates>
+  <commands uuid="1dd11148-e8d6-4ab4-ba12-3b817777ce94">
+    <name>Обновление</name>
+    <synonym>
+      <key>ru</key>
+      <value>Обновление</value>
+    </synonym>
+    <group>ActionsPanelTools</group>
+    <commandParameterType/>
+    <representation>Auto</representation>
+    <shortcut></shortcut>
+  </commands>
+  <commands uuid="1c5e1b0b-5941-4372-998b-d7ff509f1966">
+    <name>РезервнаяКопия</name>
+    <synonym>
+      <key>ru</key>
+      <value>Резервная копия</value>
+    </synonym>
+    <group>ActionsPanelTools</group>
+    <commandParameterType/>
+    <representation>Auto</representation>
+    <shortcut></shortcut>
+  </commands>
+  <commands uuid="932e5fb8-19e5-4e6a-8e0d-fb16925e4721">
+    <name>ВосстановитьИБ</name>
+    <synonym>
+      <key>ru</key>
+      <value>Восстановить из копии</value>
+    </synonym>
+    <group>ActionsPanelTools</group>
+    <commandParameterType/>
+    <representation>Auto</representation>
+    <shortcut></shortcut>
+  </commands>
+</mdclass:DataProcessor>

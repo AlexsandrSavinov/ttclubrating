@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:DataProcessor xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="8dc3e0ab-6b76-482f-a363-1205c90a28e2">
+  <producedTypes>
+    <objectType typeId="5b355852-76fa-4725-9f78-b9d4b82e5c6b" valueTypeId="730e4292-4936-4b35-8cf9-557022956f04"/>
+    <managerType typeId="8b08ee81-7939-487e-b1f2-4fa1be7aa5c9" valueTypeId="92daaa76-0f7d-435d-833f-91932e87d55e"/>
+  </producedTypes>
+  <name>СкрытьУчастниковИзОтчетов</name>
+  <synonym>
+    <key>ru</key>
+    <value>Скрыть участников из отчетов</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultForm>DataProcessor.СкрытьУчастниковИзОтчетов.Form.Форма</defaultForm>
+  <forms uuid="be61c655-5555-4d23-9528-b92eed2e0cab">
+    <name>Форма</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <templates uuid="8538643e-d34e-4583-99d8-bf4c3f4cc537">
+    <name>СхемаПодбора</name>
+    <synonym>
+      <key>ru</key>
+      <value>Схема подбора</value>
+    </synonym>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+</mdclass:DataProcessor>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Report xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="7fdecc8b-7207-40c9-80dd-4b01b796c220">
+  <producedTypes>
+    <objectType typeId="e935a178-cd17-4573-8df1-bb86b7d8d2cd" valueTypeId="9e52424b-26ac-47a7-a14b-4c43d845ecd5"/>
+    <managerType typeId="95556f8c-4374-4284-9dfe-fd3073455807" valueTypeId="467908d3-dcf0-4182-a651-099e314a569d"/>
+  </producedTypes>
+  <name>ПобедыНадРазрядниками</name>
+  <synonym>
+    <key>ru</key>
+    <value>Победы над разрядниками</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <mainDataCompositionSchema>Report.ПобедыНадРазрядниками.Template.ОсновнаяСхемаКомпоновкиДанных</mainDataCompositionSchema>
+  <templates uuid="b887704e-2e27-4b55-a41c-a73f8f75587f">
+    <name>ОсновнаяСхемаКомпоновкиДанных</name>
+    <synonym>
+      <key>ru</key>
+      <value>Основная схема компоновки данных</value>
+    </synonym>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+</mdclass:Report>

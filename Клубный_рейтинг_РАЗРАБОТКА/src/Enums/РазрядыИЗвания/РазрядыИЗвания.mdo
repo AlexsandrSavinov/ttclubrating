@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Enum xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="992fda32-c69d-4fa1-8c1e-b440673ae4c6">
+  <producedTypes>
+    <refType typeId="df17a843-c64f-40f0-8994-bb4a7f359bed" valueTypeId="ae539eb4-951f-497c-b97d-2b54acfc5bbe"/>
+    <listType typeId="34726dc2-ca3f-4f8f-b594-770fb39cfd13" valueTypeId="f63e6b71-6bef-46a1-bcb3-d63bd63a5708"/>
+    <managerType typeId="249b1984-0f2e-43e6-98f2-8d50f58f33bc" valueTypeId="52554e5f-02d4-4fd4-948e-e902841b72b3"/>
+  </producedTypes>
+  <name>РазрядыИЗвания</name>
+  <synonym>
+    <key>ru</key>
+    <value>Разряды и звания</value>
+  </synonym>
+  <quickChoice>true</quickChoice>
+  <choiceMode>BothWays</choiceMode>
+  <enumValues uuid="1a53ac41-0966-45e2-9ac8-fd5314faaf53">
+    <name>Юношеский3</name>
+    <synonym>
+      <key>ru</key>
+      <value>3ю.</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="1e86b744-63d4-41da-91ac-3ba5b01dd129">
+    <name>Юношеский2</name>
+    <synonym>
+      <key>ru</key>
+      <value>2ю.</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="8dc50b56-4d6e-4bc8-98cf-fdde131b5555">
+    <name>Юношеский1</name>
+    <synonym>
+      <key>ru</key>
+      <value>1ю.</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="cb939068-bcd6-4128-bee8-1c9020ceb0cd">
+    <name>Разряд3</name>
+    <synonym>
+      <key>ru</key>
+      <value>III</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="ea3dc895-e098-4671-8d77-8d56a1d2750a">
+    <name>Разряд2</name>
+    <synonym>
+      <key>ru</key>
+      <value>II</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="3fe673dc-3a2c-46f6-9740-b7968138e011">
+    <name>Разряд1</name>
+    <synonym>
+      <key>ru</key>
+      <value>I</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="92e8897e-396c-49d8-b353-8a7d84c2fd85">
+    <name>КандидатВМастераСпорта</name>
+    <synonym>
+      <key>ru</key>
+      <value>КМС</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="187f5fcc-5837-455a-b0c1-37834de9e51c">
+    <name>МастерСпорта</name>
+    <synonym>
+      <key>ru</key>
+      <value>МС</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="dc7273fd-6d2a-4c6f-8709-195243d00206">
+    <name>МастерСпортаМеждународногоКласса</name>
+    <synonym>
+      <key>ru</key>
+      <value>МСМК</value>
+    </synonym>
+  </enumValues>
+</mdclass:Enum>

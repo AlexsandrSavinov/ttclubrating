@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:CommonCommand xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="ee3cdc86-beb0-4deb-a020-e5699fa98d84">
+  <name>СохранитьMXL_EXCEL</name>
+  <synonym>
+    <key>ru</key>
+    <value>Сохранить в Excel</value>
+  </synonym>
+  <group>FormCommandBarImportant</group>
+  <commandParameterType/>
+  <representation>Auto</representation>
+  <toolTip>
+    <key>ru</key>
+    <value>Сохранить в Excel</value>
+  </toolTip>
+  <picture xsi:type="core:PictureRef">
+    <picture>CommonPicture.ИконкаExcel</picture>
+  </picture>
+  <shortcut></shortcut>
+</mdclass:CommonCommand>

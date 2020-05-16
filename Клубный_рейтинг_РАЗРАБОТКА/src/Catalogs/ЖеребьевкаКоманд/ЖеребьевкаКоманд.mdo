@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Catalog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="f84be11a-9ef4-4242-8ce5-676735cd6a88">
+  <producedTypes>
+    <objectType typeId="69e5d686-3bf7-48ba-b376-0b10c56b14f7" valueTypeId="9380259c-8133-460a-b432-4efbce7ac8d2"/>
+    <refType typeId="8902d397-be97-4d73-8e77-15642810bdc3" valueTypeId="7a244b15-fafe-4bfe-b16b-4a6dd94275a3"/>
+    <selectionType typeId="0fc0d7f1-ebb4-40f7-a6c0-a711b93ded66" valueTypeId="f8b94352-9a60-446f-9c32-786e22afbc90"/>
+    <listType typeId="adbce4cb-e4ca-4803-b7ab-a6226071c15c" valueTypeId="5d3f0007-ddd8-46a1-ae25-2501b2ed7541"/>
+    <managerType typeId="0c6c43c9-5ef0-476a-a996-9cf96a5ecb7d" valueTypeId="7b952296-32e7-49da-8138-c7b1ee3564ea"/>
+  </producedTypes>
+  <name>ЖеребьевкаКоманд</name>
+  <synonym>
+    <key>ru</key>
+    <value>Жеребьевка команд</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Catalog.ЖеребьевкаКоманд.StandardAttribute.Description</inputByString>
+  <inputByString>Catalog.ЖеребьевкаКоманд.StandardAttribute.Code</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <createOnInput>Use</createOnInput>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <levelCount>2</levelCount>
+  <foldersOnTop>true</foldersOnTop>
+  <codeLength>9</codeLength>
+  <descriptionLength>50</descriptionLength>
+  <codeType>String</codeType>
+  <codeAllowedLength>Variable</codeAllowedLength>
+  <checkUnique>true</checkUnique>
+  <autonumbering>true</autonumbering>
+  <defaultPresentation>AsDescription</defaultPresentation>
+  <predefined>
+    <items id="ecb8770a-9587-4b57-afb4-59716191bed4">
+      <name>Приложение61</name>
+      <description>Приложение 6.1</description>
+      <code xsi:type="core:StringValue">
+        <value>000000001</value>
+      </code>
+    </items>
+    <items id="383e0200-7956-43db-a026-669330871e13">
+      <name>Приложение62</name>
+      <description>Приложение 6.2</description>
+      <code xsi:type="core:StringValue">
+        <value>000000002</value>
+      </code>
+    </items>
+    <items id="4b61f04d-2191-40ed-b3f1-677f42ace047">
+      <name>Приложение64</name>
+      <description>Приложение 6.4</description>
+      <code xsi:type="core:StringValue">
+        <value>000000004</value>
+      </code>
+    </items>
+    <items id="e200c713-a119-4231-b0d7-be31fd5cb27c">
+      <name>Приложение65</name>
+      <description>Приложение 6.5</description>
+      <code xsi:type="core:StringValue">
+        <value>000000005</value>
+      </code>
+    </items>
+  </predefined>
+  <editType>InDialog</editType>
+  <choiceMode>BothWays</choiceMode>
+  <defaultObjectForm>Catalog.ЖеребьевкаКоманд.Form.ФормаЭлемента</defaultObjectForm>
+  <defaultListForm>Catalog.ЖеребьевкаКоманд.Form.ФормаСписка</defaultListForm>
+  <attributes uuid="dd19d54c-f752-4873-9d4d-f8ed9aebc603">
+    <name>КоличествоПобед</name>
+    <synonym>
+      <key>ru</key>
+      <value>Количество побед</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>2</precision>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:NumberValue">
+      <value>0</value>
+    </fillValue>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <tabularSections uuid="7fd14a37-c8eb-47c7-a160-da9be669e53d">
+    <producedTypes>
+      <objectType typeId="4d9f58f5-e190-47ea-9cf9-8fbc6985188e" valueTypeId="5f5586f9-3bc2-43a1-9223-fcee6181828a"/>
+      <rowType typeId="c41677f0-bb12-4f84-8a0f-29aaf4297c6e" valueTypeId="a13dc494-64c4-4dcb-b15b-5ff384c2bb66"/>
+    </producedTypes>
+    <name>ПорядокВстреч</name>
+    <synonym>
+      <key>ru</key>
+      <value>Порядок встреч</value>
+    </synonym>
+    <attributes uuid="0dc34ea7-49d8-4879-b0b1-77f3c00e6767">
+      <name>ВариантABC</name>
+      <synonym>
+        <key>ru</key>
+        <value>ABC</value>
+      </synonym>
+      <type>
+        <types>EnumRef.ВариантыРасстановки</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="b759c303-866b-4b5f-abe1-060895210527">
+      <name>ВариантXYZ</name>
+      <synonym>
+        <key>ru</key>
+        <value>XYZ</value>
+      </synonym>
+      <type>
+        <types>EnumRef.ВариантыРасстановки</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+  </tabularSections>
+  <forms uuid="8ab143f4-7e9f-4e91-8fa1-5698edba4d9e">
+    <name>ФормаЭлемента</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма элемента</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="debf0580-38e1-4e10-8baa-066e1539331e">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:Catalog>

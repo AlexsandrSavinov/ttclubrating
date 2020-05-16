@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Constant xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="f7d39500-116d-4301-9a06-8b450f3e3f8c">
+  <producedTypes>
+    <managerType typeId="f5376ded-754e-4a4f-986f-a992f0b19d0b" valueTypeId="e602558c-6b9c-4a63-92c7-36a81c4d1d04"/>
+    <valueManagerType typeId="d27ea656-1e52-4088-835c-eab1396a0f65" valueTypeId="5bf60f14-8b31-4821-8f1e-f43b12d2e4a1"/>
+    <valueKeyType typeId="806ab313-f686-56d9-a76e-21943bc28d0d" valueTypeId="2bd909de-9c4f-5489-bfa5-0a711661f141"/>
+  </producedTypes>
+  <name>НумерацияУчастниковВСетке</name>
+  <synonym>
+    <key>ru</key>
+    <value>Нумерация участников в сетке</value>
+  </synonym>
+  <type>
+    <types>EnumRef.НумерацияВСетке</types>
+  </type>
+  <useStandardCommands>true</useStandardCommands>
+  <minValue xsi:type="core:UndefinedValue"/>
+  <maxValue xsi:type="core:UndefinedValue"/>
+  <dataLockControlMode>Managed</dataLockControlMode>
+</mdclass:Constant>

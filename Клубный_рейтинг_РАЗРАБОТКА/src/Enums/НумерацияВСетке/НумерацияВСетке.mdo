@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Enum xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="d2fe5354-ccfe-4e50-940c-afdfa5a47037">
+  <producedTypes>
+    <refType typeId="90f5f395-0bbc-43fe-bcb0-92bc62846ebd" valueTypeId="0bc061a8-88c0-4d1b-98bf-b78bc50e0e8a"/>
+    <listType typeId="6148a298-a86f-44a9-bdab-8843d76ddab3" valueTypeId="df045d37-3bd6-4e38-8dcb-4c59a71065bc"/>
+    <managerType typeId="8e7643bf-606a-4394-87b8-05160afbb966" valueTypeId="dfbc22b6-b910-4c8c-8209-e71ca657bda3"/>
+  </producedTypes>
+  <name>НумерацияВСетке</name>
+  <synonym>
+    <key>ru</key>
+    <value>Нумерация в сетке</value>
+  </synonym>
+  <quickChoice>true</quickChoice>
+  <choiceMode>BothWays</choiceMode>
+  <enumValues uuid="625521e1-a136-4896-889d-44a38374a102">
+    <name>ПоПорядку</name>
+    <synonym>
+      <key>ru</key>
+      <value>По порядку</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="a1846122-22fc-4f3f-af87-5789797c6f10">
+    <name>ПервыйПоследний</name>
+    <synonym>
+      <key>ru</key>
+      <value>Первый последний</value>
+    </synonym>
+    <comment>Первая игра будет 1 - 8</comment>
+  </enumValues>
+</mdclass:Enum>

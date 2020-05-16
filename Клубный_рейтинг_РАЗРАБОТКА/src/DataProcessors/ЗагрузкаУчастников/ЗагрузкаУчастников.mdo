@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:DataProcessor xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="33517d90-a0b6-4ed7-8e28-bd8298e40929">
+  <producedTypes>
+    <objectType typeId="35de3f43-3325-4022-a348-9fd3ee5690cd" valueTypeId="13e09ee7-a577-4328-931a-7c4548841bdf"/>
+    <managerType typeId="330eae6a-3fd2-4734-8f74-27b4903bd4b7" valueTypeId="ee5cedbc-b4b1-404d-9e67-0edb14c0980a"/>
+  </producedTypes>
+  <name>ЗагрузкаУчастников</name>
+  <synonym>
+    <key>ru</key>
+    <value>Загрузка участников</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultForm>DataProcessor.ЗагрузкаУчастников.Form.Форма</defaultForm>
+  <attributes uuid="1741a986-4f61-400f-ab86-ff7ba2712489">
+    <name>ПутьКФайлу</name>
+    <synonym>
+      <key>ru</key>
+      <value>Путь к файлу</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers/>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="43bdcd8a-66a7-435d-a7b1-50066f6ad98f">
+    <name>ПерваяСтрока</name>
+    <synonym>
+      <key>ru</key>
+      <value>Первая строка</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>3</precision>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="0e47c346-f085-4bad-9f05-a5478ab56ccd">
+    <name>ПоследняяСтрока</name>
+    <synonym>
+      <key>ru</key>
+      <value>Последняя строка</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>15</precision>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="f6f8044a-e354-4320-8f1e-1ee64bdb08b9">
+    <name>НомерЛиста</name>
+    <synonym>
+      <key>ru</key>
+      <value>Номер листа</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>2</precision>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <forms uuid="0891676a-da12-40e6-b3ba-8a6392ff4cf1">
+    <name>Форма</name>
+    <synonym>
+      <key>ru</key>
+      <value>Загрузка участников</value>
+    </synonym>
+    <includeHelpInContents>true</includeHelpInContents>
+    <help>
+      <pages>
+        <lang>ru</lang>
+      </pages>
+    </help>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:DataProcessor>

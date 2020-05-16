@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Enum xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="c0f82bd2-0b9c-4a92-9b05-25d953994a9a">
+  <producedTypes>
+    <refType typeId="c78efdd4-8145-448b-a60d-1fc070be7463" valueTypeId="3fc616f6-232a-40e6-ba22-e8a5a40207ff"/>
+    <listType typeId="c9c8955a-a9a7-4ce0-b967-d5af267ffd8d" valueTypeId="df19b228-769b-457f-b3a6-bd51b5325a48"/>
+    <managerType typeId="ee98bdf5-a5ee-402b-8c6e-7f669ad01d4c" valueTypeId="55ca4732-8133-4279-ac5b-191ae970d8dd"/>
+  </producedTypes>
+  <name>ТипПубликации</name>
+  <synonym>
+    <key>ru</key>
+    <value>Тип публикации</value>
+  </synonym>
+  <quickChoice>true</quickChoice>
+  <choiceMode>BothWays</choiceMode>
+  <enumValues uuid="7d1b6b7f-f097-48e7-a51a-bcac706078ff">
+    <name>Пользователь</name>
+    <synonym>
+      <key>ru</key>
+      <value>Пользователь</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="e929e741-36a5-477c-9419-ea1ac9f5973c">
+    <name>Группа</name>
+    <synonym>
+      <key>ru</key>
+      <value>Группа</value>
+    </synonym>
+  </enumValues>
+</mdclass:Enum>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Enum xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="8645cbed-aa4a-4014-9941-4ed8f71bda1b">
+  <producedTypes>
+    <refType typeId="6e3cc45a-cfa6-44c2-818e-1e87490e5f65" valueTypeId="2687128e-9b4d-4276-a220-ebb51675ca99"/>
+    <listType typeId="f876b071-296a-46eb-ae23-a23a00577150" valueTypeId="5a768934-00fd-40eb-a9fa-814e848265f4"/>
+    <managerType typeId="90a2fecc-110b-4f67-a221-0df33bd16fd6" valueTypeId="bf93fb9b-b438-44b4-b7bb-7e5cc14b8a18"/>
+  </producedTypes>
+  <name>ТипСоревнования</name>
+  <synonym>
+    <key>ru</key>
+    <value>Тип соревнования</value>
+  </synonym>
+  <quickChoice>true</quickChoice>
+  <choiceMode>BothWays</choiceMode>
+  <enumValues uuid="1b5e5bf7-acd7-4f17-a709-60b5e360332a">
+    <name>Мужские</name>
+    <synonym>
+      <key>ru</key>
+      <value>Мужские</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="23c13436-7a8b-47a7-92aa-f9134ebfebbf">
+    <name>Женские</name>
+    <synonym>
+      <key>ru</key>
+      <value>Женские</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="9b22fa10-9bde-4c02-8765-b57f530792c1">
+    <name>Смешанные</name>
+    <synonym>
+      <key>ru</key>
+      <value>Смешанные</value>
+    </synonym>
+  </enumValues>
+</mdclass:Enum>

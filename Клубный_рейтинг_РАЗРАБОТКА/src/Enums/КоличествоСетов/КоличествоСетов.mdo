@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Enum xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="efde2136-acb6-492c-b967-fcab3366b126">
+  <producedTypes>
+    <refType typeId="75c578af-4e63-4e3e-a146-45ccade4519c" valueTypeId="651bab5a-e5fd-49b6-b104-337d81695262"/>
+    <listType typeId="b00457ef-4850-47b7-ad91-0fdd3d38fb3a" valueTypeId="8be9ce1f-4cd2-4e2b-8ebf-b14c4d1a64ca"/>
+    <managerType typeId="6b2a0281-ddf2-44a0-bf23-c08e57b1f753" valueTypeId="e63fa252-a09c-4fac-9f1d-f5c4c4c64fe1"/>
+  </producedTypes>
+  <name>КоличествоСетов</name>
+  <synonym>
+    <key>ru</key>
+    <value>Количество сетов</value>
+  </synonym>
+  <quickChoice>true</quickChoice>
+  <choiceMode>BothWays</choiceMode>
+  <enumValues uuid="7d3db888-3e35-44fd-a2d0-f2e792459ad4">
+    <name>Три</name>
+    <synonym>
+      <key>ru</key>
+      <value>3</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="b8662bd8-be41-43b5-98d6-a6651593a6db">
+    <name>Пять</name>
+    <synonym>
+      <key>ru</key>
+      <value>5</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="defc1e94-a989-4ede-b54c-7b822158a0cb">
+    <name>Семь</name>
+    <synonym>
+      <key>ru</key>
+      <value>7</value>
+    </synonym>
+  </enumValues>
+</mdclass:Enum>

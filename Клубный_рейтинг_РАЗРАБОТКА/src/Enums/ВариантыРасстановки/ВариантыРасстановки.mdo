@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Enum xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="028c0003-52bc-4b0d-ad2e-3d67654b1e97">
+  <producedTypes>
+    <refType typeId="05238336-e372-40c8-af1a-5229f7b79766" valueTypeId="d13f07dc-c5b4-4656-b158-07450f1ae0ef"/>
+    <listType typeId="368c98c6-f22f-4736-811e-b2f7dd60aef9" valueTypeId="fe2eb2ef-7c84-48ee-90d6-dd9aa2c3463d"/>
+    <managerType typeId="72f5e317-b8ac-4a7f-9143-3dc0e2c14c94" valueTypeId="618589c6-45bc-4aa7-a0af-02a33979aa7a"/>
+  </producedTypes>
+  <name>ВариантыРасстановки</name>
+  <synonym>
+    <key>ru</key>
+    <value>Варианты расстановки</value>
+  </synonym>
+  <quickChoice>true</quickChoice>
+  <choiceMode>BothWays</choiceMode>
+  <enumValues uuid="6a04380e-6044-4009-a2bb-1175c6606f04">
+    <name>A</name>
+    <synonym>
+      <key>ru</key>
+      <value>A</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="972cab31-4ff8-476a-87e8-09def7457f0d">
+    <name>B</name>
+    <synonym>
+      <key>ru</key>
+      <value>B</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="e89e6f93-9c98-42b1-8247-f85ea2e78135">
+    <name>C</name>
+    <synonym>
+      <key>ru</key>
+      <value>C</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="09288d9e-14d3-447d-b02a-a064c6c268ff">
+    <name>D</name>
+    <synonym>
+      <key>ru</key>
+      <value>D</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="b8147c52-7f28-4fd9-90b1-1fecce57d6dd">
+    <name>E</name>
+    <synonym>
+      <key>ru</key>
+      <value>E</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="42521e0a-aee0-45b3-9afd-d714fe351f97">
+    <name>F</name>
+    <synonym>
+      <key>ru</key>
+      <value>F</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="d02b03f3-bbfe-4d1c-8402-ab719715f17d">
+    <name>X</name>
+    <synonym>
+      <key>ru</key>
+      <value>X</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="c2f10f74-f20f-4a18-8dc2-5e293d90a338">
+    <name>Y</name>
+    <synonym>
+      <key>ru</key>
+      <value>Y</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="afa0d8d5-01a3-46df-a165-df220d1b00bb">
+    <name>Z</name>
+    <synonym>
+      <key>ru</key>
+      <value>Z</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="d5fa0c25-6788-4cbb-a84f-c06a9e7e6bcc">
+    <name>W</name>
+    <synonym>
+      <key>ru</key>
+      <value>W</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="9434016d-3b3f-4c8d-b7e3-d1fff32b6076">
+    <name>V</name>
+    <synonym>
+      <key>ru</key>
+      <value>V</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="7de105f6-a56b-4bb4-bb3e-6dd1ed616808">
+    <name>U</name>
+    <synonym>
+      <key>ru</key>
+      <value>U</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="c81696ff-a31a-4393-b928-4ffc1869e2c5">
+    <name>Пара</name>
+    <synonym>
+      <key>ru</key>
+      <value>Пара</value>
+    </synonym>
+  </enumValues>
+</mdclass:Enum>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Enum xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="376620ee-03de-4bb8-9481-176a9a4e90c4">
+  <producedTypes>
+    <refType typeId="74544fb2-effe-4e36-a14b-80e59bcb41b6" valueTypeId="0acc65b3-05da-4b56-8659-19fc6f88c1f7"/>
+    <listType typeId="ebf8df5f-fa42-45d5-af38-6a7a77f5da58" valueTypeId="0418f358-37c6-41f8-ad4d-d965f3b2ae85"/>
+    <managerType typeId="973dbadf-0247-4584-956b-2fb89d984581" valueTypeId="e57ae68d-fb01-45d2-89b1-c2fbdd7135a8"/>
+  </producedTypes>
+  <name>РежимыТуровСоревнования</name>
+  <synonym>
+    <key>ru</key>
+    <value>Режимы туров соревнования</value>
+  </synonym>
+  <quickChoice>true</quickChoice>
+  <choiceMode>BothWays</choiceMode>
+  <enumValues uuid="e6a80dec-d2d5-43ab-87a1-ff45093b7457">
+    <name>Групповой</name>
+    <synonym>
+      <key>ru</key>
+      <value>По круговой</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="c6a112c6-b718-4f01-90a0-2462eb18bcc4">
+    <name>МинусДва</name>
+    <synonym>
+      <key>ru</key>
+      <value>После 2 поражений с опред. всех мест</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="4bb133ba-7ee1-4089-b9b6-25445610e357">
+    <name>Прогрессивная</name>
+    <synonym>
+      <key>ru</key>
+      <value>Прогрессивная с опред. всех мест</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="c80e6c9e-f9cd-4e4b-ab10-a740a71b065c">
+    <name>Олимпийка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Прямой нокаут (олимпийка)</value>
+    </synonym>
+  </enumValues>
+</mdclass:Enum>

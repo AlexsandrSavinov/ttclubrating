@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Constant xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="d469ad1c-7851-4d5b-8c00-2b86ba46b6ef">
+  <producedTypes>
+    <managerType typeId="8ee4c48e-1a94-4673-a90e-f867b9176efe" valueTypeId="191193a1-6c21-4dd5-9765-a62dbe9b2813"/>
+    <valueManagerType typeId="aaa41e94-0bc0-4681-bc09-71dcc4504eed" valueTypeId="5ce9e9c4-7adb-42c3-9c0f-83f00fb002ac"/>
+    <valueKeyType typeId="d6ac3bfb-d2e5-5b09-8922-0e0d978d153c" valueTypeId="2e229055-5360-5776-ab8f-06e6e9610064"/>
+  </producedTypes>
+  <name>Сетка32ПрямойСнос</name>
+  <synonym>
+    <key>ru</key>
+    <value>Сетка32 прямой снос</value>
+  </synonym>
+  <type>
+    <types>Boolean</types>
+  </type>
+  <useStandardCommands>true</useStandardCommands>
+  <minValue xsi:type="core:UndefinedValue"/>
+  <maxValue xsi:type="core:UndefinedValue"/>
+  <dataLockControlMode>Managed</dataLockControlMode>
+</mdclass:Constant>

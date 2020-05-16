@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Constant xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="5a79311e-8cb3-41d1-babc-2af64a906765">
+  <producedTypes>
+    <managerType typeId="cce3dc54-0bcb-46f7-a5e9-c8c11eb35370" valueTypeId="f7e71f55-9475-4f67-ae23-ab08947644b5"/>
+    <valueManagerType typeId="d906328f-b9e9-4bfa-af2a-d9a1f2d7ffbb" valueTypeId="9e261429-b214-48c2-9265-fd2a213e9032"/>
+    <valueKeyType typeId="e2e6f6e9-85d6-51b7-8f38-f2085d3bc5c1" valueTypeId="3eb666a3-2ea8-56ec-ac2b-f2eb0fb5683b"/>
+  </producedTypes>
+  <name>ВыводКолонкиГород</name>
+  <synonym>
+    <key>ru</key>
+    <value>Вывод колонки город</value>
+  </synonym>
+  <type>
+    <types>Boolean</types>
+  </type>
+  <useStandardCommands>true</useStandardCommands>
+  <minValue xsi:type="core:UndefinedValue"/>
+  <maxValue xsi:type="core:UndefinedValue"/>
+  <dataLockControlMode>Managed</dataLockControlMode>
+</mdclass:Constant>

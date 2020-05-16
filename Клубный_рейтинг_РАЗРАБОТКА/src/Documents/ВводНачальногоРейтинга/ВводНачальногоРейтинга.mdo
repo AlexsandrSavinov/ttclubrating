@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Document xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="ce33cde7-cea5-43e7-8754-53d2d5cac805">
+  <producedTypes>
+    <objectType typeId="5e87e37b-9355-4525-8fe3-01450ed4ab8e" valueTypeId="6bdfeb8b-b3b8-4c9a-82ab-eb3623ed4b80"/>
+    <refType typeId="647ef89f-d374-4f4a-b8e3-1e62cbc56f9a" valueTypeId="af42be8f-94f0-48da-8776-06867c49a2da"/>
+    <selectionType typeId="76097fab-d4cb-4a12-acc7-ccff1a371e21" valueTypeId="ac1e7c33-8957-41b7-b25b-7efa12a8d401"/>
+    <listType typeId="be104b7a-0b93-4f6d-a7d7-094edc0acf81" valueTypeId="94538a18-6118-4b70-93c3-a26c42868488"/>
+    <managerType typeId="0ef8b20e-7ffa-4eca-83ef-7b7a2237b7e9" valueTypeId="881ff523-053f-432b-a102-9617a4034b29"/>
+  </producedTypes>
+  <name>ВводНачальногоРейтинга</name>
+  <synonym>
+    <key>ru</key>
+    <value>Корректировка рейтинга</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Document.ВводНачальногоРейтинга.StandardAttribute.Number</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <createOnInput>Use</createOnInput>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <objectPresentation>
+    <key>ru</key>
+    <value>Корректировка рейтинга</value>
+  </objectPresentation>
+  <listPresentation>
+    <key>ru</key>
+    <value>Корректировка рейтинга</value>
+  </listPresentation>
+  <numberType>String</numberType>
+  <numberLength>9</numberLength>
+  <numberAllowedLength>Variable</numberAllowedLength>
+  <checkUnique>true</checkUnique>
+  <autonumbering>true</autonumbering>
+  <defaultObjectForm>Document.ВводНачальногоРейтинга.Form.ФормаДокумента</defaultObjectForm>
+  <realTimePosting>Deny</realTimePosting>
+  <registerRecords>InformationRegister.РейтингУчастников</registerRecords>
+  <postInPrivilegedMode>true</postInPrivilegedMode>
+  <unpostInPrivilegedMode>true</unpostInPrivilegedMode>
+  <attributes uuid="e092858f-f743-45f6-89fe-e577ddc625da">
+    <name>Комментарий</name>
+    <synonym>
+      <key>ru</key>
+      <value>Комментарий</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>150</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <forms uuid="17d5bea4-7a27-4c31-980c-60913828991c">
+    <name>ФормаДокумента</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма документа</value>
+    </synonym>
+    <includeHelpInContents>true</includeHelpInContents>
+    <help>
+      <pages>
+        <lang>ru</lang>
+      </pages>
+    </help>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <tabularSections uuid="8b255467-6e86-432b-a128-e9ebff01d97d">
+    <producedTypes>
+      <objectType typeId="cf2273ba-58d5-4e08-aa61-01c5da9ff4e5" valueTypeId="d8d95866-ba07-49c6-994d-0507b0ec39c1"/>
+      <rowType typeId="80a91038-35cf-474a-bc1f-018b2638c78a" valueTypeId="1c98c3ce-0ae4-4c27-84e9-d47f7c7de0b5"/>
+    </producedTypes>
+    <name>Данные</name>
+    <synonym>
+      <key>ru</key>
+      <value>Данные</value>
+    </synonym>
+    <attributes uuid="3d2cb466-4f56-41cc-9ae4-21534ccd0a80">
+      <name>Игрок</name>
+      <synonym>
+        <key>ru</key>
+        <value>Игрок</value>
+      </synonym>
+      <type>
+        <types>CatalogRef.Участники</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="2fa127a6-dfd9-4757-b4b3-bdca55a37541">
+      <name>Рейтинг</name>
+      <synonym>
+        <key>ru</key>
+        <value>Рейтинг</value>
+      </synonym>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>10</precision>
+          <scale>2</scale>
+        </numberQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="50da7e97-1241-42b3-912e-c8b4d2ca99ab">
+      <name>ВидРейтинга</name>
+      <synonym>
+        <key>ru</key>
+        <value>Вид рейтинга</value>
+      </synonym>
+      <type>
+        <types>CatalogRef.ВидыРейтинга</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+  </tabularSections>
+</mdclass:Document>

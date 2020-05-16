@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Enum xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="f863ea33-5e89-4d2c-a26a-3d4f9e1ffbb0">
+  <producedTypes>
+    <refType typeId="13f4f59e-e899-4493-bbd6-ba615e6b2a5c" valueTypeId="cce9b11a-170e-4654-b722-3d689e41e199"/>
+    <listType typeId="1369e1f8-dcce-4155-a483-69fb39f2366f" valueTypeId="cd0762cd-38a7-482b-92c7-bd3ecabe16ef"/>
+    <managerType typeId="bbd972f0-6975-4a90-98a5-9afc5301ac70" valueTypeId="00000cab-8971-47e7-b234-91b6fe879367"/>
+  </producedTypes>
+  <name>ОтображениеВкладок</name>
+  <synonym>
+    <key>ru</key>
+    <value>Отображение вкладок</value>
+  </synonym>
+  <quickChoice>true</quickChoice>
+  <choiceMode>BothWays</choiceMode>
+  <enumValues uuid="c9182ee3-938a-46b3-a735-3e55d30ab146">
+    <name>ЗакладкиСверху</name>
+    <synonym>
+      <key>ru</key>
+      <value>Закладки сверху</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="a97c1daa-aea1-4103-8d3a-dc102a0667b9">
+    <name>ЗакладкиСлеваГоризонтально</name>
+    <synonym>
+      <key>ru</key>
+      <value>Закладки слева горизонтально</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="e8ce711d-8394-461e-a126-fcf4ab5e9a83">
+    <name>ЗакладкиСнизу</name>
+    <synonym>
+      <key>ru</key>
+      <value>Закладки снизу</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="9a166188-e4ae-4b2a-8287-c10f403bea41">
+    <name>ЗакладкиСправаГоризонтально</name>
+    <synonym>
+      <key>ru</key>
+      <value>Закладки справа горизонтально</value>
+    </synonym>
+  </enumValues>
+</mdclass:Enum>
