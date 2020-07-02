@@ -164,11 +164,12 @@
   <constants>Constant.ТекущаяВерсияПрограммы</constants>
   <constants>Constant.ТокенВК</constants>
   <constants>Constant.ИспользоватьБотаTtclubrating</constants>
-  <commonForms>CommonForm.ФормаВыводаНаПечать</commonForms>
+  <constants>Constant.КачествоКартинки</constants>
   <commonForms>CommonForm.КалендарьСоревнований</commonForms>
   <commonForms>CommonForm.НастройкиПрограммы</commonForms>
-  <commonForms>CommonForm.ФормаОтчета</commonForms>
   <commonForms>CommonForm.ОтправкаДанныхВСоциальныеСети</commonForms>
+  <commonForms>CommonForm.ФормаВыводаНаПечать</commonForms>
+  <commonForms>CommonForm.ФормаОтчета</commonForms>
   <catalogs>Catalog.ВидыРейтинга</catalogs>
   <catalogs>Catalog.Города</catalogs>
   <catalogs>Catalog.ДополнительныеОтчетыИОбработки</catalogs>
