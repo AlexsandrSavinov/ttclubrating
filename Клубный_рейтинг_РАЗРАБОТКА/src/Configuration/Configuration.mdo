@@ -228,4 +228,5 @@
   <informationRegisters>InformationRegister.РейтингУчастников</informationRegisters>
   <informationRegisters>InformationRegister.ТекущиеВстречи</informationRegisters>
   <informationRegisters>InformationRegister.ФормулыРасчетаРейтинга</informationRegisters>
+  <informationRegisters>InformationRegister.КоэффициентыРейтингаПоСчетуВстречи</informationRegisters>
 </mdclass:Configuration>

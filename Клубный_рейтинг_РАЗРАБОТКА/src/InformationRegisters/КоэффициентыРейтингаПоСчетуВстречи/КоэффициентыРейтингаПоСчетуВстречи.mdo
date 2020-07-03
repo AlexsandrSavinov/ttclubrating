@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="881b68bd-9af5-405c-85bb-5477a7ec177f">
+  <producedTypes>
+    <selectionType typeId="b86c3f9d-30db-49aa-9987-4eedd119be9c" valueTypeId="a78e8d90-dbfe-4b4e-9118-b7cdb52479f4"/>
+    <listType typeId="3c370982-fa53-48c4-b090-138f8a513ea7" valueTypeId="ece4256d-7db2-4c46-adb3-af2ca42ac123"/>
+    <managerType typeId="2903ad52-052e-423d-b395-b11a877ab14f" valueTypeId="a7438e68-b597-4fa0-b0ce-ef393d700779"/>
+    <recordSetType typeId="c7e91002-d799-4a73-a33d-18f1208025c9" valueTypeId="f1ec97ba-4382-46c3-8978-c8e2b205213c"/>
+    <recordKeyType typeId="3e90e1e4-f38d-4739-ae87-56c8e079f14e" valueTypeId="9ade643d-e159-456b-99fa-5a24dacff64b"/>
+    <recordType typeId="607baee5-a0a1-4dfd-a27c-8f1170610175" valueTypeId="1c3a21c9-be53-4cdf-a2cc-b5a1d364f668"/>
+    <recordManagerType typeId="e727b602-729c-4bd7-b9ba-24d1cdedd059" valueTypeId="b2b3fe88-0a9e-46d1-842a-51f3c8d2247b"/>
+  </producedTypes>
+  <name>КоэффициентыРейтингаПоСчетуВстречи</name>
+  <synonym>
+    <key>ru</key>
+    <value>Коэффициенты рейтинга по счету встречи</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultRecordForm>InformationRegister.КоэффициентыРейтингаПоСчетуВстречи.Form.ФормаЗаписи</defaultRecordForm>
+  <defaultListForm>InformationRegister.КоэффициентыРейтингаПоСчетуВстречи.Form.ФормаСписка</defaultListForm>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Period</name>
+    <synonym>
+      <key>ru</key>
+      <value>Действует с</value>
+    </synonym>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+  </standardAttributes>
+  <informationRegisterPeriodicity>Day</informationRegisterPeriodicity>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <resources uuid="8adde9bc-48bb-4fea-a3c4-77df2a16b6c5">
+    <name>Коэффициент</name>
+    <synonym>
+      <key>ru</key>
+      <value>Коэффициент</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>4</precision>
+        <scale>2</scale>
+      </numberQualifiers>
+    </type>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </resources>
+  <dimensions uuid="ab1c4c87-3439-4bd8-81f5-a5404ee9027a">
+    <name>СчетВыигравшего</name>
+    <synonym>
+      <key>ru</key>
+      <value>Счет выигравшего</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>1</precision>
+      </numberQualifiers>
+    </type>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="13067352-e977-4e4d-b985-556d64da3d5b">
+    <name>СчетПроигравшего</name>
+    <synonym>
+      <key>ru</key>
+      <value>Счет проигравшего</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>1</precision>
+      </numberQualifiers>
+    </type>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <forms uuid="dba0e2f3-619d-4131-9aa4-6e09db20e4b0">
+    <name>ФормаЗаписи</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма записи</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="a0d7b059-0c7c-420a-a9b9-94d550903f7a">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:InformationRegister>

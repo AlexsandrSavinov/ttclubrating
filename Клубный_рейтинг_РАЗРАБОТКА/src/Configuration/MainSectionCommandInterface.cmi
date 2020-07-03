@@ -259,6 +259,7 @@
       <commands>InformationRegister.ФормулыРасчетаРейтинга.StandardCommand.OpenList</commands>
       <commands>InformationRegister.БонусныеОчки.StandardCommand.OpenList</commands>
       <commands>Catalog.ДополнительныеОтчетыИОбработки.StandardCommand.OpenList</commands>
+      <commands>InformationRegister.КоэффициентыРейтингаПоСчетуВстречи.StandardCommand.OpenList</commands>
     </placementFragments>
     <placementFragments>
       <group>ActionsPanelCreate</group>
@@ -325,6 +326,7 @@
       <commands>InformationRegister.ПериодДействияРазрядов.StandardCommand.OpenList</commands>
       <commands>InformationRegister.НастройкиСбораГрупп.StandardCommand.OpenList</commands>
       <commands>InformationRegister.ФормулыРасчетаРейтинга.StandardCommand.OpenList</commands>
+      <commands>InformationRegister.КоэффициентыРейтингаПоСчетуВстречи.StandardCommand.OpenList</commands>
       <commands>InformationRegister.БонусныеОчки.StandardCommand.OpenList</commands>
       <commands>Catalog.ДополнительныеОтчетыИОбработки.StandardCommand.OpenList</commands>
     </orderFragments>
