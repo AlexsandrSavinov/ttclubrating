@@ -18,7 +18,7 @@
   <scriptVariant>Russian</scriptVariant>
   <defaultRoles>Role.ПолныеПрава</defaultRoles>
   <vendor>Савинов А.В.</vendor>
-  <version>2.15</version>
+  <version>2.16</version>
   <updateCatalogAddress>http://ttclubrating.ru/updates</updateCatalogAddress>
   <includeHelpInContents>true</includeHelpInContents>
   <help>
@@ -32,7 +32,7 @@
   <defaultLanguage>Language.Русский</defaultLanguage>
   <briefInformation>
     <key>ru</key>
-    <value>&quot;Клубный рейтинг&quot; версия 2.15</value>
+    <value>&quot;Клубный рейтинг&quot; версия 2.16</value>
   </briefInformation>
   <detailedInformation>
     <key>ru</key>
