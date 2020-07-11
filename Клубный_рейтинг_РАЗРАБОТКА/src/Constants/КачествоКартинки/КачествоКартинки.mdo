@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Constant xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="7218cf21-4f74-4b26-a1e2-a52a6965d274">
+  <producedTypes>
+    <managerType typeId="f83ee5ea-66c4-4d9e-8f00-3800ae628f14" valueTypeId="59db956c-66b5-4893-a9d6-56a3fd83b2e6"/>
+    <valueManagerType typeId="16f7f10b-e446-40c5-871f-cf795b4212c5" valueTypeId="b37a2ab1-44b6-4899-afca-aa31e8439a2e"/>
+    <valueKeyType typeId="c83ed612-d43f-498e-838c-5ab33ebc0101" valueTypeId="d21aa100-9d92-44bb-a36b-f6946e2549a9"/>
+  </producedTypes>
+  <name>КачествоКартинки</name>
+  <synonym>
+    <key>ru</key>
+    <value>Качество картинки</value>
+  </synonym>
+  <type>
+    <types>Number</types>
+    <numberQualifiers>
+      <precision>3</precision>
+    </numberQualifiers>
+  </type>
+  <useStandardCommands>true</useStandardCommands>
+  <maxValue xsi:type="core:StringValue">
+    <value>100</value>
+  </maxValue>
+  <dataLockControlMode>Managed</dataLockControlMode>
+</mdclass:Constant>
