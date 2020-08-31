@@ -104,10 +104,6 @@
           <segments>ВидРейтинга</segments>
         </paths>
       </dataPath>
-      <handlers>
-        <event>OnChange</event>
-        <name>ВидРейтингаПриИзменении</name>
-      </handlers>
       <extendedTooltip>
         <name>ВидРейтингаРасширеннаяПодсказка</name>
         <id>16</id>
