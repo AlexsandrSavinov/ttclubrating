@@ -152,7 +152,6 @@
           <autoMaxHeight>true</autoMaxHeight>
           <horizontalStretch>true</horizontalStretch>
           <wrap>true</wrap>
-          <dropListButton>false</dropListButton>
           <clearButton>true</clearButton>
           <openButton>false</openButton>
           <quickChoice>false</quickChoice>
