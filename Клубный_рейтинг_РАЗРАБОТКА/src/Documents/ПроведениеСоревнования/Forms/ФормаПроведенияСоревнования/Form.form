@@ -386,6 +386,7 @@
         <segments>СписокГруппПереключатели</segments>
       </paths>
     </dataPath>
+    <titleLocation>None</titleLocation>
     <handlers>
       <event>OnChange</event>
       <name>СписокГруппПереключателиПриИзменении</name>
