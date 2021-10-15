@@ -119,13 +119,13 @@
   <roles>Role.ПолныеПрава</roles>
   <commonTemplates>CommonTemplate.АвторскиеПраваЗащищены</commonTemplates>
   <commonTemplates>CommonTemplate.ДанныеДляЗагрузки</commonTemplates>
-  <commonModules>CommonModule.Клиентские</commonModules>
+  <commonModules>CommonModule.КлиентскиеКлиент</commonModules>
   <commonModules>CommonModule.ОбновлениеИБ</commonModules>
-  <commonModules>CommonModule.Общий</commonModules>
+  <commonModules>CommonModule.ОбщийКлиентСервер</commonModules>
   <commonModules>CommonModule.РаботаССоциальнымиСетямиКлиент</commonModules>
   <commonModules>CommonModule.РаботаССоциальнымиСетямиКлиентСервер</commonModules>
   <commonModules>CommonModule.РаботаССоциальнымиСетямиСервер</commonModules>
-  <commonModules>CommonModule.Серверные</commonModules>
+  <commonModules>CommonModule.СерверныеСервер</commonModules>
   <scheduledJobs>ScheduledJob.ПроверкаПроксиСерверовКТелеграмм</scheduledJobs>
   <commonCommands>CommonCommand.ВыходИзПрограммы</commonCommands>
   <commonCommands>CommonCommand.СохранитьMXL_EXCEL</commonCommands>

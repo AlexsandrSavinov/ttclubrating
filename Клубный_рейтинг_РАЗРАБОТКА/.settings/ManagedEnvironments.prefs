@@ -1,4 +1,6 @@
-<<<<<<< HEAD
+=\=\=\=\=\=\=
+<<<<<<<=HEAD
+>>>>>>>=branch 'develop/develop' of https\://github.com/AlexsandrSavinov/ttclubrating.git
 CLIENT=false
 EXTERNAL_CONN=false
 MNG_CLIENT=false
@@ -10,16 +12,3 @@ SERVER=true
 THIN_CLIENT=true
 WEB_CLIENT=true
 eclipse.preferences.version=1
-=======
-CLIENT=false
-EXTERNAL_CONN=false
-MNG_CLIENT=true
-MOBILE_AUTONOMOUS_SERVER=false
-MOBILE_CLIENT=true
-MOBILE_SERVER=true
-MOBILE_THIN_CLIENT=false
-SERVER=true
-THIN_CLIENT=true
-WEB_CLIENT=true
-eclipse.preferences.version=1
->>>>>>> branch 'develop/develop' of https://github.com/AlexsandrSavinov/ttclubrating.git

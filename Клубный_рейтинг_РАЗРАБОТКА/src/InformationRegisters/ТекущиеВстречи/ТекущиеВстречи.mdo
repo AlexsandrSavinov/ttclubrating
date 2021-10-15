@@ -19,6 +19,14 @@
   <defaultRecordForm>InformationRegister.ТекущиеВстречи.Form.ФормаЗаписи</defaultRecordForm>
   <defaultListForm>InformationRegister.ТекущиеВстречи.Form.ФормаСписка</defaultListForm>
   <dataLockControlMode>Managed</dataLockControlMode>
+  <recordPresentation>
+    <key>ru</key>
+    <value>Текущая встреча</value>
+  </recordPresentation>
+  <listPresentation>
+    <key>ru</key>
+    <value>Текущие встречи</value>
+  </listPresentation>
   <resources uuid="2babbc6b-50b4-4c9a-b956-86faafb3b91f">
     <name>Участник1</name>
     <synonym>

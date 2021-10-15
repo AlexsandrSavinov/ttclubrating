@@ -65,6 +65,9 @@
           <key>ru</key>
           <value>Нет фото</value>
         </nonselectedPictureText>
+        <border xsi:type="core:BorderDef">
+          <style>Single</style>
+        </border>
       </extInfo>
     </items>
     <items xsi:type="form:FormGroup">
@@ -752,7 +755,7 @@
       <type>UsualGroup</type>
       <extInfo xsi:type="form:UsualGroupExtInfo">
         <group>Vertical</group>
-        <representation>WeakSeparation</representation>
+        <verticalSpacing>Half</verticalSpacing>
         <showLeftMargin>true</showLeftMargin>
         <united>true</united>
         <throughAlign>Auto</throughAlign>
@@ -1264,6 +1267,7 @@
     <type>UsualGroup</type>
     <extInfo xsi:type="form:UsualGroupExtInfo">
       <group>AlwaysHorizontal</group>
+      <verticalSpacing>Half</verticalSpacing>
       <representation>StrongSeparation</representation>
       <showLeftMargin>true</showLeftMargin>
       <united>true</united>
@@ -2804,13 +2808,7 @@
     <currentRowUse>DontUse</currentRowUse>
   </formCommands>
   <commandInterface>
-    <navigationPanel>
-      <cmiFragmentRecord>
-        <command>0:82596bcb-3cf5-4527-b056-8f34f1de5827</command>
-        <group>FormNavigationPanelGoTo</group>
-        <index>0</index>
-      </cmiFragmentRecord>
-    </navigationPanel>
+    <navigationPanel/>
     <commandBar>
       <cmiFragmentRecord>
         <command>Catalog.Участники.Command.ДетализацияПрироста</command>
