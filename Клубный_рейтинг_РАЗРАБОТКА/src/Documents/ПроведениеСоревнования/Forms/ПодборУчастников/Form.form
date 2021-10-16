@@ -2992,11 +2992,6 @@
     <edit>
       <common>true</common>
     </edit>
-    <notDefaultUseAlwaysAttributes xsi:type="form:MultiLanguageDataPath">
-      <paths xsi:type="form:DataPath">
-        <segments>СписокУчастниковДляПодбора.ВидРейтинга</segments>
-      </paths>
-    </notDefaultUseAlwaysAttributes>
     <notDefaultUseAlwaysAttributes xsi:type="form:DataPath">
       <segments>СписокУчастниковДляПодбора.НеВыводитьВОтчетах</segments>
     </notDefaultUseAlwaysAttributes>
