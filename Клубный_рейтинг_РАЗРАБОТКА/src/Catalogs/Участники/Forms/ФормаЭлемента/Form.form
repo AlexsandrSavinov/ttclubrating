@@ -855,11 +855,6 @@
     <userVisible>
       <common>true</common>
     </userVisible>
-    <dataPath xsi:type="form:MultiLanguageDataPath">
-      <paths xsi:type="form:DataPath">
-        <segments>1/0:bfd25fcb-0bf0-4afb-90b6-a0f8a50a0007</segments>
-      </paths>
-    </dataPath>
     <extendedTooltip>
       <name>ИДТелеграммРасширеннаяПодсказка</name>
       <id>142</id>
