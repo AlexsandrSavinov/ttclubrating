@@ -29,6 +29,14 @@
   </standardAttributes>
   <informationRegisterPeriodicity>Day</informationRegisterPeriodicity>
   <dataLockControlMode>Managed</dataLockControlMode>
+  <recordPresentation>
+    <key>ru</key>
+    <value>Коэффициент рейтинга по счету встречи</value>
+  </recordPresentation>
+  <listPresentation>
+    <key>ru</key>
+    <value>Коэффициенты рейтинга по счету встречи</value>
+  </listPresentation>
   <resources uuid="8adde9bc-48bb-4fea-a3c4-77df2a16b6c5">
     <name>Коэффициент</name>
     <synonym>

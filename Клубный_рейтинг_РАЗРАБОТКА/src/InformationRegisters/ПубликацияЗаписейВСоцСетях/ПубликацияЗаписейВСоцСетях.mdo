@@ -18,6 +18,14 @@
   <editType>InDialog</editType>
   <defaultRecordForm>InformationRegister.ПубликацияЗаписейВСоцСетях.Form.ФормаЗаписи</defaultRecordForm>
   <dataLockControlMode>Managed</dataLockControlMode>
+  <recordPresentation>
+    <key>ru</key>
+    <value>Публикация записей в соц сетях</value>
+  </recordPresentation>
+  <listPresentation>
+    <key>ru</key>
+    <value>Публикации записей в соц сетях</value>
+  </listPresentation>
   <resources uuid="239a743b-d12c-4a9b-a7ca-2ee72a7d13b1">
     <name>Публиковать</name>
     <synonym>

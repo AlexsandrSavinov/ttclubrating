@@ -17,6 +17,14 @@
   <useStandardCommands>true</useStandardCommands>
   <editType>InDialog</editType>
   <dataLockControlMode>Managed</dataLockControlMode>
+  <recordPresentation>
+    <key>ru</key>
+    <value>Встреча участников</value>
+  </recordPresentation>
+  <listPresentation>
+    <key>ru</key>
+    <value>Встречи участников</value>
+  </listPresentation>
   <resources uuid="c911643a-899c-4faa-b764-0535990430b7">
     <name>ОчкиВыигравшего</name>
     <synonym>

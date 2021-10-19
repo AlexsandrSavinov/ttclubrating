@@ -18,6 +18,14 @@
   <editType>InDialog</editType>
   <defaultRecordForm>InformationRegister.НастройкиСбораГрупп.Form.ФормаЗаписи</defaultRecordForm>
   <dataLockControlMode>Managed</dataLockControlMode>
+  <recordPresentation>
+    <key>ru</key>
+    <value>Настройка сбора групп</value>
+  </recordPresentation>
+  <listPresentation>
+    <key>ru</key>
+    <value>Настройки сбора групп</value>
+  </listPresentation>
   <explanation>
     <key>ru</key>
     <value>Настройки для автоматического заполнения (формирования) групп в жеребьевке, для группового этапа.</value>

@@ -57,6 +57,14 @@
   <informationRegisterPeriodicity>Day</informationRegisterPeriodicity>
   <mainFilterOnPeriod>true</mainFilterOnPeriod>
   <dataLockControlMode>Managed</dataLockControlMode>
+  <recordPresentation>
+    <key>ru</key>
+    <value>Период действия разрядов</value>
+  </recordPresentation>
+  <listPresentation>
+    <key>ru</key>
+    <value>Периоды действия разрядов</value>
+  </listPresentation>
   <resources uuid="c57442c8-f32f-466d-ac1b-5097893b2820">
     <name>СрокДействияЛет</name>
     <synonym>

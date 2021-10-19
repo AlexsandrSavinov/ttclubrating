@@ -19,6 +19,10 @@
   <defaultRecordForm>InformationRegister.ПорядокИгр.Form.ФормаЗаписи</defaultRecordForm>
   <defaultListForm>InformationRegister.ПорядокИгр.Form.ФормаСписка</defaultListForm>
   <dataLockControlMode>Managed</dataLockControlMode>
+  <recordPresentation>
+    <key>ru</key>
+    <value>Порядок игр</value>
+  </recordPresentation>
   <dimensions uuid="e6fb20b4-f9c1-4b82-8971-fb021b9ae721">
     <name>РежимТура</name>
     <synonym>
