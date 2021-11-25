@@ -116,7 +116,6 @@
     <group>ActionsPanelTools</group>
     <commandParameterType/>
     <representation>Auto</representation>
-    <shortcut></shortcut>
   </commands>
   <commands uuid="1c5e1b0b-5941-4372-998b-d7ff509f1966">
     <name>РезервнаяКопия</name>
@@ -127,7 +126,6 @@
     <group>ActionsPanelTools</group>
     <commandParameterType/>
     <representation>Auto</representation>
-    <shortcut></shortcut>
   </commands>
   <commands uuid="932e5fb8-19e5-4e6a-8e0d-fb16925e4721">
     <name>ВосстановитьИБ</name>
@@ -138,6 +136,5 @@
     <group>ActionsPanelTools</group>
     <commandParameterType/>
     <representation>Auto</representation>
-    <shortcut></shortcut>
   </commands>
 </mdclass:DataProcessor>

@@ -143,6 +143,5 @@
     <group>NavigationPanelImportant</group>
     <commandParameterType/>
     <representation>Auto</representation>
-    <shortcut></shortcut>
   </commands>
 </mdclass:InformationRegister>

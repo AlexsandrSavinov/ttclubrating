@@ -12,10 +12,8 @@
     <userVisible>
       <common>true</common>
     </userVisible>
-    <dataPath xsi:type="form:MultiLanguageDataPath">
-      <paths xsi:type="form:DataPath">
-        <segments>Имя</segments>
-      </paths>
+    <dataPath xsi:type="form:DataPath">
+      <segments>Имя</segments>
     </dataPath>
     <extendedTooltip>
       <name>ИмяРасширеннаяПодсказка</name>
@@ -64,10 +62,8 @@
     <userVisible>
       <common>true</common>
     </userVisible>
-    <dataPath xsi:type="form:MultiLanguageDataPath">
-      <paths xsi:type="form:DataPath">
-        <segments>ПолноеИмя</segments>
-      </paths>
+    <dataPath xsi:type="form:DataPath">
+      <segments>ПолноеИмя</segments>
     </dataPath>
     <extendedTooltip>
       <name>ПолноеИмяРасширеннаяПодсказка</name>
@@ -116,10 +112,8 @@
     <userVisible>
       <common>true</common>
     </userVisible>
-    <dataPath xsi:type="form:MultiLanguageDataPath">
-      <paths xsi:type="form:DataPath">
-        <segments>Пароль</segments>
-      </paths>
+    <dataPath xsi:type="form:DataPath">
+      <segments>Пароль</segments>
     </dataPath>
     <handlers>
       <event>OnChange</event>
@@ -172,10 +166,8 @@
     <userVisible>
       <common>true</common>
     </userVisible>
-    <dataPath xsi:type="form:MultiLanguageDataPath">
-      <paths xsi:type="form:DataPath">
-        <segments>ПодтверждениеПароля</segments>
-      </paths>
+    <dataPath xsi:type="form:DataPath">
+      <segments>ПодтверждениеПароля</segments>
     </dataPath>
     <handlers>
       <event>OnChange</event>
@@ -253,6 +245,7 @@
       <autoMaxWidth>true</autoMaxWidth>
       <autoMaxHeight>true</autoMaxHeight>
       <placementArea>UserCmds</placementArea>
+      <toolTipRepresentation>Auto</toolTipRepresentation>
       <representationInContextMenu>Auto</representationInContextMenu>
     </items>
     <visible>true</visible>

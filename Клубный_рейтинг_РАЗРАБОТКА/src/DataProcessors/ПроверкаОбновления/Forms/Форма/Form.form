@@ -18,10 +18,8 @@
         <userVisible>
           <common>true</common>
         </userVisible>
-        <dataPath xsi:type="form:MultiLanguageDataPath">
-          <paths xsi:type="form:DataPath">
-            <segments>Пользователь</segments>
-          </paths>
+        <dataPath xsi:type="form:DataPath">
+          <segments>Пользователь</segments>
         </dataPath>
         <extendedTooltip>
           <name>ПользовательРасширеннаяПодсказка</name>
@@ -71,10 +69,8 @@
         <userVisible>
           <common>true</common>
         </userVisible>
-        <dataPath xsi:type="form:MultiLanguageDataPath">
-          <paths xsi:type="form:DataPath">
-            <segments>Пароль</segments>
-          </paths>
+        <dataPath xsi:type="form:DataPath">
+          <segments>Пароль</segments>
         </dataPath>
         <extendedTooltip>
           <name>ПарольРасширеннаяПодсказка</name>
@@ -153,10 +149,8 @@
       <userVisible>
         <common>true</common>
       </userVisible>
-      <dataPath xsi:type="form:MultiLanguageDataPath">
-        <paths xsi:type="form:DataPath">
-          <segments>ПутьКПрограмме</segments>
-        </paths>
+      <dataPath xsi:type="form:DataPath">
+        <segments>ПутьКПрограмме</segments>
       </dataPath>
       <extendedTooltip>
         <name>ПутьКПрограммеРасширеннаяПодсказка</name>
@@ -206,10 +200,8 @@
       <userVisible>
         <common>true</common>
       </userVisible>
-      <dataPath xsi:type="form:MultiLanguageDataPath">
-        <paths xsi:type="form:DataPath">
-          <segments>ПутьКБазе</segments>
-        </paths>
+      <dataPath xsi:type="form:DataPath">
+        <segments>ПутьКБазе</segments>
       </dataPath>
       <extendedTooltip>
         <name>ПутьКБазеРасширеннаяПодсказка</name>
@@ -375,6 +367,7 @@
           <autoMaxWidth>true</autoMaxWidth>
           <autoMaxHeight>true</autoMaxHeight>
           <placementArea>UserCmds</placementArea>
+          <toolTipRepresentation>Auto</toolTipRepresentation>
           <representationInContextMenu>Auto</representationInContextMenu>
         </items>
         <items xsi:type="form:Decoration">
@@ -458,10 +451,8 @@
           <userVisible>
             <common>true</common>
           </userVisible>
-          <dataPath xsi:type="form:MultiLanguageDataPath">
-            <paths xsi:type="form:DataPath">
-              <segments>ТекущаяВерсия</segments>
-            </paths>
+          <dataPath xsi:type="form:DataPath">
+            <segments>ТекущаяВерсия</segments>
           </dataPath>
           <titleLocation>Left</titleLocation>
           <extendedTooltip>
@@ -508,10 +499,8 @@
           <userVisible>
             <common>true</common>
           </userVisible>
-          <dataPath xsi:type="form:MultiLanguageDataPath">
-            <paths xsi:type="form:DataPath">
-              <segments>ПоследняяВерсия</segments>
-            </paths>
+          <dataPath xsi:type="form:DataPath">
+            <segments>ПоследняяВерсия</segments>
           </dataPath>
           <titleLocation>Left</titleLocation>
           <extendedTooltip>
@@ -597,10 +586,8 @@
         <userVisible>
           <common>true</common>
         </userVisible>
-        <dataPath xsi:type="form:MultiLanguageDataPath">
-          <paths xsi:type="form:DataPath">
-            <segments>Инф</segments>
-          </paths>
+        <dataPath xsi:type="form:DataPath">
+          <segments>Инф</segments>
         </dataPath>
         <titleLocation>None</titleLocation>
         <extendedTooltip>
@@ -680,6 +667,7 @@
           <underline>false</underline>
           <strikeout>false</strikeout>
         </font>
+        <toolTipRepresentation>Auto</toolTipRepresentation>
         <representationInContextMenu>Auto</representationInContextMenu>
       </items>
       <items xsi:type="form:FormField">
@@ -689,10 +677,8 @@
         <userVisible>
           <common>true</common>
         </userVisible>
-        <dataPath xsi:type="form:MultiLanguageDataPath">
-          <paths xsi:type="form:DataPath">
-            <segments>ПолеПомощьПриОбновлении</segments>
-          </paths>
+        <dataPath xsi:type="form:DataPath">
+          <segments>ПолеПомощьПриОбновлении</segments>
         </dataPath>
         <titleLocation>None</titleLocation>
         <extendedTooltip>
@@ -748,10 +734,8 @@
             <userVisible>
               <common>true</common>
             </userVisible>
-            <dataPath xsi:type="form:MultiLanguageDataPath">
-              <paths xsi:type="form:DataPath">
-                <segments>Объект.СоздаватьРезервнуюКопию</segments>
-              </paths>
+            <dataPath xsi:type="form:DataPath">
+              <segments>Объект.СоздаватьРезервнуюКопию</segments>
             </dataPath>
             <titleLocation>Right</titleLocation>
             <extendedTooltip>
@@ -797,10 +781,8 @@
             <userVisible>
               <common>true</common>
             </userVisible>
-            <dataPath xsi:type="form:MultiLanguageDataPath">
-              <paths xsi:type="form:DataPath">
-                <segments>Объект.ИмяКаталогаРезервнойКопииИБ</segments>
-              </paths>
+            <dataPath xsi:type="form:DataPath">
+              <segments>Объект.ИмяКаталогаРезервнойКопииИБ</segments>
             </dataPath>
             <extendedTooltip>
               <name>КаталогКопииРасширеннаяПодсказка</name>
@@ -878,10 +860,8 @@
           <userVisible>
             <common>true</common>
           </userVisible>
-          <dataPath xsi:type="form:MultiLanguageDataPath">
-            <paths xsi:type="form:DataPath">
-              <segments>ЗапуститьПрограммуПослеОбновления</segments>
-            </paths>
+          <dataPath xsi:type="form:DataPath">
+            <segments>ЗапуститьПрограммуПослеОбновления</segments>
           </dataPath>
           <titleLocation>Right</titleLocation>
           <extendedTooltip>
@@ -1007,6 +987,7 @@
             <picture xsi:type="core:PictureRef">
               <picture>StdPicture.Refresh</picture>
             </picture>
+            <toolTipRepresentation>Auto</toolTipRepresentation>
             <representationInContextMenu>Auto</representationInContextMenu>
           </items>
           <visible>true</visible>
@@ -1124,10 +1105,8 @@
         <userVisible>
           <common>true</common>
         </userVisible>
-        <dataPath xsi:type="form:MultiLanguageDataPath">
-          <paths xsi:type="form:DataPath">
-            <segments>Объект.КаталогСРезервнымиКопиями</segments>
-          </paths>
+        <dataPath xsi:type="form:DataPath">
+          <segments>Объект.КаталогСРезервнымиКопиями</segments>
         </dataPath>
         <extendedTooltip>
           <name>ИмяКаталогаРезервнойКопииИБРасширеннаяПодсказка</name>
@@ -1204,6 +1183,7 @@
           <underline>false</underline>
           <strikeout>false</strikeout>
         </font>
+        <toolTipRepresentation>Auto</toolTipRepresentation>
         <representationInContextMenu>Auto</representationInContextMenu>
       </items>
       <items xsi:type="form:FormField">
@@ -1214,10 +1194,8 @@
         <userVisible>
           <common>true</common>
         </userVisible>
-        <dataPath xsi:type="form:MultiLanguageDataPath">
-          <paths xsi:type="form:DataPath">
-            <segments>ПолеПомощьПриВыгрузки</segments>
-          </paths>
+        <dataPath xsi:type="form:DataPath">
+          <segments>ПолеПомощьПриВыгрузки</segments>
         </dataPath>
         <titleLocation>None</titleLocation>
         <extendedTooltip>
@@ -1303,10 +1281,8 @@
         <userVisible>
           <common>true</common>
         </userVisible>
-        <dataPath xsi:type="form:MultiLanguageDataPath">
-          <paths xsi:type="form:DataPath">
-            <segments>Объект.ФайлЗагрузкиРезервнойКопии</segments>
-          </paths>
+        <dataPath xsi:type="form:DataPath">
+          <segments>Объект.ФайлЗагрузкиРезервнойКопии</segments>
         </dataPath>
         <extendedTooltip>
           <name>ФайлЗагрузкиРезервнойКопииРасширеннаяПодсказка</name>
@@ -1387,6 +1363,7 @@
           <underline>false</underline>
           <strikeout>false</strikeout>
         </font>
+        <toolTipRepresentation>Auto</toolTipRepresentation>
         <representationInContextMenu>Auto</representationInContextMenu>
       </items>
       <items xsi:type="form:FormField">
@@ -1397,10 +1374,8 @@
         <userVisible>
           <common>true</common>
         </userVisible>
-        <dataPath xsi:type="form:MultiLanguageDataPath">
-          <paths xsi:type="form:DataPath">
-            <segments>ПолеПомощьПриВосстановлении</segments>
-          </paths>
+        <dataPath xsi:type="form:DataPath">
+          <segments>ПолеПомощьПриВосстановлении</segments>
         </dataPath>
         <titleLocation>None</titleLocation>
         <extendedTooltip>

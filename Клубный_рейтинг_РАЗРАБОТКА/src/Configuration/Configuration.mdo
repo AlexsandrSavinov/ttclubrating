@@ -12,7 +12,8 @@
   <containedObjects classId="9de14907-ec23-4a07-96f0-85521cb6b53b" objectId="bfa0deea-ee85-4118-b091-5c6b7e5b83fe"/>
   <containedObjects classId="51f2d5d8-ea4d-4064-8892-82951750031e" objectId="348c7fe1-d1f4-48eb-89c2-2dcdab93efee"/>
   <containedObjects classId="e68182ea-4237-4383-967f-90c1e3370bc7" objectId="68cd43cf-377c-49d9-8e92-25a1a6267681"/>
-  <configurationExtensionCompatibilityMode>8.3.15</configurationExtensionCompatibilityMode>
+  <containedObjects classId="fb282519-d103-4dd3-bc12-cb271d631dfc" objectId="4938744b-b49b-498c-8212-2173440697e9"/>
+  <configurationExtensionCompatibilityMode>8.3.19</configurationExtensionCompatibilityMode>
   <defaultRunMode>ManagedApplication</defaultRunMode>
   <usePurposes>PersonalComputer</usePurposes>
   <scriptVariant>Russian</scriptVariant>
@@ -27,6 +28,15 @@
     </pages>
   </help>
   <defaultReportForm>CommonForm.ФормаОтчета</defaultReportForm>
+  <usedMobileApplicationFunctionalities>
+    <functionality>
+      <use>true</use>
+    </functionality>
+    <functionality>
+      <functionality>OSBackup</functionality>
+      <use>true</use>
+    </functionality>
+  </usedMobileApplicationFunctionalities>
   <mainSectionPicture/>
   <defaultStyle>Style.ОсновнойСтиль</defaultStyle>
   <defaultLanguage>Language.Русский</defaultLanguage>

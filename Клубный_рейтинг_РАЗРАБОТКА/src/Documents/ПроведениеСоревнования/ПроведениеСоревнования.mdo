@@ -347,6 +347,9 @@
         <precision>1</precision>
       </numberQualifiers>
     </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
     <fullTextSearch>Use</fullTextSearch>
     <dataHistory>Use</dataHistory>
   </attributes>
@@ -2144,7 +2147,6 @@
     <picture xsi:type="core:PictureRef">
       <picture>CommonPicture.РассчитатьРейтинг</picture>
     </picture>
-    <shortcut></shortcut>
   </commands>
   <commands uuid="3e58cc8c-5c23-46a0-8bcb-c3e00ff79290">
     <name>Протоколы</name>
@@ -2164,7 +2166,6 @@
     <picture xsi:type="core:PictureRef">
       <picture>StdPicture.Document</picture>
     </picture>
-    <shortcut></shortcut>
   </commands>
   <commands uuid="6f43766a-f579-4a12-8d23-6c8dfaaa464b">
     <name>СписокУчастников</name>
@@ -2181,7 +2182,6 @@
     <picture xsi:type="core:PictureRef">
       <picture>StdPicture.Form</picture>
     </picture>
-    <shortcut></shortcut>
   </commands>
   <commands uuid="21dad97c-3bd0-4e2a-9b3d-94af865e7bfb">
     <name>ВывестиТекущийРейтинг</name>
@@ -2194,7 +2194,6 @@
       <types>DocumentRef.ПроведениеСоревнования</types>
     </commandParameterType>
     <representation>Auto</representation>
-    <shortcut></shortcut>
   </commands>
   <commands uuid="105a4db2-6d7d-4841-8242-96cb5e34f2d7">
     <name>ДетализацияПоСоревнованию</name>
@@ -2207,6 +2206,5 @@
       <types>DocumentRef.ПроведениеСоревнования</types>
     </commandParameterType>
     <representation>Auto</representation>
-    <shortcut></shortcut>
   </commands>
 </mdclass:Document>

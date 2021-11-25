@@ -35,6 +35,7 @@
         <autoMaxWidth>true</autoMaxWidth>
         <autoMaxHeight>true</autoMaxHeight>
         <placementArea>UserCmds</placementArea>
+        <toolTipRepresentation>Auto</toolTipRepresentation>
         <representationInContextMenu>Auto</representationInContextMenu>
       </items>
       <items xsi:type="form:Button">
@@ -65,6 +66,7 @@
         <autoMaxWidth>true</autoMaxWidth>
         <autoMaxHeight>true</autoMaxHeight>
         <placementArea>UserCmds</placementArea>
+        <toolTipRepresentation>Auto</toolTipRepresentation>
         <representationInContextMenu>Auto</representationInContextMenu>
       </items>
       <visible>true</visible>
@@ -104,10 +106,8 @@
       <userVisible>
         <common>true</common>
       </userVisible>
-      <dataPath xsi:type="form:MultiLanguageDataPath">
-        <paths xsi:type="form:DataPath">
-          <segments>ВариантыВыбораКоличестваПартий</segments>
-        </paths>
+      <dataPath xsi:type="form:DataPath">
+        <segments>ВариантыВыбораКоличестваПартий</segments>
       </dataPath>
       <titleLocation>None</titleLocation>
       <handlers>
@@ -230,10 +230,8 @@
         <userVisible>
           <common>true</common>
         </userVisible>
-        <dataPath xsi:type="form:MultiLanguageDataPath">
-          <paths xsi:type="form:DataPath">
-            <segments>ТаблицаВыбораПоИтогам.Участник1</segments>
-          </paths>
+        <dataPath xsi:type="form:DataPath">
+          <segments>ТаблицаВыбораПоИтогам.Участник1</segments>
         </dataPath>
         <extendedTooltip>
           <name>ТаблицаВыбораПоИтогамУчастник1РасширеннаяПодсказка</name>
@@ -296,10 +294,8 @@
         <userVisible>
           <common>true</common>
         </userVisible>
-        <dataPath xsi:type="form:MultiLanguageDataPath">
-          <paths xsi:type="form:DataPath">
-            <segments>ТаблицаВыбораПоИтогам.КолПартий1</segments>
-          </paths>
+        <dataPath xsi:type="form:DataPath">
+          <segments>ТаблицаВыбораПоИтогам.КолПартий1</segments>
         </dataPath>
         <extendedTooltip>
           <name>ТаблицаВыбораПоИтогамКолПартий1РасширеннаяПодсказка</name>
@@ -375,10 +371,8 @@
         <userVisible>
           <common>true</common>
         </userVisible>
-        <dataPath xsi:type="form:MultiLanguageDataPath">
-          <paths xsi:type="form:DataPath">
-            <segments>ТаблицаВыбораПоИтогам.КолПартий2</segments>
-          </paths>
+        <dataPath xsi:type="form:DataPath">
+          <segments>ТаблицаВыбораПоИтогам.КолПартий2</segments>
         </dataPath>
         <extendedTooltip>
           <name>ТаблицаВыбораПоИтогамКолПартий2РасширеннаяПодсказка</name>
@@ -445,10 +439,8 @@
         <userVisible>
           <common>true</common>
         </userVisible>
-        <dataPath xsi:type="form:MultiLanguageDataPath">
-          <paths xsi:type="form:DataPath">
-            <segments>ТаблицаВыбораПоИтогам.Участник2</segments>
-          </paths>
+        <dataPath xsi:type="form:DataPath">
+          <segments>ТаблицаВыбораПоИтогам.Участник2</segments>
         </dataPath>
         <extendedTooltip>
           <name>ТаблицаВыбораПоИтогамУчастник2РасширеннаяПодсказка</name>
@@ -735,10 +727,8 @@
         <userVisible>
           <common>true</common>
         </userVisible>
-        <dataPath xsi:type="form:MultiLanguageDataPath">
-          <paths xsi:type="form:DataPath">
-            <segments>ТаблицаПартий.Участник</segments>
-          </paths>
+        <dataPath xsi:type="form:DataPath">
+          <segments>ТаблицаПартий.Участник</segments>
         </dataPath>
         <extendedTooltip>
           <name>ТаблицаПартийУчастникРасширеннаяПодсказка</name>
@@ -792,10 +782,8 @@
         <userVisible>
           <common>true</common>
         </userVisible>
-        <dataPath xsi:type="form:MultiLanguageDataPath">
-          <paths xsi:type="form:DataPath">
-            <segments>ТаблицаПартий.Игра1</segments>
-          </paths>
+        <dataPath xsi:type="form:DataPath">
+          <segments>ТаблицаПартий.Игра1</segments>
         </dataPath>
         <handlers>
           <event>OnChange</event>
@@ -854,10 +842,8 @@
         <userVisible>
           <common>true</common>
         </userVisible>
-        <dataPath xsi:type="form:MultiLanguageDataPath">
-          <paths xsi:type="form:DataPath">
-            <segments>ТаблицаПартий.Игра2</segments>
-          </paths>
+        <dataPath xsi:type="form:DataPath">
+          <segments>ТаблицаПартий.Игра2</segments>
         </dataPath>
         <handlers>
           <event>OnChange</event>
@@ -916,10 +902,8 @@
         <userVisible>
           <common>true</common>
         </userVisible>
-        <dataPath xsi:type="form:MultiLanguageDataPath">
-          <paths xsi:type="form:DataPath">
-            <segments>ТаблицаПартий.Игра3</segments>
-          </paths>
+        <dataPath xsi:type="form:DataPath">
+          <segments>ТаблицаПартий.Игра3</segments>
         </dataPath>
         <handlers>
           <event>OnChange</event>
@@ -977,10 +961,8 @@
         <userVisible>
           <common>true</common>
         </userVisible>
-        <dataPath xsi:type="form:MultiLanguageDataPath">
-          <paths xsi:type="form:DataPath">
-            <segments>ТаблицаПартий.Игра4</segments>
-          </paths>
+        <dataPath xsi:type="form:DataPath">
+          <segments>ТаблицаПартий.Игра4</segments>
         </dataPath>
         <handlers>
           <event>OnChange</event>
@@ -1038,10 +1020,8 @@
         <userVisible>
           <common>true</common>
         </userVisible>
-        <dataPath xsi:type="form:MultiLanguageDataPath">
-          <paths xsi:type="form:DataPath">
-            <segments>ТаблицаПартий.Игра5</segments>
-          </paths>
+        <dataPath xsi:type="form:DataPath">
+          <segments>ТаблицаПартий.Игра5</segments>
         </dataPath>
         <handlers>
           <event>OnChange</event>
@@ -1099,10 +1079,8 @@
         <userVisible>
           <common>true</common>
         </userVisible>
-        <dataPath xsi:type="form:MultiLanguageDataPath">
-          <paths xsi:type="form:DataPath">
-            <segments>ТаблицаПартий.Игра6</segments>
-          </paths>
+        <dataPath xsi:type="form:DataPath">
+          <segments>ТаблицаПартий.Игра6</segments>
         </dataPath>
         <handlers>
           <event>OnChange</event>
@@ -1160,10 +1138,8 @@
         <userVisible>
           <common>true</common>
         </userVisible>
-        <dataPath xsi:type="form:MultiLanguageDataPath">
-          <paths xsi:type="form:DataPath">
-            <segments>ТаблицаПартий.Игра7</segments>
-          </paths>
+        <dataPath xsi:type="form:DataPath">
+          <segments>ТаблицаПартий.Игра7</segments>
         </dataPath>
         <handlers>
           <event>OnChange</event>
@@ -1221,10 +1197,8 @@
         <userVisible>
           <common>true</common>
         </userVisible>
-        <dataPath xsi:type="form:MultiLanguageDataPath">
-          <paths xsi:type="form:DataPath">
-            <segments>ТаблицаПартий.Итог</segments>
-          </paths>
+        <dataPath xsi:type="form:DataPath">
+          <segments>ТаблицаПартий.Итог</segments>
         </dataPath>
         <extendedTooltip>
           <name>ТаблицаПартийИтогРасширеннаяПодсказка</name>
@@ -1297,6 +1271,7 @@
           <autoMaxWidth>true</autoMaxWidth>
           <autoMaxHeight>true</autoMaxHeight>
           <placementArea>UserCmds</placementArea>
+          <toolTipRepresentation>Auto</toolTipRepresentation>
           <representationInContextMenu>Auto</representationInContextMenu>
         </items>
         <visible>true</visible>

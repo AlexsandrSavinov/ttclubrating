@@ -15,10 +15,8 @@
       <userVisible>
         <common>true</common>
       </userVisible>
-      <dataPath xsi:type="form:MultiLanguageDataPath">
-        <paths xsi:type="form:DataPath">
-          <segments>Объект.Description</segments>
-        </paths>
+      <dataPath xsi:type="form:DataPath">
+        <segments>Объект.Description</segments>
       </dataPath>
       <extendedTooltip>
         <name>НаименованиеРасширеннаяПодсказка</name>
@@ -68,10 +66,8 @@
       <userVisible>
         <common>true</common>
       </userVisible>
-      <dataPath xsi:type="form:MultiLanguageDataPath">
-        <paths xsi:type="form:DataPath">
-          <segments>Объект.Code</segments>
-        </paths>
+      <dataPath xsi:type="form:DataPath">
+        <segments>Объект.Code</segments>
       </dataPath>
       <extendedTooltip>
         <name>КодРасширеннаяПодсказка</name>
@@ -151,10 +147,8 @@
       <userVisible>
         <common>true</common>
       </userVisible>
-      <dataPath xsi:type="form:MultiLanguageDataPath">
-        <paths xsi:type="form:DataPath">
-          <segments>Объект.НомерУдостоверения</segments>
-        </paths>
+      <dataPath xsi:type="form:DataPath">
+        <segments>Объект.НомерУдостоверения</segments>
       </dataPath>
       <extendedTooltip>
         <name>НомерУдостоверенияРасширеннаяПодсказка</name>
@@ -203,10 +197,8 @@
       <userVisible>
         <common>true</common>
       </userVisible>
-      <dataPath xsi:type="form:MultiLanguageDataPath">
-        <paths xsi:type="form:DataPath">
-          <segments>Объект.Город</segments>
-        </paths>
+      <dataPath xsi:type="form:DataPath">
+        <segments>Объект.Город</segments>
       </dataPath>
       <extendedTooltip>
         <name>ГородРасширеннаяПодсказка</name>
@@ -284,10 +276,8 @@
     <userVisible>
       <common>true</common>
     </userVisible>
-    <dataPath xsi:type="form:MultiLanguageDataPath">
-      <paths xsi:type="form:DataPath">
-        <segments>Объект.Квалификация</segments>
-      </paths>
+    <dataPath xsi:type="form:DataPath">
+      <segments>Объект.Квалификация</segments>
     </dataPath>
     <extendedTooltip>
       <name>КвалификацияРасширеннаяПодсказка</name>

@@ -25,10 +25,8 @@
       <userVisible>
         <common>true</common>
       </userVisible>
-      <dataPath xsi:type="form:MultiLanguageDataPath">
-        <paths xsi:type="form:DataPath">
-          <segments>Список.Description</segments>
-        </paths>
+      <dataPath xsi:type="form:DataPath">
+        <segments>Список.Description</segments>
       </dataPath>
       <defaultItem>true</defaultItem>
       <extendedTooltip>
@@ -76,10 +74,8 @@
       <userVisible>
         <common>true</common>
       </userVisible>
-      <dataPath xsi:type="form:MultiLanguageDataPath">
-        <paths xsi:type="form:DataPath">
-          <segments>Список.ДатаРождения</segments>
-        </paths>
+      <dataPath xsi:type="form:DataPath">
+        <segments>Список.ДатаРождения</segments>
       </dataPath>
       <extendedTooltip>
         <name>ДатаРожденияРасширеннаяПодсказка</name>
@@ -125,10 +121,8 @@
       <userVisible>
         <common>true</common>
       </userVisible>
-      <dataPath xsi:type="form:MultiLanguageDataPath">
-        <paths xsi:type="form:DataPath">
-          <segments>Список.ЗваниеРазряд</segments>
-        </paths>
+      <dataPath xsi:type="form:DataPath">
+        <segments>Список.ЗваниеРазряд</segments>
       </dataPath>
       <extendedTooltip>
         <name>ЗваниеРазрядРасширеннаяПодсказка</name>
@@ -174,10 +168,8 @@
       <userVisible>
         <common>true</common>
       </userVisible>
-      <dataPath xsi:type="form:MultiLanguageDataPath">
-        <paths xsi:type="form:DataPath">
-          <segments>Список.Город</segments>
-        </paths>
+      <dataPath xsi:type="form:DataPath">
+        <segments>Список.Город</segments>
       </dataPath>
       <extendedTooltip>
         <name>ГородРасширеннаяПодсказка</name>
@@ -223,10 +215,8 @@
       <userVisible>
         <common>true</common>
       </userVisible>
-      <dataPath xsi:type="form:MultiLanguageDataPath">
-        <paths xsi:type="form:DataPath">
-          <segments>Список.Клуб</segments>
-        </paths>
+      <dataPath xsi:type="form:DataPath">
+        <segments>Список.Клуб</segments>
       </dataPath>
       <extendedTooltip>
         <name>КлубРасширеннаяПодсказка</name>

@@ -17,6 +17,16 @@
   <inputByString>Catalog.Участники.StandardAttribute.Code</inputByString>
   <searchStringModeOnInputByString>AnyPart</searchStringModeOnInputByString>
   <choiceDataGetModeOnInputByString>Background</choiceDataGetModeOnInputByString>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Parent</name>
+    <synonym>
+      <key>ru</key>
+      <value>Группа</value>
+    </synonym>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fullTextSearch>Use</fullTextSearch>
+  </standardAttributes>
   <createOnInput>Use</createOnInput>
   <dataLockControlMode>Managed</dataLockControlMode>
   <fullTextSearch>Use</fullTextSearch>
@@ -393,7 +403,6 @@
     <picture xsi:type="core:PictureRef">
       <picture>CommonPicture.КарточкаУчастника</picture>
     </picture>
-    <shortcut></shortcut>
   </commands>
   <commands uuid="7b766665-42e1-46e4-9023-de3a323d8128">
     <name>ДетализацияПрироста</name>
@@ -406,6 +415,5 @@
       <types>CatalogRef.Участники</types>
     </commandParameterType>
     <representation>Auto</representation>
-    <shortcut></shortcut>
   </commands>
 </mdclass:Catalog>

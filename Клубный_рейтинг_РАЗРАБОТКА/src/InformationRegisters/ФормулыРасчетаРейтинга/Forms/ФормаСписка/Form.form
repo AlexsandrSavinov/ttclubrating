@@ -25,10 +25,8 @@
       <userVisible>
         <common>true</common>
       </userVisible>
-      <dataPath xsi:type="form:MultiLanguageDataPath">
-        <paths xsi:type="form:DataPath">
-          <segments>Список.Period</segments>
-        </paths>
+      <dataPath xsi:type="form:DataPath">
+        <segments>Список.Period</segments>
       </dataPath>
       <defaultItem>true</defaultItem>
       <extendedTooltip>
@@ -74,10 +72,8 @@
       <userVisible>
         <common>true</common>
       </userVisible>
-      <dataPath xsi:type="form:MultiLanguageDataPath">
-        <paths xsi:type="form:DataPath">
-          <segments>Список.ТипПрироста</segments>
-        </paths>
+      <dataPath xsi:type="form:DataPath">
+        <segments>Список.ТипПрироста</segments>
       </dataPath>
       <extendedTooltip>
         <name>ТипПриростаРасширеннаяПодсказка</name>
@@ -122,10 +118,8 @@
       <userVisible>
         <common>true</common>
       </userVisible>
-      <dataPath xsi:type="form:MultiLanguageDataPath">
-        <paths xsi:type="form:DataPath">
-          <segments>Список.Формула</segments>
-        </paths>
+      <dataPath xsi:type="form:DataPath">
+        <segments>Список.Формула</segments>
       </dataPath>
       <extendedTooltip>
         <name>ФормулаРасширеннаяПодсказка</name>

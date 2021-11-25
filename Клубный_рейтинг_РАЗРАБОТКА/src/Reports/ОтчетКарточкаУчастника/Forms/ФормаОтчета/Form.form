@@ -33,6 +33,7 @@
       <autoMaxWidth>true</autoMaxWidth>
       <autoMaxHeight>true</autoMaxHeight>
       <placementArea>UserCmds</placementArea>
+      <toolTipRepresentation>Auto</toolTipRepresentation>
       <representationInContextMenu>Auto</representationInContextMenu>
     </items>
     <items xsi:type="form:FormField">
@@ -43,10 +44,8 @@
       <userVisible>
         <common>true</common>
       </userVisible>
-      <dataPath xsi:type="form:MultiLanguageDataPath">
-        <paths xsi:type="form:DataPath">
-          <segments>Участник</segments>
-        </paths>
+      <dataPath xsi:type="form:DataPath">
+        <segments>Участник</segments>
       </dataPath>
       <handlers>
         <event>OnChange</event>
@@ -99,10 +98,8 @@
       <userVisible>
         <common>true</common>
       </userVisible>
-      <dataPath xsi:type="form:MultiLanguageDataPath">
-        <paths xsi:type="form:DataPath">
-          <segments>ВидРейтинга</segments>
-        </paths>
+      <dataPath xsi:type="form:DataPath">
+        <segments>ВидРейтинга</segments>
       </dataPath>
       <extendedTooltip>
         <name>ВидРейтингаРасширеннаяПодсказка</name>
@@ -159,10 +156,8 @@
       <userVisible>
         <common>true</common>
       </userVisible>
-      <dataPath xsi:type="form:MultiLanguageDataPath">
-        <paths xsi:type="form:DataPath">
-          <segments>Период.StartDate</segments>
-        </paths>
+      <dataPath xsi:type="form:DataPath">
+        <segments>Период.StartDate</segments>
       </dataPath>
       <extendedTooltip>
         <name>ПериодДатаНачалаРасширеннаяПодсказка</name>
@@ -215,10 +210,8 @@
       <userVisible>
         <common>true</common>
       </userVisible>
-      <dataPath xsi:type="form:MultiLanguageDataPath">
-        <paths xsi:type="form:DataPath">
-          <segments>Период.EndDate</segments>
-        </paths>
+      <dataPath xsi:type="form:DataPath">
+        <segments>Период.EndDate</segments>
       </dataPath>
       <extendedTooltip>
         <name>ПериодДатаОкончанияРасширеннаяПодсказка</name>
@@ -295,10 +288,8 @@
     <userVisible>
       <common>true</common>
     </userVisible>
-    <dataPath xsi:type="form:MultiLanguageDataPath">
-      <paths xsi:type="form:DataPath">
-        <segments>ТабДок</segments>
-      </paths>
+    <dataPath xsi:type="form:DataPath">
+      <segments>ТабДок</segments>
     </dataPath>
     <titleLocation>None</titleLocation>
     <extendedTooltip>
@@ -342,6 +333,7 @@
       <verticalScrollBar>ScrollAlways</verticalScrollBar>
       <horizontalScrollBar>ScrollAlways</horizontalScrollBar>
       <selectionShowMode>Always</selectionShowMode>
+      <drawingSelectionShowMode>Auto</drawingSelectionShowMode>
       <showGroups>true</showGroups>
       <enableStartDrag>true</enableStartDrag>
       <enableDrag>true</enableDrag>

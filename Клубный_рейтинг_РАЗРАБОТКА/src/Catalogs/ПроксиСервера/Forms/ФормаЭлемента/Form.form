@@ -7,10 +7,8 @@
     <userVisible>
       <common>true</common>
     </userVisible>
-    <dataPath xsi:type="form:MultiLanguageDataPath">
-      <paths xsi:type="form:DataPath">
-        <segments>Объект.Code</segments>
-      </paths>
+    <dataPath xsi:type="form:DataPath">
+      <segments>Объект.Code</segments>
     </dataPath>
     <extendedTooltip>
       <name>КодРасширеннаяПодсказка</name>
@@ -59,10 +57,8 @@
     <userVisible>
       <common>true</common>
     </userVisible>
-    <dataPath xsi:type="form:MultiLanguageDataPath">
-      <paths xsi:type="form:DataPath">
-        <segments>Объект.Description</segments>
-      </paths>
+    <dataPath xsi:type="form:DataPath">
+      <segments>Объект.Description</segments>
     </dataPath>
     <extendedTooltip>
       <name>НаименованиеРасширеннаяПодсказка</name>
@@ -115,10 +111,8 @@
     <userVisible>
       <common>true</common>
     </userVisible>
-    <dataPath xsi:type="form:MultiLanguageDataPath">
-      <paths xsi:type="form:DataPath">
-        <segments>Объект.Порт</segments>
-      </paths>
+    <dataPath xsi:type="form:DataPath">
+      <segments>Объект.Порт</segments>
     </dataPath>
     <extendedTooltip>
       <name>ПортРасширеннаяПодсказка</name>
@@ -167,10 +161,8 @@
     <userVisible>
       <common>true</common>
     </userVisible>
-    <dataPath xsi:type="form:MultiLanguageDataPath">
-      <paths xsi:type="form:DataPath">
-        <segments>Объект.Пользователь</segments>
-      </paths>
+    <dataPath xsi:type="form:DataPath">
+      <segments>Объект.Пользователь</segments>
     </dataPath>
     <extendedTooltip>
       <name>ПользовательРасширеннаяПодсказка</name>
@@ -219,10 +211,8 @@
     <userVisible>
       <common>true</common>
     </userVisible>
-    <dataPath xsi:type="form:MultiLanguageDataPath">
-      <paths xsi:type="form:DataPath">
-        <segments>Объект.Пароль</segments>
-      </paths>
+    <dataPath xsi:type="form:DataPath">
+      <segments>Объект.Пароль</segments>
     </dataPath>
     <extendedTooltip>
       <name>ПарольРасширеннаяПодсказка</name>
@@ -271,10 +261,8 @@
     <userVisible>
       <common>true</common>
     </userVisible>
-    <dataPath xsi:type="form:MultiLanguageDataPath">
-      <paths xsi:type="form:DataPath">
-        <segments>Объект.Протокол</segments>
-      </paths>
+    <dataPath xsi:type="form:DataPath">
+      <segments>Объект.Протокол</segments>
     </dataPath>
     <extendedTooltip>
       <name>ПротоколРасширеннаяПодсказка</name>

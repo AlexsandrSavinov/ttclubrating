@@ -15,5 +15,4 @@
   <picture xsi:type="core:PictureRef">
     <picture>CommonPicture.ИконкаPDF</picture>
   </picture>
-  <shortcut></shortcut>
 </mdclass:CommonCommand>
